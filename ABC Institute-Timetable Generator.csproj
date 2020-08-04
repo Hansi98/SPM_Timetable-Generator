@@ -58,6 +58,12 @@
     <Compile Include="Section1_Location.Designer.cs">
       <DependentUpon>Section1_Location.cs</DependentUpon>
     </Compile>
+    <Compile Include="Section1_WorkingDays.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section1_WorkingDays.Designer.cs">
+      <DependentUpon>Section1_WorkingDays.cs</DependentUpon>
+    </Compile>
     <Compile Include="Section1_WorkingHours.cs">
       <SubType>Form</SubType>
     </Compile>
