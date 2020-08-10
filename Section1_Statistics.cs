@@ -21,5 +21,15 @@ namespace ABC_Institute___Timetable_Generator
         {
             this.Close();
         }
+
+        private void Section1_Statistics_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ComboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

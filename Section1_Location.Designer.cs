@@ -30,56 +30,54 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Section1_Location));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnclose = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.nishikiDLocations_buildiing_comboBox = new System.Windows.Forms.ComboBox();
+            this.nishikiDLocations_roomtype_comboBox = new System.Windows.Forms.ComboBox();
+            this.nishikiDLocations_room_textBox = new System.Windows.Forms.TextBox();
+            this.nishikiDLocation_dataGridView = new System.Windows.Forms.DataGridView();
+            this.nishikiDLocation_btnadd = new System.Windows.Forms.Button();
+            this.nishikiDLocation_btnupdate = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nishikiDLocation_dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel1.Controls.Add(this.dataGridView1);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.comboBox3);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.comboBox2);
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.nishikiDLocation_btnupdate);
+            this.panel1.Controls.Add(this.nishikiDLocation_btnadd);
+            this.panel1.Controls.Add(this.nishikiDLocation_dataGridView);
+            this.panel1.Controls.Add(this.nishikiDLocations_room_textBox);
+            this.panel1.Controls.Add(this.nishikiDLocations_roomtype_comboBox);
+            this.panel1.Controls.Add(this.nishikiDLocations_buildiing_comboBox);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnclose);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1001, 627);
             this.panel1.TabIndex = 1;
             // 
-            // button1
+            // btnclose
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(939, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(50, 36);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            this.btnclose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnclose.Location = new System.Drawing.Point(939, 12);
+            this.btnclose.Name = "btnclose";
+            this.btnclose.Size = new System.Drawing.Size(50, 36);
+            this.btnclose.TabIndex = 1;
+            this.btnclose.Text = "X";
+            this.btnclose.UseVisualStyleBackColor = true;
+            this.btnclose.Click += new System.EventHandler(this.Button1_Click);
             // 
             // pictureBox1
             // 
@@ -110,7 +108,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(267, 117);
+            this.label2.Location = new System.Drawing.Point(287, 74);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 25);
             this.label2.TabIndex = 4;
@@ -122,7 +120,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(267, 153);
+            this.label3.Location = new System.Drawing.Point(287, 110);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(68, 25);
             this.label3.TabIndex = 5;
@@ -134,85 +132,77 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(267, 187);
+            this.label4.Location = new System.Drawing.Point(287, 144);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(113, 25);
             this.label4.TabIndex = 6;
             this.label4.Text = "Room Type";
             // 
-            // comboBox1
+            // nishikiDLocations_buildiing_comboBox
             // 
-            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.nishikiDLocations_buildiing_comboBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(441, 116);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(272, 24);
-            this.comboBox1.TabIndex = 7;
+            this.nishikiDLocations_buildiing_comboBox.FormattingEnabled = true;
+            this.nishikiDLocations_buildiing_comboBox.Location = new System.Drawing.Point(461, 73);
+            this.nishikiDLocations_buildiing_comboBox.Name = "nishikiDLocations_buildiing_comboBox";
+            this.nishikiDLocations_buildiing_comboBox.Size = new System.Drawing.Size(272, 24);
+            this.nishikiDLocations_buildiing_comboBox.TabIndex = 7;
             // 
-            // comboBox2
+            // nishikiDLocations_roomtype_comboBox
             // 
-            this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.nishikiDLocations_roomtype_comboBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(441, 187);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(272, 24);
-            this.comboBox2.TabIndex = 8;
+            this.nishikiDLocations_roomtype_comboBox.FormattingEnabled = true;
+            this.nishikiDLocations_roomtype_comboBox.Location = new System.Drawing.Point(461, 144);
+            this.nishikiDLocations_roomtype_comboBox.Name = "nishikiDLocations_roomtype_comboBox";
+            this.nishikiDLocations_roomtype_comboBox.Size = new System.Drawing.Size(272, 24);
+            this.nishikiDLocations_roomtype_comboBox.TabIndex = 8;
             // 
-            // textBox1
+            // nishikiDLocations_room_textBox
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.nishikiDLocations_room_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(441, 153);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(272, 22);
-            this.textBox1.TabIndex = 9;
+            this.nishikiDLocations_room_textBox.Location = new System.Drawing.Point(461, 110);
+            this.nishikiDLocations_room_textBox.Name = "nishikiDLocations_room_textBox";
+            this.nishikiDLocations_room_textBox.Size = new System.Drawing.Size(272, 22);
+            this.nishikiDLocations_room_textBox.TabIndex = 9;
             // 
-            // label5
+            // nishikiDLocation_dataGridView
             // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(480, 245);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(167, 24);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Search by building";
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(653, 245);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(240, 24);
-            this.comboBox3.TabIndex = 11;
-            // 
-            // button2
-            // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Location = new System.Drawing.Point(899, 240);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(91, 33);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Search";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.nishikiDLocation_dataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 294);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(977, 321);
-            this.dataGridView1.TabIndex = 13;
+            this.nishikiDLocation_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.nishikiDLocation_dataGridView.Location = new System.Drawing.Point(12, 256);
+            this.nishikiDLocation_dataGridView.Name = "nishikiDLocation_dataGridView";
+            this.nishikiDLocation_dataGridView.RowHeadersWidth = 51;
+            this.nishikiDLocation_dataGridView.RowTemplate.Height = 24;
+            this.nishikiDLocation_dataGridView.Size = new System.Drawing.Size(977, 359);
+            this.nishikiDLocation_dataGridView.TabIndex = 13;
+            // 
+            // nishikiDLocation_btnadd
+            // 
+            this.nishikiDLocation_btnadd.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.nishikiDLocation_btnadd.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.nishikiDLocation_btnadd.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nishikiDLocation_btnadd.Location = new System.Drawing.Point(361, 197);
+            this.nishikiDLocation_btnadd.Name = "nishikiDLocation_btnadd";
+            this.nishikiDLocation_btnadd.Size = new System.Drawing.Size(158, 42);
+            this.nishikiDLocation_btnadd.TabIndex = 14;
+            this.nishikiDLocation_btnadd.Text = "ADD";
+            this.nishikiDLocation_btnadd.UseVisualStyleBackColor = false;
+            // 
+            // nishikiDLocation_btnupdate
+            // 
+            this.nishikiDLocation_btnupdate.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.nishikiDLocation_btnupdate.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.nishikiDLocation_btnupdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nishikiDLocation_btnupdate.Location = new System.Drawing.Point(525, 197);
+            this.nishikiDLocation_btnupdate.Name = "nishikiDLocation_btnupdate";
+            this.nishikiDLocation_btnupdate.Size = new System.Drawing.Size(158, 42);
+            this.nishikiDLocation_btnupdate.TabIndex = 15;
+            this.nishikiDLocation_btnupdate.Text = "UPDATE";
+            this.nishikiDLocation_btnupdate.UseVisualStyleBackColor = false;
             // 
             // Section1_Location
             // 
@@ -226,25 +216,24 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nishikiDLocation_dataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnclose;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox nishikiDLocations_room_textBox;
+        private System.Windows.Forms.ComboBox nishikiDLocations_roomtype_comboBox;
+        private System.Windows.Forms.ComboBox nishikiDLocations_buildiing_comboBox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView nishikiDLocation_dataGridView;
+        private System.Windows.Forms.Button nishikiDLocation_btnupdate;
+        private System.Windows.Forms.Button nishikiDLocation_btnadd;
     }
 }

@@ -164,6 +164,11 @@ namespace ABC_Institute___Timetable_Generator
             showsubmenu(panelslidebar);
             slidebar(homenavbtndetails);
         }
+
+        private void Panelchildform_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
         /*
 private void ResponsiveChildControls()
 {
