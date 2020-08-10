@@ -21,5 +21,10 @@ namespace ABC_Institute___Timetable_Generator
         {
             this.Close();
         }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
