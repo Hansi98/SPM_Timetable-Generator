@@ -36,6 +36,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -71,11 +72,23 @@
     <Compile Include="Section1_Statistics.Designer.cs">
       <DependentUpon>Section1_Statistics.cs</DependentUpon>
     </Compile>
+    <Compile Include="Section1_Students.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section1_Students.Designer.cs">
+      <DependentUpon>Section1_Students.cs</DependentUpon>
+    </Compile>
     <Compile Include="Section1_Students_Stat.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Section1_Students_Stat.Designer.cs">
       <DependentUpon>Section1_Students_Stat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Section1_tags.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section1_tags.Designer.cs">
+      <DependentUpon>Section1_tags.cs</DependentUpon>
     </Compile>
     <Compile Include="Section1_WorkingDays.cs">
       <SubType>Form</SubType>
@@ -108,6 +121,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Section1_Statistics.resx">
       <DependentUpon>Section1_Statistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section1_Students.resx">
+      <DependentUpon>Section1_Students.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section1_tags.resx">
+      <DependentUpon>Section1_tags.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
