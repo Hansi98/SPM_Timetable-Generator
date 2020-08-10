@@ -16,7 +16,7 @@ namespace ABC_Institute___Timetable_Generator
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Section1_WorkingHours());
+            Application.Run(new Home());
         }
     }
 }
