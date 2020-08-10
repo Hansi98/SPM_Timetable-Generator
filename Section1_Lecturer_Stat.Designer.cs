@@ -1,6 +1,6 @@
 ﻿namespace ABC_Institute___Timetable_Generator
 {
-    partial class Section1_WorkingHours
+    partial class Section1_Lecturer_Stat
     {
         /// <summary>
         /// Required designer variable.
@@ -19,7 +19,7 @@
             }
             base.Dispose(disposing);
         }
-        //working hours
+
         #region Windows Form Designer generated code
 
         /// <summary>
@@ -31,10 +31,9 @@
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Section1_WorkingHours";
+            this.Text = "Section1_Lecturer_Stat";
         }
 
         #endregion
     }
 }
-

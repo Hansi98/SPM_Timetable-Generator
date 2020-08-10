@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ABC_Institute___Timetable_Generator
 {
-    public partial class Section1_Location : Form
+    public partial class Section1_Statistics : Form
     {
-        public Section1_Location()
+        public Section1_Statistics()
         {
             InitializeComponent();
         }
@@ -20,11 +20,6 @@ namespace ABC_Institute___Timetable_Generator
         private void Button1_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void Label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

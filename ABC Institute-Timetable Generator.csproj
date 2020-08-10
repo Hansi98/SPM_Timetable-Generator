@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,11 +47,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Section1_Lecturer_Stat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section1_Lecturer_Stat.Designer.cs">
+      <DependentUpon>Section1_Lecturer_Stat.cs</DependentUpon>
+    </Compile>
     <Compile Include="Section1_Location.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Section1_Location.Designer.cs">
       <DependentUpon>Section1_Location.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Section1_Statistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section1_Statistics.Designer.cs">
+      <DependentUpon>Section1_Statistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Section1_Students_Stat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section1_Students_Stat.Designer.cs">
+      <DependentUpon>Section1_Students_Stat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Section1_WorkingDays.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section1_WorkingDays.Designer.cs">
+      <DependentUpon>Section1_WorkingDays.cs</DependentUpon>
     </Compile>
     <Compile Include="Section1_WorkingHours.cs">
       <SubType>Form</SubType>
@@ -60,6 +91,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -69,6 +103,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Section1_Location.resx">
+      <DependentUpon>Section1_Location.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section1_Statistics.resx">
+      <DependentUpon>Section1_Statistics.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
