@@ -291,7 +291,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(86, 42);
+            this.label1.Location = new System.Drawing.Point(117, 42);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(118, 29);
             this.label1.TabIndex = 6;
@@ -301,10 +301,10 @@
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(20, 21);
+            this.pictureBox1.Location = new System.Drawing.Point(31, 21);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.pictureBox1.Size = new System.Drawing.Size(49, 50);
+            this.pictureBox1.Size = new System.Drawing.Size(67, 65);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
