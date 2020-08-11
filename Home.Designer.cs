@@ -47,7 +47,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelnav = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
+           // this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.panel2.SuspendLayout();
             this.panelchildform.SuspendLayout();
             this.panelslidebar.SuspendLayout();
@@ -315,12 +315,12 @@
             // 
             // metroTabControl1
             // 
-            this.metroTabControl1.Location = new System.Drawing.Point(0, 0);
+        /*    this.metroTabControl1.Location = new System.Drawing.Point(0, 0);
             this.metroTabControl1.Name = "metroTabControl1";
             this.metroTabControl1.Padding = new System.Drawing.Point(6, 8);
             this.metroTabControl1.TabIndex = 0;
             this.metroTabControl1.UseSelectable = true;
-            // 
+        */    // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -361,6 +361,6 @@
         private System.Windows.Forms.Panel panelnav;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button homenavbtndetails;
-        private MetroFramework.Controls.MetroTabControl metroTabControl1;
+      //  private MetroFramework.Controls.MetroTabControl metroTabControl1;
     }
 }
