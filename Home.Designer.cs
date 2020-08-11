@@ -31,8 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.panel2 = new System.Windows.Forms.Panel();
             this.panelchildform = new System.Windows.Forms.Panel();
-            this.homenavbtndetails = new System.Windows.Forms.Button();
-            this.homenavbtnsessions = new System.Windows.Forms.Button();
             this.panelslidebar = new System.Windows.Forms.Panel();
             this.homebtnstatistics = new System.Windows.Forms.Button();
             this.homebtnlocations = new System.Windows.Forms.Button();
@@ -41,10 +39,12 @@
             this.homebtnsubjects = new System.Windows.Forms.Button();
             this.homebtnlecturers = new System.Windows.Forms.Button();
             this.homebtnworkingdnh = new System.Windows.Forms.Button();
-            this.homenavbtntimetables = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.homenavbtnlocations = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.homenavbtndetails = new System.Windows.Forms.Button();
+            this.homenavbtnsessions = new System.Windows.Forms.Button();
+            this.homenavbtntimetables = new System.Windows.Forms.Button();
+            this.homenavbtnlocations = new System.Windows.Forms.Button();
             this.panelnav = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
            // this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
@@ -78,34 +78,6 @@
             this.panelchildform.Size = new System.Drawing.Size(1051, 497);
             this.panelchildform.TabIndex = 1;
             this.panelchildform.Paint += new System.Windows.Forms.PaintEventHandler(this.Panelchildform_Paint);
-            // 
-            // homenavbtndetails
-            // 
-            this.homenavbtndetails.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.homenavbtndetails.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.homenavbtndetails.FlatAppearance.BorderSize = 0;
-            this.homenavbtndetails.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.homenavbtndetails.Location = new System.Drawing.Point(3, 3);
-            this.homenavbtndetails.Name = "homenavbtndetails";
-            this.homenavbtndetails.Size = new System.Drawing.Size(256, 51);
-            this.homenavbtndetails.TabIndex = 4;
-            this.homenavbtndetails.Text = "Details";
-            this.homenavbtndetails.UseVisualStyleBackColor = false;
-            this.homenavbtndetails.Click += new System.EventHandler(this.Button1_Click_1);
-            // 
-            // homenavbtnsessions
-            // 
-            this.homenavbtnsessions.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.homenavbtnsessions.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.homenavbtnsessions.FlatAppearance.BorderSize = 0;
-            this.homenavbtnsessions.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.homenavbtnsessions.Location = new System.Drawing.Point(265, 3);
-            this.homenavbtnsessions.Name = "homenavbtnsessions";
-            this.homenavbtnsessions.Size = new System.Drawing.Size(256, 51);
-            this.homenavbtnsessions.TabIndex = 1;
-            this.homenavbtnsessions.Text = "Sessions";
-            this.homenavbtnsessions.UseVisualStyleBackColor = false;
-            this.homenavbtnsessions.Click += new System.EventHandler(this.Homebtnsessions_Click);
             // 
             // panelslidebar
             // 
@@ -234,6 +206,56 @@
             this.homebtnworkingdnh.UseVisualStyleBackColor = true;
             this.homebtnworkingdnh.Click += new System.EventHandler(this.Homebtnworkingdnh_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.textBox1.Location = new System.Drawing.Point(539, 424);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(36, 22);
+            this.textBox1.TabIndex = 1;
+            this.textBox1.Text = "icon";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(336, 78);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(420, 313);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // homenavbtndetails
+            // 
+            this.homenavbtndetails.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.homenavbtndetails.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.homenavbtndetails.FlatAppearance.BorderSize = 0;
+            this.homenavbtndetails.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.homenavbtndetails.Location = new System.Drawing.Point(3, 3);
+            this.homenavbtndetails.Name = "homenavbtndetails";
+            this.homenavbtndetails.Size = new System.Drawing.Size(256, 51);
+            this.homenavbtndetails.TabIndex = 4;
+            this.homenavbtndetails.Text = "Details";
+            this.homenavbtndetails.UseVisualStyleBackColor = false;
+            this.homenavbtndetails.Click += new System.EventHandler(this.Button1_Click_1);
+            // 
+            // homenavbtnsessions
+            // 
+            this.homenavbtnsessions.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.homenavbtnsessions.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.homenavbtnsessions.FlatAppearance.BorderSize = 0;
+            this.homenavbtnsessions.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.homenavbtnsessions.Location = new System.Drawing.Point(265, 3);
+            this.homenavbtnsessions.Name = "homenavbtnsessions";
+            this.homenavbtnsessions.Size = new System.Drawing.Size(256, 51);
+            this.homenavbtnsessions.TabIndex = 1;
+            this.homenavbtnsessions.Text = "Sessions";
+            this.homenavbtnsessions.UseVisualStyleBackColor = false;
+            this.homenavbtnsessions.Click += new System.EventHandler(this.Homebtnsessions_Click);
+            // 
             // homenavbtntimetables
             // 
             this.homenavbtntimetables.BackColor = System.Drawing.Color.MediumTurquoise;
@@ -248,15 +270,6 @@
             this.homenavbtntimetables.UseVisualStyleBackColor = false;
             this.homenavbtntimetables.Click += new System.EventHandler(this.Homebtntimetables_Click);
             // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.textBox1.Location = new System.Drawing.Point(539, 424);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(36, 22);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "icon";
-            // 
             // homenavbtnlocations
             // 
             this.homenavbtnlocations.BackColor = System.Drawing.Color.MediumTurquoise;
@@ -270,19 +283,6 @@
             this.homenavbtnlocations.Text = "Locations";
             this.homenavbtnlocations.UseVisualStyleBackColor = false;
             this.homenavbtnlocations.Click += new System.EventHandler(this.Homebtnlocations_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(336, 78);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(420, 313);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // panelnav
             // 
