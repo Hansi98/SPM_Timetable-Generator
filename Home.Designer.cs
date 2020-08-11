@@ -77,7 +77,9 @@
             this.panelchildform.Name = "panelchildform";
             this.panelchildform.Size = new System.Drawing.Size(1051, 497);
             this.panelchildform.TabIndex = 1;
+
             this.panelchildform.Paint += new System.Windows.Forms.PaintEventHandler(this.Panelchildform_Paint);
+
             // 
             // panelslidebar
             // 
