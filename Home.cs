@@ -92,6 +92,7 @@ namespace ABC_Institute___Timetable_Generator
 
         private void Homebtnworkingdnh_Click(object sender, EventArgs e)
         {
+            openchildform(new Section1_WorkingDays());
             //..codes
             hidesubmenu();
         }

@@ -83,12 +83,6 @@
     <Compile Include="Section1_WorkingDays.Designer.cs">
       <DependentUpon>Section1_WorkingDays.cs</DependentUpon>
     </Compile>
-    <Compile Include="Section1_WorkingHours.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Section1_WorkingHours.Designer.cs">
-      <DependentUpon>Section1_WorkingHours.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Home.resx">
@@ -109,6 +103,18 @@
     <EmbeddedResource Include="Section1_Statistics.resx">
       <DependentUpon>Section1_Statistics.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< Updated upstream
+=======
+    <EmbeddedResource Include="Section1_Students.resx">
+      <DependentUpon>Section1_Students.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section1_tags.resx">
+      <DependentUpon>Section1_tags.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section1_WorkingDays.resx">
+      <DependentUpon>Section1_WorkingDays.cs</DependentUpon>
+    </EmbeddedResource>
+>>>>>>> Stashed changes
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
