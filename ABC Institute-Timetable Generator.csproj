@@ -64,6 +64,12 @@
     <Compile Include="Section1_Location.Designer.cs">
       <DependentUpon>Section1_Location.cs</DependentUpon>
     </Compile>
+    <Compile Include="Section1_Statistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section1_Statistics.Designer.cs">
+      <DependentUpon>Section1_Statistics.cs</DependentUpon>
+    </Compile>
     <Compile Include="Section1_Students.cs">
       <SubType>Form</SubType>
     </Compile>
