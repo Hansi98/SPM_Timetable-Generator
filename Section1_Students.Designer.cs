@@ -33,19 +33,14 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.vtabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.vtxtBoxYear = new System.Windows.Forms.TextBox();
-            this.vtxtSemester = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.vdataGridys = new System.Windows.Forms.DataGridView();
             this.vbtnUpdateys = new System.Windows.Forms.Button();
             this.vbtnAddys = new System.Windows.Forms.Button();
-            this.vdataGridys = new System.Windows.Forms.DataGridView();
+            this.vtxtSemester = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.vtxtBoxYear = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.vbtnAdddes = new System.Windows.Forms.Button();
             this.vbtnAddpro = new System.Windows.Forms.Button();
@@ -53,13 +48,18 @@
             this.label4 = new System.Windows.Forms.Label();
             this.vtxtpn = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.vbtnAddgroup = new System.Windows.Forms.Button();
-            this.vcmbys_gn = new System.Windows.Forms.ComboBox();
-            this.vcmbpro_gn = new System.Windows.Forms.ComboBox();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.vdataGridgn = new System.Windows.Forms.DataGridView();
+            this.vcmbgn_gn = new System.Windows.Forms.TextBox();
+            this.vcmbpro_gn = new System.Windows.Forms.ComboBox();
+            this.vcmbys_gn = new System.Windows.Forms.ComboBox();
+            this.vbtnAddgroup = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.label12 = new System.Windows.Forms.Label();
+            this.vcmbgn_sgn = new System.Windows.Forms.ComboBox();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.vtxtsgn_sgn = new System.Windows.Forms.TextBox();
             this.vcmbpro_sgn = new System.Windows.Forms.ComboBox();
@@ -68,21 +68,21 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.vcmbgn_sgn = new System.Windows.Forms.ComboBox();
-            this.vcmbgn_gn = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.vtabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            this.tabPage5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vdataGridys)).BeginInit();
+            this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.vdataGridgn)).BeginInit();
+            this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -116,6 +116,7 @@
             this.vtabControl1.Controls.Add(this.tabPage3);
             this.vtabControl1.Controls.Add(this.tabPage4);
             this.vtabControl1.Controls.Add(this.tabPage5);
+            this.vtabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.vtabControl1.Location = new System.Drawing.Point(38, 89);
             this.vtabControl1.Multiline = true;
             this.vtabControl1.Name = "vtabControl1";
@@ -141,134 +142,18 @@
             this.tabPage2.Text = "Year and Semester";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // tabPage3
+            // vdataGridys
             // 
-            this.tabPage3.Controls.Add(this.dataGridView1);
-            this.tabPage3.Controls.Add(this.vbtnAdddes);
-            this.tabPage3.Controls.Add(this.vbtnAddpro);
-            this.tabPage3.Controls.Add(this.vtxtdes);
-            this.tabPage3.Controls.Add(this.label4);
-            this.tabPage3.Controls.Add(this.vtxtpn);
-            this.tabPage3.Controls.Add(this.label5);
-            this.tabPage3.Location = new System.Drawing.Point(4, 74);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(966, 429);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Programme";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.vdataGridgn);
-            this.tabPage4.Controls.Add(this.vcmbgn_gn);
-            this.tabPage4.Controls.Add(this.vcmbpro_gn);
-            this.tabPage4.Controls.Add(this.vcmbys_gn);
-            this.tabPage4.Controls.Add(this.vbtnAddgroup);
-            this.tabPage4.Controls.Add(this.label9);
-            this.tabPage4.Controls.Add(this.label8);
-            this.tabPage4.Controls.Add(this.label7);
-            this.tabPage4.Location = new System.Drawing.Point(4, 74);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(966, 429);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Group No";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Controls.Add(this.label12);
-            this.tabPage5.Controls.Add(this.vcmbgn_sgn);
-            this.tabPage5.Controls.Add(this.dataGridView3);
-            this.tabPage5.Controls.Add(this.vtxtsgn_sgn);
-            this.tabPage5.Controls.Add(this.vcmbpro_sgn);
-            this.tabPage5.Controls.Add(this.vcmbys_sgn);
-            this.tabPage5.Controls.Add(this.button2);
-            this.tabPage5.Controls.Add(this.label6);
-            this.tabPage5.Controls.Add(this.label10);
-            this.tabPage5.Controls.Add(this.label11);
-            this.tabPage5.Location = new System.Drawing.Point(4, 74);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(966, 429);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "Sub-group Number";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(985, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(50, 36);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(115, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 29);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Students";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(38, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(65, 71);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.vdataGridys.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(210, 34);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(186, 25);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Add Academic Year";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // vtxtBoxYear
-            // 
-            this.vtxtBoxYear.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.vtxtBoxYear.Location = new System.Drawing.Point(486, 34);
-            this.vtxtBoxYear.Name = "vtxtBoxYear";
-            this.vtxtBoxYear.Size = new System.Drawing.Size(374, 22);
-            this.vtxtBoxYear.TabIndex = 5;
-            // 
-            // vtxtSemester
-            // 
-            this.vtxtSemester.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.vtxtSemester.Location = new System.Drawing.Point(486, 71);
-            this.vtxtSemester.Name = "vtxtSemester";
-            this.vtxtSemester.Size = new System.Drawing.Size(374, 22);
-            this.vtxtSemester.TabIndex = 7;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(210, 71);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(229, 25);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Add Academic Semester";
+            this.vdataGridys.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.vdataGridys.Location = new System.Drawing.Point(26, 172);
+            this.vdataGridys.Name = "vdataGridys";
+            this.vdataGridys.RowHeadersWidth = 51;
+            this.vdataGridys.RowTemplate.Height = 24;
+            this.vdataGridys.Size = new System.Drawing.Size(919, 241);
+            this.vdataGridys.TabIndex = 17;
             // 
             // vbtnUpdateys
             // 
@@ -296,18 +181,65 @@
             this.vbtnAddys.Text = "Add details";
             this.vbtnAddys.UseVisualStyleBackColor = false;
             // 
-            // vdataGridys
+            // vtxtSemester
             // 
-            this.vdataGridys.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.vtxtSemester.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.vdataGridys.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.vdataGridys.Location = new System.Drawing.Point(26, 172);
-            this.vdataGridys.Name = "vdataGridys";
-            this.vdataGridys.RowHeadersWidth = 51;
-            this.vdataGridys.RowTemplate.Height = 24;
-            this.vdataGridys.Size = new System.Drawing.Size(919, 241);
-            this.vdataGridys.TabIndex = 17;
+            this.vtxtSemester.Location = new System.Drawing.Point(486, 71);
+            this.vtxtSemester.Name = "vtxtSemester";
+            this.vtxtSemester.Size = new System.Drawing.Size(374, 22);
+            this.vtxtSemester.TabIndex = 7;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(210, 71);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(229, 25);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Add Academic Semester";
+            // 
+            // vtxtBoxYear
+            // 
+            this.vtxtBoxYear.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.vtxtBoxYear.Location = new System.Drawing.Point(486, 34);
+            this.vtxtBoxYear.Name = "vtxtBoxYear";
+            this.vtxtBoxYear.Size = new System.Drawing.Size(374, 22);
+            this.vtxtBoxYear.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(210, 34);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(186, 25);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Add Academic Year";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.dataGridView1);
+            this.tabPage3.Controls.Add(this.vbtnAdddes);
+            this.tabPage3.Controls.Add(this.vbtnAddpro);
+            this.tabPage3.Controls.Add(this.vtxtdes);
+            this.tabPage3.Controls.Add(this.label4);
+            this.tabPage3.Controls.Add(this.vtxtpn);
+            this.tabPage3.Controls.Add(this.label5);
+            this.tabPage3.Location = new System.Drawing.Point(4, 74);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(966, 429);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Programme";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -391,42 +323,65 @@
             this.label5.Text = "Add Programme Name";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // label7
+            // tabPage4
             // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.tabPage4.Controls.Add(this.vdataGridgn);
+            this.tabPage4.Controls.Add(this.vcmbgn_gn);
+            this.tabPage4.Controls.Add(this.vcmbpro_gn);
+            this.tabPage4.Controls.Add(this.vcmbys_gn);
+            this.tabPage4.Controls.Add(this.vbtnAddgroup);
+            this.tabPage4.Controls.Add(this.label9);
+            this.tabPage4.Controls.Add(this.label8);
+            this.tabPage4.Controls.Add(this.label7);
+            this.tabPage4.Location = new System.Drawing.Point(4, 74);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(966, 429);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Group No";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // vdataGridgn
+            // 
+            this.vdataGridgn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(167, 87);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(96, 25);
-            this.label7.TabIndex = 20;
-            this.label7.Text = "Group No";
+            this.vdataGridgn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.vdataGridgn.Location = new System.Drawing.Point(26, 168);
+            this.vdataGridgn.Name = "vdataGridgn";
+            this.vdataGridgn.RowHeadersWidth = 51;
+            this.vdataGridgn.RowTemplate.Height = 24;
+            this.vdataGridgn.Size = new System.Drawing.Size(919, 241);
+            this.vdataGridgn.TabIndex = 27;
             // 
-            // label8
+            // vcmbgn_gn
             // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.vcmbgn_gn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(167, 51);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(113, 25);
-            this.label8.TabIndex = 21;
-            this.label8.Text = "Programme";
+            this.vcmbgn_gn.Location = new System.Drawing.Point(383, 87);
+            this.vcmbgn_gn.Name = "vcmbgn_gn";
+            this.vcmbgn_gn.Size = new System.Drawing.Size(374, 22);
+            this.vcmbgn_gn.TabIndex = 26;
             // 
-            // label9
+            // vcmbpro_gn
             // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.vcmbpro_gn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(167, 15);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(180, 25);
-            this.label9.TabIndex = 22;
-            this.label9.Text = "Year and Semester";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
+            this.vcmbpro_gn.FormattingEnabled = true;
+            this.vcmbpro_gn.Location = new System.Drawing.Point(383, 52);
+            this.vcmbpro_gn.Name = "vcmbpro_gn";
+            this.vcmbpro_gn.Size = new System.Drawing.Size(374, 24);
+            this.vcmbpro_gn.TabIndex = 25;
+            // 
+            // vcmbys_gn
+            // 
+            this.vcmbys_gn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.vcmbys_gn.FormattingEnabled = true;
+            this.vcmbys_gn.Location = new System.Drawing.Point(383, 19);
+            this.vcmbys_gn.Name = "vcmbys_gn";
+            this.vcmbys_gn.Size = new System.Drawing.Size(374, 24);
+            this.vcmbys_gn.TabIndex = 24;
             // 
             // vbtnAddgroup
             // 
@@ -441,38 +396,85 @@
             this.vbtnAddgroup.Text = "Add details";
             this.vbtnAddgroup.UseVisualStyleBackColor = false;
             // 
-            // vcmbys_gn
+            // label9
             // 
-            this.vcmbys_gn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.vcmbys_gn.FormattingEnabled = true;
-            this.vcmbys_gn.Location = new System.Drawing.Point(383, 19);
-            this.vcmbys_gn.Name = "vcmbys_gn";
-            this.vcmbys_gn.Size = new System.Drawing.Size(374, 24);
-            this.vcmbys_gn.TabIndex = 24;
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(167, 15);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(180, 25);
+            this.label9.TabIndex = 22;
+            this.label9.Text = "Year and Semester";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
-            // vcmbpro_gn
+            // label8
             // 
-            this.vcmbpro_gn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.vcmbpro_gn.FormattingEnabled = true;
-            this.vcmbpro_gn.Location = new System.Drawing.Point(383, 52);
-            this.vcmbpro_gn.Name = "vcmbpro_gn";
-            this.vcmbpro_gn.Size = new System.Drawing.Size(374, 24);
-            this.vcmbpro_gn.TabIndex = 25;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(167, 51);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(113, 25);
+            this.label8.TabIndex = 21;
+            this.label8.Text = "Programme";
             // 
-            // vdataGridgn
+            // label7
             // 
-            this.vdataGridgn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.vdataGridgn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.vdataGridgn.Location = new System.Drawing.Point(26, 168);
-            this.vdataGridgn.Name = "vdataGridgn";
-            this.vdataGridgn.RowHeadersWidth = 51;
-            this.vdataGridgn.RowTemplate.Height = 24;
-            this.vdataGridgn.Size = new System.Drawing.Size(919, 241);
-            this.vdataGridgn.TabIndex = 27;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(167, 87);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(96, 25);
+            this.label7.TabIndex = 20;
+            this.label7.Text = "Group No";
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.label12);
+            this.tabPage5.Controls.Add(this.vcmbgn_sgn);
+            this.tabPage5.Controls.Add(this.dataGridView3);
+            this.tabPage5.Controls.Add(this.vtxtsgn_sgn);
+            this.tabPage5.Controls.Add(this.vcmbpro_sgn);
+            this.tabPage5.Controls.Add(this.vcmbys_sgn);
+            this.tabPage5.Controls.Add(this.button2);
+            this.tabPage5.Controls.Add(this.label6);
+            this.tabPage5.Controls.Add(this.label10);
+            this.tabPage5.Controls.Add(this.label11);
+            this.tabPage5.Location = new System.Drawing.Point(4, 74);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(966, 429);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Sub-group Number";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // label12
+            // 
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(26, 130);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(137, 25);
+            this.label12.TabIndex = 37;
+            this.label12.Text = "Sub Group No";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
+            // 
+            // vcmbgn_sgn
+            // 
+            this.vcmbgn_sgn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.vcmbgn_sgn.FormattingEnabled = true;
+            this.vcmbgn_sgn.Location = new System.Drawing.Point(242, 91);
+            this.vcmbgn_sgn.Name = "vcmbgn_sgn";
+            this.vcmbgn_sgn.Size = new System.Drawing.Size(374, 24);
+            this.vcmbgn_sgn.TabIndex = 36;
             // 
             // dataGridView3
             // 
@@ -565,37 +567,36 @@
             this.label11.TabIndex = 28;
             this.label11.Text = "Group No";
             // 
-            // vcmbgn_sgn
+            // button1
             // 
-            this.vcmbgn_sgn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.vcmbgn_sgn.FormattingEnabled = true;
-            this.vcmbgn_sgn.Location = new System.Drawing.Point(242, 91);
-            this.vcmbgn_sgn.Name = "vcmbgn_sgn";
-            this.vcmbgn_sgn.Size = new System.Drawing.Size(374, 24);
-            this.vcmbgn_sgn.TabIndex = 36;
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Location = new System.Drawing.Point(985, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(50, 36);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // vcmbgn_gn
+            // label1
             // 
-            this.vcmbgn_gn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.vcmbgn_gn.Location = new System.Drawing.Point(383, 87);
-            this.vcmbgn_gn.Name = "vcmbgn_gn";
-            this.vcmbgn_gn.Size = new System.Drawing.Size(374, 22);
-            this.vcmbgn_gn.TabIndex = 26;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(115, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(115, 29);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Students";
             // 
-            // label12
+            // pictureBox1
             // 
-            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(26, 130);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(137, 25);
-            this.label12.TabIndex = 37;
-            this.label12.Text = "Sub Group No";
-            this.label12.Click += new System.EventHandler(this.label12_Click);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(38, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(65, 71);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // Section1_Students
             // 
@@ -612,17 +613,17 @@
             this.vtabControl1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.vdataGridys)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.vdataGridgn)).EndInit();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vdataGridys)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vdataGridgn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
