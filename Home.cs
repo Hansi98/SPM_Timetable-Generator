@@ -132,7 +132,7 @@ namespace ABC_Institute___Timetable_Generator
 
         private void Homebtnstatistics_Click(object sender, EventArgs e)
         {
-            openchildform(new Section1_Statistics());
+            //openchildform(new Section1_Statistics());
             //..codes
             hidesubmenu();
         }

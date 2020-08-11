@@ -39,6 +39,8 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -56,35 +58,17 @@
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="Section1_Lecturer_Stat.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Section1_Lecturer_Stat.Designer.cs">
-      <DependentUpon>Section1_Lecturer_Stat.cs</DependentUpon>
-    </Compile>
     <Compile Include="Section1_Location.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Section1_Location.Designer.cs">
       <DependentUpon>Section1_Location.cs</DependentUpon>
     </Compile>
-    <Compile Include="Section1_Statistics.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Section1_Statistics.Designer.cs">
-      <DependentUpon>Section1_Statistics.cs</DependentUpon>
-    </Compile>
     <Compile Include="Section1_Students.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Section1_Students.Designer.cs">
       <DependentUpon>Section1_Students.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Section1_Students_Stat.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Section1_Students_Stat.Designer.cs">
-      <DependentUpon>Section1_Students_Stat.cs</DependentUpon>
     </Compile>
     <Compile Include="Section1_tags.cs">
       <SubType>Form</SubType>
@@ -120,9 +104,6 @@
     </Compile>
     <EmbeddedResource Include="Section1_Location.resx">
       <DependentUpon>Section1_Location.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Section1_Statistics.resx">
-      <DependentUpon>Section1_Statistics.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Section1_Students.resx">
       <DependentUpon>Section1_Students.cs</DependentUpon>
