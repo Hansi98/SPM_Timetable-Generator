@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-<<<<<<< Updated upstream
+
             this.button1 = new System.Windows.Forms.Button();
-=======
+
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
@@ -40,6 +40,15 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Section1_Statistics));
             this.panel1 = new System.Windows.Forms.Panel();
             this.nishikiDStat_tabcontrol = new System.Windows.Forms.TabControl();
@@ -70,12 +79,12 @@
             this.nishikiDStat_subjectstab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nishikiDStat_subjectschart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
->>>>>>> Stashed changes
+
             this.SuspendLayout();
             // 
-            // button1
+            // panel1
             // 
-<<<<<<< Updated upstream
+
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.Location = new System.Drawing.Point(971, 12);
             this.button1.Name = "button1";
@@ -84,7 +93,7 @@
             this.button1.Text = "X";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
-=======
+
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel1.Controls.Add(this.nishikiDStat_tabcontrol);
             this.panel1.Controls.Add(this.label1);
@@ -97,6 +106,9 @@
             this.panel1.Size = new System.Drawing.Size(821, 518);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1095, 637);
+            this.panel1.TabIndex = 0;
             // 
             // nishikiDStat_tabcontrol
             // 
@@ -113,6 +125,11 @@
             this.nishikiDStat_tabcontrol.Padding = new System.Drawing.Point(50, 7);
             this.nishikiDStat_tabcontrol.SelectedIndex = 0;
             this.nishikiDStat_tabcontrol.Size = new System.Drawing.Size(790, 413);
+            this.nishikiDStat_tabcontrol.Location = new System.Drawing.Point(20, 103);
+            this.nishikiDStat_tabcontrol.Name = "nishikiDStat_tabcontrol";
+            this.nishikiDStat_tabcontrol.Padding = new System.Drawing.Point(50, 7);
+            this.nishikiDStat_tabcontrol.SelectedIndex = 0;
+            this.nishikiDStat_tabcontrol.Size = new System.Drawing.Size(1053, 508);
             this.nishikiDStat_tabcontrol.TabIndex = 7;
             // 
             // nishikiDStat_lecturertab
@@ -126,6 +143,10 @@
             this.nishikiDStat_lecturertab.Name = "nishikiDStat_lecturertab";
             this.nishikiDStat_lecturertab.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.nishikiDStat_lecturertab.Size = new System.Drawing.Size(782, 375);
+            this.nishikiDStat_lecturertab.Location = new System.Drawing.Point(4, 37);
+            this.nishikiDStat_lecturertab.Name = "nishikiDStat_lecturertab";
+            this.nishikiDStat_lecturertab.Padding = new System.Windows.Forms.Padding(3);
+            this.nishikiDStat_lecturertab.Size = new System.Drawing.Size(1045, 467);
             this.nishikiDStat_lecturertab.TabIndex = 0;
             this.nishikiDStat_lecturertab.Text = "Lecturers";
             this.nishikiDStat_lecturertab.UseVisualStyleBackColor = true;
@@ -146,6 +167,18 @@
             series4.Name = "Series1";
             this.nishikiDStat_lecturerchart.Series.Add(series4);
             this.nishikiDStat_lecturerchart.Size = new System.Drawing.Size(535, 232);
+            chartArea1.Name = "ChartArea1";
+            this.nishikiDStat_lecturerchart.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.nishikiDStat_lecturerchart.Legends.Add(legend1);
+            this.nishikiDStat_lecturerchart.Location = new System.Drawing.Point(176, 113);
+            this.nishikiDStat_lecturerchart.Name = "nishikiDStat_lecturerchart";
+            this.nishikiDStat_lecturerchart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.nishikiDStat_lecturerchart.Series.Add(series1);
+            this.nishikiDStat_lecturerchart.Size = new System.Drawing.Size(713, 286);
             this.nishikiDStat_lecturerchart.TabIndex = 3;
             this.nishikiDStat_lecturerchart.Text = "chart1";
             // 
@@ -157,6 +190,9 @@
             this.nishikiDStat_lecturerbtnsubmit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.nishikiDStat_lecturerbtnsubmit.Name = "nishikiDStat_lecturerbtnsubmit";
             this.nishikiDStat_lecturerbtnsubmit.Size = new System.Drawing.Size(74, 32);
+            this.nishikiDStat_lecturerbtnsubmit.Location = new System.Drawing.Point(705, 22);
+            this.nishikiDStat_lecturerbtnsubmit.Name = "nishikiDStat_lecturerbtnsubmit";
+            this.nishikiDStat_lecturerbtnsubmit.Size = new System.Drawing.Size(99, 40);
             this.nishikiDStat_lecturerbtnsubmit.TabIndex = 2;
             this.nishikiDStat_lecturerbtnsubmit.Text = "SUBMIT";
             this.nishikiDStat_lecturerbtnsubmit.UseVisualStyleBackColor = false;
@@ -169,6 +205,10 @@
             this.nishikiDStat_lecturercmb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.nishikiDStat_lecturercmb.Name = "nishikiDStat_lecturercmb";
             this.nishikiDStat_lecturercmb.Size = new System.Drawing.Size(226, 25);
+
+            this.nishikiDStat_lecturercmb.Location = new System.Drawing.Point(387, 29);
+            this.nishikiDStat_lecturercmb.Name = "nishikiDStat_lecturercmb";
+            this.nishikiDStat_lecturercmb.Size = new System.Drawing.Size(300, 28);
             this.nishikiDStat_lecturercmb.TabIndex = 1;
             // 
             // label2
@@ -180,6 +220,9 @@
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(91, 19);
+            this.label2.Location = new System.Drawing.Point(265, 34);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(116, 23);
             this.label2.TabIndex = 0;
             this.label2.Text = "Lecturers by:";
             // 
@@ -194,6 +237,10 @@
             this.nishikiDStat_studenttab.Name = "nishikiDStat_studenttab";
             this.nishikiDStat_studenttab.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.nishikiDStat_studenttab.Size = new System.Drawing.Size(782, 375);
+            this.nishikiDStat_studenttab.Location = new System.Drawing.Point(4, 37);
+            this.nishikiDStat_studenttab.Name = "nishikiDStat_studenttab";
+            this.nishikiDStat_studenttab.Padding = new System.Windows.Forms.Padding(3);
+            this.nishikiDStat_studenttab.Size = new System.Drawing.Size(1045, 467);
             this.nishikiDStat_studenttab.TabIndex = 1;
             this.nishikiDStat_studenttab.Text = "Students";
             this.nishikiDStat_studenttab.UseVisualStyleBackColor = true;
@@ -214,6 +261,19 @@
             series5.Name = "Series1";
             this.nishikiDStat_studnetschart.Series.Add(series5);
             this.nishikiDStat_studnetschart.Size = new System.Drawing.Size(530, 232);
+
+            chartArea2.Name = "ChartArea1";
+            this.nishikiDStat_studnetschart.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.nishikiDStat_studnetschart.Legends.Add(legend2);
+            this.nishikiDStat_studnetschart.Location = new System.Drawing.Point(170, 118);
+            this.nishikiDStat_studnetschart.Name = "nishikiDStat_studnetschart";
+            this.nishikiDStat_studnetschart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.nishikiDStat_studnetschart.Series.Add(series2);
+            this.nishikiDStat_studnetschart.Size = new System.Drawing.Size(706, 286);
             this.nishikiDStat_studnetschart.TabIndex = 7;
             this.nishikiDStat_studnetschart.Text = "chart2";
             // 
@@ -225,6 +285,9 @@
             this.nishikiDStat_studentsbtnsubmit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.nishikiDStat_studentsbtnsubmit.Name = "nishikiDStat_studentsbtnsubmit";
             this.nishikiDStat_studentsbtnsubmit.Size = new System.Drawing.Size(74, 32);
+            this.nishikiDStat_studentsbtnsubmit.Location = new System.Drawing.Point(699, 27);
+            this.nishikiDStat_studentsbtnsubmit.Name = "nishikiDStat_studentsbtnsubmit";
+            this.nishikiDStat_studentsbtnsubmit.Size = new System.Drawing.Size(99, 40);
             this.nishikiDStat_studentsbtnsubmit.TabIndex = 6;
             this.nishikiDStat_studentsbtnsubmit.Text = "SUBMIT";
             this.nishikiDStat_studentsbtnsubmit.UseVisualStyleBackColor = false;
@@ -237,6 +300,9 @@
             this.nishikiDStat_studentcmb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.nishikiDStat_studentcmb.Name = "nishikiDStat_studentcmb";
             this.nishikiDStat_studentcmb.Size = new System.Drawing.Size(226, 25);
+            this.nishikiDStat_studentcmb.Location = new System.Drawing.Point(381, 34);
+            this.nishikiDStat_studentcmb.Name = "nishikiDStat_studentcmb";
+            this.nishikiDStat_studentcmb.Size = new System.Drawing.Size(300, 28);
             this.nishikiDStat_studentcmb.TabIndex = 5;
             // 
             // label3
@@ -248,6 +314,9 @@
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(91, 19);
+            this.label3.Location = new System.Drawing.Point(259, 39);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(116, 23);
             this.label3.TabIndex = 4;
             this.label3.Text = "Lecturers by:";
             // 
@@ -262,6 +331,10 @@
             this.nishikiDStat_subjectstab.Name = "nishikiDStat_subjectstab";
             this.nishikiDStat_subjectstab.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.nishikiDStat_subjectstab.Size = new System.Drawing.Size(782, 375);
+            this.nishikiDStat_subjectstab.Location = new System.Drawing.Point(4, 37);
+            this.nishikiDStat_subjectstab.Name = "nishikiDStat_subjectstab";
+            this.nishikiDStat_subjectstab.Padding = new System.Windows.Forms.Padding(3);
+            this.nishikiDStat_subjectstab.Size = new System.Drawing.Size(1045, 467);
             this.nishikiDStat_subjectstab.TabIndex = 2;
             this.nishikiDStat_subjectstab.Text = "Subjects";
             this.nishikiDStat_subjectstab.UseVisualStyleBackColor = true;
@@ -282,6 +355,18 @@
             series6.Name = "Series1";
             this.nishikiDStat_subjectschart.Series.Add(series6);
             this.nishikiDStat_subjectschart.Size = new System.Drawing.Size(530, 232);
+            chartArea3.Name = "ChartArea1";
+            this.nishikiDStat_subjectschart.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.nishikiDStat_subjectschart.Legends.Add(legend3);
+            this.nishikiDStat_subjectschart.Location = new System.Drawing.Point(173, 121);
+            this.nishikiDStat_subjectschart.Name = "nishikiDStat_subjectschart";
+            this.nishikiDStat_subjectschart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.nishikiDStat_subjectschart.Series.Add(series3);
+            this.nishikiDStat_subjectschart.Size = new System.Drawing.Size(706, 286);
             this.nishikiDStat_subjectschart.TabIndex = 7;
             this.nishikiDStat_subjectschart.Text = "chart3";
             // 
@@ -293,6 +378,9 @@
             this.nishikiDStat_subjectsbtnsubmit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.nishikiDStat_subjectsbtnsubmit.Name = "nishikiDStat_subjectsbtnsubmit";
             this.nishikiDStat_subjectsbtnsubmit.Size = new System.Drawing.Size(74, 32);
+            this.nishikiDStat_subjectsbtnsubmit.Location = new System.Drawing.Point(702, 30);
+            this.nishikiDStat_subjectsbtnsubmit.Name = "nishikiDStat_subjectsbtnsubmit";
+            this.nishikiDStat_subjectsbtnsubmit.Size = new System.Drawing.Size(99, 40);
             this.nishikiDStat_subjectsbtnsubmit.TabIndex = 6;
             this.nishikiDStat_subjectsbtnsubmit.Text = "SUBMIT";
             this.nishikiDStat_subjectsbtnsubmit.UseVisualStyleBackColor = false;
@@ -305,6 +393,9 @@
             this.nishikiDStat_subjectscmb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.nishikiDStat_subjectscmb.Name = "nishikiDStat_subjectscmb";
             this.nishikiDStat_subjectscmb.Size = new System.Drawing.Size(226, 25);
+            this.nishikiDStat_subjectscmb.Location = new System.Drawing.Point(384, 37);
+            this.nishikiDStat_subjectscmb.Name = "nishikiDStat_subjectscmb";
+            this.nishikiDStat_subjectscmb.Size = new System.Drawing.Size(300, 28);
             this.nishikiDStat_subjectscmb.TabIndex = 5;
             // 
             // label4
@@ -316,6 +407,9 @@
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(91, 19);
+            this.label4.Location = new System.Drawing.Point(262, 42);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(116, 23);
             this.label4.TabIndex = 4;
             this.label4.Text = "Lecturers by:";
             // 
@@ -327,6 +421,9 @@
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 24);
+            this.label1.Location = new System.Drawing.Point(117, 42);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(118, 29);
             this.label1.TabIndex = 6;
             this.label1.Text = "Statistics";
             // 
@@ -343,6 +440,14 @@
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+
+            this.pictureBox1.Location = new System.Drawing.Point(31, 21);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.pictureBox1.Size = new System.Drawing.Size(67, 65);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
             // 
             // btnclose
             // 
@@ -351,34 +456,71 @@
             this.btnclose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnclose.Name = "btnclose";
             this.btnclose.Size = new System.Drawing.Size(38, 29);
+            this.btnclose.Location = new System.Drawing.Point(1023, 21);
+            this.btnclose.Name = "btnclose";
+            this.btnclose.Size = new System.Drawing.Size(50, 36);
             this.btnclose.TabIndex = 4;
             this.btnclose.Text = "X";
             this.btnclose.UseVisualStyleBackColor = true;
             this.btnclose.Click += new System.EventHandler(this.Btnclose_Click);
->>>>>>> Stashed changes
+
             // 
             // Section1_Statistics
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< Updated upstream
+
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(1043, 450);
             this.Controls.Add(this.button1);
-=======
             this.ClientSize = new System.Drawing.Size(821, 518);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
->>>>>>> Stashed changes
+
+            this.ClientSize = new System.Drawing.Size(1095, 637);
+            this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Section1_Statistics";
             this.Text = "Section1_Statistics";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.nishikiDStat_tabcontrol.ResumeLayout(false);
+            this.nishikiDStat_lecturertab.ResumeLayout(false);
+            this.nishikiDStat_lecturertab.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nishikiDStat_lecturerchart)).EndInit();
+            this.nishikiDStat_studenttab.ResumeLayout(false);
+            this.nishikiDStat_studenttab.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nishikiDStat_studnetschart)).EndInit();
+            this.nishikiDStat_subjectstab.ResumeLayout(false);
+            this.nishikiDStat_subjectstab.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nishikiDStat_subjectschart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TabControl nishikiDStat_tabcontrol;
+        private System.Windows.Forms.TabPage nishikiDStat_lecturertab;
+        private System.Windows.Forms.DataVisualization.Charting.Chart nishikiDStat_lecturerchart;
+        private System.Windows.Forms.Button nishikiDStat_lecturerbtnsubmit;
+        private System.Windows.Forms.ComboBox nishikiDStat_lecturercmb;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TabPage nishikiDStat_studenttab;
+        private System.Windows.Forms.DataVisualization.Charting.Chart nishikiDStat_studnetschart;
+        private System.Windows.Forms.Button nishikiDStat_studentsbtnsubmit;
+        private System.Windows.Forms.ComboBox nishikiDStat_studentcmb;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TabPage nishikiDStat_subjectstab;
+        private System.Windows.Forms.DataVisualization.Charting.Chart nishikiDStat_subjectschart;
+        private System.Windows.Forms.Button nishikiDStat_subjectsbtnsubmit;
+        private System.Windows.Forms.ComboBox nishikiDStat_subjectscmb;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnclose;
     }
 }

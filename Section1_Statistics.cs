@@ -17,7 +17,7 @@ namespace ABC_Institute___Timetable_Generator
             InitializeComponent();
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void Btnclose_Click(object sender, EventArgs e)
         {
             this.Close();
         }
