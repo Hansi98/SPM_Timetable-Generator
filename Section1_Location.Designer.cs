@@ -34,33 +34,33 @@
             this.nishikiDLocation_btnadd = new System.Windows.Forms.Button();
             this.nishikiDLocation_dataGridView = new System.Windows.Forms.DataGridView();
             this.nishikiDLocations_room_textBox = new System.Windows.Forms.TextBox();
-            this.nishikiDLocations_roomtype_comboBox = new System.Windows.Forms.ComboBox();
-            this.nishikiDLocations_buildiing_comboBox = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.nishikilocationimg = new System.Windows.Forms.PictureBox();
             this.btnclose = new System.Windows.Forms.Button();
+            this.nishikiDLocations_building_textBox = new System.Windows.Forms.TextBox();
+            this.nishikiDLocations_roomtype_textBox = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nishikiDLocation_dataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nishikilocationimg)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel1.Controls.Add(this.nishikiDLocations_roomtype_textBox);
+            this.panel1.Controls.Add(this.nishikiDLocations_building_textBox);
             this.panel1.Controls.Add(this.nishikiDLocation_btnupdate);
             this.panel1.Controls.Add(this.nishikiDLocation_btnadd);
             this.panel1.Controls.Add(this.nishikiDLocation_dataGridView);
             this.panel1.Controls.Add(this.nishikiDLocations_room_textBox);
-            this.panel1.Controls.Add(this.nishikiDLocations_roomtype_comboBox);
-            this.panel1.Controls.Add(this.nishikiDLocations_buildiing_comboBox);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.nishikilocationimg);
             this.panel1.Controls.Add(this.btnclose);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -114,26 +114,6 @@
             this.nishikiDLocations_room_textBox.Size = new System.Drawing.Size(272, 22);
             this.nishikiDLocations_room_textBox.TabIndex = 9;
             // 
-            // nishikiDLocations_roomtype_comboBox
-            // 
-            this.nishikiDLocations_roomtype_comboBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.nishikiDLocations_roomtype_comboBox.FormattingEnabled = true;
-            this.nishikiDLocations_roomtype_comboBox.Location = new System.Drawing.Point(461, 144);
-            this.nishikiDLocations_roomtype_comboBox.Name = "nishikiDLocations_roomtype_comboBox";
-            this.nishikiDLocations_roomtype_comboBox.Size = new System.Drawing.Size(272, 24);
-            this.nishikiDLocations_roomtype_comboBox.TabIndex = 8;
-            // 
-            // nishikiDLocations_buildiing_comboBox
-            // 
-            this.nishikiDLocations_buildiing_comboBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.nishikiDLocations_buildiing_comboBox.FormattingEnabled = true;
-            this.nishikiDLocations_buildiing_comboBox.Location = new System.Drawing.Point(461, 73);
-            this.nishikiDLocations_buildiing_comboBox.Name = "nishikiDLocations_buildiing_comboBox";
-            this.nishikiDLocations_buildiing_comboBox.Size = new System.Drawing.Size(272, 24);
-            this.nishikiDLocations_buildiing_comboBox.TabIndex = 7;
-            // 
             // label4
             // 
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -181,17 +161,17 @@
             this.label1.Text = "Location";
             this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
-            // pictureBox1
+            // nishikilocationimg
             // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(23, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.pictureBox1.Size = new System.Drawing.Size(77, 69);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.nishikilocationimg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.nishikilocationimg.Image = ((System.Drawing.Image)(resources.GetObject("nishikilocationimg.Image")));
+            this.nishikilocationimg.Location = new System.Drawing.Point(23, 12);
+            this.nishikilocationimg.Name = "nishikilocationimg";
+            this.nishikilocationimg.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.nishikilocationimg.Size = new System.Drawing.Size(77, 69);
+            this.nishikilocationimg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.nishikilocationimg.TabIndex = 2;
+            this.nishikilocationimg.TabStop = false;
             // 
             // btnclose
             // 
@@ -203,6 +183,24 @@
             this.btnclose.Text = "X";
             this.btnclose.UseVisualStyleBackColor = true;
             this.btnclose.Click += new System.EventHandler(this.Button1_Click);
+            // 
+            // nishikiDLocations_building_textBox
+            // 
+            this.nishikiDLocations_building_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.nishikiDLocations_building_textBox.Location = new System.Drawing.Point(461, 74);
+            this.nishikiDLocations_building_textBox.Name = "nishikiDLocations_building_textBox";
+            this.nishikiDLocations_building_textBox.Size = new System.Drawing.Size(272, 22);
+            this.nishikiDLocations_building_textBox.TabIndex = 16;
+            // 
+            // nishikiDLocations_roomtype_textBox
+            // 
+            this.nishikiDLocations_roomtype_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.nishikiDLocations_roomtype_textBox.Location = new System.Drawing.Point(461, 148);
+            this.nishikiDLocations_roomtype_textBox.Name = "nishikiDLocations_roomtype_textBox";
+            this.nishikiDLocations_roomtype_textBox.Size = new System.Drawing.Size(272, 22);
+            this.nishikiDLocations_roomtype_textBox.TabIndex = 17;
             // 
             // Section1_Location
             // 
@@ -216,7 +214,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nishikiDLocation_dataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nishikilocationimg)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -225,15 +223,15 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnclose;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox nishikilocationimg;
         private System.Windows.Forms.TextBox nishikiDLocations_room_textBox;
-        private System.Windows.Forms.ComboBox nishikiDLocations_roomtype_comboBox;
-        private System.Windows.Forms.ComboBox nishikiDLocations_buildiing_comboBox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView nishikiDLocation_dataGridView;
         private System.Windows.Forms.Button nishikiDLocation_btnupdate;
         private System.Windows.Forms.Button nishikiDLocation_btnadd;
+        private System.Windows.Forms.TextBox nishikiDLocations_roomtype_textBox;
+        private System.Windows.Forms.TextBox nishikiDLocations_building_textBox;
     }
 }
