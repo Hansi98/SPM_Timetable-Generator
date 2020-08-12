@@ -54,6 +54,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Section1_addLecturer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section1_addLecturer.Designer.cs">
+      <DependentUpon>Section1_addLecturer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,23 +78,29 @@
     <Compile Include="Section1_Location.Designer.cs">
       <DependentUpon>Section1_Location.cs</DependentUpon>
     </Compile>
-    <Compile Include="Section1_Statistics.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Section1_Statistics.Designer.cs">
-      <DependentUpon>Section1_Statistics.cs</DependentUpon>
-    </Compile>
     <Compile Include="Section1_Students.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Section1_Students.Designer.cs">
       <DependentUpon>Section1_Students.cs</DependentUpon>
     </Compile>
+    <Compile Include="Section1_Subjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section1_Subjects.Designer.cs">
+      <DependentUpon>Section1_Subjects.cs</DependentUpon>
+    </Compile>
     <Compile Include="Section1_tags.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Section1_tags.Designer.cs">
       <DependentUpon>Section1_tags.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Section1_UpdateLecturer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section1_UpdateLecturer.Designer.cs">
+      <DependentUpon>Section1_UpdateLecturer.cs</DependentUpon>
     </Compile>
     <Compile Include="Section1_WorkingDays.cs">
       <SubType>Form</SubType>
@@ -99,6 +111,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tags.cs" />
+    <Compile Include="Section1_viewLecturer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section1_viewLecturer.Designer.cs">
+      <DependentUpon>Section1_viewLecturer.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,24 +128,34 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Section1_addLecturer.resx">
+      <DependentUpon>Section1_addLecturer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Section1_Lecturers.resx">
       <DependentUpon>Section1_Lecturers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Section1_Location.resx">
       <DependentUpon>Section1_Location.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Section1_Statistics.resx">
-      <DependentUpon>Section1_Statistics.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Section1_Students.resx">
       <DependentUpon>Section1_Students.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section1_Subjects.resx">
+      <DependentUpon>Section1_Subjects.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Section1_tags.resx">
       <DependentUpon>Section1_tags.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Section1_UpdateLecturer.resx">
+      <DependentUpon>Section1_UpdateLecturer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Section1_WorkingDays.resx">
       <DependentUpon>Section1_WorkingDays.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section1_viewLecturer.resx">
+      <DependentUpon>Section1_viewLecturer.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -144,6 +172,45 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\add_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\add_60px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\classroom_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\elective_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\math_book_500px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\more_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\new_60px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\trash_can_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\user_groups_52px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\cancel_52px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\cancel_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\checked_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\refresh_26px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

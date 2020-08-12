@@ -338,6 +338,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(359, 712);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
             this.Name = "Section1_UpdateLecturer";
             this.Text = "Update Lecturer";
             this.panel1.ResumeLayout(false);
