@@ -32,7 +32,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.nishikiDLocation_dataGridView = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnclose = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -40,24 +39,25 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.RS1_totLecs = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.RS1_newLecs = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.RS1_searchLec = new System.Windows.Forms.TextBox();
-            this.RS1_addLecturer = new System.Windows.Forms.Button();
-            this.RS1_viewLecturer = new System.Windows.Forms.Button();
             this.RS1_deleteLecturer = new System.Windows.Forms.Button();
+            this.RS1_viewLecturer = new System.Windows.Forms.Button();
+            this.RS1_addLecturer = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nishikiDLocation_dataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -72,10 +72,11 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.btnclose);
-            this.panel1.Location = new System.Drawing.Point(2, 2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(814, 580);
+            this.panel1.Size = new System.Drawing.Size(819, 581);
             this.panel1.TabIndex = 2;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -86,12 +87,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.nishikiDLocation_dataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.nishikiDLocation_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.nishikiDLocation_dataGridView.Location = new System.Drawing.Point(29, 272);
+            this.nishikiDLocation_dataGridView.Location = new System.Drawing.Point(29, 277);
             this.nishikiDLocation_dataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.nishikiDLocation_dataGridView.Name = "nishikiDLocation_dataGridView";
             this.nishikiDLocation_dataGridView.RowHeadersWidth = 51;
             this.nishikiDLocation_dataGridView.RowTemplate.Height = 24;
-            this.nishikiDLocation_dataGridView.Size = new System.Drawing.Size(760, 214);
+            this.nishikiDLocation_dataGridView.Size = new System.Drawing.Size(765, 215);
             this.nishikiDLocation_dataGridView.TabIndex = 13;
             // 
             // label1
@@ -106,23 +107,10 @@
             this.label1.Text = "Lecturer Portal";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(17, 10);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.pictureBox1.Size = new System.Drawing.Size(68, 60);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
             // btnclose
             // 
             this.btnclose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnclose.Location = new System.Drawing.Point(767, 10);
+            this.btnclose.Location = new System.Drawing.Point(772, 10);
             this.btnclose.Margin = new System.Windows.Forms.Padding(2);
             this.btnclose.Name = "btnclose";
             this.btnclose.Size = new System.Drawing.Size(38, 29);
@@ -191,19 +179,6 @@
             this.RS1_totLecs.TabIndex = 1;
             this.RS1_totLecs.Text = "340";
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(10, 11);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.pictureBox2.Size = new System.Drawing.Size(48, 65);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 15;
-            this.pictureBox2.TabStop = false;
-            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.SystemColors.Control;
@@ -214,19 +189,6 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(194, 85);
             this.panel5.TabIndex = 17;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(10, 11);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.pictureBox3.Size = new System.Drawing.Size(48, 65);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 15;
-            this.pictureBox3.TabStop = false;
             // 
             // RS1_newLecs
             // 
@@ -252,26 +214,27 @@
             // 
             this.RS1_searchLec.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.RS1_searchLec.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RS1_searchLec.Location = new System.Drawing.Point(493, 231);
+            this.RS1_searchLec.Location = new System.Drawing.Point(506, 236);
             this.RS1_searchLec.Name = "RS1_searchLec";
             this.RS1_searchLec.Size = new System.Drawing.Size(282, 31);
             this.RS1_searchLec.TabIndex = 15;
             this.RS1_searchLec.Text = " Search ...";
             // 
-            // RS1_addLecturer
+            // RS1_deleteLecturer
             // 
-            this.RS1_addLecturer.BackColor = System.Drawing.Color.DodgerBlue;
-            this.RS1_addLecturer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RS1_addLecturer.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RS1_addLecturer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.RS1_addLecturer.Image = ((System.Drawing.Image)(resources.GetObject("RS1_addLecturer.Image")));
-            this.RS1_addLecturer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RS1_addLecturer.Location = new System.Drawing.Point(29, 217);
-            this.RS1_addLecturer.Name = "RS1_addLecturer";
-            this.RS1_addLecturer.Size = new System.Drawing.Size(198, 47);
-            this.RS1_addLecturer.TabIndex = 16;
-            this.RS1_addLecturer.Text = "Add Lecturer";
-            this.RS1_addLecturer.UseVisualStyleBackColor = false;
+            this.RS1_deleteLecturer.BackColor = System.Drawing.Color.Crimson;
+            this.RS1_deleteLecturer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RS1_deleteLecturer.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RS1_deleteLecturer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.RS1_deleteLecturer.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.trash_can_24px;
+            this.RS1_deleteLecturer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RS1_deleteLecturer.Location = new System.Drawing.Point(680, 511);
+            this.RS1_deleteLecturer.Name = "RS1_deleteLecturer";
+            this.RS1_deleteLecturer.Size = new System.Drawing.Size(109, 47);
+            this.RS1_deleteLecturer.TabIndex = 18;
+            this.RS1_deleteLecturer.Text = "Delete";
+            this.RS1_deleteLecturer.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.RS1_deleteLecturer.UseVisualStyleBackColor = false;
             // 
             // RS1_viewLecturer
             // 
@@ -279,7 +242,7 @@
             this.RS1_viewLecturer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RS1_viewLecturer.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RS1_viewLecturer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.RS1_viewLecturer.Image = ((System.Drawing.Image)(resources.GetObject("RS1_viewLecturer.Image")));
+            this.RS1_viewLecturer.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.more_26px;
             this.RS1_viewLecturer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.RS1_viewLecturer.Location = new System.Drawing.Point(575, 511);
             this.RS1_viewLecturer.Name = "RS1_viewLecturer";
@@ -289,21 +252,59 @@
             this.RS1_viewLecturer.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.RS1_viewLecturer.UseVisualStyleBackColor = false;
             // 
-            // RS1_deleteLecturer
+            // RS1_addLecturer
             // 
-            this.RS1_deleteLecturer.BackColor = System.Drawing.Color.Crimson;
-            this.RS1_deleteLecturer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RS1_deleteLecturer.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RS1_deleteLecturer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.RS1_deleteLecturer.Image = ((System.Drawing.Image)(resources.GetObject("RS1_deleteLecturer.Image")));
-            this.RS1_deleteLecturer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RS1_deleteLecturer.Location = new System.Drawing.Point(680, 511);
-            this.RS1_deleteLecturer.Name = "RS1_deleteLecturer";
-            this.RS1_deleteLecturer.Size = new System.Drawing.Size(109, 47);
-            this.RS1_deleteLecturer.TabIndex = 18;
-            this.RS1_deleteLecturer.Text = "Delete";
-            this.RS1_deleteLecturer.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.RS1_deleteLecturer.UseVisualStyleBackColor = false;
+            this.RS1_addLecturer.BackColor = System.Drawing.Color.DodgerBlue;
+            this.RS1_addLecturer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RS1_addLecturer.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RS1_addLecturer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.RS1_addLecturer.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.add_30px;
+            this.RS1_addLecturer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RS1_addLecturer.Location = new System.Drawing.Point(29, 222);
+            this.RS1_addLecturer.Name = "RS1_addLecturer";
+            this.RS1_addLecturer.Size = new System.Drawing.Size(198, 47);
+            this.RS1_addLecturer.TabIndex = 16;
+            this.RS1_addLecturer.Text = "Add Lecturer";
+            this.RS1_addLecturer.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(10, 11);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.pictureBox3.Size = new System.Drawing.Size(48, 65);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 15;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(10, 11);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.pictureBox2.Size = new System.Drawing.Size(48, 65);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 15;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(17, 10);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.pictureBox1.Size = new System.Drawing.Size(68, 60);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // Section1_Lecturers
             // 
@@ -317,16 +318,16 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nishikiDLocation_dataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
