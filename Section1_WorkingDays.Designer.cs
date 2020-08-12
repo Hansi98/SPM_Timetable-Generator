@@ -30,35 +30,35 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Section1_WorkingDays));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnclose = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.HansiWork_tabcontrol = new System.Windows.Forms.TabControl();
             this.HansiWork_daystab = new System.Windows.Forms.TabPage();
+            this.HansiWork_tabledays = new System.Windows.Forms.TableLayoutPanel();
+            this.HansiWork_dayslist = new System.Windows.Forms.CheckedListBox();
+            this.HansiWork_daysno = new System.Windows.Forms.NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
             this.HansiWork_daysbtnadd = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.HansiWork_hourstab = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
-            this.HansiWork_daysno = new System.Windows.Forms.NumericUpDown();
-            this.HansiWork_dayslist = new System.Windows.Forms.CheckedListBox();
-            this.HansiWork_tabledays = new System.Windows.Forms.TableLayoutPanel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.HansiWork_minutes = new System.Windows.Forms.NumericUpDown();
+            this.label5 = new System.Windows.Forms.Label();
+            this.HansiWork_timeslots = new System.Windows.Forms.ComboBox();
             this.HansiWork_hourstable = new System.Windows.Forms.TableLayoutPanel();
             this.HansiWork_hours = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.HansiWork_hoursaddbtn = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.HansiWork_timeslots = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.HansiWork_minutes = new System.Windows.Forms.NumericUpDown();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnclose = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.HansiWork_tabcontrol.SuspendLayout();
             this.HansiWork_daystab.SuspendLayout();
-            this.HansiWork_hourstab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.HansiWork_daysno)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.HansiWork_hours)).BeginInit();
+            this.HansiWork_hourstab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.HansiWork_minutes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HansiWork_hours)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -73,17 +73,27 @@
             this.panel1.Size = new System.Drawing.Size(785, 509);
             this.panel1.TabIndex = 0;
             // 
-            // btnclose
+            // pictureBox1
             // 
-            this.btnclose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnclose.Location = new System.Drawing.Point(734, 10);
-            this.btnclose.Margin = new System.Windows.Forms.Padding(2);
-            this.btnclose.Name = "btnclose";
-            this.btnclose.Size = new System.Drawing.Size(38, 29);
-            this.btnclose.TabIndex = 5;
-            this.btnclose.Text = "X";
-            this.btnclose.UseVisualStyleBackColor = true;
-            this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(13, 11);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(79, 66);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(97, 26);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(241, 24);
+            this.label7.TabIndex = 9;
+            this.label7.Text = "Working Days and Hours";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // HansiWork_tabcontrol
             // 
@@ -113,16 +123,69 @@
             this.HansiWork_daystab.Margin = new System.Windows.Forms.Padding(2);
             this.HansiWork_daystab.Name = "HansiWork_daystab";
             this.HansiWork_daystab.Padding = new System.Windows.Forms.Padding(2);
-            this.HansiWork_daystab.Size = new System.Drawing.Size(782, 375);
+            this.HansiWork_daystab.Size = new System.Drawing.Size(746, 366);
             this.HansiWork_daystab.TabIndex = 0;
             this.HansiWork_daystab.Text = "Working Days";
             this.HansiWork_daystab.UseVisualStyleBackColor = true;
+            // 
+            // HansiWork_tabledays
+            // 
+            this.HansiWork_tabledays.BackColor = System.Drawing.Color.DarkGray;
+            this.HansiWork_tabledays.ColumnCount = 5;
+            this.HansiWork_tabledays.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.851F));
+            this.HansiWork_tabledays.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.149F));
+            this.HansiWork_tabledays.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 177F));
+            this.HansiWork_tabledays.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 155F));
+            this.HansiWork_tabledays.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 21F));
+            this.HansiWork_tabledays.Location = new System.Drawing.Point(55, 212);
+            this.HansiWork_tabledays.Name = "HansiWork_tabledays";
+            this.HansiWork_tabledays.RowCount = 2;
+            this.HansiWork_tabledays.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.HansiWork_tabledays.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.HansiWork_tabledays.Size = new System.Drawing.Size(676, 100);
+            this.HansiWork_tabledays.TabIndex = 6;
+            this.HansiWork_tabledays.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
+            // 
+            // HansiWork_dayslist
+            // 
+            this.HansiWork_dayslist.FormattingEnabled = true;
+            this.HansiWork_dayslist.Items.AddRange(new object[] {
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"});
+            this.HansiWork_dayslist.Location = new System.Drawing.Point(390, 71);
+            this.HansiWork_dayslist.Name = "HansiWork_dayslist";
+            this.HansiWork_dayslist.Size = new System.Drawing.Size(160, 58);
+            this.HansiWork_dayslist.TabIndex = 5;
+            // 
+            // HansiWork_daysno
+            // 
+            this.HansiWork_daysno.Location = new System.Drawing.Point(390, 30);
+            this.HansiWork_daysno.Name = "HansiWork_daysno";
+            this.HansiWork_daysno.Size = new System.Drawing.Size(120, 23);
+            this.HansiWork_daysno.TabIndex = 4;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(255, 85);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(104, 19);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Working Days:";
             // 
             // HansiWork_daysbtnadd
             // 
             this.HansiWork_daysbtnadd.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.HansiWork_daysbtnadd.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.HansiWork_daysbtnadd.Location = new System.Drawing.Point(331, 147);
+            this.HansiWork_daysbtnadd.Location = new System.Drawing.Point(341, 152);
             this.HansiWork_daysbtnadd.Margin = new System.Windows.Forms.Padding(2);
             this.HansiWork_daysbtnadd.Name = "HansiWork_daysbtnadd";
             this.HansiWork_daysbtnadd.Size = new System.Drawing.Size(74, 32);
@@ -163,58 +226,52 @@
             this.HansiWork_hourstab.Text = "Working Hours";
             this.HansiWork_hourstab.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // label6
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(255, 85);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 19);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Working Days:";
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Tai Le", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(516, 47);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(40, 19);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "mins";
             // 
-            // HansiWork_daysno
+            // HansiWork_minutes
             // 
-            this.HansiWork_daysno.Location = new System.Drawing.Point(390, 30);
-            this.HansiWork_daysno.Name = "HansiWork_daysno";
-            this.HansiWork_daysno.Size = new System.Drawing.Size(120, 23);
-            this.HansiWork_daysno.TabIndex = 4;
+            this.HansiWork_minutes.Location = new System.Drawing.Point(472, 42);
+            this.HansiWork_minutes.Name = "HansiWork_minutes";
+            this.HansiWork_minutes.Size = new System.Drawing.Size(57, 23);
+            this.HansiWork_minutes.TabIndex = 14;
+            this.HansiWork_minutes.ValueChanged += new System.EventHandler(this.HansiWork_minutes_ValueChanged);
             // 
-            // HansiWork_dayslist
+            // label5
             // 
-            this.HansiWork_dayslist.FormattingEnabled = true;
-            this.HansiWork_dayslist.Items.AddRange(new object[] {
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday",
-            "Sunday"});
-            this.HansiWork_dayslist.Location = new System.Drawing.Point(390, 71);
-            this.HansiWork_dayslist.Name = "HansiWork_dayslist";
-            this.HansiWork_dayslist.Size = new System.Drawing.Size(160, 58);
-            this.HansiWork_dayslist.TabIndex = 5;
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Tai Le", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(432, 46);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(17, 19);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "h";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // HansiWork_tabledays
+            // HansiWork_timeslots
             // 
-            this.HansiWork_tabledays.BackColor = System.Drawing.Color.DarkGray;
-            this.HansiWork_tabledays.ColumnCount = 5;
-            this.HansiWork_tabledays.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.851F));
-            this.HansiWork_tabledays.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.149F));
-            this.HansiWork_tabledays.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 177F));
-            this.HansiWork_tabledays.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 155F));
-            this.HansiWork_tabledays.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.HansiWork_tabledays.Location = new System.Drawing.Point(55, 212);
-            this.HansiWork_tabledays.Name = "HansiWork_tabledays";
-            this.HansiWork_tabledays.RowCount = 2;
-            this.HansiWork_tabledays.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.HansiWork_tabledays.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.HansiWork_tabledays.Size = new System.Drawing.Size(676, 100);
-            this.HansiWork_tabledays.TabIndex = 6;
-            this.HansiWork_tabledays.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
+            this.HansiWork_timeslots.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.HansiWork_timeslots.FormattingEnabled = true;
+            this.HansiWork_timeslots.Items.AddRange(new object[] {
+            "1h time slot",
+            "30 mins time slot"});
+            this.HansiWork_timeslots.Location = new System.Drawing.Point(370, 91);
+            this.HansiWork_timeslots.Margin = new System.Windows.Forms.Padding(2);
+            this.HansiWork_timeslots.Name = "HansiWork_timeslots";
+            this.HansiWork_timeslots.Size = new System.Drawing.Size(226, 25);
+            this.HansiWork_timeslots.TabIndex = 12;
+            this.HansiWork_timeslots.SelectedIndexChanged += new System.EventHandler(this.HansiWork_timeslots_SelectedIndexChanged);
             // 
             // HansiWork_hourstable
             // 
@@ -223,7 +280,7 @@
             this.HansiWork_hourstable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.851F));
             this.HansiWork_hourstable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.149F));
             this.HansiWork_hourstable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 177F));
-            this.HansiWork_hourstable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 155F));
+            this.HansiWork_hourstable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 156F));
             this.HansiWork_hourstable.Location = new System.Drawing.Point(51, 206);
             this.HansiWork_hourstable.Name = "HansiWork_hourstable";
             this.HansiWork_hourstable.RowCount = 2;
@@ -276,74 +333,17 @@
             this.label4.Text = "Working time per day(Include lunch time):";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // HansiWork_timeslots
+            // btnclose
             // 
-            this.HansiWork_timeslots.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.HansiWork_timeslots.FormattingEnabled = true;
-            this.HansiWork_timeslots.Items.AddRange(new object[] {
-            "1h time slot",
-            "30 mins time slot"});
-            this.HansiWork_timeslots.Location = new System.Drawing.Point(370, 91);
-            this.HansiWork_timeslots.Margin = new System.Windows.Forms.Padding(2);
-            this.HansiWork_timeslots.Name = "HansiWork_timeslots";
-            this.HansiWork_timeslots.Size = new System.Drawing.Size(226, 25);
-            this.HansiWork_timeslots.TabIndex = 12;
-            this.HansiWork_timeslots.SelectedIndexChanged += new System.EventHandler(this.HansiWork_timeslots_SelectedIndexChanged);
-            // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Tai Le", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(432, 46);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(17, 19);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "h";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // HansiWork_minutes
-            // 
-            this.HansiWork_minutes.Location = new System.Drawing.Point(472, 42);
-            this.HansiWork_minutes.Name = "HansiWork_minutes";
-            this.HansiWork_minutes.Size = new System.Drawing.Size(57, 23);
-            this.HansiWork_minutes.TabIndex = 14;
-            this.HansiWork_minutes.ValueChanged += new System.EventHandler(this.HansiWork_minutes_ValueChanged);
-            // 
-            // label6
-            // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Tai Le", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(516, 47);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(40, 19);
-            this.label6.TabIndex = 15;
-            this.label6.Text = "mins";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(97, 26);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(241, 24);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "Working Days and Hours";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(13, 11);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(79, 66);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
+            this.btnclose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnclose.Location = new System.Drawing.Point(734, 10);
+            this.btnclose.Margin = new System.Windows.Forms.Padding(2);
+            this.btnclose.Name = "btnclose";
+            this.btnclose.Size = new System.Drawing.Size(38, 29);
+            this.btnclose.TabIndex = 5;
+            this.btnclose.Text = "X";
+            this.btnclose.UseVisualStyleBackColor = true;
+            this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
             // 
             // Section1_WorkingDays
             // 
@@ -356,15 +356,15 @@
             this.Text = "Section1_WorkingDays";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.HansiWork_tabcontrol.ResumeLayout(false);
             this.HansiWork_daystab.ResumeLayout(false);
             this.HansiWork_daystab.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.HansiWork_daysno)).EndInit();
             this.HansiWork_hourstab.ResumeLayout(false);
             this.HansiWork_hourstab.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.HansiWork_daysno)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.HansiWork_hours)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HansiWork_minutes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HansiWork_hours)).EndInit();
             this.ResumeLayout(false);
 
         }
