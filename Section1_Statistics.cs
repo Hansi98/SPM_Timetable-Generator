@@ -21,5 +21,15 @@ namespace ABC_Institute___Timetable_Generator
         {
             this.Close();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
