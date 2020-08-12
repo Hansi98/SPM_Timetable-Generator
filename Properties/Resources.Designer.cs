@@ -103,6 +103,16 @@ namespace ABC_Institute___Timetable_Generator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap checked_24px {
+            get {
+                object obj = ResourceManager.GetObject("checked_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap classroom_100px {
             get {
                 object obj = ResourceManager.GetObject("classroom_100px", resourceCulture);
@@ -146,6 +156,16 @@ namespace ABC_Institute___Timetable_Generator.Properties {
         internal static System.Drawing.Bitmap new_60px {
             get {
                 object obj = ResourceManager.GetObject("new_60px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap refresh_26px {
+            get {
+                object obj = ResourceManager.GetObject("refresh_26px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
