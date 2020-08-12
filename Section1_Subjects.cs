@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace ABC_Institute___Timetable_Generator
 {
-    public partial class Section1_Lecturers : Form
+    public partial class Section1_Subjects : Form
     {
-        public Section1_Lecturers()
+        public Section1_Subjects()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
