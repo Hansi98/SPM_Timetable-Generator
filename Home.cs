@@ -88,6 +88,8 @@ namespace ABC_Institute___Timetable_Generator
             timetablesrecorg = new Rectangle(homenavbtntimetables.Location.X, homenavbtntimetables.Location.Y,
                 homenavbtntimetables.Width, homenavbtntimetables.Height);
 */
+
+
         }
 
         private void Homebtnworkingdnh_Click(object sender, EventArgs e)
