@@ -50,8 +50,8 @@
             this.RS1_addLecBuilding = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.RS1_addLecLevel = new System.Windows.Forms.ComboBox();
-            this.RS1_deleteLecturer = new System.Windows.Forms.Button();
-            this.RS1_viewLecturer = new System.Windows.Forms.Button();
+            this.RS1_addLecCancel = new System.Windows.Forms.Button();
+            this.RS1_addLecADD = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,8 +68,8 @@
             this.panel1.Controls.Add(this.RS1_addLecDepartment);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.RS1_addLecFaculty);
-            this.panel1.Controls.Add(this.RS1_deleteLecturer);
-            this.panel1.Controls.Add(this.RS1_viewLecturer);
+            this.panel1.Controls.Add(this.RS1_addLecCancel);
+            this.panel1.Controls.Add(this.RS1_addLecADD);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.RS1_addLecRank);
             this.panel1.Controls.Add(this.label4);
@@ -284,37 +284,37 @@
             this.RS1_addLecLevel.Size = new System.Drawing.Size(301, 28);
             this.RS1_addLecLevel.TabIndex = 29;
             // 
-            // RS1_deleteLecturer
+            // RS1_addLecCancel
             // 
-            this.RS1_deleteLecturer.BackColor = System.Drawing.Color.Crimson;
-            this.RS1_deleteLecturer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RS1_deleteLecturer.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RS1_deleteLecturer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.RS1_deleteLecturer.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.cancel_26px;
-            this.RS1_deleteLecturer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RS1_deleteLecturer.Location = new System.Drawing.Point(219, 637);
-            this.RS1_deleteLecturer.Name = "RS1_deleteLecturer";
-            this.RS1_deleteLecturer.Size = new System.Drawing.Size(109, 47);
-            this.RS1_deleteLecturer.TabIndex = 20;
-            this.RS1_deleteLecturer.Text = "Cancel";
-            this.RS1_deleteLecturer.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.RS1_deleteLecturer.UseVisualStyleBackColor = false;
+            this.RS1_addLecCancel.BackColor = System.Drawing.Color.Crimson;
+            this.RS1_addLecCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RS1_addLecCancel.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RS1_addLecCancel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.RS1_addLecCancel.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.cancel_26px;
+            this.RS1_addLecCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RS1_addLecCancel.Location = new System.Drawing.Point(219, 637);
+            this.RS1_addLecCancel.Name = "RS1_addLecCancel";
+            this.RS1_addLecCancel.Size = new System.Drawing.Size(109, 47);
+            this.RS1_addLecCancel.TabIndex = 20;
+            this.RS1_addLecCancel.Text = "Cancel";
+            this.RS1_addLecCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.RS1_addLecCancel.UseVisualStyleBackColor = false;
             // 
-            // RS1_viewLecturer
+            // RS1_addLecADD
             // 
-            this.RS1_viewLecturer.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.RS1_viewLecturer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RS1_viewLecturer.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RS1_viewLecturer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.RS1_viewLecturer.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.add_30px;
-            this.RS1_viewLecturer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RS1_viewLecturer.Location = new System.Drawing.Point(103, 637);
-            this.RS1_viewLecturer.Name = "RS1_viewLecturer";
-            this.RS1_viewLecturer.Size = new System.Drawing.Size(97, 47);
-            this.RS1_viewLecturer.TabIndex = 19;
-            this.RS1_viewLecturer.Text = "Add";
-            this.RS1_viewLecturer.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.RS1_viewLecturer.UseVisualStyleBackColor = false;
+            this.RS1_addLecADD.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.RS1_addLecADD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RS1_addLecADD.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RS1_addLecADD.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.RS1_addLecADD.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.add_30px;
+            this.RS1_addLecADD.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RS1_addLecADD.Location = new System.Drawing.Point(103, 637);
+            this.RS1_addLecADD.Name = "RS1_addLecADD";
+            this.RS1_addLecADD.Size = new System.Drawing.Size(97, 47);
+            this.RS1_addLecADD.TabIndex = 19;
+            this.RS1_addLecADD.Text = "Add";
+            this.RS1_addLecADD.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.RS1_addLecADD.UseVisualStyleBackColor = false;
             // 
             // Section1_addLecturer
             // 
@@ -346,8 +346,8 @@
         private System.Windows.Forms.TextBox RS1_addLecFName;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox RS1_addLecRank;
-        private System.Windows.Forms.Button RS1_deleteLecturer;
-        private System.Windows.Forms.Button RS1_viewLecturer;
+        private System.Windows.Forms.Button RS1_addLecCancel;
+        private System.Windows.Forms.Button RS1_addLecADD;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ComboBox RS1_addLecLevel;
         private System.Windows.Forms.Label label10;
