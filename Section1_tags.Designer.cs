@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Section1_tags));
             this.panel1 = new System.Windows.Forms.Panel();
             this.vdataGridTags = new System.Windows.Forms.DataGridView();
@@ -39,9 +40,19 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.serviceController1 = new System.ServiceProcess.ServiceController();
+            this.tableUpdateStatementBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.resourcesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.Update = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.tagIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tagNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tagsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.vdataGridTags)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableUpdateStatementBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resourcesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tagsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -67,13 +78,22 @@
             this.vdataGridTags.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.vdataGridTags.AutoGenerateColumns = false;
             this.vdataGridTags.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.vdataGridTags.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.tagIDDataGridViewTextBoxColumn,
+            this.tagNameDataGridViewTextBoxColumn,
+            this.Update,
+            this.Delete});
+            this.vdataGridTags.DataSource = this.tagsBindingSource;
             this.vdataGridTags.Location = new System.Drawing.Point(22, 207);
             this.vdataGridTags.Name = "vdataGridTags";
             this.vdataGridTags.RowHeadersWidth = 51;
             this.vdataGridTags.RowTemplate.Height = 24;
             this.vdataGridTags.Size = new System.Drawing.Size(919, 284);
             this.vdataGridTags.TabIndex = 15;
+            this.vdataGridTags.Tag = "";
+            this.vdataGridTags.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.vdataGridTags_CellContentClick);
             // 
             // vbtnUpdateTag
             // 
@@ -157,6 +177,52 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // tableUpdateStatementBindingSource
+            // 
+            this.tableUpdateStatementBindingSource.DataSource = typeof(MySqlX.XDevAPI.Relational.TableUpdateStatement);
+            // 
+            // resourcesBindingSource
+            // 
+            this.resourcesBindingSource.DataSource = typeof(MySql.Data.Resources);
+            // 
+            // Update
+            // 
+            this.Update.HeaderText = "Update";
+            this.Update.MinimumWidth = 6;
+            this.Update.Name = "Update";
+            this.Update.Text = "Update";
+            this.Update.UseColumnTextForButtonValue = true;
+            this.Update.Width = 200;
+            // 
+            // Delete
+            // 
+            this.Delete.HeaderText = "Delete";
+            this.Delete.MinimumWidth = 6;
+            this.Delete.Name = "Delete";
+            this.Delete.Text = "Delete";
+            this.Delete.UseColumnTextForButtonValue = true;
+            this.Delete.Width = 200;
+            // 
+            // tagIDDataGridViewTextBoxColumn
+            // 
+            this.tagIDDataGridViewTextBoxColumn.DataPropertyName = "tagID";
+            this.tagIDDataGridViewTextBoxColumn.HeaderText = "tagID";
+            this.tagIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.tagIDDataGridViewTextBoxColumn.Name = "tagIDDataGridViewTextBoxColumn";
+            this.tagIDDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // tagNameDataGridViewTextBoxColumn
+            // 
+            this.tagNameDataGridViewTextBoxColumn.DataPropertyName = "tagName";
+            this.tagNameDataGridViewTextBoxColumn.HeaderText = "tagName";
+            this.tagNameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.tagNameDataGridViewTextBoxColumn.Name = "tagNameDataGridViewTextBoxColumn";
+            this.tagNameDataGridViewTextBoxColumn.Width = 840;
+            // 
+            // tagsBindingSource
+            // 
+            this.tagsBindingSource.DataSource = typeof(ABC_Institute___Timetable_Generator.Tags);
+            // 
             // Section1_tags
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -170,6 +236,9 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.vdataGridTags)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableUpdateStatementBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resourcesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tagsBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -186,5 +255,12 @@
         private System.Windows.Forms.Button vbtnAddTag;
         private System.Windows.Forms.DataGridView vdataGridTags;
         private System.ServiceProcess.ServiceController serviceController1;
+        private System.Windows.Forms.BindingSource tableUpdateStatementBindingSource;
+        private System.Windows.Forms.BindingSource resourcesBindingSource;
+        private System.Windows.Forms.BindingSource tagsBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tagIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tagNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewButtonColumn Update;
+        private System.Windows.Forms.DataGridViewButtonColumn Delete;
     }
 }

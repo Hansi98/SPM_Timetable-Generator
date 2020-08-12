@@ -19,6 +19,7 @@ namespace ABC_Institute___Timetable_Generator
         public Section1_tags()
         {
             InitializeComponent();
+            fillTagGrid();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -28,7 +29,7 @@ namespace ABC_Institute___Timetable_Generator
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            fillTagGrid();
+          
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -38,7 +39,19 @@ namespace ABC_Institute___Timetable_Generator
 
         private void button3_Click(object sender, EventArgs e)
         {
+            using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
+            {
+                mySqlCon.Open();
+                MySqlCommand mySqlCmd = new MySqlCommand("TagAddorEdit", mySqlCon);
+                mySqlCmd.CommandType = CommandType.StoredProcedure;
+                mySqlCmd.Parameters.AddWithValue("_TagID", tagID);
+                mySqlCmd.Parameters.AddWithValue("_TagName", vtxtBoxTagName.Text.Trim());
+                mySqlCmd.ExecuteNonQuery();
+                clear();
+                fillTagGrid();
+                MessageBox.Show("Tag Updated Successfully");
 
+            }
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -56,8 +69,10 @@ namespace ABC_Institute___Timetable_Generator
                 mySqlCmd.Parameters.AddWithValue("_TagID",tagID);
                 mySqlCmd.Parameters.AddWithValue("_TagName", vtxtBoxTagName.Text.Trim());
                 mySqlCmd.ExecuteNonQuery();
-                MessageBox.Show(" New Tag Added Successfully");
+           
+                clear();
                 fillTagGrid();
+                MessageBox.Show(" New Tag Added Successfully");
 
             }
         }
@@ -72,6 +87,47 @@ namespace ABC_Institute___Timetable_Generator
                 sqlDa.Fill(dataTags);
                 vdataGridTags.DataSource = dataTags;
             }
+        }
+        void clear()
+        {
+            vtxtBoxTagName.Text = "";
+            tagID = 0;
+
+        }
+
+        private void vdataGridTags_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        { 
+            if (vdataGridTags.Columns[e.ColumnIndex].Name == "Update") {
+                vtxtBoxTagName.Text =vdataGridTags.CurrentRow.Cells[1].Value.ToString();
+                tagID = Convert.ToInt32(vdataGridTags.CurrentRow.Cells[0].Value.ToString());
+            }
+
+            if (vdataGridTags.Columns[e.ColumnIndex].Name == "Delete")
+            {
+                //  vtxtBoxTagName.Text = vdataGridTags.CurrentRow.Cells[1].Value.ToString();
+                //  tagID = Convert.ToInt32(vdataGridTags.CurrentRow.Cells[0].Value.ToString());
+
+
+                tagID = Convert.ToInt32(vdataGridTags.CurrentRow.Cells[0].Value.ToString());
+                using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
+                {
+                    mySqlCon.Open();
+                    MySqlCommand mySqlCmd = new MySqlCommand("TagDeleteByID", mySqlCon);
+                    mySqlCmd.CommandType = CommandType.StoredProcedure;
+                    mySqlCmd.Parameters.AddWithValue("_TagID", tagID);
+                    if(MessageBox.Show("Do you want you delete this tag ?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    {
+                        mySqlCmd.ExecuteNonQuery();
+                    }
+                 
+                   
+                    clear();
+                    fillTagGrid();
+                    MessageBox.Show(" Tag Deleted Successfully");
+
+                }
+            }
+
         }
     }
 }
