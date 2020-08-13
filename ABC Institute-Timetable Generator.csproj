@@ -36,7 +36,7 @@
     <Reference Include="MetroFramework">
       <HintPath>..\..\..\..\Visual Studio 2019\MetroUI\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
     </Reference>
-    <Reference Include="MySql.Data, Version=8.0.21.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=8.0.20.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
@@ -54,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Programme.cs" />
     <Compile Include="Section1_addLecturer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +124,7 @@
     <Compile Include="Section1_viewLecturer.Designer.cs">
       <DependentUpon>Section1_viewLecturer.cs</DependentUpon>
     </Compile>
+    <Compile Include="yearandsemester.cs" />
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
@@ -166,6 +168,7 @@
     <EmbeddedResource Include="Section1_viewLecturer.resx">
       <DependentUpon>Section1_viewLecturer.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Programme.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -175,6 +178,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="yearandsemester.datasource" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
