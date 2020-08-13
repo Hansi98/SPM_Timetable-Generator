@@ -30,15 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Section1_Location));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.nishikiDLocation_btnupdate = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.nishikidgvbuilding = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.nishikiDLocation_buildingsearchtxtbox = new System.Windows.Forms.TextBox();
             this.nishikiDLocation_btnsearchbuilding = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.nishikidgvcapacity = new System.Windows.Forms.DataGridView();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.nishikiDLocation_capacitysearchtxtbox = new System.Windows.Forms.TextBox();
             this.nishikiDLocation_btnsearchcapacity = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.nishikiDLocation_btndelete = new System.Windows.Forms.Button();
@@ -56,7 +57,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.nishikilocationimg = new System.Windows.Forms.PictureBox();
             this.btnclose = new System.Windows.Forms.Button();
-            this.nishikiDLocation_btnupdate = new System.Windows.Forms.Button();
+            this.nishikiDLocation_btnrefreshcapacity = new System.Windows.Forms.Button();
+            this.nishikiDLocation_btnrefreshbuilding = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -92,6 +94,19 @@
             this.panel1.Size = new System.Drawing.Size(1001, 739);
             this.panel1.TabIndex = 1;
             // 
+            // nishikiDLocation_btnupdate
+            // 
+            this.nishikiDLocation_btnupdate.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.nishikiDLocation_btnupdate.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.nishikiDLocation_btnupdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nishikiDLocation_btnupdate.Location = new System.Drawing.Point(427, 229);
+            this.nishikiDLocation_btnupdate.Name = "nishikiDLocation_btnupdate";
+            this.nishikiDLocation_btnupdate.Size = new System.Drawing.Size(158, 42);
+            this.nishikiDLocation_btnupdate.TabIndex = 24;
+            this.nishikiDLocation_btnupdate.Text = "UPDATE";
+            this.nishikiDLocation_btnupdate.UseVisualStyleBackColor = false;
+            this.nishikiDLocation_btnupdate.Click += new System.EventHandler(this.NishikiDLocation_btnupdate_Click);
+            // 
             // tabControl1
             // 
             this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -109,8 +124,9 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.nishikiDLocation_btnrefreshbuilding);
             this.tabPage1.Controls.Add(this.nishikidgvbuilding);
-            this.tabPage1.Controls.Add(this.textBox1);
+            this.tabPage1.Controls.Add(this.nishikiDLocation_buildingsearchtxtbox);
             this.tabPage1.Controls.Add(this.nishikiDLocation_btnsearchbuilding);
             this.tabPage1.Controls.Add(this.label7);
             this.tabPage1.Location = new System.Drawing.Point(4, 33);
@@ -140,32 +156,33 @@
             this.nishikidgvbuilding.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Nishikidgvbuilding_CellContentClick);
             this.nishikidgvbuilding.DoubleClick += new System.EventHandler(this.Nishikidgvbuilding_DoubleClick);
             // 
-            // textBox1
+            // nishikiDLocation_buildingsearchtxtbox
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(595, 18);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(214, 27);
-            this.textBox1.TabIndex = 20;
+            this.nishikiDLocation_buildingsearchtxtbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.nishikiDLocation_buildingsearchtxtbox.Location = new System.Drawing.Point(473, 27);
+            this.nishikiDLocation_buildingsearchtxtbox.Name = "nishikiDLocation_buildingsearchtxtbox";
+            this.nishikiDLocation_buildingsearchtxtbox.Size = new System.Drawing.Size(214, 27);
+            this.nishikiDLocation_buildingsearchtxtbox.TabIndex = 20;
             // 
             // nishikiDLocation_btnsearchbuilding
             // 
             this.nishikiDLocation_btnsearchbuilding.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.nishikiDLocation_btnsearchbuilding.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.nishikiDLocation_btnsearchbuilding.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nishikiDLocation_btnsearchbuilding.Location = new System.Drawing.Point(815, 8);
+            this.nishikiDLocation_btnsearchbuilding.Location = new System.Drawing.Point(693, 17);
             this.nishikiDLocation_btnsearchbuilding.Name = "nishikiDLocation_btnsearchbuilding";
             this.nishikiDLocation_btnsearchbuilding.Size = new System.Drawing.Size(131, 42);
             this.nishikiDLocation_btnsearchbuilding.TabIndex = 19;
             this.nishikiDLocation_btnsearchbuilding.Text = "SEARCH";
             this.nishikiDLocation_btnsearchbuilding.UseVisualStyleBackColor = false;
+            this.nishikiDLocation_btnsearchbuilding.Click += new System.EventHandler(this.NishikiDLocation_btnsearchbuilding_Click);
             // 
             // label7
             // 
             this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(514, 18);
+            this.label7.Location = new System.Drawing.Point(392, 27);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(70, 24);
             this.label7.TabIndex = 18;
@@ -173,8 +190,9 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.nishikiDLocation_btnrefreshcapacity);
             this.tabPage2.Controls.Add(this.nishikidgvcapacity);
-            this.tabPage2.Controls.Add(this.textBox2);
+            this.tabPage2.Controls.Add(this.nishikiDLocation_capacitysearchtxtbox);
             this.tabPage2.Controls.Add(this.nishikiDLocation_btnsearchcapacity);
             this.tabPage2.Controls.Add(this.label8);
             this.tabPage2.Location = new System.Drawing.Point(4, 33);
@@ -198,33 +216,35 @@
             this.nishikidgvcapacity.RowTemplate.Height = 24;
             this.nishikidgvcapacity.Size = new System.Drawing.Size(924, 309);
             this.nishikidgvcapacity.TabIndex = 24;
+            this.nishikidgvcapacity.DoubleClick += new System.EventHandler(this.Nishikidgvcapacity_DoubleClick);
             // 
-            // textBox2
+            // nishikiDLocation_capacitysearchtxtbox
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Location = new System.Drawing.Point(607, 23);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(214, 27);
-            this.textBox2.TabIndex = 23;
+            this.nishikiDLocation_capacitysearchtxtbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.nishikiDLocation_capacitysearchtxtbox.Location = new System.Drawing.Point(489, 25);
+            this.nishikiDLocation_capacitysearchtxtbox.Name = "nishikiDLocation_capacitysearchtxtbox";
+            this.nishikiDLocation_capacitysearchtxtbox.Size = new System.Drawing.Size(214, 27);
+            this.nishikiDLocation_capacitysearchtxtbox.TabIndex = 23;
             // 
             // nishikiDLocation_btnsearchcapacity
             // 
             this.nishikiDLocation_btnsearchcapacity.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.nishikiDLocation_btnsearchcapacity.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.nishikiDLocation_btnsearchcapacity.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nishikiDLocation_btnsearchcapacity.Location = new System.Drawing.Point(827, 13);
+            this.nishikiDLocation_btnsearchcapacity.Location = new System.Drawing.Point(709, 15);
             this.nishikiDLocation_btnsearchcapacity.Name = "nishikiDLocation_btnsearchcapacity";
-            this.nishikiDLocation_btnsearchcapacity.Size = new System.Drawing.Size(131, 42);
+            this.nishikiDLocation_btnsearchcapacity.Size = new System.Drawing.Size(118, 42);
             this.nishikiDLocation_btnsearchcapacity.TabIndex = 22;
             this.nishikiDLocation_btnsearchcapacity.Text = "SEARCH";
             this.nishikiDLocation_btnsearchcapacity.UseVisualStyleBackColor = false;
+            this.nishikiDLocation_btnsearchcapacity.Click += new System.EventHandler(this.NishikiDLocation_btnsearchcapacity_Click);
             // 
             // label8
             // 
             this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(526, 23);
+            this.label8.Location = new System.Drawing.Point(408, 25);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(70, 24);
             this.label8.TabIndex = 21;
@@ -235,12 +255,13 @@
             this.nishikiDLocation_btndelete.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.nishikiDLocation_btndelete.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.nishikiDLocation_btndelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nishikiDLocation_btndelete.Location = new System.Drawing.Point(679, 229);
+            this.nishikiDLocation_btndelete.Location = new System.Drawing.Point(623, 229);
             this.nishikiDLocation_btndelete.Name = "nishikiDLocation_btndelete";
             this.nishikiDLocation_btndelete.Size = new System.Drawing.Size(158, 42);
             this.nishikiDLocation_btndelete.TabIndex = 22;
             this.nishikiDLocation_btndelete.Text = "DELETE";
             this.nishikiDLocation_btndelete.UseVisualStyleBackColor = false;
+            this.nishikiDLocation_btndelete.Click += new System.EventHandler(this.NishikiDLocation_btndelete_Click);
             // 
             // nishikiDLocations_roomtype_labradiobtn
             // 
@@ -316,7 +337,7 @@
             this.nishikiDLocation_btnadd.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.nishikiDLocation_btnadd.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.nishikiDLocation_btnadd.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nishikiDLocation_btnadd.Location = new System.Drawing.Point(281, 229);
+            this.nishikiDLocation_btnadd.Location = new System.Drawing.Point(225, 229);
             this.nishikiDLocation_btnadd.Name = "nishikiDLocation_btnadd";
             this.nishikiDLocation_btnadd.Size = new System.Drawing.Size(158, 42);
             this.nishikiDLocation_btnadd.TabIndex = 14;
@@ -403,17 +424,31 @@
             this.btnclose.UseVisualStyleBackColor = true;
             this.btnclose.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // nishikiDLocation_btnupdate
+            // nishikiDLocation_btnrefreshcapacity
             // 
-            this.nishikiDLocation_btnupdate.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.nishikiDLocation_btnupdate.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.nishikiDLocation_btnupdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nishikiDLocation_btnupdate.Location = new System.Drawing.Point(483, 229);
-            this.nishikiDLocation_btnupdate.Name = "nishikiDLocation_btnupdate";
-            this.nishikiDLocation_btnupdate.Size = new System.Drawing.Size(158, 42);
-            this.nishikiDLocation_btnupdate.TabIndex = 24;
-            this.nishikiDLocation_btnupdate.Text = "UPDATE";
-            this.nishikiDLocation_btnupdate.UseVisualStyleBackColor = false;
+            this.nishikiDLocation_btnrefreshcapacity.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.nishikiDLocation_btnrefreshcapacity.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.nishikiDLocation_btnrefreshcapacity.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nishikiDLocation_btnrefreshcapacity.Location = new System.Drawing.Point(831, 15);
+            this.nishikiDLocation_btnrefreshcapacity.Name = "nishikiDLocation_btnrefreshcapacity";
+            this.nishikiDLocation_btnrefreshcapacity.Size = new System.Drawing.Size(118, 42);
+            this.nishikiDLocation_btnrefreshcapacity.TabIndex = 25;
+            this.nishikiDLocation_btnrefreshcapacity.Text = "REFRESH";
+            this.nishikiDLocation_btnrefreshcapacity.UseVisualStyleBackColor = false;
+            this.nishikiDLocation_btnrefreshcapacity.Click += new System.EventHandler(this.NishikiDLocation_btnrefreshcapacity_Click);
+            // 
+            // nishikiDLocation_btnrefreshbuilding
+            // 
+            this.nishikiDLocation_btnrefreshbuilding.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.nishikiDLocation_btnrefreshbuilding.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.nishikiDLocation_btnrefreshbuilding.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nishikiDLocation_btnrefreshbuilding.Location = new System.Drawing.Point(828, 17);
+            this.nishikiDLocation_btnrefreshbuilding.Name = "nishikiDLocation_btnrefreshbuilding";
+            this.nishikiDLocation_btnrefreshbuilding.Size = new System.Drawing.Size(118, 42);
+            this.nishikiDLocation_btnrefreshbuilding.TabIndex = 26;
+            this.nishikiDLocation_btnrefreshbuilding.Text = "REFRESH";
+            this.nishikiDLocation_btnrefreshbuilding.UseVisualStyleBackColor = false;
+            this.nishikiDLocation_btnrefreshbuilding.Click += new System.EventHandler(this.NishikiDLocation_btnrefreshbuilding_Click);
             // 
             // Section1_Location
             // 
@@ -455,12 +490,12 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.DataGridView nishikidgvbuilding;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox nishikiDLocation_buildingsearchtxtbox;
         private System.Windows.Forms.Button nishikiDLocation_btnsearchbuilding;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.DataGridView nishikidgvcapacity;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox nishikiDLocation_capacitysearchtxtbox;
         private System.Windows.Forms.Button nishikiDLocation_btnsearchcapacity;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button nishikiDLocation_btndelete;
@@ -468,5 +503,7 @@
         private System.Windows.Forms.RadioButton nishikiDLocations_roomtype_lechallradiobtn;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button nishikiDLocation_btnupdate;
+        private System.Windows.Forms.Button nishikiDLocation_btnrefreshbuilding;
+        private System.Windows.Forms.Button nishikiDLocation_btnrefreshcapacity;
     }
 }
