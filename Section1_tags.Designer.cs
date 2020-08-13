@@ -32,6 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Section1_tags));
             this.panel1 = new System.Windows.Forms.Panel();
             this.vdataGridTags = new System.Windows.Forms.DataGridView();
+            this.Update = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.vbtnUpdateTag = new System.Windows.Forms.Button();
             this.vbtnAddTag = new System.Windows.Forms.Button();
             this.vtxtBoxTagName = new System.Windows.Forms.TextBox();
@@ -42,8 +44,6 @@
             this.serviceController1 = new System.ServiceProcess.ServiceController();
             this.tableUpdateStatementBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.resourcesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.Update = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.tagIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tagNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tagsBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -94,6 +94,24 @@
             this.vdataGridTags.TabIndex = 15;
             this.vdataGridTags.Tag = "";
             this.vdataGridTags.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.vdataGridTags_CellContentClick);
+            // 
+            // Update
+            // 
+            this.Update.HeaderText = "Update";
+            this.Update.MinimumWidth = 6;
+            this.Update.Name = "Update";
+            this.Update.Text = "Update";
+            this.Update.UseColumnTextForButtonValue = true;
+            this.Update.Width = 200;
+            // 
+            // Delete
+            // 
+            this.Delete.HeaderText = "Delete";
+            this.Delete.MinimumWidth = 6;
+            this.Delete.Name = "Delete";
+            this.Delete.Text = "Delete";
+            this.Delete.UseColumnTextForButtonValue = true;
+            this.Delete.Width = 200;
             // 
             // vbtnUpdateTag
             // 
@@ -184,24 +202,6 @@
             // resourcesBindingSource
             // 
             this.resourcesBindingSource.DataSource = typeof(MySql.Data.Resources);
-            // 
-            // Update
-            // 
-            this.Update.HeaderText = "Update";
-            this.Update.MinimumWidth = 6;
-            this.Update.Name = "Update";
-            this.Update.Text = "Update";
-            this.Update.UseColumnTextForButtonValue = true;
-            this.Update.Width = 200;
-            // 
-            // Delete
-            // 
-            this.Delete.HeaderText = "Delete";
-            this.Delete.MinimumWidth = 6;
-            this.Delete.Name = "Delete";
-            this.Delete.Text = "Delete";
-            this.Delete.UseColumnTextForButtonValue = true;
-            this.Delete.Width = 200;
             // 
             // tagIDDataGridViewTextBoxColumn
             // 
