@@ -34,5 +34,10 @@ namespace ABC_Institute___Timetable_Generator
 
 
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -4,6 +4,7 @@ using MySql.Data.MySqlClient;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,8 +18,20 @@ namespace ABC_Institute___Timetable_Generator.ServiceImpl
         public bool addLecturer(Lecturer L)
         {
             
-            MySqlCommand command = new MySqlCommand("lecturerAddorEdit",this.con);
-            return false;
+            
+            MySqlCommand mysqlcommand = new MySqlCommand("lecturerAddorEdit",this.con);
+            mysqlcommand.CommandType = CommandType.StoredProcedure;
+            mysqlcommand.Parameters.AddWithValue("_",L.FName);
+            if (mysqlcommand.ExecuteNonQuery() > 1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+
         }
 
         public bool deleteLecturer(string EmpID)
