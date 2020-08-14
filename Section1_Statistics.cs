@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ABC_Institute___Timetable_Generator
 {
-    public partial class Section1_Subjects : Form
+    public partial class Section1_Statistics : Form
     {
-        public Section1_Subjects()
+        public Section1_Statistics()
         {
             InitializeComponent();
         }
