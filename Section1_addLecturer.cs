@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,6 +25,13 @@ namespace ABC_Institute___Timetable_Generator
 
         private void label2_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void RS1_addLecADD_Click(object sender, EventArgs e)
+        {
+            
+
 
         }
     }

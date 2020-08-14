@@ -26,5 +26,10 @@ namespace ABC_Institute___Timetable_Generator
         {
 
         }
+
+        private void RS1_addLecturer_Click(object sender, EventArgs e)
+        {
+            new Section1_addLecturer().Show();
+        }
     }
 }

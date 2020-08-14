@@ -30,33 +30,33 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Section1_Subjects));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.RS1_deleteSubject = new System.Windows.Forms.Button();
+            this.RS1_viewSubject = new System.Windows.Forms.Button();
+            this.RS1_addSubject = new System.Windows.Forms.Button();
             this.RS1_searchSub = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.RS1_newLecs = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.RS1_totLecs = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.nishikiDLocation_dataGridView = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnclose = new System.Windows.Forms.Button();
-            this.RS1_deleteSubject = new System.Windows.Forms.Button();
-            this.RS1_viewSubject = new System.Windows.Forms.Button();
-            this.RS1_addSubject = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnclose = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nishikiDLocation_dataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,6 +78,53 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(817, 581);
             this.panel1.TabIndex = 3;
+            // 
+            // RS1_deleteSubject
+            // 
+            this.RS1_deleteSubject.BackColor = System.Drawing.Color.Crimson;
+            this.RS1_deleteSubject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RS1_deleteSubject.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RS1_deleteSubject.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.RS1_deleteSubject.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.trash_can_24px;
+            this.RS1_deleteSubject.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RS1_deleteSubject.Location = new System.Drawing.Point(680, 511);
+            this.RS1_deleteSubject.Name = "RS1_deleteSubject";
+            this.RS1_deleteSubject.Size = new System.Drawing.Size(109, 47);
+            this.RS1_deleteSubject.TabIndex = 18;
+            this.RS1_deleteSubject.Text = "Delete";
+            this.RS1_deleteSubject.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.RS1_deleteSubject.UseVisualStyleBackColor = false;
+            // 
+            // RS1_viewSubject
+            // 
+            this.RS1_viewSubject.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.RS1_viewSubject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RS1_viewSubject.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RS1_viewSubject.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.RS1_viewSubject.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.add_30px;
+            this.RS1_viewSubject.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RS1_viewSubject.Location = new System.Drawing.Point(575, 511);
+            this.RS1_viewSubject.Name = "RS1_viewSubject";
+            this.RS1_viewSubject.Size = new System.Drawing.Size(97, 47);
+            this.RS1_viewSubject.TabIndex = 17;
+            this.RS1_viewSubject.Text = "View";
+            this.RS1_viewSubject.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.RS1_viewSubject.UseVisualStyleBackColor = false;
+            // 
+            // RS1_addSubject
+            // 
+            this.RS1_addSubject.BackColor = System.Drawing.Color.DodgerBlue;
+            this.RS1_addSubject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RS1_addSubject.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RS1_addSubject.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.RS1_addSubject.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.add_30px;
+            this.RS1_addSubject.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RS1_addSubject.Location = new System.Drawing.Point(29, 222);
+            this.RS1_addSubject.Name = "RS1_addSubject";
+            this.RS1_addSubject.Size = new System.Drawing.Size(198, 47);
+            this.RS1_addSubject.TabIndex = 16;
+            this.RS1_addSubject.Text = "Add Subject";
+            this.RS1_addSubject.UseVisualStyleBackColor = false;
             // 
             // RS1_searchSub
             // 
@@ -111,6 +158,19 @@
             this.panel5.Size = new System.Drawing.Size(194, 85);
             this.panel5.TabIndex = 17;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(10, 11);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.pictureBox3.Size = new System.Drawing.Size(48, 65);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 15;
+            this.pictureBox3.TabStop = false;
+            // 
             // RS1_newLecs
             // 
             this.RS1_newLecs.AutoSize = true;
@@ -141,6 +201,19 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(194, 85);
             this.panel4.TabIndex = 16;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(10, 11);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.pictureBox2.Size = new System.Drawing.Size(48, 65);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 15;
+            this.pictureBox2.TabStop = false;
             // 
             // RS1_totLecs
             // 
@@ -209,90 +282,6 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Subject Portal";
             // 
-            // btnclose
-            // 
-            this.btnclose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnclose.Location = new System.Drawing.Point(770, 10);
-            this.btnclose.Margin = new System.Windows.Forms.Padding(2);
-            this.btnclose.Name = "btnclose";
-            this.btnclose.Size = new System.Drawing.Size(38, 29);
-            this.btnclose.TabIndex = 1;
-            this.btnclose.Text = "X";
-            this.btnclose.UseVisualStyleBackColor = true;
-            // 
-            // RS1_deleteSubject
-            // 
-            this.RS1_deleteSubject.BackColor = System.Drawing.Color.Crimson;
-            this.RS1_deleteSubject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RS1_deleteSubject.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RS1_deleteSubject.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.RS1_deleteSubject.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.trash_can_24px;
-            this.RS1_deleteSubject.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RS1_deleteSubject.Location = new System.Drawing.Point(680, 511);
-            this.RS1_deleteSubject.Name = "RS1_deleteSubject";
-            this.RS1_deleteSubject.Size = new System.Drawing.Size(109, 47);
-            this.RS1_deleteSubject.TabIndex = 18;
-            this.RS1_deleteSubject.Text = "Delete";
-            this.RS1_deleteSubject.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.RS1_deleteSubject.UseVisualStyleBackColor = false;
-            // 
-            // RS1_viewSubject
-            // 
-            this.RS1_viewSubject.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.RS1_viewSubject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RS1_viewSubject.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RS1_viewSubject.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.RS1_viewSubject.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.add_30px;
-            this.RS1_viewSubject.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RS1_viewSubject.Location = new System.Drawing.Point(575, 511);
-            this.RS1_viewSubject.Name = "RS1_viewSubject";
-            this.RS1_viewSubject.Size = new System.Drawing.Size(97, 47);
-            this.RS1_viewSubject.TabIndex = 17;
-            this.RS1_viewSubject.Text = "View";
-            this.RS1_viewSubject.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.RS1_viewSubject.UseVisualStyleBackColor = false;
-            // 
-            // RS1_addSubject
-            // 
-            this.RS1_addSubject.BackColor = System.Drawing.Color.DodgerBlue;
-            this.RS1_addSubject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RS1_addSubject.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RS1_addSubject.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.RS1_addSubject.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.add_30px;
-            this.RS1_addSubject.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RS1_addSubject.Location = new System.Drawing.Point(29, 222);
-            this.RS1_addSubject.Name = "RS1_addSubject";
-            this.RS1_addSubject.Size = new System.Drawing.Size(198, 47);
-            this.RS1_addSubject.TabIndex = 16;
-            this.RS1_addSubject.Text = "Add Subject";
-            this.RS1_addSubject.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(10, 11);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.pictureBox3.Size = new System.Drawing.Size(48, 65);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 15;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(10, 11);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.pictureBox2.Size = new System.Drawing.Size(48, 65);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 15;
-            this.pictureBox2.TabStop = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -305,6 +294,18 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
+            // 
+            // btnclose
+            // 
+            this.btnclose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnclose.Location = new System.Drawing.Point(770, 10);
+            this.btnclose.Margin = new System.Windows.Forms.Padding(2);
+            this.btnclose.Name = "btnclose";
+            this.btnclose.Size = new System.Drawing.Size(38, 29);
+            this.btnclose.TabIndex = 1;
+            this.btnclose.Text = "X";
+            this.btnclose.UseVisualStyleBackColor = true;
+            this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
             // 
             // Section1_Subjects
             // 
@@ -320,13 +321,13 @@
             this.panel2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nishikiDLocation_dataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

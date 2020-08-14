@@ -16,5 +16,10 @@ namespace ABC_Institute___Timetable_Generator
         {
             InitializeComponent();
         }
+
+        private void btnclose_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

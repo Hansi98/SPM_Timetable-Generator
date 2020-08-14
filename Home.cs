@@ -101,6 +101,7 @@ namespace ABC_Institute___Timetable_Generator
 
         private void Homebtnlecturers_Click(object sender, EventArgs e)
         {
+            openchildform(new Section1_Lecturers());
             //..codes
             hidesubmenu();
         }
