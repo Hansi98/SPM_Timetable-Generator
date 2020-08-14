@@ -43,6 +43,8 @@
             this.vtabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.vdataGridys = new System.Windows.Forms.DataGridView();
+            this.Update = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.vbtnUpdateys = new System.Windows.Forms.Button();
             this.vbtnAddys = new System.Windows.Forms.Button();
             this.vtxtSemester = new System.Windows.Forms.TextBox();
@@ -51,6 +53,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.vdataGridpro = new System.Windows.Forms.DataGridView();
+            this.proUpdate = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.proDelete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.vbtnAdddes = new System.Windows.Forms.Button();
             this.vbtnAddpro = new System.Windows.Forms.Button();
             this.vtxtdes = new System.Windows.Forms.TextBox();
@@ -59,7 +63,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.vdataGridgn = new System.Windows.Forms.DataGridView();
-            this.vcmbgn_gn = new System.Windows.Forms.TextBox();
+            this.vtxtgn_gn = new System.Windows.Forms.TextBox();
             this.vcmbpro_gn = new System.Windows.Forms.ComboBox();
             this.vcmbys_gn = new System.Windows.Forms.ComboBox();
             this.vbtnAddgroup = new System.Windows.Forms.Button();
@@ -80,20 +84,23 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Update = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.ysIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.yearDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.semesterDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.yearandsemesterBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.programmeBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.programmeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.proIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.proNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.proDescriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.proUpdate = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.proDelete = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.programmeBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.groupNumbersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.programmeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.yearSemesterDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.programmeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupDelete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.vtabControl1.SuspendLayout();
@@ -108,6 +115,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yearandsemesterBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.programmeBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupNumbersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.programmeBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -134,6 +142,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1047, 626);
             this.panel2.TabIndex = 0;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // vtabControl1
             // 
@@ -153,6 +162,9 @@
             this.vtabControl1.SelectedIndex = 0;
             this.vtabControl1.Size = new System.Drawing.Size(973, 507);
             this.vtabControl1.TabIndex = 5;
+            this.vtabControl1.Selected += new System.Windows.Forms.TabControlEventHandler(this.vtabControl1_Selected);
+            this.vtabControl1.TabIndexChanged += new System.EventHandler(this.vtabControl1_TabIndexChanged);
+            this.vtabControl1.Click += new System.EventHandler(this.vtabControl1_Click);
             // 
             // tabPage2
             // 
@@ -171,6 +183,7 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Year and Semester";
             this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
             // vdataGridys
             // 
@@ -211,6 +224,24 @@
             this.vdataGridys.Size = new System.Drawing.Size(919, 237);
             this.vdataGridys.TabIndex = 17;
             this.vdataGridys.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.vdataGridys_CellContentClick);
+            // 
+            // Update
+            // 
+            this.Update.HeaderText = "Update";
+            this.Update.MinimumWidth = 6;
+            this.Update.Name = "Update";
+            this.Update.Text = "Update";
+            this.Update.UseColumnTextForButtonValue = true;
+            this.Update.Width = 240;
+            // 
+            // Delete
+            // 
+            this.Delete.HeaderText = "Delete";
+            this.Delete.MinimumWidth = 6;
+            this.Delete.Name = "Delete";
+            this.Delete.Text = "Delete";
+            this.Delete.UseColumnTextForButtonValue = true;
+            this.Delete.Width = 240;
             // 
             // vbtnUpdateys
             // 
@@ -341,9 +372,27 @@
             this.vdataGridpro.Name = "vdataGridpro";
             this.vdataGridpro.RowHeadersWidth = 51;
             this.vdataGridpro.RowTemplate.Height = 24;
-            this.vdataGridpro.Size = new System.Drawing.Size(919, 832);
+            this.vdataGridpro.Size = new System.Drawing.Size(919, 1532);
             this.vdataGridpro.TabIndex = 24;
             this.vdataGridpro.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // proUpdate
+            // 
+            this.proUpdate.HeaderText = "Update";
+            this.proUpdate.MinimumWidth = 6;
+            this.proUpdate.Name = "proUpdate";
+            this.proUpdate.Text = "Update";
+            this.proUpdate.UseColumnTextForButtonValue = true;
+            this.proUpdate.Width = 240;
+            // 
+            // proDelete
+            // 
+            this.proDelete.HeaderText = "Delete";
+            this.proDelete.MinimumWidth = 6;
+            this.proDelete.Name = "proDelete";
+            this.proDelete.Text = "Delete";
+            this.proDelete.UseColumnTextForButtonValue = true;
+            this.proDelete.Width = 240;
             // 
             // vbtnAdddes
             // 
@@ -423,7 +472,7 @@
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.vdataGridgn);
-            this.tabPage4.Controls.Add(this.vcmbgn_gn);
+            this.tabPage4.Controls.Add(this.vtxtgn_gn);
             this.tabPage4.Controls.Add(this.vcmbpro_gn);
             this.tabPage4.Controls.Add(this.vcmbys_gn);
             this.tabPage4.Controls.Add(this.vbtnAddgroup);
@@ -438,12 +487,14 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Group No";
             this.tabPage4.UseVisualStyleBackColor = true;
+            this.tabPage4.Click += new System.EventHandler(this.tabPage4_Click);
             // 
             // vdataGridgn
             // 
             this.vdataGridgn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.vdataGridgn.AutoGenerateColumns = false;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -453,6 +504,14 @@
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.vdataGridgn.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.vdataGridgn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.vdataGridgn.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.tIDDataGridViewTextBoxColumn,
+            this.yearSemesterDataGridViewTextBoxColumn,
+            this.programmeDataGridViewTextBoxColumn,
+            this.groupNoDataGridViewTextBoxColumn,
+            this.groupIDDataGridViewTextBoxColumn,
+            this.groupDelete});
+            this.vdataGridgn.DataSource = this.groupNumbersBindingSource;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -468,16 +527,17 @@
             this.vdataGridgn.RowTemplate.Height = 24;
             this.vdataGridgn.Size = new System.Drawing.Size(919, 237);
             this.vdataGridgn.TabIndex = 27;
+            this.vdataGridgn.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.vdataGridgn_CellContentClick);
             // 
-            // vcmbgn_gn
+            // vtxtgn_gn
             // 
-            this.vcmbgn_gn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.vtxtgn_gn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.vcmbgn_gn.Location = new System.Drawing.Point(383, 87);
-            this.vcmbgn_gn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.vcmbgn_gn.Name = "vcmbgn_gn";
-            this.vcmbgn_gn.Size = new System.Drawing.Size(375, 22);
-            this.vcmbgn_gn.TabIndex = 26;
+            this.vtxtgn_gn.Location = new System.Drawing.Point(383, 87);
+            this.vtxtgn_gn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.vtxtgn_gn.Name = "vtxtgn_gn";
+            this.vtxtgn_gn.Size = new System.Drawing.Size(375, 22);
+            this.vtxtgn_gn.TabIndex = 26;
             // 
             // vcmbpro_gn
             // 
@@ -514,6 +574,7 @@
             this.vbtnAddgroup.TabIndex = 23;
             this.vbtnAddgroup.Text = "Add details";
             this.vbtnAddgroup.UseVisualStyleBackColor = false;
+            this.vbtnAddgroup.Click += new System.EventHandler(this.vbtnAddgroup_Click);
             // 
             // label9
             // 
@@ -742,24 +803,6 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // Update
-            // 
-            this.Update.HeaderText = "Update";
-            this.Update.MinimumWidth = 6;
-            this.Update.Name = "Update";
-            this.Update.Text = "Update";
-            this.Update.UseColumnTextForButtonValue = true;
-            this.Update.Width = 240;
-            // 
-            // Delete
-            // 
-            this.Delete.HeaderText = "Delete";
-            this.Delete.MinimumWidth = 6;
-            this.Delete.Name = "Delete";
-            this.Delete.Text = "Delete";
-            this.Delete.UseColumnTextForButtonValue = true;
-            this.Delete.Width = 240;
-            // 
             // ysIDDataGridViewTextBoxColumn
             // 
             this.ysIDDataGridViewTextBoxColumn.DataPropertyName = "ysID";
@@ -796,14 +839,6 @@
             // 
             this.yearandsemesterBindingSource.DataSource = typeof(ABC_Institute___Timetable_Generator.yearandsemester);
             // 
-            // programmeBindingSource1
-            // 
-            this.programmeBindingSource1.DataSource = typeof(ABC_Institute___Timetable_Generator.Programme);
-            // 
-            // programmeBindingSource
-            // 
-            this.programmeBindingSource.DataSource = typeof(ABC_Institute___Timetable_Generator.Programme);
-            // 
             // proIDDataGridViewTextBoxColumn
             // 
             this.proIDDataGridViewTextBoxColumn.DataPropertyName = "proID";
@@ -828,23 +863,66 @@
             this.proDescriptionDataGridViewTextBoxColumn.Name = "proDescriptionDataGridViewTextBoxColumn";
             this.proDescriptionDataGridViewTextBoxColumn.Width = 540;
             // 
-            // proUpdate
+            // programmeBindingSource1
             // 
-            this.proUpdate.HeaderText = "Update";
-            this.proUpdate.MinimumWidth = 6;
-            this.proUpdate.Name = "proUpdate";
-            this.proUpdate.Text = "Update";
-            this.proUpdate.UseColumnTextForButtonValue = true;
-            this.proUpdate.Width = 240;
+            this.programmeBindingSource1.DataSource = typeof(ABC_Institute___Timetable_Generator.Programme);
             // 
-            // proDelete
+            // groupNumbersBindingSource
             // 
-            this.proDelete.HeaderText = "Delete";
-            this.proDelete.MinimumWidth = 6;
-            this.proDelete.Name = "proDelete";
-            this.proDelete.Text = "Delete";
-            this.proDelete.UseColumnTextForButtonValue = true;
-            this.proDelete.Width = 240;
+            this.groupNumbersBindingSource.DataSource = typeof(ABC_Institute___Timetable_Generator.GroupNumbers);
+            // 
+            // programmeBindingSource
+            // 
+            this.programmeBindingSource.DataSource = typeof(ABC_Institute___Timetable_Generator.Programme);
+            // 
+            // tIDDataGridViewTextBoxColumn
+            // 
+            this.tIDDataGridViewTextBoxColumn.DataPropertyName = "tID";
+            this.tIDDataGridViewTextBoxColumn.HeaderText = "tID";
+            this.tIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.tIDDataGridViewTextBoxColumn.Name = "tIDDataGridViewTextBoxColumn";
+            this.tIDDataGridViewTextBoxColumn.Width = 185;
+            // 
+            // yearSemesterDataGridViewTextBoxColumn
+            // 
+            this.yearSemesterDataGridViewTextBoxColumn.DataPropertyName = "Year_Semester";
+            this.yearSemesterDataGridViewTextBoxColumn.HeaderText = "Year_Semester";
+            this.yearSemesterDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.yearSemesterDataGridViewTextBoxColumn.Name = "yearSemesterDataGridViewTextBoxColumn";
+            this.yearSemesterDataGridViewTextBoxColumn.Width = 240;
+            // 
+            // programmeDataGridViewTextBoxColumn
+            // 
+            this.programmeDataGridViewTextBoxColumn.DataPropertyName = "Programme";
+            this.programmeDataGridViewTextBoxColumn.HeaderText = "Programme";
+            this.programmeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.programmeDataGridViewTextBoxColumn.Name = "programmeDataGridViewTextBoxColumn";
+            this.programmeDataGridViewTextBoxColumn.Width = 240;
+            // 
+            // groupNoDataGridViewTextBoxColumn
+            // 
+            this.groupNoDataGridViewTextBoxColumn.DataPropertyName = "GroupNo";
+            this.groupNoDataGridViewTextBoxColumn.HeaderText = "GroupNo";
+            this.groupNoDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.groupNoDataGridViewTextBoxColumn.Name = "groupNoDataGridViewTextBoxColumn";
+            this.groupNoDataGridViewTextBoxColumn.Width = 240;
+            // 
+            // groupIDDataGridViewTextBoxColumn
+            // 
+            this.groupIDDataGridViewTextBoxColumn.DataPropertyName = "GroupID";
+            this.groupIDDataGridViewTextBoxColumn.HeaderText = "GroupID";
+            this.groupIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.groupIDDataGridViewTextBoxColumn.Name = "groupIDDataGridViewTextBoxColumn";
+            this.groupIDDataGridViewTextBoxColumn.Width = 240;
+            // 
+            // groupDelete
+            // 
+            this.groupDelete.HeaderText = "Delete";
+            this.groupDelete.MinimumWidth = 6;
+            this.groupDelete.Name = "groupDelete";
+            this.groupDelete.Text = "Delete";
+            this.groupDelete.UseColumnTextForButtonValue = true;
+            this.groupDelete.Width = 240;
             // 
             // Section1_Students
             // 
@@ -875,6 +953,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yearandsemesterBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.programmeBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupNumbersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.programmeBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -922,7 +1001,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox vcmbgn_gn;
+        private System.Windows.Forms.TextBox vtxtgn_gn;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.BindingSource yearandsemesterBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn ysIDDataGridViewTextBoxColumn;
@@ -938,5 +1017,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn proDescriptionDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewButtonColumn proUpdate;
         private System.Windows.Forms.DataGridViewButtonColumn proDelete;
+        private System.Windows.Forms.BindingSource groupNumbersBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn yearSemesterDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn programmeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn groupNoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn groupIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewButtonColumn groupDelete;
     }
 }
