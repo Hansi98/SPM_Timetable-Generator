@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
 namespace ABC_Institute___Timetable_Generator
@@ -14,9 +15,14 @@ namespace ABC_Institute___Timetable_Generator
        
         public MySqlConnection getConnection()
         {
+            try { 
             MySqlConnection con = new MySqlConnection(conString);
             this.con = con;
             this.con.Open();
+            }catch(Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
             return this.con;
 
         }

@@ -9,7 +9,7 @@ namespace ABC_Institute___Timetable_Generator.Models
 {
     class Lecturer
     {
-        private String ID;
+        private string ID;
         private String fName;
         private String MName;
         private String LName;
@@ -17,12 +17,12 @@ namespace ABC_Institute___Timetable_Generator.Models
         private String dept;
         private String center;
         private String building;
-        private int level;
-        private double rank;
+        private string level;
+        private string rank;
 
-        public Lecturer(string iD, string fName, string mName, string lName, string faculty, string dept, string center, string building, int level, double rank)
+        public Lecturer(string fName, string mName, string lName, string faculty, string dept, string center, string building, string level, string rank)
         {
-            ID1 = iD;
+            this.ID = "0";
             this.FName = fName;
             MName = mName;
             LName = lName;
@@ -42,8 +42,8 @@ namespace ABC_Institute___Timetable_Generator.Models
         public string Dept { get => dept; set => dept = value; }
         public string Center { get => center; set => center = value; }
         public string Building { get => building; set => building = value; }
-        public int Level { get => level; set => level = value; }
-        public double Rank { get => rank; set => rank = value; }
+        public string Level { get => level; set => level = value; }
+        public string Rank { get => rank; set => rank = value; }
     }
 
 }

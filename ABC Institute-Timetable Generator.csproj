@@ -57,6 +57,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DBconnection.cs" />
+    <Compile Include="Lecturer.cs" />
+    <Compile Include="LecturerServiceImpl.cs" />
+    <Compile Include="LecturerServicesInt.cs" />
     <Compile Include="Programme.cs" />
     <Compile Include="Section1_addLecturer.cs">
       <SubType>Form</SubType>

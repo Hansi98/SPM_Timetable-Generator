@@ -8,6 +8,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace ABC_Institute___Timetable_Generator.ServiceImpl
 {
@@ -21,13 +22,24 @@ namespace ABC_Institute___Timetable_Generator.ServiceImpl
             
             MySqlCommand mysqlcommand = new MySqlCommand("lecturerAddorEdit",this.con);
             mysqlcommand.CommandType = CommandType.StoredProcedure;
-            mysqlcommand.Parameters.AddWithValue("_",L.FName);
+            mysqlcommand.Parameters.AddWithValue("_Eid", L.ID1);
+            mysqlcommand.Parameters.AddWithValue("_fname", L.FName);
+            mysqlcommand.Parameters.AddWithValue("_mname", L.mName);
+            mysqlcommand.Parameters.AddWithValue("_lname", L.lName);
+            mysqlcommand.Parameters.AddWithValue("_faculty", L.Faculty);
+            mysqlcommand.Parameters.AddWithValue("_dept", L.Dept);
+            mysqlcommand.Parameters.AddWithValue("_center", L.Center);
+            mysqlcommand.Parameters.AddWithValue("_building", L.Building);
+            mysqlcommand.Parameters.AddWithValue("_Llevel", L.Level);
+            mysqlcommand.Parameters.AddWithValue("_Lrank", L.Rank);
             if (mysqlcommand.ExecuteNonQuery() > 1)
             {
+                MessageBox.Show("Lecturer Added Successfully");
                 return true;
             }
             else
             {
+               
                 return false;
             }
 
@@ -46,7 +58,26 @@ namespace ABC_Institute___Timetable_Generator.ServiceImpl
 
         public string getNextEmpID()
         {
-            throw new NotImplementedException();
+
+            MySqlDataAdapter data = new MySqlDataAdapter("lecturerMaxID", this.con);
+            data.SelectCommand.CommandType = CommandType.StoredProcedure;
+            DataTable table = new DataTable();
+            data.Fill(table);
+            int val;
+            try
+            {
+                val = Convert.ToInt32(table.Rows[0][0]) + 1;
+
+            }catch(InvalidCastException e)
+            {
+                return "1";
+            }
+
+                return val.ToString();
+            
+
+
+
         }
 
         public Lecturer getSingleLecturer(string EmpID)
