@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,11 +17,16 @@ namespace ABC_Institute___Timetable_Generator
         string connectionString = @"SERVER=mysql-11768-0.cloudclusters.net;PORT=11776;DATABASE=mydb;UID=chamika;PASSWORD=asd123+++";
         int yearsemID = 0;
         int proID = 0;
+        int groupID = 0;
         public Section1_Students()
         {
             InitializeComponent();
             fillTagGridyearandsem();
             fillTagGridpro();
+            fillTagGridgroup();
+
+
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -245,6 +251,130 @@ namespace ABC_Institute___Timetable_Generator
 
             }
 
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage4_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void vtabControl1_TabIndexChanged(object sender, EventArgs e)
+        {
+
+           
+        }
+
+        private void vtabControl1_Selected(object sender, TabControlEventArgs e)
+        {
+            MySqlConnection cs = new MySqlConnection(connectionString);
+
+            MySqlDataAdapter ysAdapter = new MySqlDataAdapter("SELECT * FROM yearandsemester", cs);
+            MySqlDataAdapter prodapter = new MySqlDataAdapter("SELECT * FROM Programmes", cs);
+
+            DataTable ysDatatable = new DataTable();
+            ysAdapter.Fill(ysDatatable);
+
+            DataTable proDatatable = new DataTable();
+            prodapter.Fill(proDatatable);
+
+            vcmbys_gn.Items.Clear();
+            vcmbys_sgn.Items.Clear();
+            vcmbpro_gn.Items.Clear();
+            vcmbpro_sgn.Items.Clear();
+            for (int i = 0; i < ysDatatable.Rows.Count; i++)
+            {
+                vcmbys_gn.Items.Add(ysDatatable.Rows[i]["ID"]);
+                vcmbys_sgn.Items.Add(ysDatatable.Rows[i]["ID"]);
+            }
+
+            for (int i = 0; i < proDatatable.Rows.Count; i++)
+            {
+                vcmbpro_gn.Items.Add(proDatatable.Rows[i]["proName"]);
+                vcmbpro_sgn.Items.Add(proDatatable.Rows[i]["proName"]);
+            }
+
+        }
+
+        private void vtabControl1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void vbtnAddgroup_Click(object sender, EventArgs e)
+        {
+            using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
+            {
+                mySqlCon.Open();
+                MySqlCommand mySqlCmd = new MySqlCommand("GroupAddorEdit", mySqlCon);
+                mySqlCmd.CommandType = CommandType.StoredProcedure;
+                mySqlCmd.Parameters.AddWithValue("_tID", groupID);
+                mySqlCmd.Parameters.AddWithValue("_Year_Semester", vcmbys_gn.Text.Trim());
+                mySqlCmd.Parameters.AddWithValue("_Programme", vcmbpro_gn.Text.Trim()); 
+                mySqlCmd.Parameters.AddWithValue("_GroupNo", vtxtgn_gn.Text.Trim());
+                mySqlCmd.ExecuteNonQuery();
+
+                cleargroup();
+                fillTagGridgroup();
+                MessageBox.Show(" Added Successfully");
+
+            }
+        }
+        public void cleargroup()
+        {
+            vcmbys_gn.Text = "";
+            vcmbpro_gn.Text = "";
+            vtxtgn_gn.Text = "";
+
+        }
+        public void fillTagGridgroup()
+        {
+            using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
+            {
+                mySqlCon.Open();
+                MySqlDataAdapter sqlDa = new MySqlDataAdapter("GroupViewAll", mySqlCon);
+                sqlDa.SelectCommand.CommandType = CommandType.StoredProcedure;
+                DataTable dataTags = new DataTable();
+                sqlDa.Fill(dataTags);
+                vdataGridgn.DataSource = dataTags;
+            }
+
+        }
+
+        private void vdataGridgn_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (vdataGridgn.Columns[e.ColumnIndex].Name == "groupDelete")// groupDelete
+            {
+                //  vtxtBoxTagName.Text = vdataGridTags.CurrentRow.Cells[1].Value.ToString();
+                //  tagID = Convert.ToInt32(vdataGridTags.CurrentRow.Cells[0].Value.ToString());
+
+
+                groupID = Convert.ToInt32(vdataGridgn.CurrentRow.Cells[0].Value.ToString());
+                using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
+                {
+                    mySqlCon.Open();
+                    MySqlCommand mySqlCmd = new MySqlCommand("GroupDeleteByID", mySqlCon);
+                    mySqlCmd.CommandType = CommandType.StoredProcedure;
+                    mySqlCmd.Parameters.AddWithValue("_tID", groupID);
+                    if (MessageBox.Show("Do you want you delete this?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    {
+                        mySqlCmd.ExecuteNonQuery();
+                    }
+
+                    cleargroup();
+                    fillTagGridgroup();
+                    MessageBox.Show("Deleted Successfully");
+
+                }
+            }
         }
     }
 }
