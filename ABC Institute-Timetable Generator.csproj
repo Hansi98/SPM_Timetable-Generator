@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -36,10 +36,12 @@
     <Reference Include="MetroFramework">
       <HintPath>..\..\..\..\Visual Studio 2019\MetroUI\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
     </Reference>
+
     <Reference Include="MySql.Data, Version=8.0.20.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 8.0.20\Assemblies\v4.5.2\MySql.Data.dll</HintPath>
     </Reference>
+
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
@@ -57,10 +59,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DBconnection.cs" />
-    <Compile Include="Lecturer.cs" />
-    <Compile Include="LecturerServiceImpl.cs" />
-    <Compile Include="LecturerServicesInt.cs" />
+    <Compile Include="GroupNumbers.cs" />
     <Compile Include="Programme.cs" />
     <Compile Include="Section1_addLecturer.cs">
       <SubType>Form</SubType>
@@ -175,6 +174,7 @@
     <EmbeddedResource Include="Section1_viewLecturer.resx">
       <DependentUpon>Section1_viewLecturer.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="GroupNumbers.datasource" />
     <None Include="Programme.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
