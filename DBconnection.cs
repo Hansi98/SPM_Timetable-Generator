@@ -10,7 +10,7 @@ namespace ABC_Institute___Timetable_Generator
 {
     class DBconnection
     {
-        private String conString = @"SERVER=mysql-11768-0.cloudclusters.net;PORT=11776;DATABASE=mydb;UID=chamika;PASSWORD=asd123+++";
+        private String conString = @"SERVER=mysql-11921-0.cloudclusters.net;PORT=11921;DATABASE=mydb;UID=chamika;PASSWORD=asd123+++";
         private MySqlConnection con;
        
         public MySqlConnection getConnection()
@@ -21,7 +21,7 @@ namespace ABC_Institute___Timetable_Generator
             this.con.Open();
             }catch(Exception e)
             {
-                MessageBox.Show(e.Message);
+                MessageBox.Show("Data Connection Error Occured");
             }
             return this.con;
 

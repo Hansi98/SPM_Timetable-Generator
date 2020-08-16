@@ -32,9 +32,9 @@ namespace ABC_Institute___Timetable_Generator.ServiceImpl
             mysqlcommand.Parameters.AddWithValue("_building", L.Building);
             mysqlcommand.Parameters.AddWithValue("_Llevel", L.Level);
             mysqlcommand.Parameters.AddWithValue("_Lrank", L.Rank);
-            if (mysqlcommand.ExecuteNonQuery() > 1)
+            if (mysqlcommand.ExecuteNonQuery() >= 1)
             {
-                MessageBox.Show("Lecturer Added Successfully");
+               
                 return true;
             }
             else
@@ -51,9 +51,33 @@ namespace ABC_Institute___Timetable_Generator.ServiceImpl
             throw new NotImplementedException();
         }
 
-        public ArrayList getAllLecturers()
+        public int getAllCount()
         {
-            throw new NotImplementedException();
+            MySqlDataAdapter data = new MySqlDataAdapter("lecturerGetTotCount", this.con);
+            data.SelectCommand.CommandType = CommandType.StoredProcedure;
+            DataTable table = new DataTable();
+            data.Fill(table);
+            int val;
+            try
+            {
+                val = Convert.ToInt32(table.Rows[0][0])+0;
+
+            }
+            catch (InvalidCastException e)
+            {
+                return 0;
+            }
+
+            return val;
+        }
+
+        public DataTable getAllLecturers()
+        {
+            MySqlDataAdapter data = new MySqlDataAdapter("viewAllLecturers", this.con);
+            data.SelectCommand.CommandType = CommandType.StoredProcedure;
+            DataTable table = new DataTable();
+            data.Fill(table);
+            return table;
         }
 
         public string getNextEmpID()

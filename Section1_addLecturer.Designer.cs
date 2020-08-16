@@ -30,19 +30,14 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.RS1_addLecLevel = new System.Windows.Forms.ComboBox();
-            this.RS1_addLecBuilding = new System.Windows.Forms.TextBox();
-            this.RS1_addLecCenter = new System.Windows.Forms.TextBox();
-            this.RS1_addLecDept = new System.Windows.Forms.TextBox();
-            this.RS1_addLecFac = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.leveladdleclabel = new System.Windows.Forms.Label();
+            this.buildaddleclabel = new System.Windows.Forms.Label();
+            this.centaddleclabel = new System.Windows.Forms.Label();
+            this.deptaddleclabel = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.RS1_addLecCancel = new System.Windows.Forms.Button();
             this.RS1_addLecADD = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.RS1_addLecRank = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.RS1_addLecLName = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -51,27 +46,33 @@
             this.label2 = new System.Windows.Forms.Label();
             this.RS1_addLecFName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.RS1_addLecEmpID = new System.Windows.Forms.TextBox();
+            this.RS1_addLecFac = new System.Windows.Forms.ComboBox();
+            this.RS1_addLecDept = new System.Windows.Forms.ComboBox();
+            this.RS1_addLecRank = new System.Windows.Forms.Label();
+            this.RS1_addLecCenter = new System.Windows.Forms.ComboBox();
+            this.RS1_addLecBuilding = new System.Windows.Forms.ComboBox();
+            this.RS1_addLecEmpID = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel1.Controls.Add(this.RS1_addLecLevel);
+            this.panel1.Controls.Add(this.RS1_addLecEmpID);
             this.panel1.Controls.Add(this.RS1_addLecBuilding);
             this.panel1.Controls.Add(this.RS1_addLecCenter);
+            this.panel1.Controls.Add(this.RS1_addLecRank);
             this.panel1.Controls.Add(this.RS1_addLecDept);
             this.panel1.Controls.Add(this.RS1_addLecFac);
-            this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.RS1_addLecLevel);
+            this.panel1.Controls.Add(this.leveladdleclabel);
+            this.panel1.Controls.Add(this.buildaddleclabel);
+            this.panel1.Controls.Add(this.centaddleclabel);
+            this.panel1.Controls.Add(this.deptaddleclabel);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.RS1_addLecCancel);
             this.panel1.Controls.Add(this.RS1_addLecADD);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.RS1_addLecRank);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.RS1_addLecLName);
             this.panel1.Controls.Add(this.label5);
@@ -80,7 +81,6 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.RS1_addLecFName);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.RS1_addLecEmpID);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -104,78 +104,52 @@
             this.RS1_addLecLevel.Name = "RS1_addLecLevel";
             this.RS1_addLecLevel.Size = new System.Drawing.Size(300, 28);
             this.RS1_addLecLevel.TabIndex = 35;
+            this.RS1_addLecLevel.Visible = false;
+            this.RS1_addLecLevel.SelectedIndexChanged += new System.EventHandler(this.RS1_addLecLevel_SelectedIndexChanged);
             // 
-            // RS1_addLecBuilding
+            // leveladdleclabel
             // 
-            this.RS1_addLecBuilding.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RS1_addLecBuilding.Location = new System.Drawing.Point(27, 476);
-            this.RS1_addLecBuilding.Name = "RS1_addLecBuilding";
-            this.RS1_addLecBuilding.Size = new System.Drawing.Size(304, 29);
-            this.RS1_addLecBuilding.TabIndex = 34;
+            this.leveladdleclabel.AutoSize = true;
+            this.leveladdleclabel.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.leveladdleclabel.Location = new System.Drawing.Point(26, 511);
+            this.leveladdleclabel.Name = "leveladdleclabel";
+            this.leveladdleclabel.Size = new System.Drawing.Size(51, 19);
+            this.leveladdleclabel.TabIndex = 30;
+            this.leveladdleclabel.Text = "Level";
+            this.leveladdleclabel.Visible = false;
             // 
-            // RS1_addLecCenter
+            // buildaddleclabel
             // 
-            this.RS1_addLecCenter.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RS1_addLecCenter.Location = new System.Drawing.Point(27, 425);
-            this.RS1_addLecCenter.Name = "RS1_addLecCenter";
-            this.RS1_addLecCenter.Size = new System.Drawing.Size(304, 29);
-            this.RS1_addLecCenter.TabIndex = 33;
+            this.buildaddleclabel.AutoSize = true;
+            this.buildaddleclabel.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buildaddleclabel.Location = new System.Drawing.Point(26, 456);
+            this.buildaddleclabel.Name = "buildaddleclabel";
+            this.buildaddleclabel.Size = new System.Drawing.Size(72, 19);
+            this.buildaddleclabel.TabIndex = 28;
+            this.buildaddleclabel.Text = "Building";
+            this.buildaddleclabel.Visible = false;
             // 
-            // RS1_addLecDept
+            // centaddleclabel
             // 
-            this.RS1_addLecDept.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RS1_addLecDept.Location = new System.Drawing.Point(27, 370);
-            this.RS1_addLecDept.Name = "RS1_addLecDept";
-            this.RS1_addLecDept.Size = new System.Drawing.Size(304, 29);
-            this.RS1_addLecDept.TabIndex = 32;
+            this.centaddleclabel.AutoSize = true;
+            this.centaddleclabel.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.centaddleclabel.Location = new System.Drawing.Point(26, 402);
+            this.centaddleclabel.Name = "centaddleclabel";
+            this.centaddleclabel.Size = new System.Drawing.Size(60, 19);
+            this.centaddleclabel.TabIndex = 26;
+            this.centaddleclabel.Text = "Center";
+            this.centaddleclabel.Visible = false;
             // 
-            // RS1_addLecFac
+            // deptaddleclabel
             // 
-            this.RS1_addLecFac.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RS1_addLecFac.Location = new System.Drawing.Point(27, 318);
-            this.RS1_addLecFac.Name = "RS1_addLecFac";
-            this.RS1_addLecFac.Size = new System.Drawing.Size(304, 29);
-            this.RS1_addLecFac.TabIndex = 31;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(26, 511);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(51, 19);
-            this.label11.TabIndex = 30;
-            this.label11.Text = "Level";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(26, 456);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(72, 19);
-            this.label10.TabIndex = 28;
-            this.label10.Text = "Building";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(26, 402);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(60, 19);
-            this.label9.TabIndex = 26;
-            this.label9.Text = "Center";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(26, 350);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(101, 19);
-            this.label8.TabIndex = 24;
-            this.label8.Text = "Department";
+            this.deptaddleclabel.AutoSize = true;
+            this.deptaddleclabel.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deptaddleclabel.Location = new System.Drawing.Point(26, 350);
+            this.deptaddleclabel.Name = "deptaddleclabel";
+            this.deptaddleclabel.Size = new System.Drawing.Size(101, 19);
+            this.deptaddleclabel.TabIndex = 24;
+            this.deptaddleclabel.Text = "Department";
+            this.deptaddleclabel.Visible = false;
             // 
             // label7
             // 
@@ -202,6 +176,7 @@
             this.RS1_addLecCancel.Text = "Cancel";
             this.RS1_addLecCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.RS1_addLecCancel.UseVisualStyleBackColor = false;
+            this.RS1_addLecCancel.Click += new System.EventHandler(this.RS1_addLecCancel_Click);
             // 
             // RS1_addLecADD
             // 
@@ -229,14 +204,6 @@
             this.label6.Size = new System.Drawing.Size(49, 19);
             this.label6.TabIndex = 10;
             this.label6.Text = "Rank";
-            // 
-            // RS1_addLecRank
-            // 
-            this.RS1_addLecRank.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RS1_addLecRank.Location = new System.Drawing.Point(27, 589);
-            this.RS1_addLecRank.Name = "RS1_addLecRank";
-            this.RS1_addLecRank.Size = new System.Drawing.Size(304, 29);
-            this.RS1_addLecRank.TabIndex = 9;
             // 
             // label4
             // 
@@ -314,13 +281,89 @@
             this.label1.Text = "Employee ID";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // RS1_addLecFac
+            // 
+            this.RS1_addLecFac.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RS1_addLecFac.FormattingEnabled = true;
+            this.RS1_addLecFac.Items.AddRange(new object[] {
+            "Faculty of Computing",
+            "Faculty of Engineering",
+            "Faculty of Bussiness & Management"});
+            this.RS1_addLecFac.Location = new System.Drawing.Point(27, 319);
+            this.RS1_addLecFac.Name = "RS1_addLecFac";
+            this.RS1_addLecFac.Size = new System.Drawing.Size(300, 28);
+            this.RS1_addLecFac.TabIndex = 36;
+            this.RS1_addLecFac.SelectedIndexChanged += new System.EventHandler(this.RS1_addLecFac_SelectedIndexChanged);
+            // 
+            // RS1_addLecDept
+            // 
+            this.RS1_addLecDept.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RS1_addLecDept.FormattingEnabled = true;
+            this.RS1_addLecDept.Items.AddRange(new object[] {
+            "Faculty of Computing",
+            "Faculty of Engineering",
+            "Faculty of Bussiness & Management"});
+            this.RS1_addLecDept.Location = new System.Drawing.Point(27, 372);
+            this.RS1_addLecDept.Name = "RS1_addLecDept";
+            this.RS1_addLecDept.Size = new System.Drawing.Size(300, 28);
+            this.RS1_addLecDept.TabIndex = 37;
+            this.RS1_addLecDept.Visible = false;
+            this.RS1_addLecDept.SelectedIndexChanged += new System.EventHandler(this.RS1_addLecDept_SelectedIndexChanged);
+            // 
+            // RS1_addLecRank
+            // 
+            this.RS1_addLecRank.AutoSize = true;
+            this.RS1_addLecRank.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RS1_addLecRank.Location = new System.Drawing.Point(28, 594);
+            this.RS1_addLecRank.Name = "RS1_addLecRank";
+            this.RS1_addLecRank.Size = new System.Drawing.Size(51, 20);
+            this.RS1_addLecRank.TabIndex = 38;
+            this.RS1_addLecRank.Text = "Rank";
+            this.RS1_addLecRank.Visible = false;
+            // 
+            // RS1_addLecCenter
+            // 
+            this.RS1_addLecCenter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RS1_addLecCenter.FormattingEnabled = true;
+            this.RS1_addLecCenter.Items.AddRange(new object[] {
+            "Malabe",
+            "Metro",
+            "Kandy"});
+            this.RS1_addLecCenter.Location = new System.Drawing.Point(27, 425);
+            this.RS1_addLecCenter.Name = "RS1_addLecCenter";
+            this.RS1_addLecCenter.Size = new System.Drawing.Size(300, 28);
+            this.RS1_addLecCenter.TabIndex = 39;
+            this.RS1_addLecCenter.Visible = false;
+            this.RS1_addLecCenter.SelectedIndexChanged += new System.EventHandler(this.RS1_addLecCenter_SelectedIndexChanged);
+            // 
+            // RS1_addLecBuilding
+            // 
+            this.RS1_addLecBuilding.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RS1_addLecBuilding.FormattingEnabled = true;
+            this.RS1_addLecBuilding.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"});
+            this.RS1_addLecBuilding.Location = new System.Drawing.Point(27, 478);
+            this.RS1_addLecBuilding.Name = "RS1_addLecBuilding";
+            this.RS1_addLecBuilding.Size = new System.Drawing.Size(300, 28);
+            this.RS1_addLecBuilding.TabIndex = 40;
+            this.RS1_addLecBuilding.Visible = false;
+            // 
             // RS1_addLecEmpID
             // 
-            this.RS1_addLecEmpID.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RS1_addLecEmpID.Location = new System.Drawing.Point(27, 101);
+            this.RS1_addLecEmpID.AutoSize = true;
+            this.RS1_addLecEmpID.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RS1_addLecEmpID.Location = new System.Drawing.Point(28, 100);
             this.RS1_addLecEmpID.Name = "RS1_addLecEmpID";
-            this.RS1_addLecEmpID.Size = new System.Drawing.Size(304, 29);
-            this.RS1_addLecEmpID.TabIndex = 0;
+            this.RS1_addLecEmpID.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.RS1_addLecEmpID.Size = new System.Drawing.Size(26, 20);
+            this.RS1_addLecEmpID.TabIndex = 41;
+            this.RS1_addLecEmpID.Text = "ID";
             // 
             // Section1_addLecturer
             // 
@@ -343,7 +386,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox RS1_addLecEmpID;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox RS1_addLecLName;
         private System.Windows.Forms.Label label5;
@@ -352,18 +394,19 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox RS1_addLecFName;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox RS1_addLecRank;
         private System.Windows.Forms.Button RS1_addLecCancel;
         private System.Windows.Forms.Button RS1_addLecADD;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label leveladdleclabel;
+        private System.Windows.Forms.Label buildaddleclabel;
+        private System.Windows.Forms.Label centaddleclabel;
+        private System.Windows.Forms.Label deptaddleclabel;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox RS1_addLecLevel;
-        private System.Windows.Forms.TextBox RS1_addLecBuilding;
-        private System.Windows.Forms.TextBox RS1_addLecCenter;
-        private System.Windows.Forms.TextBox RS1_addLecDept;
-        private System.Windows.Forms.TextBox RS1_addLecFac;
+        private System.Windows.Forms.ComboBox RS1_addLecFac;
+        private System.Windows.Forms.ComboBox RS1_addLecDept;
+        private System.Windows.Forms.Label RS1_addLecRank;
+        private System.Windows.Forms.ComboBox RS1_addLecBuilding;
+        private System.Windows.Forms.ComboBox RS1_addLecCenter;
+        private System.Windows.Forms.Label RS1_addLecEmpID;
     }
 }
