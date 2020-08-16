@@ -29,13 +29,26 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Section1_WorkingDays));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.HansiWork_tabcontrol = new System.Windows.Forms.TabControl();
             this.HansiWork_daystab = new System.Windows.Forms.TabPage();
-            this.HansiWork_tabledays = new System.Windows.Forms.TableLayoutPanel();
-            this.HansiWork_dayslist = new System.Windows.Forms.CheckedListBox();
+            this.hansiwork_daystable = new System.Windows.Forms.DataGridView();
+            this.wd_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.noOfWd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.workingDays = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Update = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.HansiWork_daysbtnupdate = new System.Windows.Forms.Button();
+            this.hansisuncheckBox = new System.Windows.Forms.CheckBox();
+            this.hansisatcheckBox = new System.Windows.Forms.CheckBox();
+            this.hansifricheckBox = new System.Windows.Forms.CheckBox();
+            this.hansithurscheckBox = new System.Windows.Forms.CheckBox();
+            this.hansiwedcheckBox = new System.Windows.Forms.CheckBox();
+            this.hansituesdaycheckBox = new System.Windows.Forms.CheckBox();
+            this.hansimondaycheckBox = new System.Windows.Forms.CheckBox();
             this.HansiWork_daysno = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.HansiWork_daysbtnadd = new System.Windows.Forms.Button();
@@ -44,17 +57,18 @@
             this.label6 = new System.Windows.Forms.Label();
             this.HansiWork_minutes = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
-            this.HansiWork_timeslots = new System.Windows.Forms.ComboBox();
             this.HansiWork_hourstable = new System.Windows.Forms.TableLayoutPanel();
             this.HansiWork_hours = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.HansiWork_hoursaddbtn = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.btnclose = new System.Windows.Forms.Button();
+            this.hansiwork_hourslots = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.HansiWork_tabcontrol.SuspendLayout();
             this.HansiWork_daystab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hansiwork_daystable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HansiWork_daysno)).BeginInit();
             this.HansiWork_hourstab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.HansiWork_minutes)).BeginInit();
@@ -113,8 +127,15 @@
             // 
             // HansiWork_daystab
             // 
-            this.HansiWork_daystab.Controls.Add(this.HansiWork_tabledays);
-            this.HansiWork_daystab.Controls.Add(this.HansiWork_dayslist);
+            this.HansiWork_daystab.Controls.Add(this.hansiwork_daystable);
+            this.HansiWork_daystab.Controls.Add(this.HansiWork_daysbtnupdate);
+            this.HansiWork_daystab.Controls.Add(this.hansisuncheckBox);
+            this.HansiWork_daystab.Controls.Add(this.hansisatcheckBox);
+            this.HansiWork_daystab.Controls.Add(this.hansifricheckBox);
+            this.HansiWork_daystab.Controls.Add(this.hansithurscheckBox);
+            this.HansiWork_daystab.Controls.Add(this.hansiwedcheckBox);
+            this.HansiWork_daystab.Controls.Add(this.hansituesdaycheckBox);
+            this.HansiWork_daystab.Controls.Add(this.hansimondaycheckBox);
             this.HansiWork_daystab.Controls.Add(this.HansiWork_daysno);
             this.HansiWork_daystab.Controls.Add(this.label1);
             this.HansiWork_daystab.Controls.Add(this.HansiWork_daysbtnadd);
@@ -128,45 +149,174 @@
             this.HansiWork_daystab.Text = "Working Days";
             this.HansiWork_daystab.UseVisualStyleBackColor = true;
             // 
-            // HansiWork_tabledays
+            // hansiwork_daystable
             // 
-            this.HansiWork_tabledays.BackColor = System.Drawing.Color.DarkGray;
-            this.HansiWork_tabledays.ColumnCount = 5;
-            this.HansiWork_tabledays.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.851F));
-            this.HansiWork_tabledays.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.149F));
-            this.HansiWork_tabledays.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 177F));
-            this.HansiWork_tabledays.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 155F));
-            this.HansiWork_tabledays.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 21F));
-            this.HansiWork_tabledays.Location = new System.Drawing.Point(55, 212);
-            this.HansiWork_tabledays.Name = "HansiWork_tabledays";
-            this.HansiWork_tabledays.RowCount = 2;
-            this.HansiWork_tabledays.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.HansiWork_tabledays.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.HansiWork_tabledays.Size = new System.Drawing.Size(676, 100);
-            this.HansiWork_tabledays.TabIndex = 6;
-            this.HansiWork_tabledays.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
+            this.hansiwork_daystable.AllowUserToAddRows = false;
+            this.hansiwork_daystable.AllowUserToDeleteRows = false;
+            this.hansiwork_daystable.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.hansiwork_daystable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.hansiwork_daystable.ColumnHeadersHeight = 35;
+            this.hansiwork_daystable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.hansiwork_daystable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.wd_ID,
+            this.noOfWd,
+            this.workingDays,
+            this.Update,
+            this.Delete});
+            this.hansiwork_daystable.Location = new System.Drawing.Point(15, 201);
+            this.hansiwork_daystable.Name = "hansiwork_daystable";
+            this.hansiwork_daystable.ReadOnly = true;
+            this.hansiwork_daystable.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.hansiwork_daystable.Size = new System.Drawing.Size(726, 150);
+            this.hansiwork_daystable.TabIndex = 15;
+            this.hansiwork_daystable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.hansiwork_daystable_CellContentClick);
             // 
-            // HansiWork_dayslist
+            // wd_ID
             // 
-            this.HansiWork_dayslist.FormattingEnabled = true;
-            this.HansiWork_dayslist.Items.AddRange(new object[] {
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday",
-            "Sunday"});
-            this.HansiWork_dayslist.Location = new System.Drawing.Point(390, 71);
-            this.HansiWork_dayslist.Name = "HansiWork_dayslist";
-            this.HansiWork_dayslist.Size = new System.Drawing.Size(160, 58);
-            this.HansiWork_dayslist.TabIndex = 5;
+            this.wd_ID.DataPropertyName = "wdID";
+            this.wd_ID.HeaderText = "Working Days ID";
+            this.wd_ID.Name = "wd_ID";
+            this.wd_ID.ReadOnly = true;
+            this.wd_ID.Width = 150;
+            // 
+            // noOfWd
+            // 
+            this.noOfWd.DataPropertyName = "noOfWd";
+            this.noOfWd.HeaderText = "No of Working Days";
+            this.noOfWd.Name = "noOfWd";
+            this.noOfWd.ReadOnly = true;
+            this.noOfWd.Width = 150;
+            // 
+            // workingDays
+            // 
+            this.workingDays.DataPropertyName = "workingDays";
+            this.workingDays.HeaderText = "Working Days";
+            this.workingDays.MinimumWidth = 6;
+            this.workingDays.Name = "workingDays";
+            this.workingDays.ReadOnly = true;
+            this.workingDays.Width = 300;
+            // 
+            // Update
+            // 
+            this.Update.HeaderText = "Update";
+            this.Update.Name = "Update";
+            this.Update.ReadOnly = true;
+            this.Update.Text = "Update";
+            this.Update.UseColumnTextForButtonValue = true;
+            // 
+            // Delete
+            // 
+            this.Delete.HeaderText = "Delete";
+            this.Delete.Name = "Delete";
+            this.Delete.ReadOnly = true;
+            this.Delete.Text = "Delete";
+            this.Delete.UseColumnTextForButtonValue = true;
+            // 
+            // HansiWork_daysbtnupdate
+            // 
+            this.HansiWork_daysbtnupdate.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.HansiWork_daysbtnupdate.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.HansiWork_daysbtnupdate.Location = new System.Drawing.Point(390, 153);
+            this.HansiWork_daysbtnupdate.Margin = new System.Windows.Forms.Padding(2);
+            this.HansiWork_daysbtnupdate.Name = "HansiWork_daysbtnupdate";
+            this.HansiWork_daysbtnupdate.Size = new System.Drawing.Size(113, 32);
+            this.HansiWork_daysbtnupdate.TabIndex = 3;
+            this.HansiWork_daysbtnupdate.Text = "UPDATE";
+            this.HansiWork_daysbtnupdate.UseVisualStyleBackColor = false;
+            this.HansiWork_daysbtnupdate.Click += new System.EventHandler(this.HansiWork_daysbtnupdate_Click);
+            // 
+            // hansisuncheckBox
+            // 
+            this.hansisuncheckBox.AutoSize = true;
+            this.hansisuncheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hansisuncheckBox.Location = new System.Drawing.Point(610, 59);
+            this.hansisuncheckBox.Name = "hansisuncheckBox";
+            this.hansisuncheckBox.Size = new System.Drawing.Size(76, 22);
+            this.hansisuncheckBox.TabIndex = 14;
+            this.hansisuncheckBox.Text = "Sunday";
+            this.hansisuncheckBox.UseVisualStyleBackColor = true;
+            // 
+            // hansisatcheckBox
+            // 
+            this.hansisatcheckBox.AutoSize = true;
+            this.hansisatcheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hansisatcheckBox.Location = new System.Drawing.Point(493, 108);
+            this.hansisatcheckBox.Name = "hansisatcheckBox";
+            this.hansisatcheckBox.Size = new System.Drawing.Size(85, 22);
+            this.hansisatcheckBox.TabIndex = 13;
+            this.hansisatcheckBox.Text = "Saturday";
+            this.hansisatcheckBox.UseVisualStyleBackColor = true;
+            // 
+            // hansifricheckBox
+            // 
+            this.hansifricheckBox.AutoSize = true;
+            this.hansifricheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hansifricheckBox.Location = new System.Drawing.Point(493, 81);
+            this.hansifricheckBox.Name = "hansifricheckBox";
+            this.hansifricheckBox.Size = new System.Drawing.Size(67, 22);
+            this.hansifricheckBox.TabIndex = 12;
+            this.hansifricheckBox.Text = "Friday";
+            this.hansifricheckBox.UseVisualStyleBackColor = true;
+            // 
+            // hansithurscheckBox
+            // 
+            this.hansithurscheckBox.AutoSize = true;
+            this.hansithurscheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hansithurscheckBox.Location = new System.Drawing.Point(493, 59);
+            this.hansithurscheckBox.Name = "hansithurscheckBox";
+            this.hansithurscheckBox.Size = new System.Drawing.Size(88, 22);
+            this.hansithurscheckBox.TabIndex = 11;
+            this.hansithurscheckBox.Text = "Thursday";
+            this.hansithurscheckBox.UseVisualStyleBackColor = true;
+            // 
+            // hansiwedcheckBox
+            // 
+            this.hansiwedcheckBox.AutoSize = true;
+            this.hansiwedcheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hansiwedcheckBox.Location = new System.Drawing.Point(372, 110);
+            this.hansiwedcheckBox.Name = "hansiwedcheckBox";
+            this.hansiwedcheckBox.Size = new System.Drawing.Size(97, 22);
+            this.hansiwedcheckBox.TabIndex = 10;
+            this.hansiwedcheckBox.Text = "Wednsday";
+            this.hansiwedcheckBox.UseVisualStyleBackColor = true;
+            // 
+            // hansituesdaycheckBox
+            // 
+            this.hansituesdaycheckBox.AutoSize = true;
+            this.hansituesdaycheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hansituesdaycheckBox.Location = new System.Drawing.Point(372, 83);
+            this.hansituesdaycheckBox.Name = "hansituesdaycheckBox";
+            this.hansituesdaycheckBox.Size = new System.Drawing.Size(83, 22);
+            this.hansituesdaycheckBox.TabIndex = 9;
+            this.hansituesdaycheckBox.Text = "Tuesday";
+            this.hansituesdaycheckBox.UseVisualStyleBackColor = true;
+            // 
+            // hansimondaycheckBox
+            // 
+            this.hansimondaycheckBox.AutoSize = true;
+            this.hansimondaycheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hansimondaycheckBox.Location = new System.Drawing.Point(372, 59);
+            this.hansimondaycheckBox.Name = "hansimondaycheckBox";
+            this.hansimondaycheckBox.Size = new System.Drawing.Size(80, 22);
+            this.hansimondaycheckBox.TabIndex = 8;
+            this.hansimondaycheckBox.Text = "Monday";
+            this.hansimondaycheckBox.UseVisualStyleBackColor = true;
             // 
             // HansiWork_daysno
             // 
-            this.HansiWork_daysno.Location = new System.Drawing.Point(390, 30);
+            this.HansiWork_daysno.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HansiWork_daysno.Location = new System.Drawing.Point(372, 29);
             this.HansiWork_daysno.Name = "HansiWork_daysno";
-            this.HansiWork_daysno.Size = new System.Drawing.Size(120, 23);
+            this.HansiWork_daysno.Size = new System.Drawing.Size(120, 24);
             this.HansiWork_daysno.TabIndex = 4;
             // 
             // label1
@@ -174,7 +324,7 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(255, 85);
+            this.label1.Location = new System.Drawing.Point(221, 83);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(104, 19);
@@ -185,20 +335,21 @@
             // 
             this.HansiWork_daysbtnadd.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.HansiWork_daysbtnadd.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.HansiWork_daysbtnadd.Location = new System.Drawing.Point(341, 152);
+            this.HansiWork_daysbtnadd.Location = new System.Drawing.Point(246, 153);
             this.HansiWork_daysbtnadd.Margin = new System.Windows.Forms.Padding(2);
             this.HansiWork_daysbtnadd.Name = "HansiWork_daysbtnadd";
-            this.HansiWork_daysbtnadd.Size = new System.Drawing.Size(74, 32);
+            this.HansiWork_daysbtnadd.Size = new System.Drawing.Size(113, 32);
             this.HansiWork_daysbtnadd.TabIndex = 2;
             this.HansiWork_daysbtnadd.Text = "ADD";
             this.HansiWork_daysbtnadd.UseVisualStyleBackColor = false;
+            this.HansiWork_daysbtnadd.Click += new System.EventHandler(this.HansiWork_daysbtnadd_Click);
             // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(120, 33);
+            this.label2.Location = new System.Drawing.Point(86, 33);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(239, 19);
@@ -208,10 +359,10 @@
             // 
             // HansiWork_hourstab
             // 
+            this.HansiWork_hourstab.Controls.Add(this.hansiwork_hourslots);
             this.HansiWork_hourstab.Controls.Add(this.label6);
             this.HansiWork_hourstab.Controls.Add(this.HansiWork_minutes);
             this.HansiWork_hourstab.Controls.Add(this.label5);
-            this.HansiWork_hourstab.Controls.Add(this.HansiWork_timeslots);
             this.HansiWork_hourstab.Controls.Add(this.HansiWork_hourstable);
             this.HansiWork_hourstab.Controls.Add(this.HansiWork_hours);
             this.HansiWork_hourstab.Controls.Add(this.label3);
@@ -231,7 +382,7 @@
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Tai Le", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(516, 47);
+            this.label6.Location = new System.Drawing.Point(534, 47);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(40, 19);
@@ -251,27 +402,13 @@
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Tai Le", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(432, 46);
+            this.label5.Location = new System.Drawing.Point(450, 46);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(17, 19);
             this.label5.TabIndex = 13;
             this.label5.Text = "h";
             this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // HansiWork_timeslots
-            // 
-            this.HansiWork_timeslots.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.HansiWork_timeslots.FormattingEnabled = true;
-            this.HansiWork_timeslots.Items.AddRange(new object[] {
-            "1h time slot",
-            "30 mins time slot"});
-            this.HansiWork_timeslots.Location = new System.Drawing.Point(370, 91);
-            this.HansiWork_timeslots.Margin = new System.Windows.Forms.Padding(2);
-            this.HansiWork_timeslots.Name = "HansiWork_timeslots";
-            this.HansiWork_timeslots.Size = new System.Drawing.Size(226, 25);
-            this.HansiWork_timeslots.TabIndex = 12;
-            this.HansiWork_timeslots.SelectedIndexChanged += new System.EventHandler(this.HansiWork_timeslots_SelectedIndexChanged);
             // 
             // HansiWork_hourstable
             // 
@@ -280,7 +417,7 @@
             this.HansiWork_hourstable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.851F));
             this.HansiWork_hourstable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.149F));
             this.HansiWork_hourstable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 177F));
-            this.HansiWork_hourstable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 156F));
+            this.HansiWork_hourstable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 158F));
             this.HansiWork_hourstable.Location = new System.Drawing.Point(51, 206);
             this.HansiWork_hourstable.Name = "HansiWork_hourstable";
             this.HansiWork_hourstable.RowCount = 2;
@@ -345,6 +482,13 @@
             this.btnclose.UseVisualStyleBackColor = true;
             this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
             // 
+            // hansiwork_hourslots
+            // 
+            this.hansiwork_hourslots.Location = new System.Drawing.Point(388, 93);
+            this.hansiwork_hourslots.Name = "hansiwork_hourslots";
+            this.hansiwork_hourslots.Size = new System.Drawing.Size(186, 23);
+            this.hansiwork_hourslots.TabIndex = 16;
+            // 
             // Section1_WorkingDays
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -360,6 +504,7 @@
             this.HansiWork_tabcontrol.ResumeLayout(false);
             this.HansiWork_daystab.ResumeLayout(false);
             this.HansiWork_daystab.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hansiwork_daystable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HansiWork_daysno)).EndInit();
             this.HansiWork_hourstab.ResumeLayout(false);
             this.HansiWork_hourstab.PerformLayout();
@@ -378,20 +523,32 @@
         private System.Windows.Forms.Button HansiWork_daysbtnadd;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TabPage HansiWork_hourstab;
-        private System.Windows.Forms.CheckedListBox HansiWork_dayslist;
         private System.Windows.Forms.NumericUpDown HansiWork_daysno;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TableLayoutPanel HansiWork_tabledays;
         private System.Windows.Forms.TableLayoutPanel HansiWork_hourstable;
         private System.Windows.Forms.NumericUpDown HansiWork_hours;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button HansiWork_hoursaddbtn;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox HansiWork_timeslots;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.NumericUpDown HansiWork_minutes;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.CheckBox hansisuncheckBox;
+        private System.Windows.Forms.CheckBox hansisatcheckBox;
+        private System.Windows.Forms.CheckBox hansifricheckBox;
+        private System.Windows.Forms.CheckBox hansithurscheckBox;
+        private System.Windows.Forms.CheckBox hansiwedcheckBox;
+        private System.Windows.Forms.CheckBox hansituesdaycheckBox;
+        private System.Windows.Forms.CheckBox hansimondaycheckBox;
+        private System.Windows.Forms.Button HansiWork_daysbtnupdate;
+        private System.Windows.Forms.DataGridView hansiwork_daystable;
+        private System.Windows.Forms.DataGridViewTextBoxColumn wd_ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn noOfWd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn workingDays;
+        private System.Windows.Forms.DataGridViewButtonColumn Update;
+        private System.Windows.Forms.DataGridViewButtonColumn Delete;
+        private System.Windows.Forms.TextBox hansiwork_hourslots;
     }
 }
