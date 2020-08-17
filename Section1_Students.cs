@@ -19,6 +19,7 @@ namespace ABC_Institute___Timetable_Generator
         int proID = 0;
         int groupID = 0;
         int sgID = 0;
+        
 
         public Section1_Students()
         {
@@ -422,5 +423,33 @@ namespace ABC_Institute___Timetable_Generator
 
         }
 
+        private void vgatagridSG_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (vgatagridSG.Columns[e.ColumnIndex].Name == "subGroupDelete")// groupDelete
+            {
+                //  vtxtBoxTagName.Text = vdataGridTags.CurrentRow.Cells[1].Value.ToString();
+                //  tagID = Convert.ToInt32(vdataGridTags.CurrentRow.Cells[0].Value.ToString());
+
+
+                sgID = Convert.ToInt32(vgatagridSG.CurrentRow.Cells[0].Value.ToString());
+                using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
+                {
+                    mySqlCon.Open();
+                    MySqlCommand mySqlCmd = new MySqlCommand("SubGroupDeleteByID", mySqlCon);
+                    mySqlCmd.CommandType = CommandType.StoredProcedure;
+                    mySqlCmd.Parameters.AddWithValue("_sgID", sgID);
+                    if (MessageBox.Show("Do you want you delete this?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    {
+                        mySqlCmd.ExecuteNonQuery();
+                    }
+
+                    clearsubgroup();
+                    fillTagGridsubgroup();
+                    MessageBox.Show("Deleted Successfully");
+
+                }
+            }
+        }
+    
     }
 }
