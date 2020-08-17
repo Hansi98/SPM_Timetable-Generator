@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Section1_Statistics));
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
@@ -38,35 +37,36 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Section1_Statistics));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.nishikistatimg = new System.Windows.Forms.PictureBox();
-            this.btnclose = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.nishikiDstatistics_lectab = new System.Windows.Forms.TabPage();
-            this.nishikiDstatistics_subtab = new System.Windows.Forms.TabPage();
-            this.nishikiDstatistics_studentstab = new System.Windows.Forms.TabPage();
+            this.nishikiDstatistics_lecchart = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.nishikiDstatistics_leccmb = new System.Windows.Forms.ComboBox();
             this.nishikiDstatistics_lec_btnsubmit = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.nishikiDstatistics_leccmb = new System.Windows.Forms.ComboBox();
-            this.nishikiDstatistics_lecchart = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.nishikiDstatistics_subtab = new System.Windows.Forms.TabPage();
             this.nishikiDstatistics_subchart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.nishikiDstatistics_subjectscmb = new System.Windows.Forms.ComboBox();
             this.nishikiDstatistics_sub_btnsubmit = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.nishikiDstatistics_studentstab = new System.Windows.Forms.TabPage();
             this.nishikiDstatistics_studentschart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.nishikiDstatistics_studentscmb = new System.Windows.Forms.ComboBox();
             this.nishikiDstatistics_students_btnsubmit = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.nishikistatimg = new System.Windows.Forms.PictureBox();
+            this.btnclose = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nishikistatimg)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.nishikiDstatistics_lectab.SuspendLayout();
-            this.nishikiDstatistics_subtab.SuspendLayout();
-            this.nishikiDstatistics_studentstab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nishikiDstatistics_lecchart)).BeginInit();
+            this.nishikiDstatistics_subtab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nishikiDstatistics_subchart)).BeginInit();
+            this.nishikiDstatistics_studentstab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nishikiDstatistics_studentschart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nishikistatimg)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -81,39 +81,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1044, 607);
             this.panel1.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(104, 33);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 29);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Location";
-            // 
-            // nishikistatimg
-            // 
-            this.nishikistatimg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.nishikistatimg.Image = ((System.Drawing.Image)(resources.GetObject("nishikistatimg.Image")));
-            this.nishikistatimg.Location = new System.Drawing.Point(21, 12);
-            this.nishikistatimg.Name = "nishikistatimg";
-            this.nishikistatimg.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.nishikistatimg.Size = new System.Drawing.Size(77, 69);
-            this.nishikistatimg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.nishikistatimg.TabIndex = 5;
-            this.nishikistatimg.TabStop = false;
-            // 
-            // btnclose
-            // 
-            this.btnclose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnclose.Location = new System.Drawing.Point(982, 12);
-            this.btnclose.Name = "btnclose";
-            this.btnclose.Size = new System.Drawing.Size(50, 36);
-            this.btnclose.TabIndex = 4;
-            this.btnclose.Text = "X";
-            this.btnclose.UseVisualStyleBackColor = true;
-            this.btnclose.Click += new System.EventHandler(this.Btnclose_Click);
             // 
             // tabControl1
             // 
@@ -145,66 +112,6 @@
             this.nishikiDstatistics_lectab.Text = "Lecturers";
             this.nishikiDstatistics_lectab.UseVisualStyleBackColor = true;
             // 
-            // nishikiDstatistics_subtab
-            // 
-            this.nishikiDstatistics_subtab.Controls.Add(this.nishikiDstatistics_subchart);
-            this.nishikiDstatistics_subtab.Controls.Add(this.nishikiDstatistics_subjectscmb);
-            this.nishikiDstatistics_subtab.Controls.Add(this.nishikiDstatistics_sub_btnsubmit);
-            this.nishikiDstatistics_subtab.Controls.Add(this.label2);
-            this.nishikiDstatistics_subtab.Location = new System.Drawing.Point(4, 32);
-            this.nishikiDstatistics_subtab.Name = "nishikiDstatistics_subtab";
-            this.nishikiDstatistics_subtab.Padding = new System.Windows.Forms.Padding(3);
-            this.nishikiDstatistics_subtab.Size = new System.Drawing.Size(1003, 448);
-            this.nishikiDstatistics_subtab.TabIndex = 1;
-            this.nishikiDstatistics_subtab.Text = "Subjects";
-            this.nishikiDstatistics_subtab.UseVisualStyleBackColor = true;
-            // 
-            // nishikiDstatistics_studentstab
-            // 
-            this.nishikiDstatistics_studentstab.Controls.Add(this.nishikiDstatistics_studentschart);
-            this.nishikiDstatistics_studentstab.Controls.Add(this.nishikiDstatistics_studentscmb);
-            this.nishikiDstatistics_studentstab.Controls.Add(this.nishikiDstatistics_students_btnsubmit);
-            this.nishikiDstatistics_studentstab.Controls.Add(this.label3);
-            this.nishikiDstatistics_studentstab.Location = new System.Drawing.Point(4, 32);
-            this.nishikiDstatistics_studentstab.Name = "nishikiDstatistics_studentstab";
-            this.nishikiDstatistics_studentstab.Padding = new System.Windows.Forms.Padding(3);
-            this.nishikiDstatistics_studentstab.Size = new System.Drawing.Size(1003, 448);
-            this.nishikiDstatistics_studentstab.TabIndex = 2;
-            this.nishikiDstatistics_studentstab.Text = "Students";
-            this.nishikiDstatistics_studentstab.UseVisualStyleBackColor = true;
-            // 
-            // nishikiDstatistics_lec_btnsubmit
-            // 
-            this.nishikiDstatistics_lec_btnsubmit.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.nishikiDstatistics_lec_btnsubmit.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.nishikiDstatistics_lec_btnsubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nishikiDstatistics_lec_btnsubmit.Location = new System.Drawing.Point(657, 23);
-            this.nishikiDstatistics_lec_btnsubmit.Name = "nishikiDstatistics_lec_btnsubmit";
-            this.nishikiDstatistics_lec_btnsubmit.Size = new System.Drawing.Size(138, 47);
-            this.nishikiDstatistics_lec_btnsubmit.TabIndex = 19;
-            this.nishikiDstatistics_lec_btnsubmit.Text = "SUBMIT";
-            this.nishikiDstatistics_lec_btnsubmit.UseVisualStyleBackColor = false;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(196, 34);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(109, 22);
-            this.label4.TabIndex = 18;
-            this.label4.Text = "Lectueres by:";
-            // 
-            // nishikiDstatistics_leccmb
-            // 
-            this.nishikiDstatistics_leccmb.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.nishikiDstatistics_leccmb.FormattingEnabled = true;
-            this.nishikiDstatistics_leccmb.Location = new System.Drawing.Point(335, 32);
-            this.nishikiDstatistics_leccmb.Name = "nishikiDstatistics_leccmb";
-            this.nishikiDstatistics_leccmb.Size = new System.Drawing.Size(301, 27);
-            this.nishikiDstatistics_leccmb.TabIndex = 20;
-            // 
             // nishikiDstatistics_lecchart
             // 
             this.nishikiDstatistics_lecchart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -218,11 +125,63 @@
             this.nishikiDstatistics_lecchart.Name = "nishikiDstatistics_lecchart";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
-            series1.Name = "Series1";
+            series1.Name = "Faculty";
             this.nishikiDstatistics_lecchart.Series.Add(series1);
             this.nishikiDstatistics_lecchart.Size = new System.Drawing.Size(734, 335);
             this.nishikiDstatistics_lecchart.TabIndex = 21;
             this.nishikiDstatistics_lecchart.Text = "chart1";
+            // 
+            // nishikiDstatistics_leccmb
+            // 
+            this.nishikiDstatistics_leccmb.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.nishikiDstatistics_leccmb.FormattingEnabled = true;
+            this.nishikiDstatistics_leccmb.Items.AddRange(new object[] {
+            "Faculty",
+            "Center",
+            "Department",
+            "Level"});
+            this.nishikiDstatistics_leccmb.Location = new System.Drawing.Point(335, 32);
+            this.nishikiDstatistics_leccmb.Name = "nishikiDstatistics_leccmb";
+            this.nishikiDstatistics_leccmb.Size = new System.Drawing.Size(301, 27);
+            this.nishikiDstatistics_leccmb.TabIndex = 20;
+            // 
+            // nishikiDstatistics_lec_btnsubmit
+            // 
+            this.nishikiDstatistics_lec_btnsubmit.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.nishikiDstatistics_lec_btnsubmit.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.nishikiDstatistics_lec_btnsubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nishikiDstatistics_lec_btnsubmit.Location = new System.Drawing.Point(657, 23);
+            this.nishikiDstatistics_lec_btnsubmit.Name = "nishikiDstatistics_lec_btnsubmit";
+            this.nishikiDstatistics_lec_btnsubmit.Size = new System.Drawing.Size(138, 47);
+            this.nishikiDstatistics_lec_btnsubmit.TabIndex = 19;
+            this.nishikiDstatistics_lec_btnsubmit.Text = "SUBMIT";
+            this.nishikiDstatistics_lec_btnsubmit.UseVisualStyleBackColor = false;
+            this.nishikiDstatistics_lec_btnsubmit.Click += new System.EventHandler(this.NishikiDstatistics_lec_btnsubmit_Click);
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(196, 34);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(109, 22);
+            this.label4.TabIndex = 18;
+            this.label4.Text = "Lectueres by:";
+            // 
+            // nishikiDstatistics_subtab
+            // 
+            this.nishikiDstatistics_subtab.Controls.Add(this.nishikiDstatistics_subchart);
+            this.nishikiDstatistics_subtab.Controls.Add(this.nishikiDstatistics_subjectscmb);
+            this.nishikiDstatistics_subtab.Controls.Add(this.nishikiDstatistics_sub_btnsubmit);
+            this.nishikiDstatistics_subtab.Controls.Add(this.label2);
+            this.nishikiDstatistics_subtab.Location = new System.Drawing.Point(4, 32);
+            this.nishikiDstatistics_subtab.Name = "nishikiDstatistics_subtab";
+            this.nishikiDstatistics_subtab.Padding = new System.Windows.Forms.Padding(3);
+            this.nishikiDstatistics_subtab.Size = new System.Drawing.Size(1003, 448);
+            this.nishikiDstatistics_subtab.TabIndex = 1;
+            this.nishikiDstatistics_subtab.Text = "Subjects";
+            this.nishikiDstatistics_subtab.UseVisualStyleBackColor = true;
             // 
             // nishikiDstatistics_subchart
             // 
@@ -275,6 +234,20 @@
             this.label2.TabIndex = 22;
             this.label2.Text = "Subjects by:";
             // 
+            // nishikiDstatistics_studentstab
+            // 
+            this.nishikiDstatistics_studentstab.Controls.Add(this.nishikiDstatistics_studentschart);
+            this.nishikiDstatistics_studentstab.Controls.Add(this.nishikiDstatistics_studentscmb);
+            this.nishikiDstatistics_studentstab.Controls.Add(this.nishikiDstatistics_students_btnsubmit);
+            this.nishikiDstatistics_studentstab.Controls.Add(this.label3);
+            this.nishikiDstatistics_studentstab.Location = new System.Drawing.Point(4, 32);
+            this.nishikiDstatistics_studentstab.Name = "nishikiDstatistics_studentstab";
+            this.nishikiDstatistics_studentstab.Padding = new System.Windows.Forms.Padding(3);
+            this.nishikiDstatistics_studentstab.Size = new System.Drawing.Size(1003, 448);
+            this.nishikiDstatistics_studentstab.TabIndex = 2;
+            this.nishikiDstatistics_studentstab.Text = "Students";
+            this.nishikiDstatistics_studentstab.UseVisualStyleBackColor = true;
+            // 
             // nishikiDstatistics_studentschart
             // 
             this.nishikiDstatistics_studentschart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -326,6 +299,39 @@
             this.label3.TabIndex = 22;
             this.label3.Text = "Students by:";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(104, 33);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(112, 29);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Location";
+            // 
+            // nishikistatimg
+            // 
+            this.nishikistatimg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.nishikistatimg.Image = ((System.Drawing.Image)(resources.GetObject("nishikistatimg.Image")));
+            this.nishikistatimg.Location = new System.Drawing.Point(21, 12);
+            this.nishikistatimg.Name = "nishikistatimg";
+            this.nishikistatimg.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.nishikistatimg.Size = new System.Drawing.Size(77, 69);
+            this.nishikistatimg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.nishikistatimg.TabIndex = 5;
+            this.nishikistatimg.TabStop = false;
+            // 
+            // btnclose
+            // 
+            this.btnclose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnclose.Location = new System.Drawing.Point(982, 12);
+            this.btnclose.Name = "btnclose";
+            this.btnclose.Size = new System.Drawing.Size(50, 36);
+            this.btnclose.TabIndex = 4;
+            this.btnclose.Text = "X";
+            this.btnclose.UseVisualStyleBackColor = true;
+            this.btnclose.Click += new System.EventHandler(this.Btnclose_Click);
+            // 
             // Section1_Statistics
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -337,17 +343,17 @@
             this.Text = "Section1_Statistics";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nishikistatimg)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.nishikiDstatistics_lectab.ResumeLayout(false);
             this.nishikiDstatistics_lectab.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nishikiDstatistics_lecchart)).EndInit();
             this.nishikiDstatistics_subtab.ResumeLayout(false);
             this.nishikiDstatistics_subtab.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nishikiDstatistics_subchart)).EndInit();
             this.nishikiDstatistics_studentstab.ResumeLayout(false);
             this.nishikiDstatistics_studentstab.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nishikiDstatistics_lecchart)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nishikiDstatistics_subchart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nishikiDstatistics_studentschart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nishikistatimg)).EndInit();
             this.ResumeLayout(false);
 
         }
