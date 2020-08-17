@@ -63,6 +63,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.vdataGridgn = new System.Windows.Forms.DataGridView();
+            this.groupDelete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.vtxtgn_gn = new System.Windows.Forms.TextBox();
             this.vcmbpro_gn = new System.Windows.Forms.ComboBox();
             this.vcmbys_gn = new System.Windows.Forms.ComboBox();
@@ -73,7 +74,8 @@
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.label12 = new System.Windows.Forms.Label();
             this.vcmbgn_sgn = new System.Windows.Forms.ComboBox();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.vgatagridSG = new System.Windows.Forms.DataGridView();
+            this.subGroupDelete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.vtxtsgn_sgn = new System.Windows.Forms.TextBox();
             this.vcmbpro_sgn = new System.Windows.Forms.ComboBox();
             this.vcmbys_sgn = new System.Windows.Forms.ComboBox();
@@ -93,14 +95,20 @@
             this.proNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.proDescriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.programmeBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.groupNumbersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.programmeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.yearSemesterDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.programmeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.groupDelete = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.groupNumbersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sgIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.yearSemesterDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.programmeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupNoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subGroupNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subGroupNumberBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.programmeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.vtabControl1.SuspendLayout();
@@ -111,11 +119,12 @@
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.vdataGridgn)).BeginInit();
             this.tabPage5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vgatagridSG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yearandsemesterBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.programmeBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupNumbersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.subGroupNumberBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.programmeBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -372,7 +381,7 @@
             this.vdataGridpro.Name = "vdataGridpro";
             this.vdataGridpro.RowHeadersWidth = 51;
             this.vdataGridpro.RowTemplate.Height = 24;
-            this.vdataGridpro.Size = new System.Drawing.Size(919, 1532);
+            this.vdataGridpro.Size = new System.Drawing.Size(919, 1602);
             this.vdataGridpro.TabIndex = 24;
             this.vdataGridpro.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -529,6 +538,15 @@
             this.vdataGridgn.TabIndex = 27;
             this.vdataGridgn.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.vdataGridgn_CellContentClick);
             // 
+            // groupDelete
+            // 
+            this.groupDelete.HeaderText = "Delete";
+            this.groupDelete.MinimumWidth = 6;
+            this.groupDelete.Name = "groupDelete";
+            this.groupDelete.Text = "Delete";
+            this.groupDelete.UseColumnTextForButtonValue = true;
+            this.groupDelete.Width = 240;
+            // 
             // vtxtgn_gn
             // 
             this.vtxtgn_gn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -617,7 +635,7 @@
             // 
             this.tabPage5.Controls.Add(this.label12);
             this.tabPage5.Controls.Add(this.vcmbgn_sgn);
-            this.tabPage5.Controls.Add(this.dataGridView3);
+            this.tabPage5.Controls.Add(this.vgatagridSG);
             this.tabPage5.Controls.Add(this.vtxtsgn_sgn);
             this.tabPage5.Controls.Add(this.vcmbpro_sgn);
             this.tabPage5.Controls.Add(this.vcmbys_sgn);
@@ -652,17 +670,28 @@
             this.vcmbgn_sgn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.vcmbgn_sgn.FormattingEnabled = true;
+            this.vcmbgn_sgn.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"});
             this.vcmbgn_sgn.Location = new System.Drawing.Point(243, 91);
             this.vcmbgn_sgn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.vcmbgn_sgn.Name = "vcmbgn_sgn";
             this.vcmbgn_sgn.Size = new System.Drawing.Size(375, 24);
             this.vcmbgn_sgn.TabIndex = 36;
             // 
-            // dataGridView3
+            // vgatagridSG
             // 
-            this.dataGridView3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.vgatagridSG.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.vgatagridSG.AutoGenerateColumns = false;
             dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -670,8 +699,17 @@
             dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.vgatagridSG.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.vgatagridSG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.vgatagridSG.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.sgIDDataGridViewTextBoxColumn,
+            this.yearSemesterDataGridViewTextBoxColumn1,
+            this.programmeDataGridViewTextBoxColumn1,
+            this.groupNoDataGridViewTextBoxColumn1,
+            this.subGroupNoDataGridViewTextBoxColumn,
+            this.groupIDDataGridViewTextBoxColumn1,
+            this.subGroupDelete});
+            this.vgatagridSG.DataSource = this.subGroupNumberBindingSource;
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -679,14 +717,24 @@
             dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView3.DefaultCellStyle = dataGridViewCellStyle8;
-            this.dataGridView3.Location = new System.Drawing.Point(24, 170);
-            this.dataGridView3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.RowHeadersWidth = 51;
-            this.dataGridView3.RowTemplate.Height = 24;
-            this.dataGridView3.Size = new System.Drawing.Size(919, 276);
-            this.dataGridView3.TabIndex = 35;
+            this.vgatagridSG.DefaultCellStyle = dataGridViewCellStyle8;
+            this.vgatagridSG.Location = new System.Drawing.Point(24, 170);
+            this.vgatagridSG.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.vgatagridSG.Name = "vgatagridSG";
+            this.vgatagridSG.RowHeadersWidth = 51;
+            this.vgatagridSG.RowTemplate.Height = 24;
+            this.vgatagridSG.Size = new System.Drawing.Size(919, 276);
+            this.vgatagridSG.TabIndex = 35;
+            // 
+            // subGroupDelete
+            // 
+            this.subGroupDelete.DataPropertyName = "sgID";
+            this.subGroupDelete.HeaderText = "Delete";
+            this.subGroupDelete.MinimumWidth = 6;
+            this.subGroupDelete.Name = "subGroupDelete";
+            this.subGroupDelete.Text = "Delete";
+            this.subGroupDelete.UseColumnTextForButtonValue = true;
+            this.subGroupDelete.Width = 125;
             // 
             // vtxtsgn_sgn
             // 
@@ -733,6 +781,7 @@
             this.button2.TabIndex = 31;
             this.button2.Text = "Add details";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label6
             // 
@@ -867,14 +916,6 @@
             // 
             this.programmeBindingSource1.DataSource = typeof(ABC_Institute___Timetable_Generator.Programme);
             // 
-            // groupNumbersBindingSource
-            // 
-            this.groupNumbersBindingSource.DataSource = typeof(ABC_Institute___Timetable_Generator.GroupNumbers);
-            // 
-            // programmeBindingSource
-            // 
-            this.programmeBindingSource.DataSource = typeof(ABC_Institute___Timetable_Generator.Programme);
-            // 
             // tIDDataGridViewTextBoxColumn
             // 
             this.tIDDataGridViewTextBoxColumn.DataPropertyName = "tID";
@@ -915,14 +956,65 @@
             this.groupIDDataGridViewTextBoxColumn.Name = "groupIDDataGridViewTextBoxColumn";
             this.groupIDDataGridViewTextBoxColumn.Width = 240;
             // 
-            // groupDelete
+            // groupNumbersBindingSource
             // 
-            this.groupDelete.HeaderText = "Delete";
-            this.groupDelete.MinimumWidth = 6;
-            this.groupDelete.Name = "groupDelete";
-            this.groupDelete.Text = "Delete";
-            this.groupDelete.UseColumnTextForButtonValue = true;
-            this.groupDelete.Width = 240;
+            this.groupNumbersBindingSource.DataSource = typeof(ABC_Institute___Timetable_Generator.GroupNumbers);
+            // 
+            // sgIDDataGridViewTextBoxColumn
+            // 
+            this.sgIDDataGridViewTextBoxColumn.DataPropertyName = "sgID";
+            this.sgIDDataGridViewTextBoxColumn.HeaderText = "sgID";
+            this.sgIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.sgIDDataGridViewTextBoxColumn.Name = "sgIDDataGridViewTextBoxColumn";
+            this.sgIDDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // yearSemesterDataGridViewTextBoxColumn1
+            // 
+            this.yearSemesterDataGridViewTextBoxColumn1.DataPropertyName = "Year_Semester";
+            this.yearSemesterDataGridViewTextBoxColumn1.HeaderText = "Year_Semester";
+            this.yearSemesterDataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.yearSemesterDataGridViewTextBoxColumn1.Name = "yearSemesterDataGridViewTextBoxColumn1";
+            this.yearSemesterDataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // programmeDataGridViewTextBoxColumn1
+            // 
+            this.programmeDataGridViewTextBoxColumn1.DataPropertyName = "Programme";
+            this.programmeDataGridViewTextBoxColumn1.HeaderText = "Programme";
+            this.programmeDataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.programmeDataGridViewTextBoxColumn1.Name = "programmeDataGridViewTextBoxColumn1";
+            this.programmeDataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // groupNoDataGridViewTextBoxColumn1
+            // 
+            this.groupNoDataGridViewTextBoxColumn1.DataPropertyName = "GroupNo";
+            this.groupNoDataGridViewTextBoxColumn1.HeaderText = "GroupNo";
+            this.groupNoDataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.groupNoDataGridViewTextBoxColumn1.Name = "groupNoDataGridViewTextBoxColumn1";
+            this.groupNoDataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // subGroupNoDataGridViewTextBoxColumn
+            // 
+            this.subGroupNoDataGridViewTextBoxColumn.DataPropertyName = "SubGroupNo";
+            this.subGroupNoDataGridViewTextBoxColumn.HeaderText = "SubGroupNo";
+            this.subGroupNoDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.subGroupNoDataGridViewTextBoxColumn.Name = "subGroupNoDataGridViewTextBoxColumn";
+            this.subGroupNoDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // groupIDDataGridViewTextBoxColumn1
+            // 
+            this.groupIDDataGridViewTextBoxColumn1.DataPropertyName = "GroupID";
+            this.groupIDDataGridViewTextBoxColumn1.HeaderText = "GroupID";
+            this.groupIDDataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.groupIDDataGridViewTextBoxColumn1.Name = "groupIDDataGridViewTextBoxColumn1";
+            this.groupIDDataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // subGroupNumberBindingSource
+            // 
+            this.subGroupNumberBindingSource.DataSource = typeof(ABC_Institute___Timetable_Generator.SubGroupNumber);
+            // 
+            // programmeBindingSource
+            // 
+            this.programmeBindingSource.DataSource = typeof(ABC_Institute___Timetable_Generator.Programme);
             // 
             // Section1_Students
             // 
@@ -949,11 +1041,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.vdataGridgn)).EndInit();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vgatagridSG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yearandsemesterBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.programmeBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupNumbersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.subGroupNumberBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.programmeBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -993,7 +1086,7 @@
         private System.Windows.Forms.ComboBox vcmbys_gn;
         private System.Windows.Forms.DataGridView vdataGridgn;
         private System.Windows.Forms.ComboBox vcmbgn_sgn;
-        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.DataGridView vgatagridSG;
         private System.Windows.Forms.TextBox vtxtsgn_sgn;
         private System.Windows.Forms.ComboBox vcmbpro_sgn;
         private System.Windows.Forms.ComboBox vcmbys_sgn;
@@ -1024,5 +1117,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn groupNoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn groupIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewButtonColumn groupDelete;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sgIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn yearSemesterDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn programmeDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn groupNoDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn subGroupNoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn groupIDDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewButtonColumn subGroupDelete;
+        private System.Windows.Forms.BindingSource subGroupNumberBindingSource;
     }
 }

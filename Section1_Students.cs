@@ -14,16 +14,19 @@ namespace ABC_Institute___Timetable_Generator
 {
     public partial class Section1_Students : Form
     {
-        string connectionString = @"SERVER=mysql-11768-0.cloudclusters.net;PORT=11776;DATABASE=mydb;UID=chamika;PASSWORD=asd123+++";
+        string connectionString = @"SERVER=mysql-11921-0.cloudclusters.net;PORT=11921;DATABASE=mydb;UID=chamika;PASSWORD=asd123+++";
         int yearsemID = 0;
         int proID = 0;
         int groupID = 0;
+        int sgID = 0;
+
         public Section1_Students()
         {
             InitializeComponent();
             fillTagGridyearandsem();
             fillTagGridpro();
             fillTagGridgroup();
+            fillTagGridsubgroup();
 
 
 
@@ -376,5 +379,48 @@ namespace ABC_Institute___Timetable_Generator
                 }
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
+            {
+                mySqlCon.Open();
+                MySqlCommand mySqlCmd = new MySqlCommand("SubGroupAddorEdit", mySqlCon);
+                mySqlCmd.CommandType = CommandType.StoredProcedure;
+                mySqlCmd.Parameters.AddWithValue("_sgID", sgID);
+                mySqlCmd.Parameters.AddWithValue("_Year_Semester", vcmbys_sgn.Text.Trim());
+                mySqlCmd.Parameters.AddWithValue("_Programme", vcmbpro_sgn.Text.Trim());
+                mySqlCmd.Parameters.AddWithValue("_GroupNo", vcmbgn_sgn.Text.Trim());
+                mySqlCmd.Parameters.AddWithValue("_SubGroupNo", vtxtsgn_sgn.Text.Trim());
+                mySqlCmd.ExecuteNonQuery();
+
+                clearsubgroup();
+                fillTagGridsubgroup();
+                MessageBox.Show(" Added Successfully");
+
+            }
+        }
+        public void clearsubgroup()
+        {
+            vcmbys_sgn.Text = "";
+            vcmbpro_sgn.Text = "";
+            vcmbgn_sgn.Text = "";
+            vtxtsgn_sgn.Text = "";
+
+        }
+        public void fillTagGridsubgroup()
+        {
+            using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
+            {
+                mySqlCon.Open();
+                MySqlDataAdapter sqlDa = new MySqlDataAdapter("SubGroupViewAll", mySqlCon);
+                sqlDa.SelectCommand.CommandType = CommandType.StoredProcedure;
+                DataTable dataTags = new DataTable();
+                sqlDa.Fill(dataTags);
+                vgatagridSG.DataSource = dataTags;
+            }
+
+        }
+
     }
 }

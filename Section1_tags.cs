@@ -14,7 +14,7 @@ namespace ABC_Institute___Timetable_Generator
     public partial class Section1_tags : Form
     {
 
-        string connectionString = @"SERVER=mysql-11768-0.cloudclusters.net;PORT=11776;DATABASE=mydb;UID=chamika;PASSWORD=asd123+++";
+        string connectionString = @"SERVER=mysql-11921-0.cloudclusters.net;PORT=11921;DATABASE=mydb;UID=chamika;PASSWORD=asd123+++";
         int tagID = 0;
         public Section1_tags()
         {
