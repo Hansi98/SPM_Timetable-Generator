@@ -61,7 +61,7 @@ namespace ABC_Institute___Timetable_Generator
 
         private void Homebtnlocations_Click(object sender, EventArgs e)
         {
-            openchildform(new Section1_Location());
+            //openchildform(new Section1_Location());
         }
 
         private void Homebtntimetables_Click(object sender, EventArgs e)
