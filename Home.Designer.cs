@@ -91,7 +91,9 @@
             this.panelslidebar.Location = new System.Drawing.Point(0, 0);
             this.panelslidebar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelslidebar.Name = "panelslidebar";
+
             this.panelslidebar.Size = new System.Drawing.Size(259, 485);
+
             this.panelslidebar.TabIndex = 0;
             // 
             // homebtnstatistics
@@ -102,10 +104,12 @@
             this.homebtnstatistics.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumTurquoise;
             this.homebtnstatistics.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.homebtnstatistics.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
             this.homebtnstatistics.Location = new System.Drawing.Point(0, 414);
             this.homebtnstatistics.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.homebtnstatistics.Name = "homebtnstatistics";
             this.homebtnstatistics.Size = new System.Drawing.Size(259, 69);
+
             this.homebtnstatistics.TabIndex = 6;
             this.homebtnstatistics.Text = "Statistics";
             this.homebtnstatistics.UseVisualStyleBackColor = true;
@@ -119,10 +123,12 @@
             this.homebtnlocations.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumTurquoise;
             this.homebtnlocations.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.homebtnlocations.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
             this.homebtnlocations.Location = new System.Drawing.Point(0, 345);
             this.homebtnlocations.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.homebtnlocations.Name = "homebtnlocations";
             this.homebtnlocations.Size = new System.Drawing.Size(259, 69);
+
             this.homebtnlocations.TabIndex = 5;
             this.homebtnlocations.Text = "Locations";
             this.homebtnlocations.UseVisualStyleBackColor = true;
@@ -136,10 +142,12 @@
             this.homebtntags.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumTurquoise;
             this.homebtntags.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.homebtntags.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
             this.homebtntags.Location = new System.Drawing.Point(0, 276);
             this.homebtntags.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.homebtntags.Name = "homebtntags";
             this.homebtntags.Size = new System.Drawing.Size(259, 69);
+
             this.homebtntags.TabIndex = 4;
             this.homebtntags.Text = "Tags";
             this.homebtntags.UseVisualStyleBackColor = true;
@@ -153,10 +161,12 @@
             this.homebtnstudents.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumTurquoise;
             this.homebtnstudents.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.homebtnstudents.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
             this.homebtnstudents.Location = new System.Drawing.Point(0, 207);
             this.homebtnstudents.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.homebtnstudents.Name = "homebtnstudents";
             this.homebtnstudents.Size = new System.Drawing.Size(259, 69);
+
             this.homebtnstudents.TabIndex = 3;
             this.homebtnstudents.Text = "Students";
             this.homebtnstudents.UseVisualStyleBackColor = true;
@@ -170,10 +180,12 @@
             this.homebtnsubjects.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumTurquoise;
             this.homebtnsubjects.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.homebtnsubjects.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
             this.homebtnsubjects.Location = new System.Drawing.Point(0, 138);
             this.homebtnsubjects.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.homebtnsubjects.Name = "homebtnsubjects";
             this.homebtnsubjects.Size = new System.Drawing.Size(259, 69);
+
             this.homebtnsubjects.TabIndex = 2;
             this.homebtnsubjects.Text = "Subjects";
             this.homebtnsubjects.UseVisualStyleBackColor = true;
@@ -187,10 +199,12 @@
             this.homebtnlecturers.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumTurquoise;
             this.homebtnlecturers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.homebtnlecturers.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
             this.homebtnlecturers.Location = new System.Drawing.Point(0, 69);
             this.homebtnlecturers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.homebtnlecturers.Name = "homebtnlecturers";
             this.homebtnlecturers.Size = new System.Drawing.Size(259, 69);
+
             this.homebtnlecturers.TabIndex = 1;
             this.homebtnlecturers.Text = "Lecturers";
             this.homebtnlecturers.UseVisualStyleBackColor = true;
@@ -207,7 +221,9 @@
             this.homebtnworkingdnh.Location = new System.Drawing.Point(0, 0);
             this.homebtnworkingdnh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.homebtnworkingdnh.Name = "homebtnworkingdnh";
+
             this.homebtnworkingdnh.Size = new System.Drawing.Size(259, 69);
+
             this.homebtnworkingdnh.TabIndex = 0;
             this.homebtnworkingdnh.Text = "Working days and hours";
             this.homebtnworkingdnh.UseVisualStyleBackColor = true;
@@ -215,14 +231,14 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+
             this.pictureBox1.Location = new System.Drawing.Point(336, 78);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(571, 480);
+
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -232,6 +248,7 @@
             this.homenavbtndetails.BackColor = System.Drawing.Color.MediumTurquoise;
             this.homenavbtndetails.Dock = System.Windows.Forms.DockStyle.Fill;
             this.homenavbtndetails.FlatAppearance.BorderSize = 0;
+            this.homenavbtndetails.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.homenavbtndetails.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.homenavbtndetails.Location = new System.Drawing.Point(3, 2);
             this.homenavbtndetails.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -247,6 +264,7 @@
             this.homenavbtnsessions.BackColor = System.Drawing.Color.MediumTurquoise;
             this.homenavbtnsessions.Dock = System.Windows.Forms.DockStyle.Fill;
             this.homenavbtnsessions.FlatAppearance.BorderSize = 0;
+            this.homenavbtnsessions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.homenavbtnsessions.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.homenavbtnsessions.Location = new System.Drawing.Point(303, 2);
             this.homenavbtnsessions.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -262,6 +280,7 @@
             this.homenavbtntimetables.BackColor = System.Drawing.Color.MediumTurquoise;
             this.homenavbtntimetables.Dock = System.Windows.Forms.DockStyle.Fill;
             this.homenavbtntimetables.FlatAppearance.BorderSize = 0;
+            this.homenavbtntimetables.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.homenavbtntimetables.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.homenavbtntimetables.Location = new System.Drawing.Point(903, 2);
             this.homenavbtntimetables.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -277,6 +296,7 @@
             this.homenavbtnlocations.BackColor = System.Drawing.Color.MediumTurquoise;
             this.homenavbtnlocations.Dock = System.Windows.Forms.DockStyle.Fill;
             this.homenavbtnlocations.FlatAppearance.BorderSize = 0;
+            this.homenavbtnlocations.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.homenavbtnlocations.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.homenavbtnlocations.Location = new System.Drawing.Point(603, 2);
             this.homenavbtnlocations.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -325,6 +345,8 @@
             this.ClientSize = new System.Drawing.Size(1201, 724);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelnav);
+
+
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Home";
             this.Text = "ABC Institute - Timetable Generator";

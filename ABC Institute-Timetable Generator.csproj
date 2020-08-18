@@ -249,6 +249,8 @@
     <None Include="img\refresh_26px.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="img\abclogo-removebg-preview.ico" />
+    <Content Include="img\abclogo-removebg-preview.png" />
     <Content Include="img\circle-round-userinterface-place-pin-location-512.png" />
     <Content Include="img\revenue-icon-png-17.jpg" />
   </ItemGroup>
