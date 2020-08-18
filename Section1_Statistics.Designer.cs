@@ -28,37 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend12 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea13 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend13 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea14 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend14 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea15 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend15 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series15 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend9 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend10 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Section1_Statistics));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea16 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend16 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series16 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea17 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend17 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series17 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea18 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend18 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series18 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea19 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend19 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series19 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea20 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend20 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series20 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend11 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.nishikiLocationtabControl = new System.Windows.Forms.TabControl();
@@ -78,9 +78,6 @@
             this.nishikileclvlchart_btn = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.nishikiDstatistics_subtab = new System.Windows.Forms.TabPage();
-            this.nishikiDstatistics_studentstab = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
-            this.nishikistatimg = new System.Windows.Forms.PictureBox();
             this.nishikisubjectstabcontrol = new System.Windows.Forms.TabControl();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.nishikisubhrschart = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -94,6 +91,7 @@
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.nishikisubevalchart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.nishikibtnloadeval = new System.Windows.Forms.Button();
+            this.nishikiDstatistics_studentstab = new System.Windows.Forms.TabPage();
             this.nishikistudentstabcontrol = new System.Windows.Forms.TabControl();
             this.tabPage9 = new System.Windows.Forms.TabPage();
             this.nishikistudyearchart = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -101,6 +99,8 @@
             this.tabPage10 = new System.Windows.Forms.TabPage();
             this.nishikistudentprogrammechart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.nishikistudprogrammebtn = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.nishikistatimg = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.nishikiLocationtabControl.SuspendLayout();
             this.nishikiDstatistics_lectab.SuspendLayout();
@@ -114,8 +114,6 @@
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nishikilvllec_chart)).BeginInit();
             this.nishikiDstatistics_subtab.SuspendLayout();
-            this.nishikiDstatistics_studentstab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nishikistatimg)).BeginInit();
             this.nishikisubjectstabcontrol.SuspendLayout();
             this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nishikisubhrschart)).BeginInit();
@@ -125,11 +123,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.nishikisublabchart)).BeginInit();
             this.tabPage8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nishikisubevalchart)).BeginInit();
+            this.nishikiDstatistics_studentstab.SuspendLayout();
             this.nishikistudentstabcontrol.SuspendLayout();
             this.tabPage9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nishikistudyearchart)).BeginInit();
             this.tabPage10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nishikistudentprogrammechart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nishikistatimg)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -218,16 +218,16 @@
             this.nishikifacultylec_chart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea12.Name = "ChartArea1";
-            this.nishikifacultylec_chart.ChartAreas.Add(chartArea12);
-            legend12.Name = "Legend1";
-            this.nishikifacultylec_chart.Legends.Add(legend12);
+            chartArea1.Name = "ChartArea1";
+            this.nishikifacultylec_chart.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.nishikifacultylec_chart.Legends.Add(legend1);
             this.nishikifacultylec_chart.Location = new System.Drawing.Point(179, 51);
             this.nishikifacultylec_chart.Name = "nishikifacultylec_chart";
-            series12.ChartArea = "ChartArea1";
-            series12.Legend = "Legend1";
-            series12.Name = "Faculty";
-            this.nishikifacultylec_chart.Series.Add(series12);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Faculty";
+            this.nishikifacultylec_chart.Series.Add(series1);
             this.nishikifacultylec_chart.Size = new System.Drawing.Size(650, 471);
             this.nishikifacultylec_chart.TabIndex = 21;
             this.nishikifacultylec_chart.Text = "chart1";
@@ -262,18 +262,18 @@
             this.nishikicenterlec_chart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea13.Name = "ChartArea1";
-            this.nishikicenterlec_chart.ChartAreas.Add(chartArea13);
-            legend13.Name = "Legend1";
-            this.nishikicenterlec_chart.Legends.Add(legend13);
+            chartArea2.Name = "ChartArea1";
+            this.nishikicenterlec_chart.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.nishikicenterlec_chart.Legends.Add(legend2);
             this.nishikicenterlec_chart.Location = new System.Drawing.Point(133, 37);
             this.nishikicenterlec_chart.Name = "nishikicenterlec_chart";
             this.nishikicenterlec_chart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            series13.ChartArea = "ChartArea1";
-            series13.Legend = "Legend1";
-            series13.Name = "Center";
-            this.nishikicenterlec_chart.Series.Add(series13);
-            this.nishikicenterlec_chart.Size = new System.Drawing.Size(650, 474);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Center";
+            this.nishikicenterlec_chart.Series.Add(series2);
+            this.nishikicenterlec_chart.Size = new System.Drawing.Size(650, 477);
             this.nishikicenterlec_chart.TabIndex = 23;
             this.nishikicenterlec_chart.Text = "chart1";
             // 
@@ -307,18 +307,18 @@
             this.nishikideptlec_chart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea14.Name = "ChartArea1";
-            this.nishikideptlec_chart.ChartAreas.Add(chartArea14);
-            legend14.Name = "Legend1";
-            this.nishikideptlec_chart.Legends.Add(legend14);
+            chartArea3.Name = "ChartArea1";
+            this.nishikideptlec_chart.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.nishikideptlec_chart.Legends.Add(legend3);
             this.nishikideptlec_chart.Location = new System.Drawing.Point(133, 37);
             this.nishikideptlec_chart.Name = "nishikideptlec_chart";
             this.nishikideptlec_chart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
-            series14.ChartArea = "ChartArea1";
-            series14.Legend = "Legend1";
-            series14.Name = "Department";
-            this.nishikideptlec_chart.Series.Add(series14);
-            this.nishikideptlec_chart.Size = new System.Drawing.Size(668, 474);
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Department";
+            this.nishikideptlec_chart.Series.Add(series3);
+            this.nishikideptlec_chart.Size = new System.Drawing.Size(668, 477);
             this.nishikideptlec_chart.TabIndex = 23;
             this.nishikideptlec_chart.Text = "chart1";
             // 
@@ -352,18 +352,18 @@
             this.nishikilvllec_chart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea15.Name = "ChartArea1";
-            this.nishikilvllec_chart.ChartAreas.Add(chartArea15);
-            legend15.Name = "Legend1";
-            this.nishikilvllec_chart.Legends.Add(legend15);
+            chartArea4.Name = "ChartArea1";
+            this.nishikilvllec_chart.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.nishikilvllec_chart.Legends.Add(legend4);
             this.nishikilvllec_chart.Location = new System.Drawing.Point(133, 37);
             this.nishikilvllec_chart.Name = "nishikilvllec_chart";
             this.nishikilvllec_chart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate;
-            series15.ChartArea = "ChartArea1";
-            series15.Legend = "Legend1";
-            series15.Name = "Level";
-            this.nishikilvllec_chart.Series.Add(series15);
-            this.nishikilvllec_chart.Size = new System.Drawing.Size(650, 474);
+            series4.ChartArea = "ChartArea1";
+            series4.Legend = "Legend1";
+            series4.Name = "Level";
+            this.nishikilvllec_chart.Series.Add(series4);
+            this.nishikilvllec_chart.Size = new System.Drawing.Size(650, 477);
             this.nishikilvllec_chart.TabIndex = 23;
             this.nishikilvllec_chart.Text = "chart1";
             // 
@@ -402,39 +402,6 @@
             this.nishikiDstatistics_subtab.Text = "Subjects";
             this.nishikiDstatistics_subtab.UseVisualStyleBackColor = true;
             // 
-            // nishikiDstatistics_studentstab
-            // 
-            this.nishikiDstatistics_studentstab.Controls.Add(this.nishikistudentstabcontrol);
-            this.nishikiDstatistics_studentstab.Location = new System.Drawing.Point(4, 32);
-            this.nishikiDstatistics_studentstab.Name = "nishikiDstatistics_studentstab";
-            this.nishikiDstatistics_studentstab.Padding = new System.Windows.Forms.Padding(3);
-            this.nishikiDstatistics_studentstab.Size = new System.Drawing.Size(1150, 615);
-            this.nishikiDstatistics_studentstab.TabIndex = 2;
-            this.nishikiDstatistics_studentstab.Text = "Students";
-            this.nishikiDstatistics_studentstab.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(104, 33);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 29);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Location";
-            // 
-            // nishikistatimg
-            // 
-            this.nishikistatimg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.nishikistatimg.Image = ((System.Drawing.Image)(resources.GetObject("nishikistatimg.Image")));
-            this.nishikistatimg.Location = new System.Drawing.Point(21, 12);
-            this.nishikistatimg.Name = "nishikistatimg";
-            this.nishikistatimg.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.nishikistatimg.Size = new System.Drawing.Size(77, 69);
-            this.nishikistatimg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.nishikistatimg.TabIndex = 5;
-            this.nishikistatimg.TabStop = false;
-            // 
             // nishikisubjectstabcontrol
             // 
             this.nishikisubjectstabcontrol.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -468,16 +435,16 @@
             this.nishikisubhrschart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea16.Name = "ChartArea1";
-            this.nishikisubhrschart.ChartAreas.Add(chartArea16);
-            legend16.Name = "Legend1";
-            this.nishikisubhrschart.Legends.Add(legend16);
+            chartArea5.Name = "ChartArea1";
+            this.nishikisubhrschart.ChartAreas.Add(chartArea5);
+            legend5.Name = "Legend1";
+            this.nishikisubhrschart.Legends.Add(legend5);
             this.nishikisubhrschart.Location = new System.Drawing.Point(179, 51);
             this.nishikisubhrschart.Name = "nishikisubhrschart";
-            series16.ChartArea = "ChartArea1";
-            series16.Legend = "Legend1";
-            series16.Name = "Hours";
-            this.nishikisubhrschart.Series.Add(series16);
+            series5.ChartArea = "ChartArea1";
+            series5.Legend = "Legend1";
+            series5.Name = "Hours";
+            this.nishikisubhrschart.Series.Add(series5);
             this.nishikisubhrschart.Size = new System.Drawing.Size(650, 471);
             this.nishikisubhrschart.TabIndex = 21;
             this.nishikisubhrschart.Text = "chart1";
@@ -512,18 +479,18 @@
             this.nishikisubtutechart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea17.Name = "ChartArea1";
-            this.nishikisubtutechart.ChartAreas.Add(chartArea17);
-            legend17.Name = "Legend1";
-            this.nishikisubtutechart.Legends.Add(legend17);
+            chartArea6.Name = "ChartArea1";
+            this.nishikisubtutechart.ChartAreas.Add(chartArea6);
+            legend6.Name = "Legend1";
+            this.nishikisubtutechart.Legends.Add(legend6);
             this.nishikisubtutechart.Location = new System.Drawing.Point(133, 37);
             this.nishikisubtutechart.Name = "nishikisubtutechart";
             this.nishikisubtutechart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            series17.ChartArea = "ChartArea1";
-            series17.Legend = "Legend1";
-            series17.Name = "Hours";
-            this.nishikisubtutechart.Series.Add(series17);
-            this.nishikisubtutechart.Size = new System.Drawing.Size(650, 474);
+            series6.ChartArea = "ChartArea1";
+            series6.Legend = "Legend1";
+            series6.Name = "Hours";
+            this.nishikisubtutechart.Series.Add(series6);
+            this.nishikisubtutechart.Size = new System.Drawing.Size(650, 477);
             this.nishikisubtutechart.TabIndex = 23;
             this.nishikisubtutechart.Text = "chart1";
             // 
@@ -557,18 +524,18 @@
             this.nishikisublabchart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea18.Name = "ChartArea1";
-            this.nishikisublabchart.ChartAreas.Add(chartArea18);
-            legend18.Name = "Legend1";
-            this.nishikisublabchart.Legends.Add(legend18);
+            chartArea7.Name = "ChartArea1";
+            this.nishikisublabchart.ChartAreas.Add(chartArea7);
+            legend7.Name = "Legend1";
+            this.nishikisublabchart.Legends.Add(legend7);
             this.nishikisublabchart.Location = new System.Drawing.Point(133, 37);
             this.nishikisublabchart.Name = "nishikisublabchart";
             this.nishikisublabchart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
-            series18.ChartArea = "ChartArea1";
-            series18.Legend = "Legend1";
-            series18.Name = "Hours";
-            this.nishikisublabchart.Series.Add(series18);
-            this.nishikisublabchart.Size = new System.Drawing.Size(668, 474);
+            series7.ChartArea = "ChartArea1";
+            series7.Legend = "Legend1";
+            series7.Name = "Hours";
+            this.nishikisublabchart.Series.Add(series7);
+            this.nishikisublabchart.Size = new System.Drawing.Size(668, 477);
             this.nishikisublabchart.TabIndex = 23;
             this.nishikisublabchart.Text = "chart1";
             // 
@@ -602,18 +569,18 @@
             this.nishikisubevalchart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea19.Name = "ChartArea1";
-            this.nishikisubevalchart.ChartAreas.Add(chartArea19);
-            legend19.Name = "Legend1";
-            this.nishikisubevalchart.Legends.Add(legend19);
+            chartArea8.Name = "ChartArea1";
+            this.nishikisubevalchart.ChartAreas.Add(chartArea8);
+            legend8.Name = "Legend1";
+            this.nishikisubevalchart.Legends.Add(legend8);
             this.nishikisubevalchart.Location = new System.Drawing.Point(133, 37);
             this.nishikisubevalchart.Name = "nishikisubevalchart";
             this.nishikisubevalchart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate;
-            series19.ChartArea = "ChartArea1";
-            series19.Legend = "Legend1";
-            series19.Name = "Hours";
-            this.nishikisubevalchart.Series.Add(series19);
-            this.nishikisubevalchart.Size = new System.Drawing.Size(650, 474);
+            series8.ChartArea = "ChartArea1";
+            series8.Legend = "Legend1";
+            series8.Name = "Hours";
+            this.nishikisubevalchart.Series.Add(series8);
+            this.nishikisubevalchart.Size = new System.Drawing.Size(650, 477);
             this.nishikisubevalchart.TabIndex = 23;
             this.nishikisubevalchart.Text = "chart1";
             // 
@@ -629,6 +596,17 @@
             this.nishikibtnloadeval.Text = "LOAD";
             this.nishikibtnloadeval.UseVisualStyleBackColor = false;
             this.nishikibtnloadeval.Click += new System.EventHandler(this.Nishikibtnloadeval_Click);
+            // 
+            // nishikiDstatistics_studentstab
+            // 
+            this.nishikiDstatistics_studentstab.Controls.Add(this.nishikistudentstabcontrol);
+            this.nishikiDstatistics_studentstab.Location = new System.Drawing.Point(4, 32);
+            this.nishikiDstatistics_studentstab.Name = "nishikiDstatistics_studentstab";
+            this.nishikiDstatistics_studentstab.Padding = new System.Windows.Forms.Padding(3);
+            this.nishikiDstatistics_studentstab.Size = new System.Drawing.Size(1150, 615);
+            this.nishikiDstatistics_studentstab.TabIndex = 2;
+            this.nishikiDstatistics_studentstab.Text = "Students";
+            this.nishikiDstatistics_studentstab.UseVisualStyleBackColor = true;
             // 
             // nishikistudentstabcontrol
             // 
@@ -661,16 +639,16 @@
             this.nishikistudyearchart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea20.Name = "ChartArea1";
-            this.nishikistudyearchart.ChartAreas.Add(chartArea20);
-            legend20.Name = "Legend1";
-            this.nishikistudyearchart.Legends.Add(legend20);
+            chartArea9.Name = "ChartArea1";
+            this.nishikistudyearchart.ChartAreas.Add(chartArea9);
+            legend9.Name = "Legend1";
+            this.nishikistudyearchart.Legends.Add(legend9);
             this.nishikistudyearchart.Location = new System.Drawing.Point(179, 51);
             this.nishikistudyearchart.Name = "nishikistudyearchart";
-            series20.ChartArea = "ChartArea1";
-            series20.Legend = "Legend1";
-            series20.Name = "year";
-            this.nishikistudyearchart.Series.Add(series20);
+            series9.ChartArea = "ChartArea1";
+            series9.Legend = "Legend1";
+            series9.Name = "year";
+            this.nishikistudyearchart.Series.Add(series9);
             this.nishikistudyearchart.Size = new System.Drawing.Size(650, 471);
             this.nishikistudyearchart.TabIndex = 21;
             this.nishikistudyearchart.Text = "chart1";
@@ -705,18 +683,18 @@
             this.nishikistudentprogrammechart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea11.Name = "ChartArea1";
-            this.nishikistudentprogrammechart.ChartAreas.Add(chartArea11);
-            legend11.Name = "Legend1";
-            this.nishikistudentprogrammechart.Legends.Add(legend11);
+            chartArea10.Name = "ChartArea1";
+            this.nishikistudentprogrammechart.ChartAreas.Add(chartArea10);
+            legend10.Name = "Legend1";
+            this.nishikistudentprogrammechart.Legends.Add(legend10);
             this.nishikistudentprogrammechart.Location = new System.Drawing.Point(133, 37);
             this.nishikistudentprogrammechart.Name = "nishikistudentprogrammechart";
             this.nishikistudentprogrammechart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            series11.ChartArea = "ChartArea1";
-            series11.Legend = "Legend1";
-            series11.Name = "Programme";
-            this.nishikistudentprogrammechart.Series.Add(series11);
-            this.nishikistudentprogrammechart.Size = new System.Drawing.Size(650, 474);
+            series10.ChartArea = "ChartArea1";
+            series10.Legend = "Legend1";
+            series10.Name = "Programme";
+            this.nishikistudentprogrammechart.Series.Add(series10);
+            this.nishikistudentprogrammechart.Size = new System.Drawing.Size(650, 477);
             this.nishikistudentprogrammechart.TabIndex = 23;
             this.nishikistudentprogrammechart.Text = "chart1";
             // 
@@ -732,6 +710,28 @@
             this.nishikistudprogrammebtn.Text = "LOAD";
             this.nishikistudprogrammebtn.UseVisualStyleBackColor = false;
             this.nishikistudprogrammebtn.Click += new System.EventHandler(this.Nishikistudprogrammebtn_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(104, 33);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(118, 29);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Statistics";
+            // 
+            // nishikistatimg
+            // 
+            this.nishikistatimg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.nishikistatimg.Image = ((System.Drawing.Image)(resources.GetObject("nishikistatimg.Image")));
+            this.nishikistatimg.Location = new System.Drawing.Point(21, 12);
+            this.nishikistatimg.Name = "nishikistatimg";
+            this.nishikistatimg.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.nishikistatimg.Size = new System.Drawing.Size(77, 69);
+            this.nishikistatimg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.nishikistatimg.TabIndex = 5;
+            this.nishikistatimg.TabStop = false;
             // 
             // Section1_Statistics
             // 
@@ -757,8 +757,6 @@
             this.tabPage4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.nishikilvllec_chart)).EndInit();
             this.nishikiDstatistics_subtab.ResumeLayout(false);
-            this.nishikiDstatistics_studentstab.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.nishikistatimg)).EndInit();
             this.nishikisubjectstabcontrol.ResumeLayout(false);
             this.tabPage5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.nishikisubhrschart)).EndInit();
@@ -768,11 +766,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.nishikisublabchart)).EndInit();
             this.tabPage8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.nishikisubevalchart)).EndInit();
+            this.nishikiDstatistics_studentstab.ResumeLayout(false);
             this.nishikistudentstabcontrol.ResumeLayout(false);
             this.tabPage9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.nishikistudyearchart)).EndInit();
             this.tabPage10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.nishikistudentprogrammechart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nishikistatimg)).EndInit();
             this.ResumeLayout(false);
 
         }
