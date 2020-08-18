@@ -96,5 +96,62 @@ namespace ABC_Institute___Timetable_Generator
         {
             this.Close();
         }
+
+        private void Nishikibtnloadlec_Click(object sender, EventArgs e)
+        {
+
+            MySqlConnection sqlcon = new MySqlConnection(connectionString);
+            MySqlCommand sqlcmd = new MySqlCommand("StatisticsSubjectsbyLechours", sqlcon);
+            sqlcmd.CommandType = CommandType.StoredProcedure;
+
+            sqlcon.Open();
+
+            this.nishikisubhrschart.Series["Hours"].Points.AddXY("Artificial Intelligence", 3);
+            this.nishikisubhrschart.Series["Hours"].Points.AddXY("Machine Learning", 3);
+
+            sqlcon.Close();
+        }
+
+        private void Nishikibtnloadtute_Click(object sender, EventArgs e)
+        {
+            MySqlConnection sqlcon = new MySqlConnection(connectionString);
+            MySqlCommand sqlcmd = new MySqlCommand("StatisticsSubjectsbyTutehours", sqlcon);
+            sqlcmd.CommandType = CommandType.StoredProcedure;
+
+            sqlcon.Open();
+
+            this.nishikisubtutechart.Series["Hours"].Points.AddXY("Artificial Intelligence", 1);
+            this.nishikisubtutechart.Series["Hours"].Points.AddXY("Machine Learning", 0);
+
+            sqlcon.Close();
+        }
+
+        private void Nishikibtnloadlab_Click(object sender, EventArgs e)
+        {
+            MySqlConnection sqlcon = new MySqlConnection(connectionString);
+            MySqlCommand sqlcmd = new MySqlCommand("StatisticsSubjectsbyLabhours", sqlcon);
+            sqlcmd.CommandType = CommandType.StoredProcedure;
+
+            sqlcon.Open();
+
+            this.nishikisublabchart.Series["Hours"].Points.AddXY("Artificial Intelligence", 3);
+            this.nishikisublabchart.Series["Hours"].Points.AddXY("Machine Learning", 0);
+
+            sqlcon.Close();
+        }
+
+        private void Nishikibtnloadeval_Click(object sender, EventArgs e)
+        {
+            MySqlConnection sqlcon = new MySqlConnection(connectionString);
+            MySqlCommand sqlcmd = new MySqlCommand("StatisticsSubjectsbyEvahours", sqlcon);
+            sqlcmd.CommandType = CommandType.StoredProcedure;
+
+            sqlcon.Open();
+
+            this.nishikisubevalchart.Series["Hours"].Points.AddXY("Artificial Intelligence", 5);
+            this.nishikisubevalchart.Series["Hours"].Points.AddXY("Machine Learning", 0);
+
+            sqlcon.Close();
+        }
     }
 }
