@@ -29,11 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Section1_tags));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.vdataGridTags = new System.Windows.Forms.DataGridView();
-            this.Update = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.vbtnUpdateTag = new System.Windows.Forms.Button();
             this.vbtnAddTag = new System.Windows.Forms.Button();
             this.vtxtBoxTagName = new System.Windows.Forms.TextBox();
@@ -44,9 +46,11 @@
             this.serviceController1 = new System.ServiceProcess.ServiceController();
             this.tableUpdateStatementBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.resourcesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tagsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tagIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tagNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tagsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.Update = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.vdataGridTags)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -79,6 +83,14 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.vdataGridTags.AutoGenerateColumns = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.vdataGridTags.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.vdataGridTags.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.vdataGridTags.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.tagIDDataGridViewTextBoxColumn,
@@ -89,29 +101,13 @@
             this.vdataGridTags.Location = new System.Drawing.Point(22, 207);
             this.vdataGridTags.Name = "vdataGridTags";
             this.vdataGridTags.RowHeadersWidth = 51;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.vdataGridTags.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.vdataGridTags.RowTemplate.Height = 24;
             this.vdataGridTags.Size = new System.Drawing.Size(919, 284);
             this.vdataGridTags.TabIndex = 15;
             this.vdataGridTags.Tag = "";
             this.vdataGridTags.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.vdataGridTags_CellContentClick);
-            // 
-            // Update
-            // 
-            this.Update.HeaderText = "Update";
-            this.Update.MinimumWidth = 6;
-            this.Update.Name = "Update";
-            this.Update.Text = "Update";
-            this.Update.UseColumnTextForButtonValue = true;
-            this.Update.Width = 200;
-            // 
-            // Delete
-            // 
-            this.Delete.HeaderText = "Delete";
-            this.Delete.MinimumWidth = 6;
-            this.Delete.Name = "Delete";
-            this.Delete.Text = "Delete";
-            this.Delete.UseColumnTextForButtonValue = true;
-            this.Delete.Width = 200;
             // 
             // vbtnUpdateTag
             // 
@@ -203,6 +199,10 @@
             // 
             this.resourcesBindingSource.DataSource = typeof(MySql.Data.Resources);
             // 
+            // tagsBindingSource
+            // 
+            this.tagsBindingSource.DataSource = typeof(ABC_Institute___Timetable_Generator.Tags);
+            // 
             // tagIDDataGridViewTextBoxColumn
             // 
             this.tagIDDataGridViewTextBoxColumn.DataPropertyName = "tagID";
@@ -219,9 +219,31 @@
             this.tagNameDataGridViewTextBoxColumn.Name = "tagNameDataGridViewTextBoxColumn";
             this.tagNameDataGridViewTextBoxColumn.Width = 840;
             // 
-            // tagsBindingSource
+            // Update
             // 
-            this.tagsBindingSource.DataSource = typeof(ABC_Institute___Timetable_Generator.Tags);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.Update.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Update.HeaderText = "Update";
+            this.Update.MinimumWidth = 6;
+            this.Update.Name = "Update";
+            this.Update.Text = "Update";
+            this.Update.UseColumnTextForButtonValue = true;
+            this.Update.Width = 200;
+            // 
+            // Delete
+            // 
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Red;
+            this.Delete.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Delete.HeaderText = "Delete";
+            this.Delete.MinimumWidth = 6;
+            this.Delete.Name = "Delete";
+            this.Delete.Text = "Delete";
+            this.Delete.UseColumnTextForButtonValue = true;
+            this.Delete.Width = 205;
             // 
             // Section1_tags
             // 
