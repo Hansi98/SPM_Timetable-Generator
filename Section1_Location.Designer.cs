@@ -33,11 +33,13 @@
             this.nishikiDLocation_btnupdate = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.nishikiDLocation_btnrefreshbuilding = new System.Windows.Forms.Button();
             this.nishikidgvbuilding = new System.Windows.Forms.DataGridView();
             this.nishikiDLocation_buildingsearchtxtbox = new System.Windows.Forms.TextBox();
             this.nishikiDLocation_btnsearchbuilding = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.nishikiDLocation_btnrefreshcapacity = new System.Windows.Forms.Button();
             this.nishikidgvcapacity = new System.Windows.Forms.DataGridView();
             this.nishikiDLocation_capacitysearchtxtbox = new System.Windows.Forms.TextBox();
             this.nishikiDLocation_btnsearchcapacity = new System.Windows.Forms.Button();
@@ -57,8 +59,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.nishikilocationimg = new System.Windows.Forms.PictureBox();
             this.btnclose = new System.Windows.Forms.Button();
-            this.nishikiDLocation_btnrefreshcapacity = new System.Windows.Forms.Button();
-            this.nishikiDLocation_btnrefreshbuilding = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -137,6 +137,19 @@
             this.tabPage1.Text = "Search By Building or Room Type";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // nishikiDLocation_btnrefreshbuilding
+            // 
+            this.nishikiDLocation_btnrefreshbuilding.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.nishikiDLocation_btnrefreshbuilding.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.nishikiDLocation_btnrefreshbuilding.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nishikiDLocation_btnrefreshbuilding.Location = new System.Drawing.Point(828, 17);
+            this.nishikiDLocation_btnrefreshbuilding.Name = "nishikiDLocation_btnrefreshbuilding";
+            this.nishikiDLocation_btnrefreshbuilding.Size = new System.Drawing.Size(118, 42);
+            this.nishikiDLocation_btnrefreshbuilding.TabIndex = 26;
+            this.nishikiDLocation_btnrefreshbuilding.Text = "REFRESH";
+            this.nishikiDLocation_btnrefreshbuilding.UseVisualStyleBackColor = false;
+            this.nishikiDLocation_btnrefreshbuilding.Click += new System.EventHandler(this.NishikiDLocation_btnrefreshbuilding_Click);
+            // 
             // nishikidgvbuilding
             // 
             this.nishikidgvbuilding.AllowUserToAddRows = false;
@@ -202,6 +215,19 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Search by Capacity";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // nishikiDLocation_btnrefreshcapacity
+            // 
+            this.nishikiDLocation_btnrefreshcapacity.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.nishikiDLocation_btnrefreshcapacity.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.nishikiDLocation_btnrefreshcapacity.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nishikiDLocation_btnrefreshcapacity.Location = new System.Drawing.Point(831, 15);
+            this.nishikiDLocation_btnrefreshcapacity.Name = "nishikiDLocation_btnrefreshcapacity";
+            this.nishikiDLocation_btnrefreshcapacity.Size = new System.Drawing.Size(118, 42);
+            this.nishikiDLocation_btnrefreshcapacity.TabIndex = 25;
+            this.nishikiDLocation_btnrefreshcapacity.Text = "REFRESH";
+            this.nishikiDLocation_btnrefreshcapacity.UseVisualStyleBackColor = false;
+            this.nishikiDLocation_btnrefreshcapacity.Click += new System.EventHandler(this.NishikiDLocation_btnrefreshcapacity_Click);
             // 
             // nishikidgvcapacity
             // 
@@ -416,39 +442,14 @@
             // btnclose
             // 
             this.btnclose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnclose.BackColor = System.Drawing.Color.Red;
             this.btnclose.Location = new System.Drawing.Point(939, 12);
             this.btnclose.Name = "btnclose";
             this.btnclose.Size = new System.Drawing.Size(50, 36);
             this.btnclose.TabIndex = 1;
             this.btnclose.Text = "X";
-            this.btnclose.UseVisualStyleBackColor = true;
+            this.btnclose.UseVisualStyleBackColor = false;
             this.btnclose.Click += new System.EventHandler(this.Button1_Click);
-            // 
-            // nishikiDLocation_btnrefreshcapacity
-            // 
-            this.nishikiDLocation_btnrefreshcapacity.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.nishikiDLocation_btnrefreshcapacity.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.nishikiDLocation_btnrefreshcapacity.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nishikiDLocation_btnrefreshcapacity.Location = new System.Drawing.Point(831, 15);
-            this.nishikiDLocation_btnrefreshcapacity.Name = "nishikiDLocation_btnrefreshcapacity";
-            this.nishikiDLocation_btnrefreshcapacity.Size = new System.Drawing.Size(118, 42);
-            this.nishikiDLocation_btnrefreshcapacity.TabIndex = 25;
-            this.nishikiDLocation_btnrefreshcapacity.Text = "REFRESH";
-            this.nishikiDLocation_btnrefreshcapacity.UseVisualStyleBackColor = false;
-            this.nishikiDLocation_btnrefreshcapacity.Click += new System.EventHandler(this.NishikiDLocation_btnrefreshcapacity_Click);
-            // 
-            // nishikiDLocation_btnrefreshbuilding
-            // 
-            this.nishikiDLocation_btnrefreshbuilding.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.nishikiDLocation_btnrefreshbuilding.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.nishikiDLocation_btnrefreshbuilding.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nishikiDLocation_btnrefreshbuilding.Location = new System.Drawing.Point(828, 17);
-            this.nishikiDLocation_btnrefreshbuilding.Name = "nishikiDLocation_btnrefreshbuilding";
-            this.nishikiDLocation_btnrefreshbuilding.Size = new System.Drawing.Size(118, 42);
-            this.nishikiDLocation_btnrefreshbuilding.TabIndex = 26;
-            this.nishikiDLocation_btnrefreshbuilding.Text = "REFRESH";
-            this.nishikiDLocation_btnrefreshbuilding.UseVisualStyleBackColor = false;
-            this.nishikiDLocation_btnrefreshbuilding.Click += new System.EventHandler(this.NishikiDLocation_btnrefreshbuilding_Click);
             // 
             // Section1_Location
             // 

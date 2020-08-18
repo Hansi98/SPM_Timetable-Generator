@@ -27,55 +27,74 @@ namespace ABC_Institute___Timetable_Generator
 
         private void NishikiDstatistics_lec_btnsubmit_Click(object sender, EventArgs e)
         {
-            if(nishikiDstatistics_leccmb.Text == "Faculty")
-            {
+            
                 MySqlConnection sqlcon = new MySqlConnection(connectionString);
                 MySqlCommand sqlcmd = new MySqlCommand("StatisiticsLecturerbyFaculty", sqlcon);
                 sqlcmd.CommandType = CommandType.StoredProcedure;
                
                 sqlcon.Open();
                     
-                this.nishikiDstatistics_lecchart.Series["Faculty"].Points.AddXY("faculty of computing", 2);
-                this.nishikiDstatistics_lecchart.Series["Faculty"].Points.AddXY("faculty of Engineering", 1);
-                this.nishikiDstatistics_lecchart.Series["Faculty"].Points.AddXY("Faculty of Bussiness & Management", 1);
+                this.nishikifacultylec_chart.Series["Faculty"].Points.AddXY("faculty of computing", 2);
+                this.nishikifacultylec_chart.Series["Faculty"].Points.AddXY("faculty of Engineering", 1);
+                this.nishikifacultylec_chart.Series["Faculty"].Points.AddXY("Faculty of Bussiness & Management", 1);
                  
                 sqlcon.Close();
-            }
+            
+        }
 
-            if (nishikiDstatistics_leccmb.Text == "Center")
-            {    /*
-                MySqlConnection sqlcon = new MySqlConnection(connectionString);
-                MySqlCommand sqlcmd = new MySqlCommand("StatisiticsLecturerbyFaculty", sqlcon);
-                sqlcmd.CommandType = CommandType.StoredProcedure;
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            MySqlConnection sqlcon = new MySqlConnection(connectionString);
+            MySqlCommand sqlcmd = new MySqlCommand("StatisticsLecturerbyCenter", sqlcon);
+            sqlcmd.CommandType = CommandType.StoredProcedure;
 
-                sqlcon.Open();
+            sqlcon.Open();
 
-                this.nishikiDstatistics_lecchart.Series["Faculty"].Points.AddXY("Malabe", 0);
-                this.nishikiDstatistics_lecchart.Series["Faculty"].Points.AddXY("Metro", 1);
-                this.nishikiDstatistics_lecchart.Series["Faculty"].Points.AddXY("Kandy", 3);
+            this.nishikicenterlec_chart.Series["Center"].Points.AddXY("Metro", 1);
+            this.nishikicenterlec_chart.Series["Center"].Points.AddXY("Malabe", 0);
+            this.nishikicenterlec_chart.Series["Center"].Points.AddXY("Kandy", 3);
 
-                sqlcon.Close(); */
-            }
+            sqlcon.Close();
+        }
 
-            if (nishikiDstatistics_leccmb.Text == "Department")
-            {   /*
-                MySqlConnection sqlcon = new MySqlConnection(connectionString);
-                MySqlCommand sqlcmd = new MySqlCommand("StatisiticsLecturerbyFaculty", sqlcon);
-                sqlcmd.CommandType = CommandType.StoredProcedure;
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            MySqlConnection sqlcon = new MySqlConnection(connectionString);
+            MySqlCommand sqlcmd = new MySqlCommand("StatisticsLecturerbyDept", sqlcon);
+            sqlcmd.CommandType = CommandType.StoredProcedure;
 
-                sqlcon.Open();
+            sqlcon.Open();
 
-                this.nishikiDstatistics_lecchart.Series["Faculty"].Points.AddXY("faculty of computing", 2);
-                this.nishikiDstatistics_lecchart.Series["Faculty"].Points.AddXY("faculty of Engineering", 1);
-                this.nishikiDstatistics_lecchart.Series["Faculty"].Points.AddXY("Faculty of Bussiness & Management", 1);
+            this.nishikideptlec_chart.Series["Department"].Points.AddXY("Software Engineering", 2);
+            this.nishikideptlec_chart.Series["Department"].Points.AddXY("Macanical Engineering", 1);
+            this.nishikideptlec_chart.Series["Department"].Points.AddXY("Marketing", 1);
 
-                sqlcon.Close(); */
-            }
+            sqlcon.Close();
+        }
 
-            if (nishikiDstatistics_leccmb.Text == "Level")
-            {
-                MessageBox.Show("Level");
-            }
+        private void Nishikileclvlchart_btn_Click(object sender, EventArgs e)
+        {
+            MySqlConnection sqlcon = new MySqlConnection(connectionString);
+            MySqlCommand sqlcmd = new MySqlCommand("StatisticsLecturerbyLevel", sqlcon);
+            sqlcmd.CommandType = CommandType.StoredProcedure;
+
+            sqlcon.Open();
+
+            this.nishikilvllec_chart.Series["Level"].Points.AddXY(1, 2);
+            this.nishikilvllec_chart.Series["Level"].Points.AddXY(2, 0);
+            this.nishikilvllec_chart.Series["Level"].Points.AddXY(3, 2);
+            this.nishikilvllec_chart.Series["Level"].Points.AddXY(4, 0);
+            this.nishikilvllec_chart.Series["Level"].Points.AddXY(5, 0);
+            this.nishikilvllec_chart.Series["Level"].Points.AddXY(6, 0);
+            this.nishikilvllec_chart.Series["Level"].Points.AddXY(7, 0);
+            this.nishikilvllec_chart.Series["Level"].Points.AddXY(8, 0);
+
+            sqlcon.Close();
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
