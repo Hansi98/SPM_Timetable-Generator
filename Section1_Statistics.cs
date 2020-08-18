@@ -153,5 +153,36 @@ namespace ABC_Institute___Timetable_Generator
 
             sqlcon.Close();
         }
+
+        private void Nishikistudyearbtn_Click(object sender, EventArgs e)
+        {
+            
+            MySqlConnection sqlcon = new MySqlConnection(connectionString);
+            MySqlCommand sqlcmd = new MySqlCommand("StatisticsStudentsbyYear", sqlcon);
+            sqlcmd.CommandType = CommandType.StoredProcedure;
+
+            sqlcon.Open();
+
+            this.nishikistudyearchart.Series["year"].Points.AddXY("Y1", 2);
+            this.nishikistudyearchart.Series["year"].Points.AddXY("Y2", 2);
+
+            sqlcon.Close();
+
+        }
+
+        private void Nishikistudprogrammebtn_Click(object sender, EventArgs e)
+        {
+            
+            MySqlConnection sqlcon = new MySqlConnection(connectionString);
+            MySqlCommand sqlcmd = new MySqlCommand("StatisticsStudentsbyProgramme", sqlcon);
+            sqlcmd.CommandType = CommandType.StoredProcedure;
+
+            sqlcon.Open();
+
+            this.nishikistudentprogrammechart.Series["Programme"].Points.AddXY("CS", 2);
+            this.nishikistudentprogrammechart.Series["Programme"].Points.AddXY("SE", 2);
+
+            sqlcon.Close();
+        }
     }
 }
