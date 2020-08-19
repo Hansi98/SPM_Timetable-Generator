@@ -177,7 +177,7 @@ namespace ABC_Institute___Timetable_Generator
 
                 clearyesrandsem();
                 fillTagGridyearandsem();
-                MessageBox.Show(" Added Successfully");
+                MessageBox.Show(" Updated Successfully");
 
             }
         }
