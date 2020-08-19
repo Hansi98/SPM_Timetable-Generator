@@ -297,10 +297,27 @@ namespace ABC_Institute___Timetable_Generator
 
         private void hansiwork_hourstable_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
+            
+
             if (hansiwork_hourstable.Columns[e.ColumnIndex].Name == "h_update")
             {
-                hansiwork_hourslots.Text = hansiwork_hourstable.CurrentRow.Cells[2].Value.ToString();
-                HansiWork_hours.Text = hansiwork_hourstable.CurrentRow.Cells[1].Value.ToString();
+                
+                    string time = hansiwork_hourstable.CurrentRow.Cells[1].Value.ToString();
+                    string[] list = time.Split(':');
+                    foreach (string ti in list)
+                    {
+                        Console.WriteLine(ti);
+                    }
+
+
+                
+                    hansiwork_hourslots.Text = hansiwork_hourstable.CurrentRow.Cells[2].Value.ToString();
+                
+                
+                HansiWork_hours.Value = Convert.ToInt32(list[0]) ;
+                HansiWork_minutes.Value = Convert.ToInt32(list[1]);
+
 
 
                 whID = Convert.ToInt32(hansiwork_hourstable.CurrentRow.Cells[0].Value.ToString());
