@@ -30,8 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Section1_viewLecturer));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.RS1_lecInfoRemoveB = new System.Windows.Forms.Button();
-            this.RS1_lecInfoUpdateB = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.RS1_lecInfoRank = new System.Windows.Forms.Label();
             this.RS1_lecInfoLevel = new System.Windows.Forms.Label();
@@ -56,6 +54,8 @@
             this.RS1_lecInfoEmpID = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.RS1_lecInfoRemoveB = new System.Windows.Forms.Button();
+            this.RS1_lecInfoUpdateB = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -76,40 +76,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(958, 626);
             this.panel1.TabIndex = 0;
-            // 
-            // RS1_lecInfoRemoveB
-            // 
-            this.RS1_lecInfoRemoveB.BackColor = System.Drawing.Color.Crimson;
-            this.RS1_lecInfoRemoveB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RS1_lecInfoRemoveB.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RS1_lecInfoRemoveB.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.RS1_lecInfoRemoveB.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.trash_can_24px;
-            this.RS1_lecInfoRemoveB.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RS1_lecInfoRemoveB.Location = new System.Drawing.Point(784, 549);
-            this.RS1_lecInfoRemoveB.Name = "RS1_lecInfoRemoveB";
-            this.RS1_lecInfoRemoveB.Size = new System.Drawing.Size(112, 47);
-            this.RS1_lecInfoRemoveB.TabIndex = 21;
-            this.RS1_lecInfoRemoveB.Text = "Remove";
-            this.RS1_lecInfoRemoveB.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.RS1_lecInfoRemoveB.UseVisualStyleBackColor = false;
-            this.RS1_lecInfoRemoveB.Click += new System.EventHandler(this.RS1_lecInfoRemoveB_Click);
-            // 
-            // RS1_lecInfoUpdateB
-            // 
-            this.RS1_lecInfoUpdateB.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.RS1_lecInfoUpdateB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RS1_lecInfoUpdateB.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RS1_lecInfoUpdateB.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.RS1_lecInfoUpdateB.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.refresh_26px;
-            this.RS1_lecInfoUpdateB.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RS1_lecInfoUpdateB.Location = new System.Drawing.Point(654, 549);
-            this.RS1_lecInfoUpdateB.Name = "RS1_lecInfoUpdateB";
-            this.RS1_lecInfoUpdateB.Size = new System.Drawing.Size(110, 47);
-            this.RS1_lecInfoUpdateB.TabIndex = 20;
-            this.RS1_lecInfoUpdateB.Text = "Update";
-            this.RS1_lecInfoUpdateB.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.RS1_lecInfoUpdateB.UseVisualStyleBackColor = false;
-            this.RS1_lecInfoUpdateB.Click += new System.EventHandler(this.RS1_lecInfoUpdateB_Click);
             // 
             // panel4
             // 
@@ -367,6 +333,40 @@
             this.label3.Size = new System.Drawing.Size(288, 33);
             this.label3.TabIndex = 5;
             this.label3.Text = "Lecturer Information";
+            // 
+            // RS1_lecInfoRemoveB
+            // 
+            this.RS1_lecInfoRemoveB.BackColor = System.Drawing.Color.Crimson;
+            this.RS1_lecInfoRemoveB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RS1_lecInfoRemoveB.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RS1_lecInfoRemoveB.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.RS1_lecInfoRemoveB.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.trash_can_24px;
+            this.RS1_lecInfoRemoveB.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RS1_lecInfoRemoveB.Location = new System.Drawing.Point(784, 549);
+            this.RS1_lecInfoRemoveB.Name = "RS1_lecInfoRemoveB";
+            this.RS1_lecInfoRemoveB.Size = new System.Drawing.Size(112, 47);
+            this.RS1_lecInfoRemoveB.TabIndex = 21;
+            this.RS1_lecInfoRemoveB.Text = "Remove";
+            this.RS1_lecInfoRemoveB.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.RS1_lecInfoRemoveB.UseVisualStyleBackColor = false;
+            this.RS1_lecInfoRemoveB.Click += new System.EventHandler(this.RS1_lecInfoRemoveB_Click);
+            // 
+            // RS1_lecInfoUpdateB
+            // 
+            this.RS1_lecInfoUpdateB.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.RS1_lecInfoUpdateB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RS1_lecInfoUpdateB.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RS1_lecInfoUpdateB.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.RS1_lecInfoUpdateB.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.refresh_26px;
+            this.RS1_lecInfoUpdateB.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RS1_lecInfoUpdateB.Location = new System.Drawing.Point(654, 549);
+            this.RS1_lecInfoUpdateB.Name = "RS1_lecInfoUpdateB";
+            this.RS1_lecInfoUpdateB.Size = new System.Drawing.Size(110, 47);
+            this.RS1_lecInfoUpdateB.TabIndex = 20;
+            this.RS1_lecInfoUpdateB.Text = "Update";
+            this.RS1_lecInfoUpdateB.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.RS1_lecInfoUpdateB.UseVisualStyleBackColor = false;
+            this.RS1_lecInfoUpdateB.Click += new System.EventHandler(this.RS1_lecInfoUpdateB_Click);
             // 
             // Section1_viewLecturer
             // 

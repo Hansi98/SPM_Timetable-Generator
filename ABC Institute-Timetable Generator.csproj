@@ -269,8 +269,17 @@
   <ItemGroup>
     <Content Include="img\abclogo-removebg-preview.ico" />
     <Content Include="img\abclogo-removebg-preview.png" />
+    <None Include="img\tags_24px.png" />
+    <None Include="img\tags_50px.png" />
+    <None Include="img\student_male_32px.png" />
+    <None Include="img\timetable_30px.png" />
+    <None Include="img\back1.png" />
     <Content Include="img\circle-round-userinterface-place-pin-location-512.png" />
     <None Include="img\refresh_24px.png" />
+    <None Include="img\lecturer_32px.png" />
+    <None Include="img\elective_32pxdark.png" />
+    <None Include="img\location_24px.png" />
+    <None Include="img\graph_30px.png" />
     <Content Include="img\revenue-icon-png-17.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

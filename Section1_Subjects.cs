@@ -135,5 +135,10 @@ namespace ABC_Institute___Timetable_Generator
 
             }
         }
+
+        private void SubPortalbtnclose_Click(object sender, EventArgs e)
+        {
+            Dispose();
+        }
     }
 }

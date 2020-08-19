@@ -83,6 +83,16 @@ namespace ABC_Institute___Timetable_Generator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap back1 {
+            get {
+                object obj = ResourceManager.GetObject("back1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cancel_26px {
             get {
                 object obj = ResourceManager.GetObject("cancel_26px", resourceCulture);
@@ -133,6 +143,46 @@ namespace ABC_Institute___Timetable_Generator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap elective_32pxdark {
+            get {
+                object obj = ResourceManager.GetObject("elective_32pxdark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap graph_30px {
+            get {
+                object obj = ResourceManager.GetObject("graph_30px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lecturer_32px {
+            get {
+                object obj = ResourceManager.GetObject("lecturer_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap location_24px {
+            get {
+                object obj = ResourceManager.GetObject("location_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap math_book_500px {
             get {
                 object obj = ResourceManager.GetObject("math_book_500px", resourceCulture);
@@ -176,6 +226,46 @@ namespace ABC_Institute___Timetable_Generator.Properties {
         internal static System.Drawing.Bitmap refresh_26px {
             get {
                 object obj = ResourceManager.GetObject("refresh_26px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap student_male_32px {
+            get {
+                object obj = ResourceManager.GetObject("student_male_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tags_24px {
+            get {
+                object obj = ResourceManager.GetObject("tags_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tags_50px {
+            get {
+                object obj = ResourceManager.GetObject("tags_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap timetable_30px {
+            get {
+                object obj = ResourceManager.GetObject("timetable_30px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Section1_UpdateLecturer));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.RS1_upLecRank = new System.Windows.Forms.Label();
+            this.R1s_uplecReset = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.RS1_upLecLevel = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -40,6 +42,8 @@
             this.RS1_upLecDepartment = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.RS1_upLecFaculty = new System.Windows.Forms.ComboBox();
+            this.RS1_addLecCancel = new System.Windows.Forms.Button();
+            this.RS1_addLecADD = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.RS1_upLecLName = new System.Windows.Forms.TextBox();
@@ -50,10 +54,6 @@
             this.RS1_upLecFName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.RS1_upLecEmpID = new System.Windows.Forms.TextBox();
-            this.RS1_upLecRank = new System.Windows.Forms.Label();
-            this.R1s_uplecReset = new System.Windows.Forms.Button();
-            this.RS1_addLecCancel = new System.Windows.Forms.Button();
-            this.RS1_addLecADD = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -89,6 +89,33 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(489, 712);
             this.panel1.TabIndex = 1;
+            // 
+            // RS1_upLecRank
+            // 
+            this.RS1_upLecRank.AutoSize = true;
+            this.RS1_upLecRank.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RS1_upLecRank.Location = new System.Drawing.Point(27, 594);
+            this.RS1_upLecRank.Name = "RS1_upLecRank";
+            this.RS1_upLecRank.Size = new System.Drawing.Size(51, 20);
+            this.RS1_upLecRank.TabIndex = 39;
+            this.RS1_upLecRank.Text = "Rank";
+            // 
+            // R1s_uplecReset
+            // 
+            this.R1s_uplecReset.BackColor = System.Drawing.Color.DarkOrange;
+            this.R1s_uplecReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.R1s_uplecReset.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R1s_uplecReset.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.R1s_uplecReset.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.refresh_26px;
+            this.R1s_uplecReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.R1s_uplecReset.Location = new System.Drawing.Point(201, 643);
+            this.R1s_uplecReset.Name = "R1s_uplecReset";
+            this.R1s_uplecReset.Size = new System.Drawing.Size(88, 47);
+            this.R1s_uplecReset.TabIndex = 31;
+            this.R1s_uplecReset.Text = "Reset";
+            this.R1s_uplecReset.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.R1s_uplecReset.UseVisualStyleBackColor = false;
+            this.R1s_uplecReset.Click += new System.EventHandler(this.button1_Click);
             // 
             // label11
             // 
@@ -209,6 +236,40 @@
             this.RS1_upLecFaculty.TabIndex = 21;
             this.RS1_upLecFaculty.SelectedIndexChanged += new System.EventHandler(this.RS1_upLecFaculty_SelectedIndexChanged);
             // 
+            // RS1_addLecCancel
+            // 
+            this.RS1_addLecCancel.BackColor = System.Drawing.Color.Crimson;
+            this.RS1_addLecCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RS1_addLecCancel.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RS1_addLecCancel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.RS1_addLecCancel.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.cancel_26px;
+            this.RS1_addLecCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RS1_addLecCancel.Location = new System.Drawing.Point(358, 643);
+            this.RS1_addLecCancel.Name = "RS1_addLecCancel";
+            this.RS1_addLecCancel.Size = new System.Drawing.Size(98, 47);
+            this.RS1_addLecCancel.TabIndex = 20;
+            this.RS1_addLecCancel.Text = "Cancel";
+            this.RS1_addLecCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.RS1_addLecCancel.UseVisualStyleBackColor = false;
+            this.RS1_addLecCancel.Click += new System.EventHandler(this.RS1_addLecCancel_Click_1);
+            // 
+            // RS1_addLecADD
+            // 
+            this.RS1_addLecADD.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.RS1_addLecADD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RS1_addLecADD.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RS1_addLecADD.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.RS1_addLecADD.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.checked_24px;
+            this.RS1_addLecADD.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RS1_addLecADD.Location = new System.Drawing.Point(27, 643);
+            this.RS1_addLecADD.Name = "RS1_addLecADD";
+            this.RS1_addLecADD.Size = new System.Drawing.Size(108, 47);
+            this.RS1_addLecADD.TabIndex = 19;
+            this.RS1_addLecADD.Text = "Update";
+            this.RS1_addLecADD.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.RS1_addLecADD.UseVisualStyleBackColor = false;
+            this.RS1_addLecADD.Click += new System.EventHandler(this.RS1_addLecADD_Click);
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -301,67 +362,6 @@
             this.RS1_upLecEmpID.ReadOnly = true;
             this.RS1_upLecEmpID.Size = new System.Drawing.Size(432, 29);
             this.RS1_upLecEmpID.TabIndex = 0;
-            // 
-            // RS1_upLecRank
-            // 
-            this.RS1_upLecRank.AutoSize = true;
-            this.RS1_upLecRank.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RS1_upLecRank.Location = new System.Drawing.Point(27, 594);
-            this.RS1_upLecRank.Name = "RS1_upLecRank";
-            this.RS1_upLecRank.Size = new System.Drawing.Size(51, 20);
-            this.RS1_upLecRank.TabIndex = 39;
-            this.RS1_upLecRank.Text = "Rank";
-            // 
-            // R1s_uplecReset
-            // 
-            this.R1s_uplecReset.BackColor = System.Drawing.Color.DarkOrange;
-            this.R1s_uplecReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.R1s_uplecReset.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.R1s_uplecReset.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.R1s_uplecReset.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.refresh_26px;
-            this.R1s_uplecReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.R1s_uplecReset.Location = new System.Drawing.Point(201, 643);
-            this.R1s_uplecReset.Name = "R1s_uplecReset";
-            this.R1s_uplecReset.Size = new System.Drawing.Size(88, 47);
-            this.R1s_uplecReset.TabIndex = 31;
-            this.R1s_uplecReset.Text = "Reset";
-            this.R1s_uplecReset.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.R1s_uplecReset.UseVisualStyleBackColor = false;
-            this.R1s_uplecReset.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // RS1_addLecCancel
-            // 
-            this.RS1_addLecCancel.BackColor = System.Drawing.Color.Crimson;
-            this.RS1_addLecCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RS1_addLecCancel.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RS1_addLecCancel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.RS1_addLecCancel.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.cancel_26px;
-            this.RS1_addLecCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RS1_addLecCancel.Location = new System.Drawing.Point(358, 643);
-            this.RS1_addLecCancel.Name = "RS1_addLecCancel";
-            this.RS1_addLecCancel.Size = new System.Drawing.Size(98, 47);
-            this.RS1_addLecCancel.TabIndex = 20;
-            this.RS1_addLecCancel.Text = "Cancel";
-            this.RS1_addLecCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.RS1_addLecCancel.UseVisualStyleBackColor = false;
-            this.RS1_addLecCancel.Click += new System.EventHandler(this.RS1_addLecCancel_Click_1);
-            // 
-            // RS1_addLecADD
-            // 
-            this.RS1_addLecADD.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.RS1_addLecADD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RS1_addLecADD.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RS1_addLecADD.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.RS1_addLecADD.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.checked_24px;
-            this.RS1_addLecADD.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RS1_addLecADD.Location = new System.Drawing.Point(27, 643);
-            this.RS1_addLecADD.Name = "RS1_addLecADD";
-            this.RS1_addLecADD.Size = new System.Drawing.Size(108, 47);
-            this.RS1_addLecADD.TabIndex = 19;
-            this.RS1_addLecADD.Text = "Update";
-            this.RS1_addLecADD.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.RS1_addLecADD.UseVisualStyleBackColor = false;
-            this.RS1_addLecADD.Click += new System.EventHandler(this.RS1_addLecADD_Click);
             // 
             // Section1_UpdateLecturer
             // 

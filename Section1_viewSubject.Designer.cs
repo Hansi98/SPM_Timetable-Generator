@@ -28,7 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Section1_viewSubject));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.RS1_OfferedSem = new System.Windows.Forms.Label();
+            this.RS1_OfferedYear = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
             this.RS1_lecInfoRemoveB = new System.Windows.Forms.Button();
             this.RS1_lecInfoUpdateB = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -46,15 +52,10 @@
             this.RS1_subInfoCode = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.RS1_OfferedSem = new System.Windows.Forms.Label();
-            this.RS1_OfferedYear = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -71,6 +72,57 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(948, 608);
             this.panel1.TabIndex = 1;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Aqua;
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.RS1_OfferedSem);
+            this.panel4.Controls.Add(this.RS1_OfferedYear);
+            this.panel4.Controls.Add(this.label16);
+            this.panel4.Controls.Add(this.label19);
+            this.panel4.Location = new System.Drawing.Point(32, 212);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(864, 90);
+            this.panel4.TabIndex = 22;
+            // 
+            // RS1_OfferedSem
+            // 
+            this.RS1_OfferedSem.AutoSize = true;
+            this.RS1_OfferedSem.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RS1_OfferedSem.Location = new System.Drawing.Point(639, 41);
+            this.RS1_OfferedSem.Name = "RS1_OfferedSem";
+            this.RS1_OfferedSem.Size = new System.Drawing.Size(0, 24);
+            this.RS1_OfferedSem.TabIndex = 15;
+            // 
+            // RS1_OfferedYear
+            // 
+            this.RS1_OfferedYear.AutoSize = true;
+            this.RS1_OfferedYear.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RS1_OfferedYear.Location = new System.Drawing.Point(21, 41);
+            this.RS1_OfferedYear.Name = "RS1_OfferedYear";
+            this.RS1_OfferedYear.Size = new System.Drawing.Size(0, 24);
+            this.RS1_OfferedYear.TabIndex = 13;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(640, 21);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(141, 19);
+            this.label16.TabIndex = 12;
+            this.label16.Text = "Offered Semester";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(23, 21);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(105, 19);
+            this.label19.TabIndex = 10;
+            this.label19.Text = "Offered Year";
             // 
             // RS1_lecInfoRemoveB
             // 
@@ -262,57 +314,6 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Subject Information";
             // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Aqua;
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.RS1_OfferedSem);
-            this.panel4.Controls.Add(this.RS1_OfferedYear);
-            this.panel4.Controls.Add(this.label16);
-            this.panel4.Controls.Add(this.label19);
-            this.panel4.Location = new System.Drawing.Point(32, 212);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(864, 90);
-            this.panel4.TabIndex = 22;
-            // 
-            // RS1_OfferedSem
-            // 
-            this.RS1_OfferedSem.AutoSize = true;
-            this.RS1_OfferedSem.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RS1_OfferedSem.Location = new System.Drawing.Point(639, 41);
-            this.RS1_OfferedSem.Name = "RS1_OfferedSem";
-            this.RS1_OfferedSem.Size = new System.Drawing.Size(0, 24);
-            this.RS1_OfferedSem.TabIndex = 15;
-            // 
-            // RS1_OfferedYear
-            // 
-            this.RS1_OfferedYear.AutoSize = true;
-            this.RS1_OfferedYear.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RS1_OfferedYear.Location = new System.Drawing.Point(21, 41);
-            this.RS1_OfferedYear.Name = "RS1_OfferedYear";
-            this.RS1_OfferedYear.Size = new System.Drawing.Size(0, 24);
-            this.RS1_OfferedYear.TabIndex = 13;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(640, 21);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(141, 19);
-            this.label16.TabIndex = 12;
-            this.label16.Text = "Offered Semester";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(23, 21);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(105, 19);
-            this.label19.TabIndex = 10;
-            this.label19.Text = "Offered Year";
-            // 
             // Section1_viewSubject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -320,17 +321,18 @@
             this.ClientSize = new System.Drawing.Size(948, 608);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Section1_viewSubject";
             this.Text = "View Subject";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }

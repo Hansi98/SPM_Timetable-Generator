@@ -30,6 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Section1_addSubject));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.R1S_addSubSem = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.R1S_addSubYear = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.RS1_addSubEvalHr = new System.Windows.Forms.ComboBox();
             this.RS1_addSubLabHr = new System.Windows.Forms.ComboBox();
             this.RS1_addSubTutHr = new System.Windows.Forms.ComboBox();
@@ -38,17 +42,13 @@
             this.centaddleclabel = new System.Windows.Forms.Label();
             this.deptaddleclabel = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.RS1_addSubLec = new System.Windows.Forms.Button();
+            this.RS1_addLSubAdd = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.RS1_addSubName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.RS1_addSubCode = new System.Windows.Forms.TextBox();
-            this.RS1_addSubLec = new System.Windows.Forms.Button();
-            this.RS1_addLSubAdd = new System.Windows.Forms.Button();
-            this.R1S_addSubYear = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.R1S_addSubSem = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -79,6 +79,54 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(361, 703);
             this.panel1.TabIndex = 1;
+            // 
+            // R1S_addSubSem
+            // 
+            this.R1S_addSubSem.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.R1S_addSubSem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R1S_addSubSem.FormattingEnabled = true;
+            this.R1S_addSubSem.Items.AddRange(new object[] {
+            "1",
+            "2"});
+            this.R1S_addSubSem.Location = new System.Drawing.Point(28, 298);
+            this.R1S_addSubSem.Name = "R1S_addSubSem";
+            this.R1S_addSubSem.Size = new System.Drawing.Size(300, 28);
+            this.R1S_addSubSem.TabIndex = 44;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(27, 278);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(141, 19);
+            this.label4.TabIndex = 43;
+            this.label4.Text = "Offered Semester";
+            // 
+            // R1S_addSubYear
+            // 
+            this.R1S_addSubYear.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.R1S_addSubYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R1S_addSubYear.FormattingEnabled = true;
+            this.R1S_addSubYear.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4"});
+            this.R1S_addSubYear.Location = new System.Drawing.Point(29, 233);
+            this.R1S_addSubYear.Name = "R1S_addSubYear";
+            this.R1S_addSubYear.Size = new System.Drawing.Size(300, 28);
+            this.R1S_addSubYear.TabIndex = 42;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(28, 213);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(105, 19);
+            this.label1.TabIndex = 41;
+            this.label1.Text = "Offered Year";
             // 
             // RS1_addSubEvalHr
             // 
@@ -192,6 +240,39 @@
             this.label7.Text = "Lecture Hours  (Hr)";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
+            // RS1_addSubLec
+            // 
+            this.RS1_addSubLec.BackColor = System.Drawing.Color.Crimson;
+            this.RS1_addSubLec.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RS1_addSubLec.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RS1_addSubLec.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.RS1_addSubLec.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.cancel_26px;
+            this.RS1_addSubLec.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RS1_addSubLec.Location = new System.Drawing.Point(220, 632);
+            this.RS1_addSubLec.Name = "RS1_addSubLec";
+            this.RS1_addSubLec.Size = new System.Drawing.Size(109, 47);
+            this.RS1_addSubLec.TabIndex = 20;
+            this.RS1_addSubLec.Text = "Cancel";
+            this.RS1_addSubLec.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.RS1_addSubLec.UseVisualStyleBackColor = false;
+            // 
+            // RS1_addLSubAdd
+            // 
+            this.RS1_addLSubAdd.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.RS1_addLSubAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RS1_addLSubAdd.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RS1_addLSubAdd.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.RS1_addLSubAdd.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.add_30px;
+            this.RS1_addLSubAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RS1_addLSubAdd.Location = new System.Drawing.Point(104, 632);
+            this.RS1_addLSubAdd.Name = "RS1_addLSubAdd";
+            this.RS1_addLSubAdd.Size = new System.Drawing.Size(97, 47);
+            this.RS1_addLSubAdd.TabIndex = 19;
+            this.RS1_addLSubAdd.Text = "Add";
+            this.RS1_addLSubAdd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.RS1_addLSubAdd.UseVisualStyleBackColor = false;
+            this.RS1_addLSubAdd.Click += new System.EventHandler(this.RS1_addLSubAdd_Click);
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -237,87 +318,6 @@
             this.RS1_addSubCode.Name = "RS1_addSubCode";
             this.RS1_addSubCode.Size = new System.Drawing.Size(304, 29);
             this.RS1_addSubCode.TabIndex = 2;
-            // 
-            // RS1_addSubLec
-            // 
-            this.RS1_addSubLec.BackColor = System.Drawing.Color.Crimson;
-            this.RS1_addSubLec.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RS1_addSubLec.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RS1_addSubLec.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.RS1_addSubLec.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.cancel_26px;
-            this.RS1_addSubLec.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RS1_addSubLec.Location = new System.Drawing.Point(220, 632);
-            this.RS1_addSubLec.Name = "RS1_addSubLec";
-            this.RS1_addSubLec.Size = new System.Drawing.Size(109, 47);
-            this.RS1_addSubLec.TabIndex = 20;
-            this.RS1_addSubLec.Text = "Cancel";
-            this.RS1_addSubLec.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.RS1_addSubLec.UseVisualStyleBackColor = false;
-            // 
-            // RS1_addLSubAdd
-            // 
-            this.RS1_addLSubAdd.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.RS1_addLSubAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RS1_addLSubAdd.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RS1_addLSubAdd.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.RS1_addLSubAdd.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.add_30px;
-            this.RS1_addLSubAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RS1_addLSubAdd.Location = new System.Drawing.Point(104, 632);
-            this.RS1_addLSubAdd.Name = "RS1_addLSubAdd";
-            this.RS1_addLSubAdd.Size = new System.Drawing.Size(97, 47);
-            this.RS1_addLSubAdd.TabIndex = 19;
-            this.RS1_addLSubAdd.Text = "Add";
-            this.RS1_addLSubAdd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.RS1_addLSubAdd.UseVisualStyleBackColor = false;
-            this.RS1_addLSubAdd.Click += new System.EventHandler(this.RS1_addLSubAdd_Click);
-            // 
-            // R1S_addSubYear
-            // 
-            this.R1S_addSubYear.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.R1S_addSubYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.R1S_addSubYear.FormattingEnabled = true;
-            this.R1S_addSubYear.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4"});
-            this.R1S_addSubYear.Location = new System.Drawing.Point(29, 233);
-            this.R1S_addSubYear.Name = "R1S_addSubYear";
-            this.R1S_addSubYear.Size = new System.Drawing.Size(300, 28);
-            this.R1S_addSubYear.TabIndex = 42;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(28, 213);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 19);
-            this.label1.TabIndex = 41;
-            this.label1.Text = "Offered Year";
-            // 
-            // R1S_addSubSem
-            // 
-            this.R1S_addSubSem.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.R1S_addSubSem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.R1S_addSubSem.FormattingEnabled = true;
-            this.R1S_addSubSem.Items.AddRange(new object[] {
-            "1",
-            "2"});
-            this.R1S_addSubSem.Location = new System.Drawing.Point(28, 298);
-            this.R1S_addSubSem.Name = "R1S_addSubSem";
-            this.R1S_addSubSem.Size = new System.Drawing.Size(300, 28);
-            this.R1S_addSubSem.TabIndex = 44;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(27, 278);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(141, 19);
-            this.label4.TabIndex = 43;
-            this.label4.Text = "Offered Semester";
             // 
             // Section1_addSubject
             // 

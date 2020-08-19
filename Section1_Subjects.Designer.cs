@@ -28,10 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Section1_Subjects));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.R1S1SubDataGrid = new System.Windows.Forms.DataGridView();
             this.RS1_searchSub = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -43,8 +44,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnclose = new System.Windows.Forms.Button();
-            this.R1S1SubDataGrid = new System.Windows.Forms.DataGridView();
+            this.SubPortalbtnclose = new System.Windows.Forms.Button();
             this.R1s_subRefresh = new System.Windows.Forms.Button();
             this.RS1_deleteSubject = new System.Windows.Forms.Button();
             this.RS1_viewSubject = new System.Windows.Forms.Button();
@@ -53,11 +53,11 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.R1S1SubDataGrid)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.R1S1SubDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -66,6 +66,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel1.Controls.Add(this.SubPortalbtnclose);
             this.panel1.Controls.Add(this.R1s_subRefresh);
             this.panel1.Controls.Add(this.R1S1SubDataGrid);
             this.panel1.Controls.Add(this.RS1_deleteSubject);
@@ -75,13 +76,49 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.btnclose);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(817, 641);
             this.panel1.TabIndex = 3;
+            // 
+            // R1S1SubDataGrid
+            // 
+            this.R1S1SubDataGrid.AllowUserToAddRows = false;
+            this.R1S1SubDataGrid.AllowUserToDeleteRows = false;
+            this.R1S1SubDataGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.R1S1SubDataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.R1S1SubDataGrid.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.R1S1SubDataGrid.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.R1S1SubDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.R1S1SubDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LightSkyBlue;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.R1S1SubDataGrid.DefaultCellStyle = dataGridViewCellStyle2;
+            this.R1S1SubDataGrid.Location = new System.Drawing.Point(29, 346);
+            this.R1S1SubDataGrid.Margin = new System.Windows.Forms.Padding(2);
+            this.R1S1SubDataGrid.MultiSelect = false;
+            this.R1S1SubDataGrid.Name = "R1S1SubDataGrid";
+            this.R1S1SubDataGrid.ReadOnly = true;
+            this.R1S1SubDataGrid.RowHeadersWidth = 51;
+            this.R1S1SubDataGrid.RowTemplate.Height = 24;
+            this.R1S1SubDataGrid.Size = new System.Drawing.Size(765, 188);
+            this.R1S1SubDataGrid.TabIndex = 19;
             // 
             // RS1_searchSub
             // 
@@ -209,54 +246,21 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Subject Portal";
             // 
-            // btnclose
+            // SubPortalbtnclose
             // 
-            this.btnclose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnclose.Location = new System.Drawing.Point(770, 10);
-            this.btnclose.Margin = new System.Windows.Forms.Padding(2);
-            this.btnclose.Name = "btnclose";
-            this.btnclose.Size = new System.Drawing.Size(38, 29);
-            this.btnclose.TabIndex = 1;
-            this.btnclose.Text = "X";
-            this.btnclose.UseVisualStyleBackColor = true;
-            this.btnclose.Click += new System.EventHandler(this.Btnclose_Click);
-            // 
-            // R1S1SubDataGrid
-            // 
-            this.R1S1SubDataGrid.AllowUserToAddRows = false;
-            this.R1S1SubDataGrid.AllowUserToDeleteRows = false;
-            this.R1S1SubDataGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.R1S1SubDataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.R1S1SubDataGrid.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.R1S1SubDataGrid.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.R1S1SubDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.R1S1SubDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.LightSkyBlue;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.R1S1SubDataGrid.DefaultCellStyle = dataGridViewCellStyle4;
-            this.R1S1SubDataGrid.Location = new System.Drawing.Point(29, 346);
-            this.R1S1SubDataGrid.Margin = new System.Windows.Forms.Padding(2);
-            this.R1S1SubDataGrid.MultiSelect = false;
-            this.R1S1SubDataGrid.Name = "R1S1SubDataGrid";
-            this.R1S1SubDataGrid.ReadOnly = true;
-            this.R1S1SubDataGrid.RowHeadersWidth = 51;
-            this.R1S1SubDataGrid.RowTemplate.Height = 24;
-            this.R1S1SubDataGrid.Size = new System.Drawing.Size(765, 188);
-            this.R1S1SubDataGrid.TabIndex = 19;
+            this.SubPortalbtnclose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.SubPortalbtnclose.BackColor = System.Drawing.Color.DarkOrange;
+            this.SubPortalbtnclose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SubPortalbtnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SubPortalbtnclose.ForeColor = System.Drawing.Color.White;
+            this.SubPortalbtnclose.Location = new System.Drawing.Point(768, 11);
+            this.SubPortalbtnclose.Margin = new System.Windows.Forms.Padding(2);
+            this.SubPortalbtnclose.Name = "SubPortalbtnclose";
+            this.SubPortalbtnclose.Size = new System.Drawing.Size(38, 29);
+            this.SubPortalbtnclose.TabIndex = 21;
+            this.SubPortalbtnclose.Text = "X";
+            this.SubPortalbtnclose.UseVisualStyleBackColor = false;
+            this.SubPortalbtnclose.Click += new System.EventHandler(this.SubPortalbtnclose_Click);
             // 
             // R1s_subRefresh
             // 
@@ -299,7 +303,7 @@
             this.RS1_viewSubject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RS1_viewSubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RS1_viewSubject.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.RS1_viewSubject.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.add_30px;
+            this.RS1_viewSubject.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.more_26px;
             this.RS1_viewSubject.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.RS1_viewSubject.Location = new System.Drawing.Point(575, 571);
             this.RS1_viewSubject.Name = "RS1_viewSubject";
@@ -376,6 +380,7 @@
             this.Text = "Section1_Subjects";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.R1S1SubDataGrid)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
@@ -383,7 +388,6 @@
             this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.R1S1SubDataGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -411,8 +415,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnclose;
         private System.Windows.Forms.DataGridView R1S1SubDataGrid;
         private System.Windows.Forms.Button R1s_subRefresh;
+        private System.Windows.Forms.Button SubPortalbtnclose;
     }
 }
