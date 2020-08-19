@@ -280,6 +280,7 @@
     <None Include="img\elective_32pxdark.png" />
     <None Include="img\location_24px.png" />
     <None Include="img\graph_30px.png" />
+    <None Include="img\menu_64px.png" />
     <Content Include="img\revenue-icon-png-17.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
