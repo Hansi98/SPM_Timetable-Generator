@@ -72,31 +72,31 @@ namespace ABC_Institute___Timetable_Generator
                 
                 if (hansimondaycheckBox.Checked == true)
                 {
-                    days += "Monday  ";
+                    days += "Monday ";
                 }
                 if (hansituesdaycheckBox.Checked == true)
                 {
-                    days += "Tuesday  ";
+                    days += "Tuesday ";
                 }
                 if (hansiwedcheckBox.Checked == true)
                 {
-                    days += "Wednsday  ";
+                    days += "Wednsday ";
                 }
                 if (hansithurscheckBox.Checked == true)
                 {
-                    days += "Thursday  ";
+                    days += "Thursday ";
                 }
                 if (hansifricheckBox.Checked == true)
                 {
-                    days += "Friday  ";
+                    days += "Friday ";
                 }
                 if (hansisatcheckBox.Checked == true)
                 {
-                    days += "Saturday  ";
+                    days += "Saturday ";
                 }
                 if (hansisuncheckBox.Checked == true)
                 {
-                    days += "Sunday  ";
+                    days += "Sunday ";
                 }
 
                 mySqlCmd.Parameters.AddWithValue("_wdID", wdID);
@@ -121,34 +121,34 @@ namespace ABC_Institute___Timetable_Generator
                 MySqlCommand mySqlCmd = new MySqlCommand("WorkingDaysAddorEdit", mySqlCon);
                 mySqlCmd.CommandType = CommandType.StoredProcedure;
 
-                //if (days == "Monday")
-                //{
-                //    hansimondaycheckBox.Checked = true;
-                //}
-                //if (hansituesdaycheckBox.Checked == true)
-                //{
-                //    days += "Tuesday  ";
-                //}
-                //if (hansiwedcheckBox.Checked == true)
-                //{
-                //    days += "Wednsday  ";
-                //}
-                //if (hansithurscheckBox.Checked == true)
-                //{
-                //    days += "Thursday  ";
-                //}
-                //if (hansifricheckBox.Checked == true)
-                //{
-                //    days += "Friday  ";
-                //}
-                //if (hansisatcheckBox.Checked == true)
-                //{
-                //    days += "Saturday  ";
-                //}
-                //if (hansisuncheckBox.Checked == true)
-                //{
-                //    days += "Sunday  ";
-                //}
+                if (hansimondaycheckBox.Checked == true)
+                {
+                    days += "Monday ";
+                }
+                if (hansituesdaycheckBox.Checked == true)
+                {
+                    days += "Tuesday ";
+                }
+                if (hansiwedcheckBox.Checked == true)
+                {
+                    days += "Wednsday ";
+                }
+                if (hansithurscheckBox.Checked == true)
+                {
+                    days += "Thursday ";
+                }
+                if (hansifricheckBox.Checked == true)
+                {
+                    days += "Friday ";
+                }
+                if (hansisatcheckBox.Checked == true)
+                {
+                    days += "Saturday ";
+                }
+                if (hansisuncheckBox.Checked == true)
+                {
+                    days += "Sunday ";
+                }
 
                 mySqlCmd.Parameters.AddWithValue("_wdID", wdID);
                 mySqlCmd.Parameters.AddWithValue("_noOfWrkDays", Convert.ToInt32(HansiWork_daysno.Text.Trim()));
@@ -189,43 +189,50 @@ namespace ABC_Institute___Timetable_Generator
 
         private void hansiwork_daystable_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (hansiwork_daystable.Columns[e.ColumnIndex].Name == "hwrk_Update")
+                if (hansiwork_daystable.Columns[e.ColumnIndex].Name == "hwrk_Update")
 
-            {
-                //if (days == "Monday")
-                //{
-                //    hansimondaycheckBox.Checked = true;
-                //}
-                //if (days == "Tuesday")
-                //{
-                //    hansituesdaycheckBox.Checked = true;
-                //}
-                //if (hansiwedcheckBox.Checked == true)
-                //{
-                //    days += "Wednsday  ";
-                //}
-                //if (hansithurscheckBox.Checked == true)
-                //{
-                //    days += "Thursday  ";
-                //}
-                //if (hansifricheckBox.Checked == true)
-                //{
-                //    days += "Friday  ";
-                //}
-                //if (hansisatcheckBox.Checked == true)
-                //{
-                //    days += "Saturday  ";
-                //}
-                //if (hansisuncheckBox.Checked == true)
-                //{
-                //    days += "Sunday  ";
-                //}
+                {
+                    string day = hansiwork_daystable.CurrentRow.Cells[2].Value.ToString();
 
-                days = hansiwork_daystable.CurrentRow.Cells[2].Value.ToString();
-                HansiWork_daysno.Text = hansiwork_daystable.CurrentRow.Cells[1].Value.ToString();
+                    string[] splitdayslist = day.Split(' ');
 
-                wdID = Convert.ToInt32(hansiwork_daystable.CurrentRow.Cells[0].Value.ToString());
-            }
+                    foreach (var word in splitdayslist)
+                    {
+                        System.Console.WriteLine(word);
+                        if (word == "Monday")
+                        {
+                            hansimondaycheckBox.Checked = true;
+                        }
+                        if (word == "Tuesday")
+                        {
+                            hansituesdaycheckBox.Checked = true;
+                        }
+                        if (word == "Wednsday")
+                        {
+                            hansiwedcheckBox.Checked = true;
+                        }
+                        if (word == "Thursday")
+                        {
+                            hansithurscheckBox.Checked = true;
+                        }
+                        if (word == "Friday")
+                        {
+                            hansifricheckBox.Checked = true;
+                        }
+                        if (word == "Saturday")
+                        {
+                            hansisatcheckBox.Checked = true;
+                        }
+                        if (word == "Sunday")
+                        {
+                            hansisuncheckBox.Checked = true;
+                        }
+                    }
+                    HansiWork_daysno.Text = hansiwork_daystable.CurrentRow.Cells[1].Value.ToString();
+
+                    wdID = Convert.ToInt32(hansiwork_daystable.CurrentRow.Cells[0].Value.ToString());
+                }
+
 
             if (hansiwork_daystable.Columns[e.ColumnIndex].Name == "hwrk_delete")
             {
@@ -296,9 +303,7 @@ namespace ABC_Institute___Timetable_Generator
         }
 
         private void hansiwork_hourstable_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-            
+        {           
 
             if (hansiwork_hourstable.Columns[e.ColumnIndex].Name == "h_update")
             {
@@ -309,8 +314,6 @@ namespace ABC_Institute___Timetable_Generator
                     {
                         Console.WriteLine(ti);
                     }
-
-
                 
                     hansiwork_hourslots.Text = hansiwork_hourstable.CurrentRow.Cells[2].Value.ToString();
                 
@@ -356,7 +359,18 @@ namespace ABC_Institute___Timetable_Generator
                 MySqlCommand mySqlCmd = new MySqlCommand("WorkingHoursAddorEdit", mySqlCon);
                 mySqlCmd.CommandType = CommandType.StoredProcedure;
                 mySqlCmd.Parameters.AddWithValue("_whID", whID);
-                mySqlCmd.Parameters.AddWithValue("_noOfWrkHours", Convert.ToInt32(HansiWork_hours.Text.Trim()));// + Convert.ToInt32(HansiWork_minutes.Text.Trim()));
+
+                //if (hansiwork_hourstable.Columns[e.ColumnIndex].Name == "h_update")
+                //{
+
+                //    string time = hansiwork_hourstable.CurrentRow.Cells[1].Value.ToString();
+                //    string[] list = time.Split(':');
+                //    foreach (string ti in list)
+                //    {
+                //        Console.WriteLine(ti);
+                //    }
+
+                mySqlCmd.Parameters.AddWithValue("_noOfWrkHours", Convert.ToInt32(HansiWork_hours.Text.Trim()) +" : "+ Convert.ToInt32(HansiWork_minutes.Text.Trim()));
                 mySqlCmd.Parameters.AddWithValue("_WorkingSlots", hansiwork_hourslots.Text.Trim());
                 mySqlCmd.ExecuteNonQuery();
 
