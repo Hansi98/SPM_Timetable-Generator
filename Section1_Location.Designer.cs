@@ -97,11 +97,12 @@
             // nishikiDLocation_btnupdate
             // 
             this.nishikiDLocation_btnupdate.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.nishikiDLocation_btnupdate.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.nishikiDLocation_btnupdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nishikiDLocation_btnupdate.Location = new System.Drawing.Point(427, 229);
+            this.nishikiDLocation_btnupdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.nishikiDLocation_btnupdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.nishikiDLocation_btnupdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nishikiDLocation_btnupdate.Location = new System.Drawing.Point(408, 229);
             this.nishikiDLocation_btnupdate.Name = "nishikiDLocation_btnupdate";
-            this.nishikiDLocation_btnupdate.Size = new System.Drawing.Size(158, 42);
+            this.nishikiDLocation_btnupdate.Size = new System.Drawing.Size(187, 50);
             this.nishikiDLocation_btnupdate.TabIndex = 24;
             this.nishikiDLocation_btnupdate.Text = "UPDATE";
             this.nishikiDLocation_btnupdate.UseVisualStyleBackColor = false;
@@ -140,7 +141,7 @@
             // nishikiDLocation_btnrefreshbuilding
             // 
             this.nishikiDLocation_btnrefreshbuilding.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.nishikiDLocation_btnrefreshbuilding.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.nishikiDLocation_btnrefreshbuilding.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.nishikiDLocation_btnrefreshbuilding.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nishikiDLocation_btnrefreshbuilding.Location = new System.Drawing.Point(828, 17);
             this.nishikiDLocation_btnrefreshbuilding.Name = "nishikiDLocation_btnrefreshbuilding";
@@ -180,7 +181,7 @@
             // nishikiDLocation_btnsearchbuilding
             // 
             this.nishikiDLocation_btnsearchbuilding.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.nishikiDLocation_btnsearchbuilding.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.nishikiDLocation_btnsearchbuilding.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.nishikiDLocation_btnsearchbuilding.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nishikiDLocation_btnsearchbuilding.Location = new System.Drawing.Point(693, 17);
             this.nishikiDLocation_btnsearchbuilding.Name = "nishikiDLocation_btnsearchbuilding";
@@ -279,11 +280,12 @@
             // nishikiDLocation_btndelete
             // 
             this.nishikiDLocation_btndelete.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.nishikiDLocation_btndelete.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.nishikiDLocation_btndelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nishikiDLocation_btndelete.Location = new System.Drawing.Point(623, 229);
+            this.nishikiDLocation_btndelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.nishikiDLocation_btndelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.nishikiDLocation_btndelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nishikiDLocation_btndelete.Location = new System.Drawing.Point(608, 229);
             this.nishikiDLocation_btndelete.Name = "nishikiDLocation_btndelete";
-            this.nishikiDLocation_btndelete.Size = new System.Drawing.Size(158, 42);
+            this.nishikiDLocation_btndelete.Size = new System.Drawing.Size(187, 50);
             this.nishikiDLocation_btndelete.TabIndex = 22;
             this.nishikiDLocation_btndelete.Text = "DELETE";
             this.nishikiDLocation_btndelete.UseVisualStyleBackColor = false;
@@ -361,11 +363,12 @@
             // nishikiDLocation_btnadd
             // 
             this.nishikiDLocation_btnadd.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.nishikiDLocation_btnadd.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.nishikiDLocation_btnadd.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nishikiDLocation_btnadd.Location = new System.Drawing.Point(225, 229);
+            this.nishikiDLocation_btnadd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.nishikiDLocation_btnadd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.nishikiDLocation_btnadd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nishikiDLocation_btnadd.Location = new System.Drawing.Point(206, 229);
             this.nishikiDLocation_btnadd.Name = "nishikiDLocation_btnadd";
-            this.nishikiDLocation_btnadd.Size = new System.Drawing.Size(158, 42);
+            this.nishikiDLocation_btnadd.Size = new System.Drawing.Size(187, 50);
             this.nishikiDLocation_btnadd.TabIndex = 14;
             this.nishikiDLocation_btnadd.Text = "ADD";
             this.nishikiDLocation_btnadd.UseVisualStyleBackColor = false;
@@ -443,6 +446,7 @@
             // 
             this.btnclose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnclose.BackColor = System.Drawing.Color.Red;
+            this.btnclose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnclose.Location = new System.Drawing.Point(939, 12);
             this.btnclose.Name = "btnclose";
             this.btnclose.Size = new System.Drawing.Size(50, 36);

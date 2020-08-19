@@ -32,7 +32,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panelchildform = new System.Windows.Forms.Panel();
             this.panelslidebar = new System.Windows.Forms.Panel();
-            this.homenavbtndetails = new System.Windows.Forms.Button();
             this.homenavbtnsessions = new System.Windows.Forms.Button();
             this.homenavbtntimetables = new System.Windows.Forms.Button();
             this.homenavbtnlocations = new System.Windows.Forms.Button();
@@ -46,6 +45,7 @@
             this.homebtnlecturers = new System.Windows.Forms.Button();
             this.homebtnworkingdnh = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.homenavbtndetails = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panelchildform.SuspendLayout();
             this.panelslidebar.SuspendLayout();
@@ -96,22 +96,6 @@
             this.panelslidebar.Size = new System.Drawing.Size(262, 636);
             this.panelslidebar.TabIndex = 0;
             // 
-            // homenavbtndetails
-            // 
-            this.homenavbtndetails.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.homenavbtndetails.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.homenavbtndetails.FlatAppearance.BorderSize = 0;
-            this.homenavbtndetails.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.homenavbtndetails.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.homenavbtndetails.Location = new System.Drawing.Point(2, 2);
-            this.homenavbtndetails.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.homenavbtndetails.Name = "homenavbtndetails";
-            this.homenavbtndetails.Size = new System.Drawing.Size(257, 42);
-            this.homenavbtndetails.TabIndex = 4;
-            this.homenavbtndetails.Text = "Details";
-            this.homenavbtndetails.UseVisualStyleBackColor = false;
-            this.homenavbtndetails.Click += new System.EventHandler(this.Button1_Click_1);
-            // 
             // homenavbtnsessions
             // 
             this.homenavbtnsessions.BackColor = System.Drawing.Color.MediumTurquoise;
@@ -119,6 +103,7 @@
             this.homenavbtnsessions.FlatAppearance.BorderSize = 0;
             this.homenavbtnsessions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.homenavbtnsessions.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.homenavbtnsessions.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.homenavbtnsessions.Location = new System.Drawing.Point(263, 2);
             this.homenavbtnsessions.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.homenavbtnsessions.Name = "homenavbtnsessions";
@@ -135,6 +120,7 @@
             this.homenavbtntimetables.FlatAppearance.BorderSize = 0;
             this.homenavbtntimetables.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.homenavbtntimetables.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.homenavbtntimetables.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.homenavbtntimetables.Location = new System.Drawing.Point(794, 2);
             this.homenavbtntimetables.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.homenavbtntimetables.Name = "homenavbtntimetables";
@@ -151,6 +137,7 @@
             this.homenavbtnlocations.FlatAppearance.BorderSize = 0;
             this.homenavbtnlocations.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.homenavbtnlocations.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.homenavbtnlocations.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.homenavbtnlocations.Location = new System.Drawing.Point(530, 2);
             this.homenavbtnlocations.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.homenavbtnlocations.Name = "homenavbtnlocations";
@@ -356,6 +343,27 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // homenavbtndetails
+            // 
+            this.homenavbtndetails.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.homenavbtndetails.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.homenavbtndetails.FlatAppearance.BorderSize = 0;
+            this.homenavbtndetails.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.homenavbtndetails.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.homenavbtndetails.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.homenavbtndetails.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.menu_64px;
+            this.homenavbtndetails.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.homenavbtndetails.Location = new System.Drawing.Point(2, 2);
+            this.homenavbtndetails.Margin = new System.Windows.Forms.Padding(2);
+            this.homenavbtndetails.Name = "homenavbtndetails";
+            this.homenavbtndetails.Size = new System.Drawing.Size(257, 42);
+            this.homenavbtndetails.TabIndex = 4;
+            this.homenavbtndetails.Text = "   Menu";
+            this.homenavbtndetails.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.homenavbtndetails.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.homenavbtndetails.UseVisualStyleBackColor = false;
+            this.homenavbtndetails.Click += new System.EventHandler(this.Button1_Click_1);
             // 
             // Home
             // 

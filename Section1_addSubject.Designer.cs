@@ -77,7 +77,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(361, 703);
+            this.panel1.Size = new System.Drawing.Size(666, 703);
             this.panel1.TabIndex = 1;
             // 
             // R1S_addSubSem
@@ -90,7 +90,7 @@
             "2"});
             this.R1S_addSubSem.Location = new System.Drawing.Point(28, 298);
             this.R1S_addSubSem.Name = "R1S_addSubSem";
-            this.R1S_addSubSem.Size = new System.Drawing.Size(300, 28);
+            this.R1S_addSubSem.Size = new System.Drawing.Size(605, 28);
             this.R1S_addSubSem.TabIndex = 44;
             // 
             // label4
@@ -115,7 +115,7 @@
             "4"});
             this.R1S_addSubYear.Location = new System.Drawing.Point(29, 233);
             this.R1S_addSubYear.Name = "R1S_addSubYear";
-            this.R1S_addSubYear.Size = new System.Drawing.Size(300, 28);
+            this.R1S_addSubYear.Size = new System.Drawing.Size(605, 28);
             this.R1S_addSubYear.TabIndex = 42;
             // 
             // label1
@@ -138,14 +138,10 @@
             "1",
             "2",
             "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8"});
-            this.RS1_addSubEvalHr.Location = new System.Drawing.Point(26, 572);
+            "4"});
+            this.RS1_addSubEvalHr.Location = new System.Drawing.Point(27, 572);
             this.RS1_addSubEvalHr.Name = "RS1_addSubEvalHr";
-            this.RS1_addSubEvalHr.Size = new System.Drawing.Size(300, 28);
+            this.RS1_addSubEvalHr.Size = new System.Drawing.Size(605, 28);
             this.RS1_addSubEvalHr.TabIndex = 40;
             // 
             // RS1_addSubLabHr
@@ -158,11 +154,10 @@
             "1",
             "2",
             "3",
-            "4",
-            "5"});
-            this.RS1_addSubLabHr.Location = new System.Drawing.Point(26, 505);
+            "4"});
+            this.RS1_addSubLabHr.Location = new System.Drawing.Point(27, 505);
             this.RS1_addSubLabHr.Name = "RS1_addSubLabHr";
-            this.RS1_addSubLabHr.Size = new System.Drawing.Size(300, 28);
+            this.RS1_addSubLabHr.Size = new System.Drawing.Size(605, 28);
             this.RS1_addSubLabHr.TabIndex = 39;
             // 
             // RS1_addSubTutHr
@@ -175,11 +170,10 @@
             "1",
             "2",
             "3",
-            "4",
-            "5"});
-            this.RS1_addSubTutHr.Location = new System.Drawing.Point(26, 440);
+            "4"});
+            this.RS1_addSubTutHr.Location = new System.Drawing.Point(27, 440);
             this.RS1_addSubTutHr.Name = "RS1_addSubTutHr";
-            this.RS1_addSubTutHr.Size = new System.Drawing.Size(300, 28);
+            this.RS1_addSubTutHr.Size = new System.Drawing.Size(605, 28);
             this.RS1_addSubTutHr.TabIndex = 37;
             // 
             // RS1_addSubLecHr
@@ -191,11 +185,10 @@
             "1",
             "2",
             "3",
-            "4",
-            "5"});
-            this.RS1_addSubLecHr.Location = new System.Drawing.Point(28, 373);
+            "4"});
+            this.RS1_addSubLecHr.Location = new System.Drawing.Point(29, 373);
             this.RS1_addSubLecHr.Name = "RS1_addSubLecHr";
-            this.RS1_addSubLecHr.Size = new System.Drawing.Size(300, 28);
+            this.RS1_addSubLecHr.Size = new System.Drawing.Size(605, 28);
             this.RS1_addSubLecHr.TabIndex = 36;
             this.RS1_addSubLecHr.SelectedIndexChanged += new System.EventHandler(this.RS1_addSubLecHr_SelectedIndexChanged);
             // 
@@ -248,7 +241,7 @@
             this.RS1_addSubLec.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.RS1_addSubLec.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.cancel_26px;
             this.RS1_addSubLec.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RS1_addSubLec.Location = new System.Drawing.Point(220, 632);
+            this.RS1_addSubLec.Location = new System.Drawing.Point(524, 623);
             this.RS1_addSubLec.Name = "RS1_addSubLec";
             this.RS1_addSubLec.Size = new System.Drawing.Size(109, 47);
             this.RS1_addSubLec.TabIndex = 20;
@@ -264,9 +257,9 @@
             this.RS1_addLSubAdd.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.RS1_addLSubAdd.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.add_30px;
             this.RS1_addLSubAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RS1_addLSubAdd.Location = new System.Drawing.Point(104, 632);
+            this.RS1_addLSubAdd.Location = new System.Drawing.Point(369, 623);
             this.RS1_addLSubAdd.Name = "RS1_addLSubAdd";
-            this.RS1_addLSubAdd.Size = new System.Drawing.Size(97, 47);
+            this.RS1_addLSubAdd.Size = new System.Drawing.Size(106, 47);
             this.RS1_addLSubAdd.TabIndex = 19;
             this.RS1_addLSubAdd.Text = "Add";
             this.RS1_addLSubAdd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -288,7 +281,7 @@
             this.RS1_addSubName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RS1_addSubName.Location = new System.Drawing.Point(29, 175);
             this.RS1_addSubName.Name = "RS1_addSubName";
-            this.RS1_addSubName.Size = new System.Drawing.Size(304, 29);
+            this.RS1_addSubName.Size = new System.Drawing.Size(609, 29);
             this.RS1_addSubName.TabIndex = 5;
             // 
             // label3
@@ -316,14 +309,14 @@
             this.RS1_addSubCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RS1_addSubCode.Location = new System.Drawing.Point(31, 110);
             this.RS1_addSubCode.Name = "RS1_addSubCode";
-            this.RS1_addSubCode.Size = new System.Drawing.Size(304, 29);
+            this.RS1_addSubCode.Size = new System.Drawing.Size(609, 29);
             this.RS1_addSubCode.TabIndex = 2;
             // 
             // Section1_addSubject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(361, 703);
+            this.ClientSize = new System.Drawing.Size(666, 703);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
