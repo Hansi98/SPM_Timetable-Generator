@@ -163,6 +163,16 @@ namespace ABC_Institute___Timetable_Generator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap refresh_24px {
+            get {
+                object obj = ResourceManager.GetObject("refresh_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap refresh_26px {
             get {
                 object obj = ResourceManager.GetObject("refresh_26px", resourceCulture);

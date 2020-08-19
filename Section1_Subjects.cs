@@ -50,14 +50,90 @@ namespace ABC_Institute___Timetable_Generator
             if (R1S1SubDataGrid.Columns["EvalHr"] != null)
                 R1S1SubDataGrid.Columns["EvalHr"].HeaderText = "Evaluation Hours";
 
-               
+            if (R1S1SubDataGrid.Columns["year"] != null)
+                R1S1SubDataGrid.Columns["year"].HeaderText = "Offered Year";
+
+            if (R1S1SubDataGrid.Columns["semester"] != null)
+                R1S1SubDataGrid.Columns["semester"].HeaderText = "Offered Semester";
+
+
         }
 
         public void draw()
         {
             R1S1SubDataGrid.DataSource = Sservice.getAllSubject();
             this.R1S1changeHeader();
-          //  RS1_totLecs.Text = Lservice.getAllCount().ToString();
+          RS1_totSubs.Text = Sservice.getAllCount().ToString();
+        }
+
+        private void R1s_subRefresh_Click(object sender, EventArgs e)
+        {
+            draw();
+        }
+
+        private void RS1_searchSub_TextChanged(object sender, EventArgs e)
+        {
+            if (RS1_searchSub.Text.Trim() == "")
+            {
+
+                draw();
+
+            }
+            else
+            {
+                R1S1SubDataGrid.DataSource = Sservice.searchSubject(RS1_searchSub.Text.Trim());
+                R1S1changeHeader();
+            }
+        }
+
+        private void RS1_searchSub_MouseClick(object sender, MouseEventArgs e)
+        {
+            RS1_searchSub.Text = null;
+        }
+
+        private void RS1_viewSubject_Click(object sender, EventArgs e)
+        {
+            if (R1S1SubDataGrid.CurrentCell.ColumnIndex > 0)
+            {
+                MessageBox.Show("Please Select the Subject Code of the Relevent Subject.", "Select an Subject Code!",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Asterisk);
+            }
+            else
+            {
+                string code = R1S1SubDataGrid.CurrentCell.Value.ToString();
+                new Section1_viewSubject(Sservice.getSingleSubject(code)).Show();
+            }
+        }
+
+        private void RS1_deleteSubject_Click(object sender, EventArgs e)
+        {
+            if (R1S1SubDataGrid.CurrentCell.ColumnIndex > 0)
+            {
+                MessageBox.Show("Please Select the Subject Code of the Relevent Subject that  you want to delete.", "Select an Subject Code!",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Asterisk);
+            }
+            else
+            {
+                string code = R1S1SubDataGrid.CurrentCell.Value.ToString();
+
+                DialogResult result = MessageBox.Show("Are you sure that you want to Delete Subject " + code + " ? This Subject Details will be permenantly deleted!", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
+                {
+                    if (Sservice.deleteSubject(code))
+                    {
+                        MessageBox.Show("Subject Data permenantly deleted!", "Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        draw();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error Occured During The Deletion!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+
+
+            }
         }
     }
 }

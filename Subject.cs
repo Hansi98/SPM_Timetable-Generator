@@ -15,8 +15,12 @@ namespace ABC_Institute___Timetable_Generator.Models
         private int tutHr;
         private int labHr;
         private int EvalHr;
+        private int year;
+        private int sem;
 
-        public Subject(string code, string name, int lecHr, int tutHr, int labHr, int evalHr)
+
+
+        public Subject(string code, string name, int lecHr, int tutHr, int labHr, int evalHr,int year, int sem)
         {
             this.code = code;
             this.name = name;
@@ -24,6 +28,8 @@ namespace ABC_Institute___Timetable_Generator.Models
             this.tutHr = tutHr;
             this.labHr = labHr;
             this.EvalHr = evalHr;
+            this.year = year;
+            this.sem = sem;
         }
 
         public string Code { get => code; set => code = value; }
@@ -32,6 +38,8 @@ namespace ABC_Institute___Timetable_Generator.Models
         public int TutHrs { get => tutHr; set => tutHr = value; }
         public int LabHr { get => labHr; set => labHr = value; }
         public int evalHr { get => EvalHr; set => EvalHr = value; }
+        public int Year { get => year; set => year = value; }
+        public int Sem { get => sem; set => sem = value; }
 
     }
 

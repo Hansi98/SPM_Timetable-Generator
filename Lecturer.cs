@@ -20,9 +20,9 @@ namespace ABC_Institute___Timetable_Generator.Models
         private string level;
         private string rank;
 
-        public Lecturer(string fName, string mName, string lName, string faculty, string dept, string center, string building, string level, string rank)
+        public Lecturer(string id,string fName, string mName, string lName, string faculty, string dept, string center, string building, string level, string rank)
         {
-            this.ID = "0";
+            this.ID = id;
             this.FName = fName;
             MName = mName;
             LName = lName;

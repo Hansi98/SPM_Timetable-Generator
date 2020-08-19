@@ -15,9 +15,10 @@ namespace ABC_Institute___Timetable_Generator.Services
         Boolean updateSubject(Subject L);
         Boolean deleteSubject(String code);
         DataTable getAllSubject();
-        Lecturer getSingleSubject(String code);
-        ArrayList searchSubject(String searchString);
-        
+        Subject getSingleSubject(String code);
+        DataTable searchSubject(String searchString);
+
+        Boolean checkExist(Subject S);
 
         int getAllCount();
 

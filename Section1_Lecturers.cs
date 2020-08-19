@@ -14,11 +14,16 @@ namespace ABC_Institute___Timetable_Generator
     public partial class Section1_Lecturers : Form
 
     {
+        public static int newlecs=0;
+
+        
+
         LecturerServiceImpl Lservice = new LecturerServiceImpl();
         public Section1_Lecturers()
         {
             InitializeComponent();
-           
+            RS1_newLecs.Text = newlecs.ToString();
+
             draw();
             
         }
@@ -47,13 +52,18 @@ namespace ABC_Institute___Timetable_Generator
 
         private void RS1_searchLec_TextChanged(object sender, EventArgs e)
         {
-            if (RS1_searchLec.Text == null){
-                MessageBox.Show("Show all Details");
-            }
-            else
-            {
-                MessageBox.Show("Show Search content");
-            }
+           
+
+                if (RS1_searchLec.Text.Trim()=="") {
+
+                    draw();
+                    
+                }
+                else {
+                    R1S1LecDataGrid.DataSource = Lservice.searchLecturer(RS1_searchLec.Text.Trim());
+                    R1S1changeHeader();
+                }
+            
         }
 
         private void RS1_searchLec_MouseClick(object sender, MouseEventArgs e)
@@ -101,10 +111,61 @@ namespace ABC_Institute___Timetable_Generator
             RS1_totLecs.Text = Lservice.getAllCount().ToString();
         }
 
-        private void Section1_Lecturers_Activated(object sender, EventArgs e)
+       
+
+        private void panel1_MouseHover(object sender, EventArgs e)
+        {
+            RS1_newLecs.Text = newlecs.ToString();
+        }
+
+        private void RS1_viewLecturer_Click(object sender, EventArgs e)
+        {
+            if (R1S1LecDataGrid.CurrentCell.ColumnIndex>0)
+            {
+                MessageBox.Show("Please Select the Employee Id of the Relevent Employee","Select an Employee ID",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Asterisk);
+            }
+            else
+            {
+               string empID = R1S1LecDataGrid.CurrentCell.Value.ToString();
+               new Section1_viewLecturer(Lservice.getSingleLecturer(empID)).Show();
+            }
+        }
+
+        private void RS1_deleteLecturer_Click(object sender, EventArgs e)
+        {
+            if (R1S1LecDataGrid.CurrentCell.ColumnIndex > 0)
+            {
+                MessageBox.Show("Please Select the Employee Id of the Relevent Employee that  you want to delete", "Select an Employee ID",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Asterisk);
+            }
+            else
+            {
+                string empID = R1S1LecDataGrid.CurrentCell.Value.ToString();
+
+                DialogResult result = MessageBox.Show("Are you sure that you want to Delete Lecturer " + empID + " ? This Lecturer Details will be permenantly deleted!", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
+                {
+                    if (Lservice.deleteLecturer(empID))
+                    {
+                        MessageBox.Show("Lecturer Data permenantly deleted!", "Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        draw();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error Occured During The Deletion!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+
+
+            }
+        }
+
+        private void R1s_LecRefresh_Click(object sender, EventArgs e)
         {
             draw();
-            MessageBox.Show("tHIS eXECUTED");
         }
     }
 }

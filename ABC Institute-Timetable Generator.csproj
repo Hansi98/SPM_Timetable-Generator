@@ -59,6 +59,18 @@
   <ItemGroup>
     <Compile Include="DBconnection.cs" />
     <Compile Include="GroupNumbers.cs" />
+    <Compile Include="Section1_UpdateSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section1_UpdateSubject.Designer.cs">
+      <DependentUpon>Section1_UpdateSubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Section1_viewSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section1_viewSubject.Designer.cs">
+      <DependentUpon>Section1_viewSubject.cs</DependentUpon>
+    </Compile>
     <Compile Include="SubjectServiceImpl.cs" />
     <Compile Include="SubjectServicesInt.cs" />
     <Compile Include="Subject.cs" />
@@ -183,6 +195,12 @@
     <EmbeddedResource Include="Section1_UpdateLecturer.resx">
       <DependentUpon>Section1_UpdateLecturer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Section1_UpdateSubject.resx">
+      <DependentUpon>Section1_UpdateSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section1_viewSubject.resx">
+      <DependentUpon>Section1_viewSubject.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Section1_WorkingDays.resx">
       <DependentUpon>Section1_WorkingDays.cs</DependentUpon>
     </EmbeddedResource>
@@ -250,6 +268,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="img\circle-round-userinterface-place-pin-location-512.png" />
+    <None Include="img\refresh_24px.png" />
     <Content Include="img\revenue-icon-png-17.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

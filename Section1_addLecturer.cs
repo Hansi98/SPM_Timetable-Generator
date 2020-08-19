@@ -23,49 +23,74 @@ namespace ABC_Institute___Timetable_Generator
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void RS1_addLecADD_Click(object sender, EventArgs e)
         {
+            if (RS1_addLecEmpID.Text.Length<6) {
+                MessageBox.Show("Employee ID must be a 6 digit Number!", "Format Error",
+                                 MessageBoxButtons.OK,
+                                 MessageBoxIcon.Information);
+            } else { 
+
+            if ((RS1_addLecEmpID.Text.Trim()=="") || (RS1_addLecFName.Text.Trim()=="") || (RS1_addLecLName.Text.Trim() == "") || (RS1_addLecFac.Text.Trim() == "") || (RS1_addLecDept.Text.Trim() == "") || (RS1_addLecCenter.Text.Trim() == "") || (RS1_addLecBuilding.Text.Trim() == "") || (RS1_addLecLevel.Text.Trim() == "") || (RS1_addLecRank.Text.Trim()==""))
+            {
+                MessageBox.Show("Please Fill all the Fields! (Middle Name is Optional)", "Neccessary Fields are Empty!",
+                                 MessageBoxButtons.OK,
+                                 MessageBoxIcon.Warning);
+            }
+            else {
+
+                try
+                {
+                    Convert.ToInt32(RS1_addLecEmpID.Text.Trim());
+
+                    
+
+                    Lecturer L = new Lecturer(RS1_addLecEmpID.Text.Trim(), RS1_addLecFName.Text.Trim(), RS1_addLecMName.Text.Trim(), RS1_addLecLName.Text.Trim(), RS1_addLecFac.Text.Trim(), RS1_addLecDept.Text.Trim(), RS1_addLecCenter.Text.Trim(), RS1_addLecBuilding.Text.Trim(), RS1_addLecLevel.Text.Trim(), RS1_addLecRank.Text.Trim());
+                   
+                    if (Lservice.checkExist(L)) {
+                        MessageBox.Show("This Employee ID is Already Regitered in the System!", "Employee Already Exist!",
+                                 MessageBoxButtons.OK,
+                                 MessageBoxIcon.Warning);
+                    }
+                    else
+                    {
+                        if (Lservice.addLecturer(L))
+                        {
+                            MessageBox.Show("Lecturer Added Successfully", "Success!",
+                                 MessageBoxButtons.OK,
+                                 MessageBoxIcon.Information);
+                            Dispose();
+
+
+                        }
+                        else
+                        {
+                            MessageBox.Show("Some Error Occured During the Lecturer Registration, Please Re-Try", "Error!",
+                                 MessageBoxButtons.OK,
+                                 MessageBoxIcon.Error);
+
+                        }
+                    }
+               }
+               catch (FormatException error)
+               {
+                   MessageBox.Show("Employee ID Must be an Digit Number", "Format Error",
+                                 MessageBoxButtons.OK,
+                                 MessageBoxIcon.Exclamation);
+                }
+
            
-
-
-
-            Lecturer L = new Lecturer(RS1_addLecFName.Text.Trim(), RS1_addLecMName.Text.Trim(), RS1_addLecLName.Text.Trim(), RS1_addLecFac.Text.Trim(), RS1_addLecDept.Text.Trim(), RS1_addLecCenter.Text.Trim(), RS1_addLecBuilding.Text.Trim(), RS1_addLecLevel.Text.Trim(), RS1_addLecRank.Text.Trim());
-
-            if (Lservice.addLecturer(L))
-            {
-                MessageBox.Show("Lecturer Added Successfully");
-                Dispose();
-             
-                
             }
-            else
-            {
-                MessageBox.Show("Some Error Occured");
 
             }
 
-
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
+      
 
-        }
 
-        private void Section1_addLecturer_Load(object sender, EventArgs e)
-        {
-            RS1_addLecEmpID.Text= Lservice.getNextEmpID();
-        }
 
         private void RS1_addLecFac_SelectedIndexChanged(object sender, EventArgs e)
 
@@ -159,7 +184,12 @@ namespace ABC_Institute___Timetable_Generator
         private void RS1_addLecLevel_SelectedIndexChanged(object sender, EventArgs e)
         {
             RS1_addLecRank.Visible = true;
-            RS1_addLecRank.Text = RS1_addLecEmpID.Text +"."+ RS1_addLecLevel.Text;
+            RS1_addLecRank.Text = RS1_addLecLevel.Text +"."+ RS1_addLecEmpID.Text;
+        }
+
+        private void RS1_addLecEmpID_TextChanged(object sender, EventArgs e)
+        {
+            RS1_addLecRank.Text = RS1_addLecLevel.Text + "." + RS1_addLecEmpID.Text;
         }
     }
 }
