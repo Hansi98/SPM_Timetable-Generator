@@ -14,7 +14,7 @@ namespace ABC_Institute___Timetable_Generator
 {
     public partial class Section1_Students : Form
     {
-        string connectionString = @"SERVER=mysql-11921-0.cloudclusters.net;PORT=11921;DATABASE=mydb;UID=chamika;PASSWORD=asd123+++";
+        string connectionString = @"SERVER=abcdatabase.mysql.database.azure.com;PORT=3306;DATABASE=mydb;UID=abcadmin@abcdatabase;PASSWORD=ABC@123abc";
         int yearsemID = 0;
         int proID = 0;
         int groupID = 0;
