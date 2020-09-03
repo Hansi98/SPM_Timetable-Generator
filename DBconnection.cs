@@ -10,7 +10,7 @@ namespace ABC_Institute___Timetable_Generator
 {
     class DBconnection
     {
-        private String conString = @"SERVER=mysql-11921-0.cloudclusters.net;PORT=11921;DATABASE=mydb;UID=chamika;PASSWORD=asd123+++";
+        private String conString = @"SERVER=abcdatabase.mysql.database.azure.com;PORT=3306;DATABASE=mydb;UID=abcadmin@abcdatabase;PASSWORD=ABC@123abc";
         private MySqlConnection con;
        
         public MySqlConnection getConnection()
