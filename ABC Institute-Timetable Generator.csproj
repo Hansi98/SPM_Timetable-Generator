@@ -59,6 +59,8 @@
   <ItemGroup>
     <Compile Include="DBconnection.cs" />
     <Compile Include="GroupNumbers.cs" />
+    <Compile Include="hansiworkdays.cs" />
+    <Compile Include="hansiworkhours.cs" />
     <Compile Include="Section1_UpdateSubject.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +72,12 @@
     </Compile>
     <Compile Include="Section1_viewSubject.Designer.cs">
       <DependentUpon>Section1_viewSubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Section1_WorkingDays.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section1_WorkingDays.Designer.cs">
+      <DependentUpon>Section1_WorkingDays.cs</DependentUpon>
     </Compile>
     <Compile Include="SubjectServiceImpl.cs" />
     <Compile Include="SubjectServicesInt.cs" />
@@ -138,12 +146,6 @@
     <Compile Include="Section1_UpdateLecturer.Designer.cs">
       <DependentUpon>Section1_UpdateLecturer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Section1_WorkingDays.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Section1_WorkingDays.Designer.cs">
-      <DependentUpon>Section1_WorkingDays.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SubGroupNumber.cs" />
@@ -201,13 +203,15 @@
     <EmbeddedResource Include="Section1_viewSubject.resx">
       <DependentUpon>Section1_viewSubject.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Section1_WorkingDays.resx">
-      <DependentUpon>Section1_WorkingDays.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Section1_viewLecturer.resx">
       <DependentUpon>Section1_viewLecturer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Section1_WorkingDays.resx">
+      <DependentUpon>Section1_WorkingDays.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="GroupNumbers.datasource" />
+    <None Include="hansiworkdays.datasource" />
+    <None Include="hansiworkhours.datasource" />
     <None Include="Programme.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
