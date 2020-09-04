@@ -7,7 +7,7 @@ namespace ABC_Institute___Timetable_Generator
 {
     public partial class Section1_WorkingDays : Form
     {
-        string connectionString = @"SERVER= mysql-11921-0.cloudclusters.net;PORT=11921;DATABASE=mydb;UID=chamika;PASSWORD=asd123+++";
+        string connectionString = @"SERVER=abcdatabase.mysql.database.azure.com;PORT=3306;DATABASE=mydb;UID=abcadmin@abcdatabase;PASSWORD=ABC@123abc";
         int wdID = 0;
         int whID = 0;
         string days = "";
