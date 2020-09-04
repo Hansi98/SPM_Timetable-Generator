@@ -192,6 +192,7 @@ namespace ABC_Institute___Timetable_Generator
             }
 
             if (vdataGridpro.Columns[e.ColumnIndex].Name == "proDelete")
+//test
             {
                 //  vtxtBoxTagName.Text = vdataGridTags.CurrentRow.Cells[1].Value.ToString();
                 //  tagID = Convert.ToInt32(vdataGridTags.CurrentRow.Cells[0].Value.ToString());
