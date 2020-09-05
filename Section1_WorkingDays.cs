@@ -11,6 +11,7 @@ namespace ABC_Institute___Timetable_Generator
         int wdID = 0;
         int whID = 0;
         string days = "";
+        string newdate = "";
 
         public Section1_WorkingDays()
         {
@@ -80,7 +81,7 @@ namespace ABC_Institute___Timetable_Generator
                 }
                 if (hansiwedcheckBox.Checked == true)
                 {
-                    days += "Wednsday ";
+                    days += "Wednesday ";
                 }
                 if (hansithurscheckBox.Checked == true)
                 {
@@ -123,41 +124,41 @@ namespace ABC_Institute___Timetable_Generator
 
                 if (hansimondaycheckBox.Checked == true)
                 {
-                    days += "Monday ";
+                    newdate += "Monday ";
                 }
                 if (hansituesdaycheckBox.Checked == true)
                 {
-                    days += "Tuesday ";
+                    newdate += "Tuesday ";
                 }
                 if (hansiwedcheckBox.Checked == true)
                 {
-                    days += "Wednsday ";
+                    newdate += "Wednesday ";
                 }
                 if (hansithurscheckBox.Checked == true)
                 {
-                    days += "Thursday ";
+                    newdate += "Thursday ";
                 }
                 if (hansifricheckBox.Checked == true)
                 {
-                    days += "Friday ";
+                    newdate += "Friday ";
                 }
                 if (hansisatcheckBox.Checked == true)
                 {
-                    days += "Saturday ";
+                    newdate += "Saturday ";
                 }
                 if (hansisuncheckBox.Checked == true)
                 {
-                    days += "Sunday ";
+                    newdate += "Sunday ";
                 }
-
+                
                 mySqlCmd.Parameters.AddWithValue("_wdID", wdID);
                 mySqlCmd.Parameters.AddWithValue("_noOfWrkDays", Convert.ToInt32(HansiWork_daysno.Text.Trim()));
-                mySqlCmd.Parameters.AddWithValue("_WorkingDays", days);
+                mySqlCmd.Parameters.AddWithValue("_WorkingDays", newdate);
+                
                 mySqlCmd.ExecuteNonQuery();
-
                 clear();
-                fillWorkingDaysGrid();
                 MessageBox.Show("Working Days Updated Successfully");
+                fillWorkingDaysGrid();
             }
         }
         void fillWorkingDaysGrid()
@@ -191,8 +192,8 @@ namespace ABC_Institute___Timetable_Generator
         {
                 if (hansiwork_daystable.Columns[e.ColumnIndex].Name == "hwrk_Update")
 
-                {
-                    string day = hansiwork_daystable.CurrentRow.Cells[2].Value.ToString();
+            {
+                string day = hansiwork_daystable.CurrentRow.Cells[2].Value.ToString();
 
                     string[] splitdayslist = day.Split(' ');
 
@@ -207,7 +208,7 @@ namespace ABC_Institute___Timetable_Generator
                         {
                             hansituesdaycheckBox.Checked = true;
                         }
-                        if (word == "Wednsday")
+                        if (word == "Wednesday")
                         {
                             hansiwedcheckBox.Checked = true;
                         }
@@ -248,12 +249,10 @@ namespace ABC_Institute___Timetable_Generator
                     {
                         mySqlCmd.ExecuteNonQuery();
                     }
-
-
                     clear();
-                    fillWorkingDaysGrid();
                     MessageBox.Show("Working Days Deleted Successfully");
-
+                    fillWorkingDaysGrid();
+                    
                 }
             }
 
@@ -269,8 +268,7 @@ namespace ABC_Institute___Timetable_Generator
                 mySqlCmd.Parameters.AddWithValue("_whID", whID);
                 mySqlCmd.Parameters.AddWithValue("_noOfWrkHours", HansiWork_hours.Text.Trim() + " : " + HansiWork_minutes.Text.Trim());
                 mySqlCmd.Parameters.AddWithValue("_WorkingSlots", hansiwork_hourslots.Text.Trim());
-
-
+                
                 mySqlCmd.ExecuteNonQuery();
 
                 clearHour();
