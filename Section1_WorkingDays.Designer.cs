@@ -51,6 +51,8 @@
             this.HansiWork_hourstab = new System.Windows.Forms.TabPage();
             this.hansiwork_hourupdate = new System.Windows.Forms.Button();
             this.hansiwork_hourstable = new System.Windows.Forms.DataGridView();
+            this.h_update = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.h_delete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.hansiwork_hourslots = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.HansiWork_minutes = new System.Windows.Forms.NumericUpDown();
@@ -60,8 +62,7 @@
             this.HansiWork_hoursaddbtn = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.btnclose = new System.Windows.Forms.Button();
-            this.h_update = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.h_delete = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.hwrk_Update = new System.Windows.Forms.DataGridViewButtonColumn();
             this.hwrk_delete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.wdIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -72,7 +73,7 @@
             this.noOfWrkHoursDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.workingSlotsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hansiworkhoursBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.HansiWork_tabcontrol.SuspendLayout();
@@ -390,6 +391,22 @@
             this.hansiwork_hourstable.TabIndex = 17;
             this.hansiwork_hourstable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.hansiwork_hourstable_CellContentClick);
             // 
+            // h_update
+            // 
+            this.h_update.HeaderText = "Update";
+            this.h_update.Name = "h_update";
+            this.h_update.Text = "Update";
+            this.h_update.UseColumnTextForButtonValue = true;
+            this.h_update.Width = 200;
+            // 
+            // h_delete
+            // 
+            this.h_delete.HeaderText = "Delete";
+            this.h_delete.Name = "h_delete";
+            this.h_delete.Text = "Delete";
+            this.h_delete.UseColumnTextForButtonValue = true;
+            this.h_delete.Width = 200;
+            // 
             // hansiwork_hourslots
             // 
             this.hansiwork_hourslots.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -494,22 +511,6 @@
             this.btnclose.UseVisualStyleBackColor = false;
             this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
             // 
-            // h_update
-            // 
-            this.h_update.HeaderText = "Update";
-            this.h_update.Name = "h_update";
-            this.h_update.Text = "Update";
-            this.h_update.UseColumnTextForButtonValue = true;
-            this.h_update.Width = 200;
-            // 
-            // h_delete
-            // 
-            this.h_delete.HeaderText = "Delete";
-            this.h_delete.Name = "h_delete";
-            this.h_delete.Text = "Delete";
-            this.h_delete.UseColumnTextForButtonValue = true;
-            this.h_delete.Width = 200;
-            // 
             // hwrk_Update
             // 
             this.hwrk_Update.HeaderText = "Update";
@@ -534,7 +535,7 @@
             this.wdIDDataGridViewTextBoxColumn.HeaderText = "wdID";
             this.wdIDDataGridViewTextBoxColumn.Name = "wdIDDataGridViewTextBoxColumn";
             this.wdIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.wdIDDataGridViewTextBoxColumn.Width = 200;
+            this.wdIDDataGridViewTextBoxColumn.Width = 150;
             // 
             // noOfWrkDaysDataGridViewTextBoxColumn
             // 
@@ -542,7 +543,7 @@
             this.noOfWrkDaysDataGridViewTextBoxColumn.HeaderText = "noOfWrkDays";
             this.noOfWrkDaysDataGridViewTextBoxColumn.Name = "noOfWrkDaysDataGridViewTextBoxColumn";
             this.noOfWrkDaysDataGridViewTextBoxColumn.ReadOnly = true;
-            this.noOfWrkDaysDataGridViewTextBoxColumn.Width = 220;
+            this.noOfWrkDaysDataGridViewTextBoxColumn.Width = 150;
             // 
             // workingDaysDataGridViewTextBoxColumn
             // 
@@ -550,7 +551,7 @@
             this.workingDaysDataGridViewTextBoxColumn.HeaderText = "WorkingDays";
             this.workingDaysDataGridViewTextBoxColumn.Name = "workingDaysDataGridViewTextBoxColumn";
             this.workingDaysDataGridViewTextBoxColumn.ReadOnly = true;
-            this.workingDaysDataGridViewTextBoxColumn.Width = 400;
+            this.workingDaysDataGridViewTextBoxColumn.Width = 480;
             // 
             // hansiworkdaysBindingSource
             // 
@@ -643,16 +644,17 @@
         private System.Windows.Forms.BindingSource hansiworkdaysBindingSource;
         private System.Windows.Forms.BindingSource hansiworkhoursBindingSource;
         private System.Windows.Forms.Button hansiwork_hourupdate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn wdIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn noOfWrkDaysDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn workingDaysDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewButtonColumn hwrk_Update;
-        private System.Windows.Forms.DataGridViewButtonColumn hwrk_delete;
         private System.Windows.Forms.DataGridViewTextBoxColumn whIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn noOfWrkHoursDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn workingSlotsDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewButtonColumn h_update;
         private System.Windows.Forms.DataGridViewButtonColumn h_delete;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn wdIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn noOfWrkDaysDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn workingDaysDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewButtonColumn hwrk_Update;
+        private System.Windows.Forms.DataGridViewButtonColumn hwrk_delete;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
