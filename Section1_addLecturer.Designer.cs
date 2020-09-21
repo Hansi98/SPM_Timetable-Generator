@@ -42,6 +42,8 @@
             this.centaddleclabel = new System.Windows.Forms.Label();
             this.deptaddleclabel = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.RS1_addLecCancel = new System.Windows.Forms.Button();
+            this.RS1_addLecADD = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.RS1_addLecLName = new System.Windows.Forms.TextBox();
@@ -51,8 +53,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.RS1_addLecFName = new System.Windows.Forms.TextBox();
             this.labeladdlec34 = new System.Windows.Forms.Label();
-            this.RS1_addLecCancel = new System.Windows.Forms.Button();
-            this.RS1_addLecADD = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,7 +85,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(368, 705);
+            this.panel1.Size = new System.Drawing.Size(596, 705);
             this.panel1.TabIndex = 0;
             // 
             // RS1_addLecEmpID
@@ -94,7 +94,7 @@
             this.RS1_addLecEmpID.Location = new System.Drawing.Point(26, 101);
             this.RS1_addLecEmpID.MaxLength = 6;
             this.RS1_addLecEmpID.Name = "RS1_addLecEmpID";
-            this.RS1_addLecEmpID.Size = new System.Drawing.Size(304, 29);
+            this.RS1_addLecEmpID.Size = new System.Drawing.Size(545, 29);
             this.RS1_addLecEmpID.TabIndex = 41;
             this.RS1_addLecEmpID.TextChanged += new System.EventHandler(this.RS1_addLecEmpID_TextChanged);
             // 
@@ -105,7 +105,7 @@
             this.RS1_addLecBuilding.FormattingEnabled = true;
             this.RS1_addLecBuilding.Location = new System.Drawing.Point(27, 478);
             this.RS1_addLecBuilding.Name = "RS1_addLecBuilding";
-            this.RS1_addLecBuilding.Size = new System.Drawing.Size(300, 28);
+            this.RS1_addLecBuilding.Size = new System.Drawing.Size(541, 28);
             this.RS1_addLecBuilding.TabIndex = 40;
             this.RS1_addLecBuilding.Visible = false;
             // 
@@ -120,7 +120,7 @@
             "Kandy"});
             this.RS1_addLecCenter.Location = new System.Drawing.Point(27, 425);
             this.RS1_addLecCenter.Name = "RS1_addLecCenter";
-            this.RS1_addLecCenter.Size = new System.Drawing.Size(300, 28);
+            this.RS1_addLecCenter.Size = new System.Drawing.Size(541, 28);
             this.RS1_addLecCenter.TabIndex = 39;
             this.RS1_addLecCenter.Visible = false;
             this.RS1_addLecCenter.SelectedIndexChanged += new System.EventHandler(this.RS1_addLecCenter_SelectedIndexChanged);
@@ -143,7 +143,7 @@
             this.RS1_addLecDept.FormattingEnabled = true;
             this.RS1_addLecDept.Location = new System.Drawing.Point(27, 372);
             this.RS1_addLecDept.Name = "RS1_addLecDept";
-            this.RS1_addLecDept.Size = new System.Drawing.Size(300, 28);
+            this.RS1_addLecDept.Size = new System.Drawing.Size(541, 28);
             this.RS1_addLecDept.TabIndex = 37;
             this.RS1_addLecDept.Visible = false;
             this.RS1_addLecDept.SelectedIndexChanged += new System.EventHandler(this.RS1_addLecDept_SelectedIndexChanged);
@@ -159,7 +159,7 @@
             "Faculty of Bussiness & Management"});
             this.RS1_addLecFac.Location = new System.Drawing.Point(27, 319);
             this.RS1_addLecFac.Name = "RS1_addLecFac";
-            this.RS1_addLecFac.Size = new System.Drawing.Size(300, 28);
+            this.RS1_addLecFac.Size = new System.Drawing.Size(541, 28);
             this.RS1_addLecFac.TabIndex = 36;
             this.RS1_addLecFac.SelectedIndexChanged += new System.EventHandler(this.RS1_addLecFac_SelectedIndexChanged);
             // 
@@ -178,7 +178,7 @@
             "7"});
             this.RS1_addLecLevel.Location = new System.Drawing.Point(28, 533);
             this.RS1_addLecLevel.Name = "RS1_addLecLevel";
-            this.RS1_addLecLevel.Size = new System.Drawing.Size(300, 28);
+            this.RS1_addLecLevel.Size = new System.Drawing.Size(541, 28);
             this.RS1_addLecLevel.TabIndex = 35;
             this.RS1_addLecLevel.Visible = false;
             this.RS1_addLecLevel.SelectedIndexChanged += new System.EventHandler(this.RS1_addLecLevel_SelectedIndexChanged);
@@ -237,6 +237,40 @@
             this.label7.TabIndex = 22;
             this.label7.Text = "Faculty";
             // 
+            // RS1_addLecCancel
+            // 
+            this.RS1_addLecCancel.BackColor = System.Drawing.Color.Crimson;
+            this.RS1_addLecCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RS1_addLecCancel.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RS1_addLecCancel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.RS1_addLecCancel.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.cancel_26px;
+            this.RS1_addLecCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RS1_addLecCancel.Location = new System.Drawing.Point(466, 627);
+            this.RS1_addLecCancel.Name = "RS1_addLecCancel";
+            this.RS1_addLecCancel.Size = new System.Drawing.Size(102, 47);
+            this.RS1_addLecCancel.TabIndex = 20;
+            this.RS1_addLecCancel.Text = "Cancel";
+            this.RS1_addLecCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.RS1_addLecCancel.UseVisualStyleBackColor = false;
+            this.RS1_addLecCancel.Click += new System.EventHandler(this.RS1_addLecCancel_Click);
+            // 
+            // RS1_addLecADD
+            // 
+            this.RS1_addLecADD.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.RS1_addLecADD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RS1_addLecADD.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RS1_addLecADD.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.RS1_addLecADD.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.add_30px;
+            this.RS1_addLecADD.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RS1_addLecADD.Location = new System.Drawing.Point(316, 627);
+            this.RS1_addLecADD.Name = "RS1_addLecADD";
+            this.RS1_addLecADD.Size = new System.Drawing.Size(108, 47);
+            this.RS1_addLecADD.TabIndex = 19;
+            this.RS1_addLecADD.Text = "Add";
+            this.RS1_addLecADD.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.RS1_addLecADD.UseVisualStyleBackColor = false;
+            this.RS1_addLecADD.Click += new System.EventHandler(this.RS1_addLecADD_Click);
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -262,7 +296,7 @@
             this.RS1_addLecLName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RS1_addLecLName.Location = new System.Drawing.Point(27, 267);
             this.RS1_addLecLName.Name = "RS1_addLecLName";
-            this.RS1_addLecLName.Size = new System.Drawing.Size(304, 29);
+            this.RS1_addLecLName.Size = new System.Drawing.Size(545, 29);
             this.RS1_addLecLName.TabIndex = 7;
             // 
             // label5
@@ -280,7 +314,7 @@
             this.RS1_addLecMName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RS1_addLecMName.Location = new System.Drawing.Point(27, 212);
             this.RS1_addLecMName.Name = "RS1_addLecMName";
-            this.RS1_addLecMName.Size = new System.Drawing.Size(304, 29);
+            this.RS1_addLecMName.Size = new System.Drawing.Size(545, 29);
             this.RS1_addLecMName.TabIndex = 5;
             // 
             // label3
@@ -308,7 +342,7 @@
             this.RS1_addLecFName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RS1_addLecFName.Location = new System.Drawing.Point(27, 156);
             this.RS1_addLecFName.Name = "RS1_addLecFName";
-            this.RS1_addLecFName.Size = new System.Drawing.Size(304, 29);
+            this.RS1_addLecFName.Size = new System.Drawing.Size(545, 29);
             this.RS1_addLecFName.TabIndex = 2;
             // 
             // labeladdlec34
@@ -321,47 +355,13 @@
             this.labeladdlec34.TabIndex = 1;
             this.labeladdlec34.Text = "Employee ID";
             // 
-            // RS1_addLecCancel
-            // 
-            this.RS1_addLecCancel.BackColor = System.Drawing.Color.Crimson;
-            this.RS1_addLecCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RS1_addLecCancel.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RS1_addLecCancel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.RS1_addLecCancel.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.cancel_26px;
-            this.RS1_addLecCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RS1_addLecCancel.Location = new System.Drawing.Point(219, 637);
-            this.RS1_addLecCancel.Name = "RS1_addLecCancel";
-            this.RS1_addLecCancel.Size = new System.Drawing.Size(109, 47);
-            this.RS1_addLecCancel.TabIndex = 20;
-            this.RS1_addLecCancel.Text = "Cancel";
-            this.RS1_addLecCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.RS1_addLecCancel.UseVisualStyleBackColor = false;
-            this.RS1_addLecCancel.Click += new System.EventHandler(this.RS1_addLecCancel_Click);
-            // 
-            // RS1_addLecADD
-            // 
-            this.RS1_addLecADD.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.RS1_addLecADD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RS1_addLecADD.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RS1_addLecADD.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.RS1_addLecADD.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.add_30px;
-            this.RS1_addLecADD.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RS1_addLecADD.Location = new System.Drawing.Point(103, 637);
-            this.RS1_addLecADD.Name = "RS1_addLecADD";
-            this.RS1_addLecADD.Size = new System.Drawing.Size(97, 47);
-            this.RS1_addLecADD.TabIndex = 19;
-            this.RS1_addLecADD.Text = "Add";
-            this.RS1_addLecADD.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.RS1_addLecADD.UseVisualStyleBackColor = false;
-            this.RS1_addLecADD.Click += new System.EventHandler(this.RS1_addLecADD_Click);
-            // 
             // Section1_addLecturer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(368, 705);
+            this.ClientSize = new System.Drawing.Size(596, 705);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
