@@ -258,5 +258,54 @@ namespace ABC_Institute___Timetable_Generator
             //
             hidesessionsubmenu();
         }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            openchildform(new Section4_roomsfortags());
+            //
+            hidelocationsubmenu();
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            openchildform(new Section4_addRoomsforsubjects());
+            //
+            hidelocationsubmenu();
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            openchildform(new Section4_addRoomsforlecturers());
+            //
+            hidelocationsubmenu();
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            openchildform(new Section4_addRoomsforgroups());
+            //
+            hidelocationsubmenu();
+        }
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+            openchildform(new Section4_addRoomsforsessions());
+            //
+            hidelocationsubmenu();
+        }
+
+        private void Button6_Click(object sender, EventArgs e)
+        {
+            openchildform(new Section4_addRoomsForconsecutivesessions());
+            //
+            hidelocationsubmenu();
+        }
+
+        private void Button7_Click(object sender, EventArgs e)
+        {
+            openchildform(new Section4_reserveRoom());
+            //
+            hidelocationsubmenu();
+        }
     }
 }

@@ -103,6 +103,42 @@
     <Compile Include="Section3_MarkUnavailabily.Designer.cs">
       <DependentUpon>Section3_MarkUnavailabily.cs</DependentUpon>
     </Compile>
+    <Compile Include="Section4_addRoomsForconsecutivesessions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section4_addRoomsForconsecutivesessions.Designer.cs">
+      <DependentUpon>Section4_addRoomsForconsecutivesessions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Section4_addRoomsforgroups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section4_addRoomsforgroups.Designer.cs">
+      <DependentUpon>Section4_addRoomsforgroups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Section4_addRoomsforlecturers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section4_addRoomsforlecturers.Designer.cs">
+      <DependentUpon>Section4_addRoomsforlecturers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Section4_addRoomsforsessions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section4_addRoomsforsessions.Designer.cs">
+      <DependentUpon>Section4_addRoomsforsessions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Section4_addRoomsforsubjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section4_addRoomsforsubjects.Designer.cs">
+      <DependentUpon>Section4_addRoomsforsubjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Section4_reserveRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section4_reserveRoom.Designer.cs">
+      <DependentUpon>Section4_reserveRoom.cs</DependentUpon>
+    </Compile>
     <Compile Include="Section4_roomsfortags.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -256,6 +292,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Section3_MarkUnavailabily.resx">
       <DependentUpon>Section3_MarkUnavailabily.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section4_addRoomsForconsecutivesessions.resx">
+      <DependentUpon>Section4_addRoomsForconsecutivesessions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section4_addRoomsforgroups.resx">
+      <DependentUpon>Section4_addRoomsforgroups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section4_addRoomsforlecturers.resx">
+      <DependentUpon>Section4_addRoomsforlecturers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section4_addRoomsforsessions.resx">
+      <DependentUpon>Section4_addRoomsforsessions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section4_addRoomsforsubjects.resx">
+      <DependentUpon>Section4_addRoomsforsubjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section4_reserveRoom.resx">
+      <DependentUpon>Section4_reserveRoom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Section4_roomsfortags.resx">
       <DependentUpon>Section4_roomsfortags.cs</DependentUpon>

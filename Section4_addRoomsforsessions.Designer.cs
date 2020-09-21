@@ -1,6 +1,6 @@
 ﻿namespace ABC_Institute___Timetable_Generator
 {
-    partial class Section4_roomsfortags
+    partial class Section4_addRoomsforsessions
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Section4_roomsfortags));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Section4_addRoomsforsessions));
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.nishikistatimg = new System.Windows.Forms.PictureBox();
@@ -43,7 +43,7 @@
             this.button1.Location = new System.Drawing.Point(1116, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(50, 36);
-            this.button1.TabIndex = 11;
+            this.button1.TabIndex = 17;
             this.button1.Text = "X";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
@@ -54,9 +54,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(95, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(333, 29);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Add Room / Rooms for tags";
+            this.label1.Size = new System.Drawing.Size(387, 29);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "Add Room / Rooms for sessions";
             // 
             // nishikistatimg
             // 
@@ -67,10 +67,10 @@
             this.nishikistatimg.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.nishikistatimg.Size = new System.Drawing.Size(77, 69);
             this.nishikistatimg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.nishikistatimg.TabIndex = 9;
+            this.nishikistatimg.TabIndex = 15;
             this.nishikistatimg.TabStop = false;
             // 
-            // Section4_roomsfortags
+            // Section4_addRoomsforsessions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -80,8 +80,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.nishikistatimg);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Section4_roomsfortags";
-            this.Text = "Section4_rooms";
+            this.Name = "Section4_addRoomsforsessions";
+            this.Text = "Section4_addRoomsforsessions";
             ((System.ComponentModel.ISupportInitialize)(this.nishikistatimg)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

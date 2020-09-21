@@ -1,6 +1,6 @@
 ﻿namespace ABC_Institute___Timetable_Generator
 {
-    partial class Section4_roomsfortags
+    partial class Section4_reserveRoom
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Section4_roomsfortags));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Section4_reserveRoom));
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.nishikistatimg = new System.Windows.Forms.PictureBox();
@@ -54,9 +54,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(95, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(333, 29);
+            this.label1.Size = new System.Drawing.Size(219, 29);
             this.label1.TabIndex = 10;
-            this.label1.Text = "Add Room / Rooms for tags";
+            this.label1.Text = "Room reservation";
             // 
             // nishikistatimg
             // 
@@ -70,7 +70,7 @@
             this.nishikistatimg.TabIndex = 9;
             this.nishikistatimg.TabStop = false;
             // 
-            // Section4_roomsfortags
+            // Section4_reserveRoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -80,8 +80,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.nishikistatimg);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Section4_roomsfortags";
-            this.Text = "Section4_rooms";
+            this.Name = "Section4_reserveRoom";
+            this.Text = "Section4_reserveRoom";
             ((System.ComponentModel.ISupportInitialize)(this.nishikistatimg)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
