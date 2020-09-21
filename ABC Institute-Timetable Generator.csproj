@@ -73,11 +73,37 @@
     <Compile Include="Section1_viewSubject.Designer.cs">
       <DependentUpon>Section1_viewSubject.cs</DependentUpon>
     </Compile>
+
+    <Compile Include="Section3_ConsecutiveSessions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section3_ConsecutiveSessions.Designer.cs">
+      <DependentUpon>Section3_ConsecutiveSessions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Section3_MarkUnavailability.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section3_MarkUnavailability.Designer.cs">
+      <DependentUpon>Section3_MarkUnavailability.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Section3_NotOverlappingSessions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section3_NotOverlappingSessions.Designer.cs">
+      <DependentUpon>Section3_NotOverlappingSessions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Section3_ParallelSessions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section3_ParallelSessions.Designer.cs">
+      <DependentUpon>Section3_ParallelSessions.cs</DependentUpon>
+
     <Compile Include="Section1_WorkingDays.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Section1_WorkingDays.Designer.cs">
       <DependentUpon>Section1_WorkingDays.cs</DependentUpon>
+
     </Compile>
     <Compile Include="SubjectServiceImpl.cs" />
     <Compile Include="SubjectServicesInt.cs" />
@@ -206,6 +232,19 @@
     <EmbeddedResource Include="Section1_viewLecturer.resx">
       <DependentUpon>Section1_viewLecturer.cs</DependentUpon>
     </EmbeddedResource>
+
+    <EmbeddedResource Include="Section3_ConsecutiveSessions.resx">
+      <DependentUpon>Section3_ConsecutiveSessions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section3_MarkUnavailability.resx">
+      <DependentUpon>Section3_MarkUnavailability.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section3_NotOverlappingSessions.resx">
+      <DependentUpon>Section3_NotOverlappingSessions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section3_ParallelSessions.resx">
+      <DependentUpon>Section3_ParallelSessions.cs</DependentUpon>
+
     <EmbeddedResource Include="Section1_WorkingDays.resx">
       <DependentUpon>Section1_WorkingDays.cs</DependentUpon>
     </EmbeddedResource>

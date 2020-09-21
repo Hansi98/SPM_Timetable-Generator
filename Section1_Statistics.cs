@@ -19,7 +19,7 @@ namespace ABC_Institute___Timetable_Generator
         {
             InitializeComponent();
         }
-
+        //nishiki
         private void Btnclose_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -183,7 +183,7 @@ namespace ABC_Institute___Timetable_Generator
             sqlcmd.CommandType = CommandType.StoredProcedure;
 
             sqlcon.Open();
-
+            
             MySqlDataReader reader = sqlcmd.ExecuteReader();
 
             while (reader.Read())
