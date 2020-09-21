@@ -36,6 +36,12 @@
             this.HansiWork_tabcontrol = new System.Windows.Forms.TabControl();
             this.HansiWork_daystab = new System.Windows.Forms.TabPage();
             this.hansiwork_daystable = new System.Windows.Forms.DataGridView();
+            this.wdIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.noOfWrkDaysDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.workingDaysDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hwrk_Update = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.hwrk_delete = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.hansiworkdaysBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.HansiWork_daysbtnupdate = new System.Windows.Forms.Button();
             this.hansisuncheckBox = new System.Windows.Forms.CheckBox();
             this.hansisatcheckBox = new System.Windows.Forms.CheckBox();
@@ -49,42 +55,34 @@
             this.HansiWork_daysbtnadd = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.HansiWork_hourstab = new System.Windows.Forms.TabPage();
+            this.hansiwork_hourslots = new System.Windows.Forms.ComboBox();
+            this.HansiWork_minutes = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.HansiWork_hours = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.hansiwork_hourupdate = new System.Windows.Forms.Button();
             this.hansiwork_hourstable = new System.Windows.Forms.DataGridView();
+            this.whIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.noOfWrkHoursDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.workingSlotsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.h_update = new System.Windows.Forms.DataGridViewButtonColumn();
             this.h_delete = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.hansiwork_hourslots = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.HansiWork_minutes = new System.Windows.Forms.NumericUpDown();
+            this.hansiworkhoursBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label5 = new System.Windows.Forms.Label();
-            this.HansiWork_hours = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.HansiWork_hoursaddbtn = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.btnclose = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.hwrk_Update = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.hwrk_delete = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.wdIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.noOfWrkDaysDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.workingDaysDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hansiworkdaysBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.whIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.noOfWrkHoursDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.workingSlotsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hansiworkhoursBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.HansiWork_tabcontrol.SuspendLayout();
             this.HansiWork_daystab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hansiwork_daystable)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hansiworkdaysBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HansiWork_daysno)).BeginInit();
             this.HansiWork_hourstab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hansiwork_hourstable)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.HansiWork_minutes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.HansiWork_hours)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hansiworkdaysBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hansiworkhoursBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -189,6 +187,52 @@
             this.hansiwork_daystable.Size = new System.Drawing.Size(762, 159);
             this.hansiwork_daystable.TabIndex = 15;
             this.hansiwork_daystable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.hansiwork_daystable_CellContentClick);
+            // 
+            // wdIDDataGridViewTextBoxColumn
+            // 
+            this.wdIDDataGridViewTextBoxColumn.DataPropertyName = "wdID";
+            this.wdIDDataGridViewTextBoxColumn.HeaderText = "wdID";
+            this.wdIDDataGridViewTextBoxColumn.Name = "wdIDDataGridViewTextBoxColumn";
+            this.wdIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.wdIDDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // noOfWrkDaysDataGridViewTextBoxColumn
+            // 
+            this.noOfWrkDaysDataGridViewTextBoxColumn.DataPropertyName = "noOfWrkDays";
+            this.noOfWrkDaysDataGridViewTextBoxColumn.HeaderText = "noOfWrkDays";
+            this.noOfWrkDaysDataGridViewTextBoxColumn.Name = "noOfWrkDaysDataGridViewTextBoxColumn";
+            this.noOfWrkDaysDataGridViewTextBoxColumn.ReadOnly = true;
+            this.noOfWrkDaysDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // workingDaysDataGridViewTextBoxColumn
+            // 
+            this.workingDaysDataGridViewTextBoxColumn.DataPropertyName = "WorkingDays";
+            this.workingDaysDataGridViewTextBoxColumn.HeaderText = "WorkingDays";
+            this.workingDaysDataGridViewTextBoxColumn.Name = "workingDaysDataGridViewTextBoxColumn";
+            this.workingDaysDataGridViewTextBoxColumn.ReadOnly = true;
+            this.workingDaysDataGridViewTextBoxColumn.Width = 480;
+            // 
+            // hwrk_Update
+            // 
+            this.hwrk_Update.HeaderText = "Update";
+            this.hwrk_Update.Name = "hwrk_Update";
+            this.hwrk_Update.ReadOnly = true;
+            this.hwrk_Update.Text = "Update";
+            this.hwrk_Update.UseColumnTextForButtonValue = true;
+            this.hwrk_Update.Width = 240;
+            // 
+            // hwrk_delete
+            // 
+            this.hwrk_delete.HeaderText = "Delete";
+            this.hwrk_delete.Name = "hwrk_delete";
+            this.hwrk_delete.ReadOnly = true;
+            this.hwrk_delete.Text = "Delete";
+            this.hwrk_delete.UseColumnTextForButtonValue = true;
+            this.hwrk_delete.Width = 240;
+            // 
+            // hansiworkdaysBindingSource
+            // 
+            this.hansiworkdaysBindingSource.DataSource = typeof(ABC_Institute___Timetable_Generator.hansiworkdays);
             // 
             // HansiWork_daysbtnupdate
             // 
@@ -337,13 +381,14 @@
             // 
             // HansiWork_hourstab
             // 
+            this.HansiWork_hourstab.Controls.Add(this.hansiwork_hourslots);
+            this.HansiWork_hourstab.Controls.Add(this.HansiWork_minutes);
+            this.HansiWork_hourstab.Controls.Add(this.label6);
+            this.HansiWork_hourstab.Controls.Add(this.HansiWork_hours);
+            this.HansiWork_hourstab.Controls.Add(this.label10);
             this.HansiWork_hourstab.Controls.Add(this.hansiwork_hourupdate);
             this.HansiWork_hourstab.Controls.Add(this.hansiwork_hourstable);
-            this.HansiWork_hourstab.Controls.Add(this.hansiwork_hourslots);
-            this.HansiWork_hourstab.Controls.Add(this.label6);
-            this.HansiWork_hourstab.Controls.Add(this.HansiWork_minutes);
             this.HansiWork_hourstab.Controls.Add(this.label5);
-            this.HansiWork_hourstab.Controls.Add(this.HansiWork_hours);
             this.HansiWork_hourstab.Controls.Add(this.label3);
             this.HansiWork_hourstab.Controls.Add(this.HansiWork_hoursaddbtn);
             this.HansiWork_hourstab.Controls.Add(this.label4);
@@ -356,6 +401,58 @@
             this.HansiWork_hourstab.TabIndex = 1;
             this.HansiWork_hourstab.Text = "Working Hours";
             this.HansiWork_hourstab.UseVisualStyleBackColor = true;
+            // 
+            // hansiwork_hourslots
+            // 
+            this.hansiwork_hourslots.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.hansiwork_hourslots.FormattingEnabled = true;
+            this.hansiwork_hourslots.Items.AddRange(new object[] {
+            "1h time slot",
+            "30 minutes time slot"});
+            this.hansiwork_hourslots.Location = new System.Drawing.Point(404, 92);
+            this.hansiwork_hourslots.Name = "hansiwork_hourslots";
+            this.hansiwork_hourslots.Size = new System.Drawing.Size(251, 24);
+            this.hansiwork_hourslots.TabIndex = 27;
+            // 
+            // HansiWork_minutes
+            // 
+            this.HansiWork_minutes.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.HansiWork_minutes.Location = new System.Drawing.Point(556, 43);
+            this.HansiWork_minutes.Name = "HansiWork_minutes";
+            this.HansiWork_minutes.Size = new System.Drawing.Size(94, 22);
+            this.HansiWork_minutes.TabIndex = 26;
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Tai Le", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(649, 48);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(17, 19);
+            this.label6.TabIndex = 25;
+            this.label6.Text = "h";
+            // 
+            // HansiWork_hours
+            // 
+            this.HansiWork_hours.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.HansiWork_hours.Location = new System.Drawing.Point(404, 43);
+            this.HansiWork_hours.Name = "HansiWork_hours";
+            this.HansiWork_hours.Size = new System.Drawing.Size(94, 22);
+            this.HansiWork_hours.TabIndex = 24;
+            // 
+            // label10
+            // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Tai Le", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(523, 48);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(23, 19);
+            this.label10.TabIndex = 23;
+            this.label10.Text = "to";
             // 
             // hansiwork_hourupdate
             // 
@@ -391,6 +488,27 @@
             this.hansiwork_hourstable.TabIndex = 17;
             this.hansiwork_hourstable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.hansiwork_hourstable_CellContentClick);
             // 
+            // whIDDataGridViewTextBoxColumn
+            // 
+            this.whIDDataGridViewTextBoxColumn.DataPropertyName = "whID";
+            this.whIDDataGridViewTextBoxColumn.HeaderText = "whID";
+            this.whIDDataGridViewTextBoxColumn.Name = "whIDDataGridViewTextBoxColumn";
+            this.whIDDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // noOfWrkHoursDataGridViewTextBoxColumn
+            // 
+            this.noOfWrkHoursDataGridViewTextBoxColumn.DataPropertyName = "noOfWrkHours";
+            this.noOfWrkHoursDataGridViewTextBoxColumn.HeaderText = "noOfWrkHours";
+            this.noOfWrkHoursDataGridViewTextBoxColumn.Name = "noOfWrkHoursDataGridViewTextBoxColumn";
+            this.noOfWrkHoursDataGridViewTextBoxColumn.Width = 250;
+            // 
+            // workingSlotsDataGridViewTextBoxColumn
+            // 
+            this.workingSlotsDataGridViewTextBoxColumn.DataPropertyName = "WorkingSlots";
+            this.workingSlotsDataGridViewTextBoxColumn.HeaderText = "WorkingSlots";
+            this.workingSlotsDataGridViewTextBoxColumn.Name = "workingSlotsDataGridViewTextBoxColumn";
+            this.workingSlotsDataGridViewTextBoxColumn.Width = 430;
+            // 
             // h_update
             // 
             this.h_update.HeaderText = "Update";
@@ -407,55 +525,22 @@
             this.h_delete.UseColumnTextForButtonValue = true;
             this.h_delete.Width = 200;
             // 
-            // hansiwork_hourslots
+            // hansiworkhoursBindingSource
             // 
-            this.hansiwork_hourslots.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.hansiwork_hourslots.Location = new System.Drawing.Point(404, 93);
-            this.hansiwork_hourslots.Name = "hansiwork_hourslots";
-            this.hansiwork_hourslots.Size = new System.Drawing.Size(266, 22);
-            this.hansiwork_hourslots.TabIndex = 16;
-            // 
-            // label6
-            // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Tai Le", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(630, 49);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(40, 19);
-            this.label6.TabIndex = 15;
-            this.label6.Text = "mins";
-            // 
-            // HansiWork_minutes
-            // 
-            this.HansiWork_minutes.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.HansiWork_minutes.Location = new System.Drawing.Point(528, 45);
-            this.HansiWork_minutes.Name = "HansiWork_minutes";
-            this.HansiWork_minutes.Size = new System.Drawing.Size(97, 22);
-            this.HansiWork_minutes.TabIndex = 14;
-            this.HansiWork_minutes.ValueChanged += new System.EventHandler(this.HansiWork_minutes_ValueChanged);
+            this.hansiworkhoursBindingSource.DataSource = typeof(ABC_Institute___Timetable_Generator.hansiworkhours);
             // 
             // label5
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Tai Le", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(506, 48);
+            this.label5.Location = new System.Drawing.Point(498, 48);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(17, 19);
             this.label5.TabIndex = 13;
             this.label5.Text = "h";
             this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // HansiWork_hours
-            // 
-            this.HansiWork_hours.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.HansiWork_hours.Location = new System.Drawing.Point(405, 44);
-            this.HansiWork_hours.Name = "HansiWork_hours";
-            this.HansiWork_hours.Size = new System.Drawing.Size(96, 22);
-            this.HansiWork_hours.TabIndex = 10;
             // 
             // label3
             // 
@@ -511,77 +596,6 @@
             this.btnclose.UseVisualStyleBackColor = false;
             this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
             // 
-            // hwrk_Update
-            // 
-            this.hwrk_Update.HeaderText = "Update";
-            this.hwrk_Update.Name = "hwrk_Update";
-            this.hwrk_Update.ReadOnly = true;
-            this.hwrk_Update.Text = "Update";
-            this.hwrk_Update.UseColumnTextForButtonValue = true;
-            this.hwrk_Update.Width = 240;
-            // 
-            // hwrk_delete
-            // 
-            this.hwrk_delete.HeaderText = "Delete";
-            this.hwrk_delete.Name = "hwrk_delete";
-            this.hwrk_delete.ReadOnly = true;
-            this.hwrk_delete.Text = "Delete";
-            this.hwrk_delete.UseColumnTextForButtonValue = true;
-            this.hwrk_delete.Width = 240;
-            // 
-            // wdIDDataGridViewTextBoxColumn
-            // 
-            this.wdIDDataGridViewTextBoxColumn.DataPropertyName = "wdID";
-            this.wdIDDataGridViewTextBoxColumn.HeaderText = "wdID";
-            this.wdIDDataGridViewTextBoxColumn.Name = "wdIDDataGridViewTextBoxColumn";
-            this.wdIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.wdIDDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // noOfWrkDaysDataGridViewTextBoxColumn
-            // 
-            this.noOfWrkDaysDataGridViewTextBoxColumn.DataPropertyName = "noOfWrkDays";
-            this.noOfWrkDaysDataGridViewTextBoxColumn.HeaderText = "noOfWrkDays";
-            this.noOfWrkDaysDataGridViewTextBoxColumn.Name = "noOfWrkDaysDataGridViewTextBoxColumn";
-            this.noOfWrkDaysDataGridViewTextBoxColumn.ReadOnly = true;
-            this.noOfWrkDaysDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // workingDaysDataGridViewTextBoxColumn
-            // 
-            this.workingDaysDataGridViewTextBoxColumn.DataPropertyName = "WorkingDays";
-            this.workingDaysDataGridViewTextBoxColumn.HeaderText = "WorkingDays";
-            this.workingDaysDataGridViewTextBoxColumn.Name = "workingDaysDataGridViewTextBoxColumn";
-            this.workingDaysDataGridViewTextBoxColumn.ReadOnly = true;
-            this.workingDaysDataGridViewTextBoxColumn.Width = 480;
-            // 
-            // hansiworkdaysBindingSource
-            // 
-            this.hansiworkdaysBindingSource.DataSource = typeof(ABC_Institute___Timetable_Generator.hansiworkdays);
-            // 
-            // whIDDataGridViewTextBoxColumn
-            // 
-            this.whIDDataGridViewTextBoxColumn.DataPropertyName = "whID";
-            this.whIDDataGridViewTextBoxColumn.HeaderText = "whID";
-            this.whIDDataGridViewTextBoxColumn.Name = "whIDDataGridViewTextBoxColumn";
-            this.whIDDataGridViewTextBoxColumn.Width = 200;
-            // 
-            // noOfWrkHoursDataGridViewTextBoxColumn
-            // 
-            this.noOfWrkHoursDataGridViewTextBoxColumn.DataPropertyName = "noOfWrkHours";
-            this.noOfWrkHoursDataGridViewTextBoxColumn.HeaderText = "noOfWrkHours";
-            this.noOfWrkHoursDataGridViewTextBoxColumn.Name = "noOfWrkHoursDataGridViewTextBoxColumn";
-            this.noOfWrkHoursDataGridViewTextBoxColumn.Width = 250;
-            // 
-            // workingSlotsDataGridViewTextBoxColumn
-            // 
-            this.workingSlotsDataGridViewTextBoxColumn.DataPropertyName = "WorkingSlots";
-            this.workingSlotsDataGridViewTextBoxColumn.HeaderText = "WorkingSlots";
-            this.workingSlotsDataGridViewTextBoxColumn.Name = "workingSlotsDataGridViewTextBoxColumn";
-            this.workingSlotsDataGridViewTextBoxColumn.Width = 430;
-            // 
-            // hansiworkhoursBindingSource
-            // 
-            this.hansiworkhoursBindingSource.DataSource = typeof(ABC_Institute___Timetable_Generator.hansiworkhours);
-            // 
             // Section1_WorkingDays
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -598,13 +612,11 @@
             this.HansiWork_daystab.ResumeLayout(false);
             this.HansiWork_daystab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hansiwork_daystable)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hansiworkdaysBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HansiWork_daysno)).EndInit();
             this.HansiWork_hourstab.ResumeLayout(false);
             this.HansiWork_hourstab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hansiwork_hourstable)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.HansiWork_minutes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.HansiWork_hours)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hansiworkdaysBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hansiworkhoursBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -621,13 +633,10 @@
         private System.Windows.Forms.TabPage HansiWork_hourstab;
         private System.Windows.Forms.NumericUpDown HansiWork_daysno;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.NumericUpDown HansiWork_hours;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button HansiWork_hoursaddbtn;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.NumericUpDown HansiWork_minutes;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.CheckBox hansisuncheckBox;
@@ -639,7 +648,6 @@
         private System.Windows.Forms.CheckBox hansimondaycheckBox;
         private System.Windows.Forms.Button HansiWork_daysbtnupdate;
         private System.Windows.Forms.DataGridView hansiwork_daystable;
-        private System.Windows.Forms.TextBox hansiwork_hourslots;
         private System.Windows.Forms.DataGridView hansiwork_hourstable;
         private System.Windows.Forms.BindingSource hansiworkdaysBindingSource;
         private System.Windows.Forms.BindingSource hansiworkhoursBindingSource;
@@ -649,12 +657,16 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn workingSlotsDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewButtonColumn h_update;
         private System.Windows.Forms.DataGridViewButtonColumn h_delete;
-        private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.DataGridViewTextBoxColumn wdIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn noOfWrkDaysDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn workingDaysDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewButtonColumn hwrk_Update;
         private System.Windows.Forms.DataGridViewButtonColumn hwrk_delete;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox HansiWork_minutes;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox HansiWork_hours;
+        private System.Windows.Forms.ComboBox hansiwork_hourslots;
     }
 }

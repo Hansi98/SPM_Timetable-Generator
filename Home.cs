@@ -131,6 +131,9 @@ namespace ABC_Institute___Timetable_Generator
 
         private void Homebtntimetables_Click(object sender, EventArgs e)
         {
+            openchildform(new Section5_viewTimetable());
+            //..codes
+            hidesubmenu();
         }
         
         

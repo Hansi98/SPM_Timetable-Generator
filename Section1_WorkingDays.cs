@@ -105,6 +105,9 @@ namespace ABC_Institute___Timetable_Generator
                 mySqlCmd.Parameters.AddWithValue("_WorkingDays", days);
 
 
+                MessageBox.Show("Check whether no of working days and working days are equal");
+
+
                 mySqlCmd.ExecuteNonQuery();
 
                 clear();
@@ -316,10 +319,8 @@ namespace ABC_Institute___Timetable_Generator
                     hansiwork_hourslots.Text = hansiwork_hourstable.CurrentRow.Cells[2].Value.ToString();
                 
                 
-                HansiWork_hours.Value = Convert.ToInt32(list[0]) ;
-                HansiWork_minutes.Value = Convert.ToInt32(list[1]);
-
-
+                HansiWork_hours.Text = list[0] ;
+                HansiWork_minutes.Text = list[1];
 
                 whID = Convert.ToInt32(hansiwork_hourstable.CurrentRow.Cells[0].Value.ToString());
             }
@@ -368,7 +369,7 @@ namespace ABC_Institute___Timetable_Generator
                 //        Console.WriteLine(ti);
                 //    }
 
-                mySqlCmd.Parameters.AddWithValue("_noOfWrkHours", Convert.ToInt32(HansiWork_hours.Text.Trim()) +" : "+ Convert.ToInt32(HansiWork_minutes.Text.Trim()));
+                mySqlCmd.Parameters.AddWithValue("_noOfWrkHours", HansiWork_hours.Text.Trim() +" : "+ HansiWork_minutes.Text.Trim());
                 mySqlCmd.Parameters.AddWithValue("_WorkingSlots", hansiwork_hourslots.Text.Trim());
                 mySqlCmd.ExecuteNonQuery();
 
@@ -377,6 +378,9 @@ namespace ABC_Institute___Timetable_Generator
                 MessageBox.Show("Working Hours Updated Successfully");
             }
         }
+
+        
+        
     }
 }
 
