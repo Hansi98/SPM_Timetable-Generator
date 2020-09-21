@@ -109,6 +109,12 @@
     <Compile Include="Section4_roomsfortags.Designer.cs">
       <DependentUpon>Section4_roomsfortags.cs</DependentUpon>
     </Compile>
+    <Compile Include="Section5_viewTimetable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section5_viewTimetable.Designer.cs">
+      <DependentUpon>Section5_viewTimetable.cs</DependentUpon>
+    </Compile>
     <Compile Include="SubjectServiceImpl.cs" />
     <Compile Include="SubjectServicesInt.cs" />
     <Compile Include="Subject.cs" />
@@ -253,6 +259,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Section4_roomsfortags.resx">
       <DependentUpon>Section4_roomsfortags.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section5_viewTimetable.resx">
+      <DependentUpon>Section5_viewTimetable.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="GroupNumbers.datasource" />
     <None Include="hansiworkdays.datasource" />
