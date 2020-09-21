@@ -213,6 +213,7 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "By Faculty";
             this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Click += new System.EventHandler(this.TabPage1_Click);
             // 
             // nishikifacultylec_chart
             // 
@@ -276,7 +277,7 @@
             series2.Legend = "Legend1";
             series2.Name = "Center";
             this.nishikicenterlec_chart.Series.Add(series2);
-            this.nishikicenterlec_chart.Size = new System.Drawing.Size(650, 483);
+            this.nishikicenterlec_chart.Size = new System.Drawing.Size(650, 486);
             this.nishikicenterlec_chart.TabIndex = 23;
             this.nishikicenterlec_chart.Text = "chart1";
             // 
@@ -321,7 +322,7 @@
             series3.Legend = "Legend1";
             series3.Name = "Department";
             this.nishikideptlec_chart.Series.Add(series3);
-            this.nishikideptlec_chart.Size = new System.Drawing.Size(668, 483);
+            this.nishikideptlec_chart.Size = new System.Drawing.Size(668, 486);
             this.nishikideptlec_chart.TabIndex = 23;
             this.nishikideptlec_chart.Text = "chart1";
             // 
@@ -366,7 +367,7 @@
             series4.Legend = "Legend1";
             series4.Name = "Level";
             this.nishikilvllec_chart.Series.Add(series4);
-            this.nishikilvllec_chart.Size = new System.Drawing.Size(650, 483);
+            this.nishikilvllec_chart.Size = new System.Drawing.Size(650, 486);
             this.nishikilvllec_chart.TabIndex = 23;
             this.nishikilvllec_chart.Text = "chart1";
             // 
@@ -493,7 +494,7 @@
             series6.Legend = "Legend1";
             series6.Name = "Hours";
             this.nishikisubtutechart.Series.Add(series6);
-            this.nishikisubtutechart.Size = new System.Drawing.Size(650, 483);
+            this.nishikisubtutechart.Size = new System.Drawing.Size(650, 486);
             this.nishikisubtutechart.TabIndex = 23;
             this.nishikisubtutechart.Text = "chart1";
             // 
@@ -538,7 +539,7 @@
             series7.Legend = "Legend1";
             series7.Name = "Hours";
             this.nishikisublabchart.Series.Add(series7);
-            this.nishikisublabchart.Size = new System.Drawing.Size(668, 483);
+            this.nishikisublabchart.Size = new System.Drawing.Size(668, 486);
             this.nishikisublabchart.TabIndex = 23;
             this.nishikisublabchart.Text = "chart1";
             // 
@@ -583,7 +584,7 @@
             series8.Legend = "Legend1";
             series8.Name = "Hours";
             this.nishikisubevalchart.Series.Add(series8);
-            this.nishikisubevalchart.Size = new System.Drawing.Size(650, 483);
+            this.nishikisubevalchart.Size = new System.Drawing.Size(650, 486);
             this.nishikisubevalchart.TabIndex = 23;
             this.nishikisubevalchart.Text = "chart1";
             // 
@@ -697,7 +698,7 @@
             series10.Legend = "Legend1";
             series10.Name = "Programme";
             this.nishikistudentprogrammechart.Series.Add(series10);
-            this.nishikistudentprogrammechart.Size = new System.Drawing.Size(650, 483);
+            this.nishikistudentprogrammechart.Size = new System.Drawing.Size(650, 486);
             this.nishikistudentprogrammechart.TabIndex = 23;
             this.nishikistudentprogrammechart.Text = "chart1";
             // 
