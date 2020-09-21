@@ -267,5 +267,10 @@ namespace ABC_Institute___Timetable_Generator
 
             sqlcon.Close();
         }
+
+        private void TabPage1_Click(object sender, EventArgs e)
+        {
+            //nishiki
+        }
     }
 }
