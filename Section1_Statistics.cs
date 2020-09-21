@@ -183,7 +183,7 @@ namespace ABC_Institute___Timetable_Generator
             sqlcmd.CommandType = CommandType.StoredProcedure;
 
             sqlcon.Open();
-
+            
             MySqlDataReader reader = sqlcmd.ExecuteReader();
 
             while (reader.Read())
