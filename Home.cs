@@ -17,6 +17,7 @@ namespace ABC_Institute___Timetable_Generator
             InitializeComponent();
             customizeddesign();
             customizesessionddesign();
+            customizedlocationdesign();
         }
 
         //slide bar
@@ -29,6 +30,11 @@ namespace ABC_Institute___Timetable_Generator
         private void customizesessionddesign()
         {
             sessionslidebar.Visible = false;
+        }
+
+        private void customizedlocationdesign()
+        {
+            locationslidebar.Visible = false;
         }
 
         private void hidesubmenu()
@@ -45,6 +51,14 @@ namespace ABC_Institute___Timetable_Generator
             if (sessionslidebar.Visible == true)
             {
                 sessionslidebar.Visible = false;
+            }
+        }
+
+        private void hidelocationsubmenu()
+        {
+            if (locationslidebar.Visible == true)
+            {
+                locationslidebar.Visible = false;
             }
         }
 
@@ -71,6 +85,17 @@ namespace ABC_Institute___Timetable_Generator
                 submenu.Visible = false;
         }
 
+        private void showlocationsubmenu(Panel submenu)
+        {
+            if (submenu.Visible == false)
+            {
+                hidelocationsubmenu();
+                submenu.Visible = true;
+            }
+            else
+                submenu.Visible = false;
+        }
+
         private void slidebar(Control btn)
         {
             panelslidebar.Width = btn.Width;
@@ -85,6 +110,12 @@ namespace ABC_Institute___Timetable_Generator
             sessionslidebar.Left = btn.Left;
         }
 
+        private void slidebarlocation(Control btn)
+        {
+            locationslidebar.Width = btn.Width;
+            locationslidebar.Left = btn.Left;
+        }
+
         //session dropdown
         private void Homebtnsessions_Click(object sender, EventArgs e)
         {
@@ -94,7 +125,8 @@ namespace ABC_Institute___Timetable_Generator
 
         private void Homebtnlocations_Click(object sender, EventArgs e)
         {
-            
+            showlocationsubmenu(locationslidebar);
+            slidebarlocation(homenavbtnlocations);
         }
 
         private void Homebtntimetables_Click(object sender, EventArgs e)
