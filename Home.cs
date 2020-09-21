@@ -16,6 +16,7 @@ namespace ABC_Institute___Timetable_Generator
         {
             InitializeComponent();
             customizeddesign();
+            customizesessionddesign();
         }
 
         //slide bar
@@ -24,11 +25,26 @@ namespace ABC_Institute___Timetable_Generator
             panelslidebar.Visible = false;
         }
 
+        //session dropdown
+        private void customizesessionddesign()
+        {
+            sessionslidebar.Visible = false;
+        }
+
         private void hidesubmenu()
         {
             if(panelslidebar.Visible == true)
             {
                 panelslidebar.Visible = false;
+            }
+        }
+
+        //session dropdown
+        private void hidesessionsubmenu()
+        {
+            if (sessionslidebar.Visible == true)
+            {
+                sessionslidebar.Visible = false;
             }
         }
 
@@ -41,27 +57,44 @@ namespace ABC_Institute___Timetable_Generator
             }
             else
                 submenu.Visible = false;
-        }        
+        }
+
+        //session dropdown
+        private void showsessionsubmenu(Panel submenu)
+        {
+            if (submenu.Visible == false)
+            {
+                hidesessionsubmenu();
+                submenu.Visible = true;
+            }
+            else
+                submenu.Visible = false;
+        }
 
         private void slidebar(Control btn)
         {
             panelslidebar.Width = btn.Width;
             panelslidebar.Left = btn.Left;
         }
-        /*
-        private void Button1_Click(object sender, EventArgs e)
+
+        //session dropdown
+
+        private void slidebarsession(Control btn)
         {
-            movepanel(homenavbtndetails);
-            showsubmenu(panelslidebar);
+            sessionslidebar.Width = btn.Width;
+            sessionslidebar.Left = btn.Left;
         }
-        */
+
+        //session dropdown
         private void Homebtnsessions_Click(object sender, EventArgs e)
         {
+            showsessionsubmenu(sessionslidebar);
+            slidebarsession(homenavbtnsessions);
         }
 
         private void Homebtnlocations_Click(object sender, EventArgs e)
         {
-            //openchildform(new Section1_Location());
+            
         }
 
         private void Homebtntimetables_Click(object sender, EventArgs e)
@@ -77,18 +110,6 @@ namespace ABC_Institute___Timetable_Generator
 
         private void Home_Load(object sender, EventArgs e)
         {
-            /*
-            formorgsize = panelnav.Size;
-            detailsrecorg = new Rectangle(homenavbtndetails.Location.X, homenavbtndetails.Location.Y,
-                homenavbtndetails.Width, homenavbtndetails.Height);
-            sessionsrecorg = new Rectangle(homenavbtnsessions.Location.X, homenavbtnsessions.Location.Y,
-                homenavbtnsessions.Width, homenavbtnsessions.Height);
-            locationsrecorg = new Rectangle(homenavbtnlocations.Location.X, homenavbtnlocations.Location.Y,
-                homenavbtnlocations.Width, homenavbtnlocations.Height);
-            timetablesrecorg = new Rectangle(homenavbtntimetables.Location.X, homenavbtntimetables.Location.Y,
-                homenavbtntimetables.Width, homenavbtntimetables.Height);
-*/
-
 
         }
 
@@ -174,35 +195,33 @@ namespace ABC_Institute___Timetable_Generator
         {
 
         }
-        /*
-private void ResponsiveChildControls()
-{
-ResponsiveControl(detailsrecorg, homenavbtndetails);
-ResponsiveControl(sessionsrecorg, homenavbtnsessions);
-ResponsiveControl(locationsrecorg, homenavbtnlocations);
-ResponsiveControl(timetablesrecorg, homenavbtntimetables);
-}
 
-private Rectangle detailsrecorg;
-private Rectangle sessionsrecorg;
-private Rectangle locationsrecorg;
-private Rectangle timetablesrecorg;
+        private void BtnVsessionunavailability_Click(object sender, EventArgs e)
+        {
+            openchildform(new Section3_MarkUnavailabily());
+            //
+            hidesessionsubmenu();
+        }
 
-private Size formorgsize;
+        private void BtnVsessionconsecutive_Click(object sender, EventArgs e)
+        {
+            openchildform(new Section3_consecutiveSessions());
+            //
+            hidesessionsubmenu();
+        }
 
-private void ResponsiveControl(Rectangle rec, Control control)
-{
-float xratio = (float)(panelnav.Width) / (float)(formorgsize.Width);
-float yratio = (float)(panelnav.Height) / (float)(formorgsize.Height);
+        private void BtnVsessionparallel_Click(object sender, EventArgs e)
+        {
+            openchildform(new Section3_parallelSessions());
+            //
+            hidesessionsubmenu();
+        }
 
-int newX = (int)(rec.X * xratio);
-int newY = (int)(rec.Y * yratio);
-int newWidth = (int)(rec.Width * xratio);
-int newHeight = (int)(rec.Height * xratio);
-
-control.Location = new Point(newX, newY);
-control.Size = new Size(newWidth, newHeight);
-}
-*/
+        private void BtnVsessionnooverlapping_Click(object sender, EventArgs e)
+        {
+            openchildform(new Section3_nooverlappingSessions());
+            //
+            hidesessionsubmenu();
+        }
     }
 }
