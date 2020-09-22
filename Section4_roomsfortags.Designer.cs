@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Section4_roomsfortags));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Section4_roomsfortags));
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.nishikistatimg = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.dgvnishikitagsrooms = new System.Windows.Forms.DataGridView();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.nishikistatimg)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.nishikistatimg = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvnishikitagsrooms)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nishikistatimg)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -61,21 +61,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(95, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(333, 29);
+            this.label1.Size = new System.Drawing.Size(229, 29);
             this.label1.TabIndex = 10;
-            this.label1.Text = "Add Room / Rooms for tags";
-            // 
-            // nishikistatimg
-            // 
-            this.nishikistatimg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.nishikistatimg.Image = ((System.Drawing.Image)(resources.GetObject("nishikistatimg.Image")));
-            this.nishikistatimg.Location = new System.Drawing.Point(12, 12);
-            this.nishikistatimg.Name = "nishikistatimg";
-            this.nishikistatimg.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.nishikistatimg.Size = new System.Drawing.Size(77, 69);
-            this.nishikistatimg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.nishikistatimg.TabIndex = 9;
-            this.nishikistatimg.TabStop = false;
+            this.label1.Text = "Add Room for tags";
             // 
             // button2
             // 
@@ -113,6 +101,17 @@
             this.dgvnishikitagsrooms.Size = new System.Drawing.Size(1124, 524);
             this.dgvnishikitagsrooms.TabIndex = 13;
             // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(997, 173);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(82, 24);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "Refresh";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -125,16 +124,17 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
             // 
-            // label2
+            // nishikistatimg
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(997, 173);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 24);
-            this.label2.TabIndex = 15;
-            this.label2.Text = "Refresh";
+            this.nishikistatimg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.nishikistatimg.Image = ((System.Drawing.Image)(resources.GetObject("nishikistatimg.Image")));
+            this.nishikistatimg.Location = new System.Drawing.Point(12, 12);
+            this.nishikistatimg.Name = "nishikistatimg";
+            this.nishikistatimg.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.nishikistatimg.Size = new System.Drawing.Size(77, 69);
+            this.nishikistatimg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.nishikistatimg.TabIndex = 9;
+            this.nishikistatimg.TabStop = false;
             // 
             // Section4_roomsfortags
             // 
@@ -152,9 +152,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Section4_roomsfortags";
             this.Text = "Section4_rooms";
-            ((System.ComponentModel.ISupportInitialize)(this.nishikistatimg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvnishikitagsrooms)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nishikistatimg)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
