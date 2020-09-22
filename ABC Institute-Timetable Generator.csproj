@@ -145,6 +145,12 @@
     <Compile Include="Section4_roomsfortags.Designer.cs">
       <DependentUpon>Section4_roomsfortags.cs</DependentUpon>
     </Compile>
+    <Compile Include="Section4_roomsubjectspopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section4_roomsubjectspopup.Designer.cs">
+      <DependentUpon>Section4_roomsubjectspopup.cs</DependentUpon>
+    </Compile>
     <Compile Include="Section4_roomtags_popup.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -319,6 +325,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Section4_roomsfortags.resx">
       <DependentUpon>Section4_roomsfortags.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section4_roomsubjectspopup.resx">
+      <DependentUpon>Section4_roomsubjectspopup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Section4_roomtags_popup.resx">
       <DependentUpon>Section4_roomtags_popup.cs</DependentUpon>

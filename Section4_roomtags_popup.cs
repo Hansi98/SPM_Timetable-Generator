@@ -52,6 +52,8 @@ namespace ABC_Institute___Timetable_Generator
             }
         }
 
+
+
         private void Button1_Click(object sender, EventArgs e)
         {
             this.Close();
