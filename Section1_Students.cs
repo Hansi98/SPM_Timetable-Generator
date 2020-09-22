@@ -325,6 +325,7 @@ namespace ABC_Institute___Timetable_Generator
                 mySqlCmd.Parameters.AddWithValue("_Year_Semester", vcmbys_gn.Text.Trim());
                 mySqlCmd.Parameters.AddWithValue("_Programme", vcmbpro_gn.Text.Trim()); 
                 mySqlCmd.Parameters.AddWithValue("_GroupNo", vtxtgn_gn.Text.Trim());
+
                 mySqlCmd.ExecuteNonQuery();
 
                 cleargroup();
@@ -451,6 +452,10 @@ namespace ABC_Institute___Timetable_Generator
                 }
             }
         }
-    
+
+        private void vcmbys_gn_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
