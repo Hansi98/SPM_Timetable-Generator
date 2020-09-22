@@ -139,6 +139,12 @@
     <Compile Include="Section4_reserveRoom.Designer.cs">
       <DependentUpon>Section4_reserveRoom.cs</DependentUpon>
     </Compile>
+    <Compile Include="Section4_roomgroupspopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section4_roomgroupspopup.Designer.cs">
+      <DependentUpon>Section4_roomgroupspopup.cs</DependentUpon>
+    </Compile>
     <Compile Include="Section4_roomlecturerpopup.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +156,12 @@
     </Compile>
     <Compile Include="Section4_roomsfortags.Designer.cs">
       <DependentUpon>Section4_roomsfortags.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Section4_roomssubgroupspopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section4_roomssubgroupspopup.Designer.cs">
+      <DependentUpon>Section4_roomssubgroupspopup.cs</DependentUpon>
     </Compile>
     <Compile Include="Section4_roomsubjectspopup.cs">
       <SubType>Form</SubType>
@@ -329,11 +341,17 @@
     <EmbeddedResource Include="Section4_reserveRoom.resx">
       <DependentUpon>Section4_reserveRoom.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Section4_roomgroupspopup.resx">
+      <DependentUpon>Section4_roomgroupspopup.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Section4_roomlecturerpopup.resx">
       <DependentUpon>Section4_roomlecturerpopup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Section4_roomsfortags.resx">
       <DependentUpon>Section4_roomsfortags.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section4_roomssubgroupspopup.resx">
+      <DependentUpon>Section4_roomssubgroupspopup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Section4_roomsubjectspopup.resx">
       <DependentUpon>Section4_roomsubjectspopup.cs</DependentUpon>
