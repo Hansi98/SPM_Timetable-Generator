@@ -61,6 +61,7 @@
     <Compile Include="GroupNumbers.cs" />
     <Compile Include="hansiworkdays.cs" />
     <Compile Include="hansiworkhours.cs" />
+    <Compile Include="LecturerUnavailability.cs" />
     <Compile Include="Section1_UpdateSubject.cs">
       <SubType>Form</SubType>
     </Compile>
