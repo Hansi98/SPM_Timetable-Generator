@@ -65,6 +65,9 @@ namespace ABC_Institute___Timetable_Generator
 
         private void Btnnishikiaddgroupsrooms_Click(object sender, EventArgs e)
         {
+            Section4_roomgroupspopup groups = new Section4_roomgroupspopup();
+
+            groups.ShowDialog();
         }
 
         private void Btnnishikiaddsubgroupsrooms_Click(object sender, EventArgs e)
