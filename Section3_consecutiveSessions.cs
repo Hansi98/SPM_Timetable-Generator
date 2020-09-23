@@ -36,7 +36,13 @@ namespace ABC_Institute___Timetable_Generator
                     arlist.Add(item.Cells[1].Value.ToString());
                 }
             }
-            var session = arlist[0] + "," + arlist[1];
+            var session = arlist[0];
+            int count = arlist.Count;
+            for (int i = 0; i < count - 1; i++)
+
+            {
+                session = session + "," + arlist[i + 1];
+            }
             using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
             {
                 string Query = "insert into mydb.consecutivesessions(consecetive_sessions) values('" + session + "');";
@@ -45,7 +51,7 @@ namespace ABC_Institute___Timetable_Generator
                 MySqlDataReader MyReader2;
                 mySqlCon.Open();
                 MyReader2 = MyCommand2.ExecuteReader();     // Here our query will be executed and data saved into the database.  
-                MessageBox.Show("Consecutive Session Added");
+                MessageBox.Show("Consecutive Session Added" + Environment.NewLine + "Session IDs : " + session);
                 while (MyReader2.Read())
                 {
                 }
@@ -119,7 +125,7 @@ namespace ABC_Institute___Timetable_Generator
                 }
 
             }
-            }
+        }
 
         private void visaldatagridconse_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -169,16 +175,25 @@ namespace ABC_Institute___Timetable_Generator
         {
             MySqlConnection cs = new MySqlConnection(connectionString);
             MySqlDataAdapter grouplotdapter = new MySqlDataAdapter("SELECT * FROM groupinfo", cs);
+          
 
             DataTable groupDatatable = new DataTable();
             grouplotdapter.Fill(groupDatatable);
 
+          
+
             visalcmbconsegid.Items.Clear();
+          
 
             for (int i = 0; i < groupDatatable.Rows.Count; i++)
             {
                 visalcmbconsegid.Items.Add((groupDatatable.Rows[i]["GroupID"]));
             }
+        }
+
+        private void tabPage3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
