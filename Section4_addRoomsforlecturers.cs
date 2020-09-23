@@ -42,7 +42,7 @@ namespace ABC_Institute___Timetable_Generator
 
         private void Btnnishikiaddlecturerrooms_Click(object sender, EventArgs e)
         {
-            Section4_roomlecturerpopup lec = new Section4_roomlecturerpopup();
+            Section4_roomlecturer_popup lec = new Section4_roomlecturer_popup();
 
             lec.ShowDialog();
         }

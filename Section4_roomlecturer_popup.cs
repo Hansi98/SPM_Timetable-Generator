@@ -11,15 +11,16 @@ using System.Windows.Forms;
 
 namespace ABC_Institute___Timetable_Generator
 {
-    public partial class Section4_roomlecturerpopup : Form
+    public partial class Section4_roomlecturer_popup : Form
     {
         string connectionString = @"SERVER=abcdatabase.mysql.database.azure.com;PORT=3306;DATABASE=mydb;UID=abcadmin@abcdatabase;PASSWORD=ABC@123abc";
         int lecID = 0;
 
-        public Section4_roomlecturerpopup()
+        public Section4_roomlecturer_popup()
         {
             InitializeComponent();
             filllecturerCombobox();
+            fillroomCombobox();
         }
 
         void filllecturerCombobox()
@@ -39,6 +40,35 @@ namespace ABC_Institute___Timetable_Generator
                     while (read.Read())
                     {
                         nishikicmblecturerrooms.Items.Add(read.GetValue(1).ToString() + " " + read.GetValue(3).ToString());
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+
+
+
+            }
+        }
+
+        void fillroomCombobox()
+        {
+            using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
+            {
+                String query = "Select Room from locations";
+
+                MySqlCommand sql = new MySqlCommand(query, mySqlCon);
+                MySqlDataReader read;
+
+                try
+                {
+                    mySqlCon.Open();
+                    read = sql.ExecuteReader();
+
+                    while (read.Read())
+                    {
+                        txtnishikilecroomname.Items.Add(read.GetValue(0).ToString());
                     }
                 }
                 catch (Exception ex)
@@ -72,7 +102,7 @@ namespace ABC_Institute___Timetable_Generator
                 mySqlCmd.CommandType = CommandType.StoredProcedure;
                 mySqlCmd.Parameters.AddWithValue("_lecID", lecID);
                 mySqlCmd.Parameters.AddWithValue("_lec", nishikicmblecturerrooms.SelectedItem);
-                mySqlCmd.Parameters.AddWithValue("_room", txtnishikilecroomname.Text.Trim());
+                mySqlCmd.Parameters.AddWithValue("_room", txtnishikilecroomname.SelectedItem);
                 mySqlCmd.ExecuteNonQuery();
 
                 string lec = nishikicmblecturerrooms.SelectedItem.ToString();

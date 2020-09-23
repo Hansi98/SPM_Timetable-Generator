@@ -11,12 +11,12 @@ using System.Windows.Forms;
 
 namespace ABC_Institute___Timetable_Generator
 {
-    public partial class Section4_roomssubgroupspopup : Form
+    public partial class Section4_roomssubgroups_popup : Form
     {
         string connectionString = @"SERVER=abcdatabase.mysql.database.azure.com;PORT=3306;DATABASE=mydb;UID=abcadmin@abcdatabase;PASSWORD=ABC@123abc";
         int subgroupID = 0;
 
-        public Section4_roomssubgroupspopup()
+        public Section4_roomssubgroups_popup()
         {
             InitializeComponent();
             fillsubgroupCombobox();

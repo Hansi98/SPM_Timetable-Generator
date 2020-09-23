@@ -1,6 +1,6 @@
 ﻿namespace ABC_Institute___Timetable_Generator
 {
-    partial class Section4_roomlecturerpopup
+    partial class Section4_roomlecturer_popup
     {
         /// <summary>
         /// Required designer variable.
@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Section4_roomlecturerpopup));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Section4_roomlecturer_popup));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.nishikibtnaddlecrooms = new System.Windows.Forms.Button();
-            this.txtnishikilecroomname = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.nishikicmblecturerrooms = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtnishikilecroomname = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -45,10 +45,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.AliceBlue;
+            this.panel1.Controls.Add(this.txtnishikilecroomname);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.nishikibtnaddlecrooms);
-            this.panel1.Controls.Add(this.txtnishikilecroomname);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.nishikicmblecturerrooms);
             this.panel1.Controls.Add(this.label1);
@@ -58,6 +58,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1199, 702);
             this.panel1.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 38);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(77, 64);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 19;
+            this.pictureBox1.TabStop = false;
             // 
             // label4
             // 
@@ -84,15 +94,6 @@
             this.nishikibtnaddlecrooms.Text = "ADD";
             this.nishikibtnaddlecrooms.UseVisualStyleBackColor = false;
             this.nishikibtnaddlecrooms.Click += new System.EventHandler(this.Nishikibtnaddlecrooms_Click);
-            // 
-            // txtnishikilecroomname
-            // 
-            this.txtnishikilecroomname.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtnishikilecroomname.Location = new System.Drawing.Point(504, 359);
-            this.txtnishikilecroomname.Name = "txtnishikilecroomname";
-            this.txtnishikilecroomname.Size = new System.Drawing.Size(381, 22);
-            this.txtnishikilecroomname.TabIndex = 16;
             // 
             // label2
             // 
@@ -141,24 +142,24 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // pictureBox1
+            // txtnishikilecroomname
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 38);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(77, 64);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 19;
-            this.pictureBox1.TabStop = false;
+            this.txtnishikilecroomname.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtnishikilecroomname.FormattingEnabled = true;
+            this.txtnishikilecroomname.Location = new System.Drawing.Point(504, 359);
+            this.txtnishikilecroomname.Name = "txtnishikilecroomname";
+            this.txtnishikilecroomname.Size = new System.Drawing.Size(381, 24);
+            this.txtnishikilecroomname.TabIndex = 20;
             // 
-            // Section4_roomlecturerpopup
+            // Section4_roomlecturer_popup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1199, 702);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Section4_roomlecturerpopup";
+            this.Name = "Section4_roomlecturer_popup";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Section4_roomlecturerpopup";
             this.panel1.ResumeLayout(false);
@@ -174,10 +175,10 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button nishikibtnaddlecrooms;
-        private System.Windows.Forms.TextBox txtnishikilecroomname;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox nishikicmblecturerrooms;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox txtnishikilecroomname;
     }
 }
