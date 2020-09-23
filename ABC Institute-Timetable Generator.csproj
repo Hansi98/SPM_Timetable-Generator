@@ -139,17 +139,23 @@
     <Compile Include="Section4_reserveRoom.Designer.cs">
       <DependentUpon>Section4_reserveRoom.cs</DependentUpon>
     </Compile>
-    <Compile Include="Section4_roomgroupspopup.cs">
+    <Compile Include="Section4_reserverooms_popup.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Section4_roomgroupspopup.Designer.cs">
-      <DependentUpon>Section4_roomgroupspopup.cs</DependentUpon>
+    <Compile Include="Section4_reserverooms_popup.Designer.cs">
+      <DependentUpon>Section4_reserverooms_popup.cs</DependentUpon>
     </Compile>
-    <Compile Include="Section4_roomlecturerpopup.cs">
+    <Compile Include="Section4_roomgroups_popup.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Section4_roomlecturerpopup.Designer.cs">
-      <DependentUpon>Section4_roomlecturerpopup.cs</DependentUpon>
+    <Compile Include="Section4_roomgroups_popup.Designer.cs">
+      <DependentUpon>Section4_roomgroups_popup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Section4_roomlecturer_popup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section4_roomlecturer_popup.Designer.cs">
+      <DependentUpon>Section4_roomlecturer_popup.cs</DependentUpon>
     </Compile>
     <Compile Include="Section4_roomsfortags.cs">
       <SubType>Form</SubType>
@@ -157,17 +163,17 @@
     <Compile Include="Section4_roomsfortags.Designer.cs">
       <DependentUpon>Section4_roomsfortags.cs</DependentUpon>
     </Compile>
-    <Compile Include="Section4_roomssubgroupspopup.cs">
+    <Compile Include="Section4_roomssubgroups_popup.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Section4_roomssubgroupspopup.Designer.cs">
-      <DependentUpon>Section4_roomssubgroupspopup.cs</DependentUpon>
+    <Compile Include="Section4_roomssubgroups_popup.Designer.cs">
+      <DependentUpon>Section4_roomssubgroups_popup.cs</DependentUpon>
     </Compile>
-    <Compile Include="Section4_roomsubjectspopup.cs">
+    <Compile Include="Section4_roomsubjects_popup.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Section4_roomsubjectspopup.Designer.cs">
-      <DependentUpon>Section4_roomsubjectspopup.cs</DependentUpon>
+    <Compile Include="Section4_roomsubjects_popup.Designer.cs">
+      <DependentUpon>Section4_roomsubjects_popup.cs</DependentUpon>
     </Compile>
     <Compile Include="Section4_roomtags_popup.cs">
       <SubType>Form</SubType>
@@ -341,20 +347,23 @@
     <EmbeddedResource Include="Section4_reserveRoom.resx">
       <DependentUpon>Section4_reserveRoom.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Section4_roomgroupspopup.resx">
-      <DependentUpon>Section4_roomgroupspopup.cs</DependentUpon>
+    <EmbeddedResource Include="Section4_reserverooms_popup.resx">
+      <DependentUpon>Section4_reserverooms_popup.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Section4_roomlecturerpopup.resx">
-      <DependentUpon>Section4_roomlecturerpopup.cs</DependentUpon>
+    <EmbeddedResource Include="Section4_roomgroups_popup.resx">
+      <DependentUpon>Section4_roomgroups_popup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section4_roomlecturer_popup.resx">
+      <DependentUpon>Section4_roomlecturer_popup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Section4_roomsfortags.resx">
       <DependentUpon>Section4_roomsfortags.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Section4_roomssubgroupspopup.resx">
-      <DependentUpon>Section4_roomssubgroupspopup.cs</DependentUpon>
+    <EmbeddedResource Include="Section4_roomssubgroups_popup.resx">
+      <DependentUpon>Section4_roomssubgroups_popup.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Section4_roomsubjectspopup.resx">
-      <DependentUpon>Section4_roomsubjectspopup.cs</DependentUpon>
+    <EmbeddedResource Include="Section4_roomsubjects_popup.resx">
+      <DependentUpon>Section4_roomsubjects_popup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Section4_roomtags_popup.resx">
       <DependentUpon>Section4_roomtags_popup.cs</DependentUpon>
