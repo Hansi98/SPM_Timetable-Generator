@@ -11,15 +11,16 @@ using System.Windows.Forms;
 
 namespace ABC_Institute___Timetable_Generator
 {
-    public partial class Section4_roomsubjectspopup : Form
+    public partial class Section4_roomsubjects_popup : Form
     {
         string connectionString = @"SERVER=abcdatabase.mysql.database.azure.com;PORT=3306;DATABASE=mydb;UID=abcadmin@abcdatabase;PASSWORD=ABC@123abc";
         int subID = 0;
 
-        public Section4_roomsubjectspopup()
+        public Section4_roomsubjects_popup()
         {
             InitializeComponent();
             filltagsCombobox();
+            fillroomsCombobox();
         }
 
         void fillsubcombobox()
@@ -89,6 +90,36 @@ namespace ABC_Institute___Timetable_Generator
 
             }
         }
+
+        void fillroomsCombobox()
+        {
+            using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
+            {
+                String query = "Select Room from locations";
+
+                MySqlCommand sql = new MySqlCommand(query, mySqlCon);
+                MySqlDataReader read;
+
+                try
+                {
+                    mySqlCon.Open();
+                    read = sql.ExecuteReader();
+
+                    while (read.Read())
+                    {
+                        txtnishikisubroomname.Items.Add(read.GetValue(0).ToString());
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+
+
+
+            }
+        }
+
         private void Button1_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -142,7 +173,7 @@ namespace ABC_Institute___Timetable_Generator
                 mySqlCmd.Parameters.AddWithValue("_sem", nishikicmbsubsemrooms.SelectedItem);
                 mySqlCmd.Parameters.AddWithValue("_sub", nishikicmbsubsubjectrooms.SelectedItem);
                 mySqlCmd.Parameters.AddWithValue("_tag", nishikicmbsubtagsrooms.SelectedItem);
-                mySqlCmd.Parameters.AddWithValue("_room", txtnishikisubroomname.Text.Trim());
+                mySqlCmd.Parameters.AddWithValue("_room", txtnishikisubroomname.SelectedItem);
                 mySqlCmd.ExecuteNonQuery();
 
                 String sub = nishikicmbsubsubjectrooms.SelectedItem.ToString();

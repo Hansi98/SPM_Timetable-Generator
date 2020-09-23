@@ -21,6 +21,7 @@ namespace ABC_Institute___Timetable_Generator
         {
             InitializeComponent();
             filltagsCombobox();
+            fillroomsCombobox();
         }
 
         void filltagsCombobox()
@@ -40,6 +41,35 @@ namespace ABC_Institute___Timetable_Generator
                     while (read.Read())
                     {
                         nishikicmbtagsrooms.Items.Add(read.GetValue(1).ToString());
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+
+
+
+            }
+        }
+
+        void fillroomsCombobox()
+        {
+            using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
+            {
+                String query = "Select Room from locations";
+
+                MySqlCommand sql = new MySqlCommand(query, mySqlCon);
+                MySqlDataReader read;
+
+                try
+                {
+                    mySqlCon.Open();
+                    read = sql.ExecuteReader();
+
+                    while (read.Read())
+                    {
+                        txtnishikitagsroomname.Items.Add(read.GetValue(0).ToString());
                     }
                 }
                 catch (Exception ex)
@@ -83,7 +113,7 @@ namespace ABC_Institute___Timetable_Generator
                 mySqlCmd.Parameters.AddWithValue("_tagsId", tagID);
                 mySqlCmd.Parameters.AddWithValue("_tags", nishikicmbtagsrooms.SelectedItem);
                 mySqlCmd.Parameters.AddWithValue("_buildingname", nishikicmbbuildingstagsroom.SelectedItem);
-                mySqlCmd.Parameters.AddWithValue("_roomname", txtnishikitagsroomname.Text.Trim());
+                mySqlCmd.Parameters.AddWithValue("_roomname", txtnishikitagsroomname.SelectedItem);
                 mySqlCmd.ExecuteNonQuery();
 
                 clearInputs();
@@ -93,6 +123,46 @@ namespace ABC_Institute___Timetable_Generator
                 this.Dispose();
 
             }
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Nishikicmbtagsrooms_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Txtnishikitagsroomname_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Roomtags_popup_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void PictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

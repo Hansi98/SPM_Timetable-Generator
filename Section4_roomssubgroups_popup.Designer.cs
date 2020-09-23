@@ -1,6 +1,6 @@
 ﻿namespace ABC_Institute___Timetable_Generator
 {
-    partial class Section4_roomssubgroupspopup
+    partial class Section4_roomssubgroups_popup
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Section4_roomssubgroupspopup));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Section4_roomssubgroups_popup));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.txtcapacitygroup = new System.Windows.Forms.Label();
