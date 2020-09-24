@@ -158,5 +158,103 @@ namespace ABC_Institute___Timetable_Generator
 
             }
         }
+
+        private void visalgdvadj2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (visalgdvadj2.Columns[e.ColumnIndex].Name == "Edit2")
+            {
+                visalcmbadjday2.Text = visalgdvadj2.CurrentRow.Cells[7].Value.ToString();
+
+                sessionID1 = Convert.ToInt32(visalgdvadj2.CurrentRow.Cells[1].Value.ToString());
+            }
+        }
+
+        private void visalbtnrefresh2_Click(object sender, EventArgs e)
+        {
+            fillTagGridsessionsadj();
+        }
+
+        private void visalbtnrefresh3_Click(object sender, EventArgs e)
+        {
+            fillTagGridsessionsadj();
+        }
+
+        private void visalbtnadjseach2_Click(object sender, EventArgs e)
+        {
+            using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
+            {
+                mySqlCon.Open();
+                MySqlDataAdapter sqlDa = new MySqlDataAdapter("sessiongetByGroupAndTimeslot", mySqlCon);
+                sqlDa.SelectCommand.CommandType = CommandType.StoredProcedure;
+                sqlDa.SelectCommand.Parameters.AddWithValue("_Group_ID", visalcmbadjgroup.Text);
+                sqlDa.SelectCommand.Parameters.AddWithValue("_Timeslot", visalcmbadjts2.Text);
+                DataTable dataLocations = new DataTable();
+                sqlDa.Fill(dataLocations);
+                visalgdvadj2.DataSource = dataLocations;
+
+            }
+        }
+
+        private void visalbtnadjfix2_Click(object sender, EventArgs e)
+        {
+            using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
+            {
+                mySqlCon.Open();
+                MySqlCommand mySqlCmd = new MySqlCommand("sessionAddorEdit", mySqlCon);
+                mySqlCmd.CommandType = CommandType.StoredProcedure;
+                mySqlCmd.Parameters.AddWithValue("_sessionID", sessionID1);
+                mySqlCmd.Parameters.AddWithValue("_Day", visalcmbadjday2.Text.Trim().ToString());
+                mySqlCmd.ExecuteNonQuery();
+
+                visalcmbadjday2.Text = "";
+                fillTagGridsessionsadj();
+                MessageBox.Show(" Fixed Successfully");
+
+            }
+        }
+
+        private void visalbtnadjseach3_Click(object sender, EventArgs e)
+        {
+            using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
+            {
+                mySqlCon.Open();
+                MySqlDataAdapter sqlDa = new MySqlDataAdapter("sessiongetBySubGroupAndTimeslot", mySqlCon);
+                sqlDa.SelectCommand.CommandType = CommandType.StoredProcedure;
+                sqlDa.SelectCommand.Parameters.AddWithValue("_Subgroup_ID", visalcmdmugsgroup.Text);
+                sqlDa.SelectCommand.Parameters.AddWithValue("_Timeslot", visalcmbadjts3.Text);
+                DataTable dataLocations = new DataTable();
+                sqlDa.Fill(dataLocations);
+                visalgdvadj3.DataSource = dataLocations;
+
+            }
+        }
+
+        private void visalgdvadj3_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (visalgdvadj3.Columns[e.ColumnIndex].Name == "Edit3")
+            {
+                visalcmbadjday3.Text = visalgdvadj3.CurrentRow.Cells[7].Value.ToString();
+
+                sessionID1 = Convert.ToInt32(visalgdvadj3.CurrentRow.Cells[1].Value.ToString());
+            }
+        }
+
+        private void visalbtnadjfix3_Click(object sender, EventArgs e)
+        {
+            using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
+            {
+                mySqlCon.Open();
+                MySqlCommand mySqlCmd = new MySqlCommand("sessionAddorEdit", mySqlCon);
+                mySqlCmd.CommandType = CommandType.StoredProcedure;
+                mySqlCmd.Parameters.AddWithValue("_sessionID", sessionID1);
+                mySqlCmd.Parameters.AddWithValue("_Day", visalcmbadjday3.Text.Trim().ToString());
+                mySqlCmd.ExecuteNonQuery();
+
+                visalcmbadjday3.Text = "";
+                fillTagGridsessionsadj();
+                MessageBox.Show(" Fixed Successfully");
+
+            }
+        }
     }
 }
