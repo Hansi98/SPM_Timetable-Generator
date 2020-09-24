@@ -33,6 +33,7 @@
             this.nishikistatimg = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.visalbtnrefresh3 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.visalbtnadjfix3 = new System.Windows.Forms.Button();
             this.visalcmbadjday3 = new System.Windows.Forms.ComboBox();
@@ -43,11 +44,13 @@
             this.label10 = new System.Windows.Forms.Label();
             this.visalcmdmugsgroup = new System.Windows.Forms.ComboBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.visalbtnrefresh2 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.visalbtnadjfix2 = new System.Windows.Forms.Button();
             this.visalcmbadjday2 = new System.Windows.Forms.ComboBox();
             this.visalcmbadjts2 = new System.Windows.Forms.ComboBox();
             this.visalgdvadj2 = new System.Windows.Forms.DataGridView();
+            this.Edit2 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.visalbtnadjseach2 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -65,6 +68,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.visalcmbadjLecturer = new System.Windows.Forms.ComboBox();
             this.visalcmbadjsubgroup = new System.Windows.Forms.TabControl();
+            this.Edit3 = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.nishikistatimg)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.visalgdvadj3)).BeginInit();
@@ -113,6 +117,7 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.visalbtnrefresh3);
             this.tabPage3.Controls.Add(this.label9);
             this.tabPage3.Controls.Add(this.visalbtnadjfix3);
             this.tabPage3.Controls.Add(this.visalcmbadjday3);
@@ -129,6 +134,18 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Sub groups";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // visalbtnrefresh3
+            // 
+            this.visalbtnrefresh3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.visalbtnrefresh3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.visalbtnrefresh3.Location = new System.Drawing.Point(945, 102);
+            this.visalbtnrefresh3.Name = "visalbtnrefresh3";
+            this.visalbtnrefresh3.Size = new System.Drawing.Size(118, 39);
+            this.visalbtnrefresh3.TabIndex = 51;
+            this.visalbtnrefresh3.Text = "REFRESH";
+            this.visalbtnrefresh3.UseVisualStyleBackColor = false;
+            this.visalbtnrefresh3.Click += new System.EventHandler(this.visalbtnrefresh3_Click);
             // 
             // label9
             // 
@@ -152,6 +169,7 @@
             this.visalbtnadjfix3.TabIndex = 29;
             this.visalbtnadjfix3.Text = "Fix";
             this.visalbtnadjfix3.UseVisualStyleBackColor = false;
+            this.visalbtnadjfix3.Click += new System.EventHandler(this.visalbtnadjfix3_Click);
             // 
             // visalcmbadjday3
             // 
@@ -184,17 +202,21 @@
             // 
             // visalgdvadj3
             // 
+            this.visalgdvadj3.AllowUserToAddRows = false;
             this.visalgdvadj3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.visalgdvadj3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.visalgdvadj3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.visalgdvadj3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Edit3});
             this.visalgdvadj3.Location = new System.Drawing.Point(50, 176);
             this.visalgdvadj3.Name = "visalgdvadj3";
             this.visalgdvadj3.RowHeadersWidth = 51;
             this.visalgdvadj3.RowTemplate.Height = 24;
             this.visalgdvadj3.Size = new System.Drawing.Size(1052, 363);
             this.visalgdvadj3.TabIndex = 23;
+            this.visalgdvadj3.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.visalgdvadj3_CellContentClick);
             // 
             // visalbtnadjseach3
             // 
@@ -207,6 +229,7 @@
             this.visalbtnadjseach3.TabIndex = 22;
             this.visalbtnadjseach3.Text = "Search";
             this.visalbtnadjseach3.UseVisualStyleBackColor = false;
+            this.visalbtnadjseach3.Click += new System.EventHandler(this.visalbtnadjseach3_Click);
             // 
             // label8
             // 
@@ -242,6 +265,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.visalbtnrefresh2);
             this.tabPage2.Controls.Add(this.label5);
             this.tabPage2.Controls.Add(this.visalbtnadjfix2);
             this.tabPage2.Controls.Add(this.visalcmbadjday2);
@@ -258,6 +282,18 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Groups";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // visalbtnrefresh2
+            // 
+            this.visalbtnrefresh2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.visalbtnrefresh2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.visalbtnrefresh2.Location = new System.Drawing.Point(933, 101);
+            this.visalbtnrefresh2.Name = "visalbtnrefresh2";
+            this.visalbtnrefresh2.Size = new System.Drawing.Size(118, 39);
+            this.visalbtnrefresh2.TabIndex = 51;
+            this.visalbtnrefresh2.Text = "REFRESH";
+            this.visalbtnrefresh2.UseVisualStyleBackColor = false;
+            this.visalbtnrefresh2.Click += new System.EventHandler(this.visalbtnrefresh2_Click);
             // 
             // label5
             // 
@@ -281,6 +317,7 @@
             this.visalbtnadjfix2.TabIndex = 38;
             this.visalbtnadjfix2.Text = "Fix";
             this.visalbtnadjfix2.UseVisualStyleBackColor = false;
+            this.visalbtnadjfix2.Click += new System.EventHandler(this.visalbtnadjfix2_Click);
             // 
             // visalcmbadjday2
             // 
@@ -313,17 +350,29 @@
             // 
             // visalgdvadj2
             // 
+            this.visalgdvadj2.AllowUserToAddRows = false;
             this.visalgdvadj2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.visalgdvadj2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.visalgdvadj2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.visalgdvadj2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Edit2});
             this.visalgdvadj2.Location = new System.Drawing.Point(50, 175);
             this.visalgdvadj2.Name = "visalgdvadj2";
             this.visalgdvadj2.RowHeadersWidth = 51;
             this.visalgdvadj2.RowTemplate.Height = 24;
             this.visalgdvadj2.Size = new System.Drawing.Size(1052, 363);
             this.visalgdvadj2.TabIndex = 35;
+            this.visalgdvadj2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.visalgdvadj2_CellContentClick);
+            // 
+            // Edit2
+            // 
+            this.Edit2.HeaderText = "Edit";
+            this.Edit2.MinimumWidth = 6;
+            this.Edit2.Name = "Edit2";
+            this.Edit2.Text = "Edit";
+            this.Edit2.UseColumnTextForButtonValue = true;
             // 
             // visalbtnadjseach2
             // 
@@ -336,6 +385,7 @@
             this.visalbtnadjseach2.TabIndex = 34;
             this.visalbtnadjseach2.Text = "Search";
             this.visalbtnadjseach2.UseVisualStyleBackColor = false;
+            this.visalbtnadjseach2.Click += new System.EventHandler(this.visalbtnadjseach2_Click);
             // 
             // label6
             // 
@@ -538,6 +588,14 @@
             this.visalcmbadjsubgroup.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.visalcmbadjsubgroup.TabIndex = 17;
             // 
+            // Edit3
+            // 
+            this.Edit3.HeaderText = "Edit";
+            this.Edit3.MinimumWidth = 6;
+            this.Edit3.Name = "Edit3";
+            this.Edit3.Text = "Edit";
+            this.Edit3.UseColumnTextForButtonValue = true;
+            // 
             // Section3_nooverlappingSessions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -606,5 +664,9 @@
         private System.Windows.Forms.ComboBox visalcmbadjday1;
         private System.Windows.Forms.DataGridViewButtonColumn Edit1;
         private System.Windows.Forms.Button visalbtnrefresh1;
+        private System.Windows.Forms.Button visalbtnrefresh3;
+        private System.Windows.Forms.Button visalbtnrefresh2;
+        private System.Windows.Forms.DataGridViewButtonColumn Edit2;
+        private System.Windows.Forms.DataGridViewButtonColumn Edit3;
     }
 }
