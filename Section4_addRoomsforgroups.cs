@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -33,12 +34,21 @@ namespace ABC_Institute___Timetable_Generator
         {
             using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
             {
+              
                 mySqlCon.Open();
                 String query = "Select * from room_groups";
-
                 MySqlDataAdapter dataadapter = new MySqlDataAdapter(query, mySqlCon);
                 DataTable dataLocations = new DataTable();
                 dataadapter.Fill(dataLocations);
+
+
+                string count;
+                MySqlCommand mySqlCmd = new MySqlCommand("test", mySqlCon);
+                mySqlCmd.CommandType = CommandType.StoredProcedure;
+                count = mySqlCmd.ExecuteScalar().ToString();
+
+                Console.WriteLine(count);
+
                 dgvnishikigroupsrooms.DataSource = dataLocations;
                 dgvnishikigroupsrooms.Columns[0].Visible = false;
             }
