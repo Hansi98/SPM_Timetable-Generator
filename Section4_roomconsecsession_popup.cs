@@ -21,6 +21,7 @@ namespace ABC_Institute___Timetable_Generator
             InitializeComponent();
             fillconsecsessionGrid();
             fillroomCombobox();
+            loadlecNames();
         }
         void fillconsecsessionGrid()
         {
@@ -75,13 +76,6 @@ namespace ABC_Institute___Timetable_Generator
             if (nihsikidgvconsecsesroomdisplay.CurrentRow.Index != -1)
             {
                 consecsessionID = Convert.ToInt32(nihsikidgvconsecsesroomdisplay.CurrentRow.Cells[0].Value.ToString());
-                //lecname = nihsikidgvsesroomdisplay.CurrentRow.Cells[1].Value.ToString();
-                //groupid = nihsikidgvsesroomdisplay.CurrentRow.Cells[2].Value.ToString();
-                //subgroupid = nihsikidgvsesroomdisplay.CurrentRow.Cells[3].Value.ToString();
-                //time = nihsikidgvsesroomdisplay.CurrentRow.Cells[4].Value.ToString();
-                //day = nihsikidgvsesroomdisplay.CurrentRow.Cells[5].Value.ToString();
-                //tag = nihsikidgvsesroomdisplay.CurrentRow.Cells[6].Value.ToString();
-                //module = nihsikidgvsesroomdisplay.CurrentRow.Cells[7].Value.ToString();
                 nishikiconsecseslecroom.Text = nihsikidgvconsecsesroomdisplay.CurrentRow.Cells[1].Value.ToString();
 
             }
@@ -102,6 +96,54 @@ namespace ABC_Institute___Timetable_Generator
                 cmd.ExecuteNonQuery();
 
                 MessageBox.Show("Location Added Successfully");
+                this.Dispose();
+
+
+
+            }
+        }
+
+        void loadlecNames()
+        {
+            using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
+            {
+                String query = "Select * from lecturer";
+
+                MySqlCommand sql = new MySqlCommand(query, mySqlCon);
+                MySqlDataReader read;
+
+                try
+                {
+                    mySqlCon.Open();
+                    read = sql.ExecuteReader();
+
+                    while (read.Read())
+                    {
+                        nishikicmbsearchconsecbylec.Items.Add(read.GetValue(1).ToString() + " " + read.GetValue(3).ToString());
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+
+            }
+        }
+          private void Searchconsecses_Click(object sender, EventArgs e)
+        {
+            using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
+            {
+                string lec = nishikicmbsearchconsecbylec.SelectedItem.ToString();
+
+                mySqlCon.Open();
+                String query = "select s.sessionID, s.Lecturer_name, s.Group_ID, s.Subgroup_ID, s.Location, s.Timeslot, s.Day, s.Tag, s.Module from mydb.sessions s, mydb.c_session c where s.sessionID = c.ConsecutiveSes_01 or s.sessionID = c.ConsecutiveSes_02 and Lecturer_name = '"+lec+"'";
+                
+                Console.WriteLine(query);
+
+                MySqlCommand cmd = new MySqlCommand(query, mySqlCon);
+                cmd.ExecuteNonQuery();
+
+                MessageBox.Show("Filtered "+lec+"'s sessions!");
                 this.Dispose();
 
 
