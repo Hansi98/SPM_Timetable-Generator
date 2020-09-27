@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -11,47 +12,43 @@ using System.Windows.Forms;
 
 namespace ABC_Institute___Timetable_Generator
 {
-    public partial class Section4_roomsfortags : Form
+    public partial class Section4_addRoomsforsessions : Form
     {
         string connectionString = @"SERVER=abcdatabase.mysql.database.azure.com;PORT=3306;DATABASE=mydb;UID=abcadmin@abcdatabase;PASSWORD=ABC@123abc";
 
-        public Section4_roomsfortags()
+        public Section4_addRoomsforsessions()
         {
             InitializeComponent();
-            fillLocationGrid();
+            fillsessionGrid();
         }
 
         private void Button1_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
-        private void Button2_Click(object sender, EventArgs e)
-        {
-            Section4_roomtags_popup tags = new Section4_roomtags_popup();
-
-            tags.ShowDialog();
-        }
-
-        void fillLocationGrid()
+        void fillsessionGrid()
         {
             using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
             {
                 mySqlCon.Open();
-                String query = "Select * from room_tags";
+                String query = "select s.Lecturer_name, s.Group_ID, s.Subgroup_ID, s.Location, s.Timeslot, s.Day, s.Tag, s.Module from sessions s, c_session c where s.sessionID != c.ConsecutiveSes_01 and s.sessionID != c.ConsecutiveSes_02";
 
                 MySqlDataAdapter dataadapter = new MySqlDataAdapter(query, mySqlCon);
-                //MySqlCommand sql = new MySqlCommand(query, mySqlCon);
                 DataTable dataLocations = new DataTable();
                 dataadapter.Fill(dataLocations);
-                dgvnishikitagsrooms.DataSource = dataLocations;
-                dgvnishikitagsrooms.Columns[0].Visible = false;
+                dgvnishikisessionrooms.DataSource = dataLocations;
             }
+        }
+        private void Btnnishikiaddsessionrooms_Click(object sender, EventArgs e)
+        {
+            Section4_roomsessions_popup ses = new Section4_roomsessions_popup();
+
+            ses.ShowDialog();
         }
 
         private void PictureBox1_Click(object sender, EventArgs e)
         {
-            fillLocationGrid();
+            fillsessionGrid();
         }
     }
 }
