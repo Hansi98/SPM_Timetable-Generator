@@ -33,6 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="MetroFramework">
       <HintPath>..\..\..\..\Visual Studio 2019\MetroUI\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
     </Reference>
@@ -44,7 +49,9 @@
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
     <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -175,6 +182,41 @@
     <Compile Include="Section4_roomsfortags.Designer.cs">
       <DependentUpon>Section4_roomsfortags.cs</DependentUpon>
     </Compile>
+    <Compile Include="Section5_LecTimetable.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Section5_LecTimetable.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Section5_GroupTimetable.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Section5_GroupTimetable.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Section5_RoomTimetable.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Section5_RoomTimetable.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Section5_ViewGrpTimetable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section5_ViewGrpTimetable.Designer.cs">
+      <DependentUpon>Section5_ViewGrpTimetable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Section5_ViewLecTimetable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section5_ViewLecTimetable.Designer.cs">
+      <DependentUpon>Section5_ViewLecTimetable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Section5_ViewRoomTimetable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section5_ViewRoomTimetable.Designer.cs">
+      <DependentUpon>Section5_ViewRoomTimetable.cs</DependentUpon>
     <Compile Include="Section4_roomssubgroups_popup.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -377,6 +419,26 @@
     <EmbeddedResource Include="Section4_roomsfortags.resx">
       <DependentUpon>Section4_roomsfortags.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Section5_LecTimetable.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Section5_LecTimetable.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section5_GroupTimetable.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Section5_GroupTimetable.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section5_RoomTimetable.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Section5_RoomTimetable.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section5_ViewGrpTimetable.resx">
+      <DependentUpon>Section5_ViewGrpTimetable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section5_ViewLecTimetable.resx">
+      <DependentUpon>Section5_ViewLecTimetable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section5_ViewRoomTimetable.resx">
+      <DependentUpon>Section5_ViewRoomTimetable.cs</DependentUpon>
     <EmbeddedResource Include="Section4_roomssubgroups_popup.resx">
       <DependentUpon>Section4_roomssubgroups_popup.cs</DependentUpon>
     </EmbeddedResource>
@@ -466,6 +528,9 @@
     <None Include="img\graph_30px.png" />
     <None Include="img\menu_64px.png" />
     <Content Include="img\revenue-icon-png-17.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
