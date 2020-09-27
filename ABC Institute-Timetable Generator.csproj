@@ -217,6 +217,7 @@
     </Compile>
     <Compile Include="Section5_ViewRoomTimetable.Designer.cs">
       <DependentUpon>Section5_ViewRoomTimetable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Section4_roomssubgroups_popup.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -439,6 +440,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Section5_ViewRoomTimetable.resx">
       <DependentUpon>Section5_ViewRoomTimetable.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Section4_roomssubgroups_popup.resx">
       <DependentUpon>Section4_roomssubgroups_popup.cs</DependentUpon>
     </EmbeddedResource>
@@ -527,6 +529,7 @@
     <None Include="img\location_24px.png" />
     <None Include="img\graph_30px.png" />
     <None Include="img\menu_64px.png" />
+    <Content Include="img\logo_timetable.png" />
     <Content Include="img\revenue-icon-png-17.jpg" />
   </ItemGroup>
   <ItemGroup>

@@ -37,7 +37,6 @@
             this.HansiTimetable_Addlec = new System.Windows.Forms.Button();
             this.hansi_timelectable = new System.Windows.Forms.DataGridView();
             this.HansiTimetable_lec = new System.Windows.Forms.ComboBox();
-            this.timetableLecturerBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.HansiTimetable_Lecdown = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.HansiTimetable_grptab = new System.Windows.Forms.TabPage();
@@ -45,27 +44,28 @@
             this.HansiTimetable_grpDown = new System.Windows.Forms.Button();
             this.HansiTimetable_Addgrp = new System.Windows.Forms.Button();
             this.HansiTimetable_grp = new System.Windows.Forms.ComboBox();
-            this.timetableGroupBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label4 = new System.Windows.Forms.Label();
             this.HansiTimetable_roomtab = new System.Windows.Forms.TabPage();
             this.hansi_timeRoomtable = new System.Windows.Forms.DataGridView();
             this.HansiTimetable_RoomDown = new System.Windows.Forms.Button();
             this.HansiTimetable_roomadd = new System.Windows.Forms.Button();
             this.HansiTimetable_room = new System.Windows.Forms.ComboBox();
-            this.timetableRoomBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label1 = new System.Windows.Forms.Label();
+            this.timetableLecturerBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.timetableGroupBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.timetableRoomBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timetableSessionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.timetableLecturerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.HansiTimetable_tabcontrol.SuspendLayout();
             this.HansiTimetable_lectab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hansi_timelectable)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.timetableLecturerBindingSource1)).BeginInit();
             this.HansiTimetable_grptab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hansi_timegrptable)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.timetableGroupBindingSource)).BeginInit();
             this.HansiTimetable_roomtab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hansi_timeRoomtable)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timetableLecturerBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timetableGroupBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.timetableRoomBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.timetableSessionsBindingSource)).BeginInit();
@@ -155,6 +155,7 @@
             this.hansi_timelectable.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.hansi_timelectable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.hansi_timelectable.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.hansi_timelectable.ColumnHeadersHeight = 35;
             this.hansi_timelectable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
@@ -162,10 +163,10 @@
             this.hansi_timelectable.Location = new System.Drawing.Point(3, 130);
             this.hansi_timelectable.Name = "hansi_timelectable";
             this.hansi_timelectable.ReadOnly = true;
-            this.hansi_timelectable.RowHeadersWidth = 50;
+            this.hansi_timelectable.RowHeadersWidth = 45;
             this.hansi_timelectable.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.hansi_timelectable.Size = new System.Drawing.Size(772, 213);
-            this.hansi_timelectable.TabIndex = 45;
+            this.hansi_timelectable.TabIndex = 100;
             // 
             // HansiTimetable_lec
             // 
@@ -229,6 +230,7 @@
             this.hansi_timegrptable.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.hansi_timegrptable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.hansi_timegrptable.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.hansi_timegrptable.ColumnHeadersHeight = 35;
             this.hansi_timegrptable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
@@ -236,7 +238,7 @@
             this.hansi_timegrptable.Location = new System.Drawing.Point(5, 140);
             this.hansi_timegrptable.Name = "hansi_timegrptable";
             this.hansi_timegrptable.ReadOnly = true;
-            this.hansi_timegrptable.RowHeadersWidth = 35;
+            this.hansi_timegrptable.RowHeadersWidth = 45;
             this.hansi_timegrptable.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.hansi_timegrptable.Size = new System.Drawing.Size(772, 213);
             this.hansi_timegrptable.TabIndex = 45;
@@ -316,6 +318,7 @@
             this.hansi_timeRoomtable.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.hansi_timeRoomtable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.hansi_timeRoomtable.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.hansi_timeRoomtable.ColumnHeadersHeight = 35;
             this.hansi_timeRoomtable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
@@ -323,7 +326,7 @@
             this.hansi_timeRoomtable.Location = new System.Drawing.Point(5, 135);
             this.hansi_timeRoomtable.Name = "hansi_timeRoomtable";
             this.hansi_timeRoomtable.ReadOnly = true;
-            this.hansi_timeRoomtable.RowHeadersWidth = 42;
+            this.hansi_timeRoomtable.RowHeadersWidth = 45;
             this.hansi_timeRoomtable.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.hansi_timeRoomtable.Size = new System.Drawing.Size(772, 217);
             this.hansi_timeRoomtable.TabIndex = 45;
@@ -406,14 +409,14 @@
             this.HansiTimetable_tabcontrol.ResumeLayout(false);
             this.HansiTimetable_lectab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.hansi_timelectable)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.timetableLecturerBindingSource1)).EndInit();
             this.HansiTimetable_grptab.ResumeLayout(false);
             this.HansiTimetable_grptab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hansi_timegrptable)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.timetableGroupBindingSource)).EndInit();
             this.HansiTimetable_roomtab.ResumeLayout(false);
             this.HansiTimetable_roomtab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hansi_timeRoomtable)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timetableLecturerBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timetableGroupBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.timetableRoomBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.timetableSessionsBindingSource)).EndInit();
