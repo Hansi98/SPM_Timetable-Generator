@@ -146,10 +146,11 @@ namespace ABC_Institute___Timetable_Generator
             using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
             {
                 mySqlCon.Open();
-                MySqlCommand mySqlCmd = new MySqlCommand("sessionAddorEdit", mySqlCon);
+                MySqlCommand mySqlCmd = new MySqlCommand("newsessionAddorEdit", mySqlCon);
                 mySqlCmd.CommandType = CommandType.StoredProcedure;
                 mySqlCmd.Parameters.AddWithValue("_sessionID", sessionID1);
                 mySqlCmd.Parameters.AddWithValue("_Day", visalcmbadjday1.Text.Trim().ToString());
+               
                 mySqlCmd.ExecuteNonQuery();
 
                 visalcmbadjday1.Text = "";
@@ -200,7 +201,7 @@ namespace ABC_Institute___Timetable_Generator
             using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
             {
                 mySqlCon.Open();
-                MySqlCommand mySqlCmd = new MySqlCommand("sessionAddorEdit", mySqlCon);
+                MySqlCommand mySqlCmd = new MySqlCommand("newsessionAddorEdit", mySqlCon);
                 mySqlCmd.CommandType = CommandType.StoredProcedure;
                 mySqlCmd.Parameters.AddWithValue("_sessionID", sessionID1);
                 mySqlCmd.Parameters.AddWithValue("_Day", visalcmbadjday2.Text.Trim().ToString());
@@ -244,7 +245,7 @@ namespace ABC_Institute___Timetable_Generator
             using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
             {
                 mySqlCon.Open();
-                MySqlCommand mySqlCmd = new MySqlCommand("sessionAddorEdit", mySqlCon);
+                MySqlCommand mySqlCmd = new MySqlCommand("newsessionAddorEdit", mySqlCon);
                 mySqlCmd.CommandType = CommandType.StoredProcedure;
                 mySqlCmd.Parameters.AddWithValue("_sessionID", sessionID1);
                 mySqlCmd.Parameters.AddWithValue("_Day", visalcmbadjday3.Text.Trim().ToString());
