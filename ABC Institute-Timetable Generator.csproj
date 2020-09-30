@@ -86,6 +86,12 @@
     <Compile Include="Section1_WorkingDays.Designer.cs">
       <DependentUpon>Section1_WorkingDays.cs</DependentUpon>
     </Compile>
+    <Compile Include="Section2_Sessions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section2_Sessions.Designer.cs">
+      <DependentUpon>Section2_Sessions.cs</DependentUpon>
+    </Compile>
     <Compile Include="Section3_consecutiveSessions.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -242,6 +248,7 @@
     <Compile Include="Section5_viewTimetable.Designer.cs">
       <DependentUpon>Section5_viewTimetable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Session.cs" />
     <Compile Include="SubjectServiceImpl.cs" />
     <Compile Include="SubjectServicesInt.cs" />
     <Compile Include="Subject.cs" />
@@ -371,6 +378,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Section1_WorkingDays.resx">
       <DependentUpon>Section1_WorkingDays.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section2_Sessions.resx">
+      <DependentUpon>Section2_Sessions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Section3_consecutiveSessions.resx">
       <DependentUpon>Section3_consecutiveSessions.cs</DependentUpon>
@@ -529,6 +539,7 @@
     <None Include="img\location_24px.png" />
     <None Include="img\graph_30px.png" />
     <None Include="img\menu_64px.png" />
+    <None Include="img\event_60px.png" />
     <Content Include="img\logo_timetable.png" />
     <Content Include="img\revenue-icon-png-17.jpg" />
   </ItemGroup>
