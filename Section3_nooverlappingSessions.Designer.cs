@@ -32,17 +32,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.nishikistatimg = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.visalbtnrefresh3 = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.visalbtnadjfix3 = new System.Windows.Forms.Button();
-            this.visalcmbadjday3 = new System.Windows.Forms.ComboBox();
-            this.visalcmbadjts3 = new System.Windows.Forms.ComboBox();
-            this.visalgdvadj3 = new System.Windows.Forms.DataGridView();
-            this.visalbtnadjseach3 = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.visalcmdmugsgroup = new System.Windows.Forms.ComboBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.visalbtnrefresh2 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -68,10 +57,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.visalcmbadjLecturer = new System.Windows.Forms.ComboBox();
             this.visalcmbadjsubgroup = new System.Windows.Forms.TabControl();
-            this.Edit3 = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.nishikistatimg)).BeginInit();
-            this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.visalgdvadj3)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.visalgdvadj2)).BeginInit();
             this.tabPage1.SuspendLayout();
@@ -115,154 +101,6 @@
             this.label1.Text = "Adjustments";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.visalbtnrefresh3);
-            this.tabPage3.Controls.Add(this.label9);
-            this.tabPage3.Controls.Add(this.visalbtnadjfix3);
-            this.tabPage3.Controls.Add(this.visalcmbadjday3);
-            this.tabPage3.Controls.Add(this.visalcmbadjts3);
-            this.tabPage3.Controls.Add(this.visalgdvadj3);
-            this.tabPage3.Controls.Add(this.visalbtnadjseach3);
-            this.tabPage3.Controls.Add(this.label8);
-            this.tabPage3.Controls.Add(this.label10);
-            this.tabPage3.Controls.Add(this.visalcmdmugsgroup);
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1146, 593);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Sub groups";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // visalbtnrefresh3
-            // 
-            this.visalbtnrefresh3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.visalbtnrefresh3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.visalbtnrefresh3.Location = new System.Drawing.Point(945, 102);
-            this.visalbtnrefresh3.Name = "visalbtnrefresh3";
-            this.visalbtnrefresh3.Size = new System.Drawing.Size(118, 39);
-            this.visalbtnrefresh3.TabIndex = 51;
-            this.visalbtnrefresh3.Text = "REFRESH";
-            this.visalbtnrefresh3.UseVisualStyleBackColor = false;
-            this.visalbtnrefresh3.Click += new System.EventHandler(this.visalbtnrefresh3_Click);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(45, 109);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(95, 25);
-            this.label9.TabIndex = 30;
-            this.label9.Text = "Time Slot";
-            // 
-            // visalbtnadjfix3
-            // 
-            this.visalbtnadjfix3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.visalbtnadjfix3.BackColor = System.Drawing.Color.Orange;
-            this.visalbtnadjfix3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.visalbtnadjfix3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.visalbtnadjfix3.Location = new System.Drawing.Point(869, 102);
-            this.visalbtnadjfix3.Name = "visalbtnadjfix3";
-            this.visalbtnadjfix3.Size = new System.Drawing.Size(233, 39);
-            this.visalbtnadjfix3.TabIndex = 29;
-            this.visalbtnadjfix3.Text = "Fix";
-            this.visalbtnadjfix3.UseVisualStyleBackColor = false;
-            this.visalbtnadjfix3.Click += new System.EventHandler(this.visalbtnadjfix3_Click);
-            // 
-            // visalcmbadjday3
-            // 
-            this.visalcmbadjday3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.visalcmbadjday3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.visalcmbadjday3.FormattingEnabled = true;
-            this.visalcmbadjday3.ItemHeight = 25;
-            this.visalcmbadjday3.Items.AddRange(new object[] {
-            "Sunday",
-            "Monday",
-            "Tuesday",
-            "Wenesday",
-            "Thursday",
-            "Friday",
-            "Saturday"});
-            this.visalcmbadjday3.Location = new System.Drawing.Point(539, 106);
-            this.visalcmbadjday3.Name = "visalcmbadjday3";
-            this.visalcmbadjday3.Size = new System.Drawing.Size(324, 33);
-            this.visalcmbadjday3.TabIndex = 28;
-            // 
-            // visalcmbadjts3
-            // 
-            this.visalcmbadjts3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.visalcmbadjts3.FormattingEnabled = true;
-            this.visalcmbadjts3.ItemHeight = 25;
-            this.visalcmbadjts3.Location = new System.Drawing.Point(347, 106);
-            this.visalcmbadjts3.Name = "visalcmbadjts3";
-            this.visalcmbadjts3.Size = new System.Drawing.Size(324, 33);
-            this.visalcmbadjts3.TabIndex = 26;
-            // 
-            // visalgdvadj3
-            // 
-            this.visalgdvadj3.AllowUserToAddRows = false;
-            this.visalgdvadj3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.visalgdvadj3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.visalgdvadj3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.visalgdvadj3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Edit3});
-            this.visalgdvadj3.Location = new System.Drawing.Point(50, 176);
-            this.visalgdvadj3.Name = "visalgdvadj3";
-            this.visalgdvadj3.RowHeadersWidth = 51;
-            this.visalgdvadj3.RowTemplate.Height = 24;
-            this.visalgdvadj3.Size = new System.Drawing.Size(1052, 363);
-            this.visalgdvadj3.TabIndex = 23;
-            this.visalgdvadj3.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.visalgdvadj3_CellContentClick);
-            // 
-            // visalbtnadjseach3
-            // 
-            this.visalbtnadjseach3.BackColor = System.Drawing.Color.Orange;
-            this.visalbtnadjseach3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.visalbtnadjseach3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.visalbtnadjseach3.Location = new System.Drawing.Point(694, 102);
-            this.visalbtnadjseach3.Name = "visalbtnadjseach3";
-            this.visalbtnadjseach3.Size = new System.Drawing.Size(233, 39);
-            this.visalbtnadjseach3.TabIndex = 22;
-            this.visalbtnadjseach3.Text = "Search";
-            this.visalbtnadjseach3.UseVisualStyleBackColor = false;
-            this.visalbtnadjseach3.Click += new System.EventHandler(this.visalbtnadjseach3_Click);
-            // 
-            // label8
-            // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(413, 109);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(47, 25);
-            this.label8.TabIndex = 21;
-            this.label8.Text = "Day";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(44, 59);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(105, 25);
-            this.label10.TabIndex = 19;
-            this.label10.Text = "Sub-group";
-            // 
-            // visalcmdmugsgroup
-            // 
-            this.visalcmdmugsgroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.visalcmdmugsgroup.FormattingEnabled = true;
-            this.visalcmdmugsgroup.ItemHeight = 25;
-            this.visalcmdmugsgroup.Location = new System.Drawing.Point(347, 56);
-            this.visalcmdmugsgroup.Name = "visalcmdmugsgroup";
-            this.visalcmdmugsgroup.Size = new System.Drawing.Size(324, 33);
-            this.visalcmdmugsgroup.TabIndex = 16;
-            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.visalbtnrefresh2);
@@ -280,7 +118,7 @@
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(1146, 593);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Groups";
+            this.tabPage2.Text = "Groups & Sub groups";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // visalbtnrefresh2
@@ -580,21 +418,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.visalcmbadjsubgroup.Controls.Add(this.tabPage1);
             this.visalcmbadjsubgroup.Controls.Add(this.tabPage2);
-            this.visalcmbadjsubgroup.Controls.Add(this.tabPage3);
             this.visalcmbadjsubgroup.Location = new System.Drawing.Point(12, 111);
             this.visalcmbadjsubgroup.Name = "visalcmbadjsubgroup";
             this.visalcmbadjsubgroup.SelectedIndex = 0;
             this.visalcmbadjsubgroup.Size = new System.Drawing.Size(1154, 622);
-            this.visalcmbadjsubgroup.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
+            this.visalcmbadjsubgroup.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
             this.visalcmbadjsubgroup.TabIndex = 17;
-            // 
-            // Edit3
-            // 
-            this.Edit3.HeaderText = "Edit";
-            this.Edit3.MinimumWidth = 6;
-            this.Edit3.Name = "Edit3";
-            this.Edit3.Text = "Edit";
-            this.Edit3.UseColumnTextForButtonValue = true;
             // 
             // Section3_nooverlappingSessions
             // 
@@ -611,9 +440,6 @@
             this.Text = "Section3_nooverlappingSessions";
             this.Load += new System.EventHandler(this.Section3_nooverlappingSessions_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nishikistatimg)).EndInit();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.visalgdvadj3)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.visalgdvadj2)).EndInit();
@@ -631,19 +457,9 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox nishikistatimg;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.DataGridView visalgdvadj3;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ComboBox visalcmdmugsgroup;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabControl visalcmbadjsubgroup;
-        private System.Windows.Forms.Button visalbtnadjfix3;
-        private System.Windows.Forms.ComboBox visalcmbadjday3;
-        private System.Windows.Forms.ComboBox visalcmbadjts3;
-        private System.Windows.Forms.Button visalbtnadjseach3;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button visalbtnadjfix2;
         private System.Windows.Forms.ComboBox visalcmbadjday2;
@@ -664,9 +480,7 @@
         private System.Windows.Forms.ComboBox visalcmbadjday1;
         private System.Windows.Forms.DataGridViewButtonColumn Edit1;
         private System.Windows.Forms.Button visalbtnrefresh1;
-        private System.Windows.Forms.Button visalbtnrefresh3;
         private System.Windows.Forms.Button visalbtnrefresh2;
         private System.Windows.Forms.DataGridViewButtonColumn Edit2;
-        private System.Windows.Forms.DataGridViewButtonColumn Edit3;
     }
 }

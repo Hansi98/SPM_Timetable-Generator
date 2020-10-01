@@ -46,26 +46,46 @@ namespace ABC_Institute___Timetable_Generator
         {
             using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
             {
-                mySqlCon.Open();
-                MySqlDataAdapter sqlDa = new MySqlDataAdapter("Select * from newsessions", mySqlCon);
+               // mySqlCon.Open();
+                //MySqlDataAdapter sqlDa = new MySqlDataAdapter("Select * from newsessions", mySqlCon);
                 //sqlDa.SelectCommand.CommandType = CommandType.StoredProcedure;
+               // DataTable dataTags = new DataTable();
+               // sqlDa.Fill(dataTags);
+
+
+                mySqlCon.Open();
+                MySqlDataAdapter sqlDa = new MySqlDataAdapter("getMasterTable", mySqlCon);
+                sqlDa.SelectCommand.CommandType = CommandType.StoredProcedure;
                 DataTable dataTags = new DataTable();
                 sqlDa.Fill(dataTags);
 
 
                 foreach (DataRow item in dataTags.Rows)
                 {
+                  // int aa = visaldatagridparasess1.Rows.Add();
+                  // visaldatagridparasess1.Rows[aa].Cells[0].Value = "false";
+                 //   visaldatagridparasess1.Rows[aa].Cells[1].Value = item["sessionID"].ToString();
+                 //   visaldatagridparasess1.Rows[aa].Cells[2].Value = item["Lecturer_Name"].ToString();
+                 //   visaldatagridparasess1.Rows[aa].Cells[3].Value = item["Group_ID"].ToString();
+                 //   visaldatagridparasess1.Rows[aa].Cells[4].Value = item["Subgroup_ID"].ToString();
+                 //   visaldatagridparasess1.Rows[aa].Cells[5].Value = item["Location"].ToString();
+                  //  visaldatagridparasess1.Rows[aa].Cells[6].Value = item["Timeslot"].ToString();
+                 //   visaldatagridparasess1.Rows[aa].Cells[7].Value = item["Day"].ToString();
+                  //  visaldatagridparasess1.Rows[aa].Cells[8].Value = item["Tag"].ToString();
+                  //  visaldatagridparasess1.Rows[aa].Cells[9].Value = item["Module"].ToString();
+
+
                     int aa = visaldatagridparasess1.Rows.Add();
                     visaldatagridparasess1.Rows[aa].Cells[0].Value = "false";
                     visaldatagridparasess1.Rows[aa].Cells[1].Value = item["sessionID"].ToString();
-                    visaldatagridparasess1.Rows[aa].Cells[2].Value = item["Lecturer_Name"].ToString();
-                    visaldatagridparasess1.Rows[aa].Cells[3].Value = item["Group_ID"].ToString();
-                    visaldatagridparasess1.Rows[aa].Cells[4].Value = item["Subgroup_ID"].ToString();
-                    visaldatagridparasess1.Rows[aa].Cells[5].Value = item["Location"].ToString();
-                    visaldatagridparasess1.Rows[aa].Cells[6].Value = item["Timeslot"].ToString();
-                    visaldatagridparasess1.Rows[aa].Cells[7].Value = item["Day"].ToString();
-                    visaldatagridparasess1.Rows[aa].Cells[8].Value = item["Tag"].ToString();
-                    visaldatagridparasess1.Rows[aa].Cells[9].Value = item["Module"].ToString();
+                    visaldatagridparasess1.Rows[aa].Cells[2].Value = item["LecID"].ToString();
+                    visaldatagridparasess1.Rows[aa].Cells[3].Value = item["lecturerName"].ToString();
+                    visaldatagridparasess1.Rows[aa].Cells[4].Value = item["GroupID"].ToString();
+                    visaldatagridparasess1.Rows[aa].Cells[5].Value = item["room"].ToString();
+                    visaldatagridparasess1.Rows[aa].Cells[6].Value = item["time"].ToString();
+                    visaldatagridparasess1.Rows[aa].Cells[7].Value = item["day"].ToString();
+                    visaldatagridparasess1.Rows[aa].Cells[8].Value = item["tag"].ToString();
+                    visaldatagridparasess1.Rows[aa].Cells[9].Value = item["subcode"].ToString();
 
 
 
@@ -83,10 +103,19 @@ namespace ABC_Institute___Timetable_Generator
             {
 
 
+             //   mySqlCon.Open();
+               // MySqlDataAdapter sqlDa = new MySqlDataAdapter("sessiongetByGroupID", mySqlCon);
+            //    sqlDa.SelectCommand.CommandType = CommandType.StoredProcedure;
+             //   sqlDa.SelectCommand.Parameters.AddWithValue("_Group_ID", visalcmbparasegid.Text.Trim());
+             //   DataTable dataTags = new DataTable();
+             //   sqlDa.Fill(dataTags);
+
+
+
                 mySqlCon.Open();
-                MySqlDataAdapter sqlDa = new MySqlDataAdapter("sessiongetByGroupID", mySqlCon);
+                MySqlDataAdapter sqlDa = new MySqlDataAdapter("MasterTablefilterByGroupID", mySqlCon);
                 sqlDa.SelectCommand.CommandType = CommandType.StoredProcedure;
-                sqlDa.SelectCommand.Parameters.AddWithValue("_Group_ID", visalcmbparasegid.Text.Trim());
+                sqlDa.SelectCommand.Parameters.AddWithValue("_groupID", visalcmbparasegid.Text.Trim());
                 DataTable dataTags = new DataTable();
                 sqlDa.Fill(dataTags);
 
@@ -99,23 +128,46 @@ namespace ABC_Institute___Timetable_Generator
                 foreach (DataRow item in dataTags.Rows)
                 {
                     int aa = visaldatagridparasess2.Rows.Add();
+                //    visaldatagridparasess2.Rows[aa].Cells[0].Value = "false";
+                //   visaldatagridparasess2.Rows[aa].Cells[1].Value = item["sessionID"].ToString();
+                //    visaldatagridparasess2.Rows[aa].Cells[2].Value = item["Lecturer_Name"].ToString();
+                //    visaldatagridparasess2.Rows[aa].Cells[3].Value = item["Group_ID"].ToString();
+                //    visaldatagridparasess2.Rows[aa].Cells[4].Value = item["Subgroup_ID"].ToString();
+                //    visaldatagridparasess2.Rows[aa].Cells[5].Value = item["Location"].ToString();
+                //    visaldatagridparasess2.Rows[aa].Cells[6].Value = item["Timeslot"].ToString();
+                //    visaldatagridparasess2.Rows[aa].Cells[7].Value = item["Day"].ToString();
+                //    visaldatagridparasess2.Rows[aa].Cells[8].Value = item["Tag"].ToString();
+                //    visaldatagridparasess2.Rows[aa].Cells[9].Value = item["Module"].ToString();
+
+
                     visaldatagridparasess2.Rows[aa].Cells[0].Value = "false";
                     visaldatagridparasess2.Rows[aa].Cells[1].Value = item["sessionID"].ToString();
-                    visaldatagridparasess2.Rows[aa].Cells[2].Value = item["Lecturer_Name"].ToString();
-                    visaldatagridparasess2.Rows[aa].Cells[3].Value = item["Group_ID"].ToString();
-                    visaldatagridparasess2.Rows[aa].Cells[4].Value = item["Subgroup_ID"].ToString();
-                    visaldatagridparasess2.Rows[aa].Cells[5].Value = item["Location"].ToString();
-                    visaldatagridparasess2.Rows[aa].Cells[6].Value = item["Timeslot"].ToString();
-                    visaldatagridparasess2.Rows[aa].Cells[7].Value = item["Day"].ToString();
-                    visaldatagridparasess2.Rows[aa].Cells[8].Value = item["Tag"].ToString();
-                    visaldatagridparasess2.Rows[aa].Cells[9].Value = item["Module"].ToString();
+                    visaldatagridparasess2.Rows[aa].Cells[2].Value = item["LecID"].ToString();
+                    visaldatagridparasess2.Rows[aa].Cells[3].Value = item["lecturerName"].ToString();
+                    visaldatagridparasess2.Rows[aa].Cells[4].Value = item["GroupID"].ToString();
+                    visaldatagridparasess2.Rows[aa].Cells[5].Value = item["room"].ToString();
+                    visaldatagridparasess2.Rows[aa].Cells[6].Value = item["time"].ToString();
+                    visaldatagridparasess2.Rows[aa].Cells[7].Value = item["day"].ToString();
+                    visaldatagridparasess2.Rows[aa].Cells[8].Value = item["tag"].ToString();
+                    visaldatagridparasess2.Rows[aa].Cells[9].Value = item["subcode"].ToString();
 
 
 
                 }
                 {
                     int aa = visaldatagridparasess2.Rows.Add();
-                    visaldatagridparasess2.Rows[aa].Cells[0].Value = "false";
+                   visaldatagridparasess2.Rows[aa].Cells[0].Value = "false";
+                   // visaldatagridparasess2.Rows[aa].Cells[1].Value = null;
+                   // visaldatagridparasess2.Rows[aa].Cells[2].Value = null;
+                    //visaldatagridparasess2.Rows[aa].Cells[3].Value = null;
+                  //  visaldatagridparasess2.Rows[aa].Cells[4].Value = null;
+                  //  visaldatagridparasess2.Rows[aa].Cells[5].Value = null;
+                  //  visaldatagridparasess2.Rows[aa].Cells[6].Value = null;
+                 //   visaldatagridparasess2.Rows[aa].Cells[7].Value = null;
+                 //   visaldatagridparasess2.Rows[aa].Cells[8].Value = null;
+                 //   visaldatagridparasess2.Rows[aa].Cells[9].Value = null;
+
+
                     visaldatagridparasess2.Rows[aa].Cells[1].Value = null;
                     visaldatagridparasess2.Rows[aa].Cells[2].Value = null;
                     visaldatagridparasess2.Rows[aa].Cells[3].Value = null;
@@ -167,6 +219,11 @@ namespace ABC_Institute___Timetable_Generator
                 }
                 mySqlCon.Close();
             }
+        }
+
+        private void visaldatagridparasess1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

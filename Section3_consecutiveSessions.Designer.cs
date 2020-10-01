@@ -35,18 +35,11 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.asdcs12 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.visalbtnconsesearch = new System.Windows.Forms.Button();
             this.visaldatagridconse = new System.Windows.Forms.DataGridView();
+            this.visalbtnconsemakese = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.visalcmbconsegid = new System.Windows.Forms.ComboBox();
             this.Column1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.sessionID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Lecturer_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,9 +50,16 @@
             this.Day = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tag = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Module = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.visalbtnconsemakese = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
-            this.visalcmbconsegid = new System.Windows.Forms.ComboBox();
+            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.nishikistatimg)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -157,66 +157,6 @@
             this.asdcs12.Size = new System.Drawing.Size(1054, 324);
             this.asdcs12.TabIndex = 25;
             // 
-            // dataGridViewCheckBoxColumn1
-            // 
-            this.dataGridViewCheckBoxColumn1.HeaderText = "Select";
-            this.dataGridViewCheckBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "sessionID";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Lecturer_Name";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "Group_ID";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "Subgroup_ID";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.HeaderText = "Location";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.HeaderText = "Timeslot";
-            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.HeaderText = "Day";
-            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.HeaderText = "Tag";
-            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.HeaderText = "Module";
-            this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            // 
             // visalbtnconsesearch
             // 
             this.visalbtnconsesearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -256,66 +196,6 @@
             this.visaldatagridconse.TabIndex = 23;
             this.visaldatagridconse.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.visaldatagridconse_CellContentClick);
             // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Select";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            // 
-            // sessionID
-            // 
-            this.sessionID.HeaderText = "sessionID";
-            this.sessionID.MinimumWidth = 6;
-            this.sessionID.Name = "sessionID";
-            // 
-            // Lecturer_Name
-            // 
-            this.Lecturer_Name.HeaderText = "Lecturer_Name";
-            this.Lecturer_Name.MinimumWidth = 6;
-            this.Lecturer_Name.Name = "Lecturer_Name";
-            // 
-            // Group_ID
-            // 
-            this.Group_ID.HeaderText = "Group_ID";
-            this.Group_ID.MinimumWidth = 6;
-            this.Group_ID.Name = "Group_ID";
-            // 
-            // Subgroup_ID
-            // 
-            this.Subgroup_ID.HeaderText = "Subgroup_ID";
-            this.Subgroup_ID.MinimumWidth = 6;
-            this.Subgroup_ID.Name = "Subgroup_ID";
-            // 
-            // Location
-            // 
-            this.Location.HeaderText = "Location";
-            this.Location.MinimumWidth = 6;
-            this.Location.Name = "Location";
-            // 
-            // Timeslot
-            // 
-            this.Timeslot.HeaderText = "Timeslot";
-            this.Timeslot.MinimumWidth = 6;
-            this.Timeslot.Name = "Timeslot";
-            // 
-            // Day
-            // 
-            this.Day.HeaderText = "Day";
-            this.Day.MinimumWidth = 6;
-            this.Day.Name = "Day";
-            // 
-            // Tag
-            // 
-            this.Tag.HeaderText = "Tag";
-            this.Tag.MinimumWidth = 6;
-            this.Tag.Name = "Tag";
-            // 
-            // Module
-            // 
-            this.Module.HeaderText = "Module";
-            this.Module.MinimumWidth = 6;
-            this.Module.Name = "Module";
-            // 
             // visalbtnconsemakese
             // 
             this.visalbtnconsemakese.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -350,6 +230,126 @@
             this.visalcmbconsegid.Size = new System.Drawing.Size(324, 44);
             this.visalcmbconsegid.TabIndex = 16;
             this.visalcmbconsegid.SelectedIndexChanged += new System.EventHandler(this.visalcmbconsegid_SelectedIndexChanged);
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Select";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            // 
+            // sessionID
+            // 
+            this.sessionID.HeaderText = "sessionID";
+            this.sessionID.MinimumWidth = 6;
+            this.sessionID.Name = "sessionID";
+            // 
+            // Lecturer_Name
+            // 
+            this.Lecturer_Name.HeaderText = "Lecturer_ID";
+            this.Lecturer_Name.MinimumWidth = 6;
+            this.Lecturer_Name.Name = "Lecturer_Name";
+            // 
+            // Group_ID
+            // 
+            this.Group_ID.HeaderText = "Lecturer_Name";
+            this.Group_ID.MinimumWidth = 6;
+            this.Group_ID.Name = "Group_ID";
+            // 
+            // Subgroup_ID
+            // 
+            this.Subgroup_ID.HeaderText = "Group_ID";
+            this.Subgroup_ID.MinimumWidth = 6;
+            this.Subgroup_ID.Name = "Subgroup_ID";
+            // 
+            // Location
+            // 
+            this.Location.HeaderText = "Room";
+            this.Location.MinimumWidth = 6;
+            this.Location.Name = "Location";
+            // 
+            // Timeslot
+            // 
+            this.Timeslot.HeaderText = "Time";
+            this.Timeslot.MinimumWidth = 6;
+            this.Timeslot.Name = "Timeslot";
+            // 
+            // Day
+            // 
+            this.Day.HeaderText = "Day";
+            this.Day.MinimumWidth = 6;
+            this.Day.Name = "Day";
+            // 
+            // Tag
+            // 
+            this.Tag.HeaderText = "Tag";
+            this.Tag.MinimumWidth = 6;
+            this.Tag.Name = "Tag";
+            // 
+            // Module
+            // 
+            this.Module.HeaderText = "Sub_Code";
+            this.Module.MinimumWidth = 6;
+            this.Module.Name = "Module";
+            // 
+            // dataGridViewCheckBoxColumn1
+            // 
+            this.dataGridViewCheckBoxColumn1.HeaderText = "Select";
+            this.dataGridViewCheckBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "sessionID";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "Lecturer_ID";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.HeaderText = "Lecturer_Name";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.HeaderText = "Group_ID";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.HeaderText = "Room";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.HeaderText = "Time";
+            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.HeaderText = "Day";
+            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.HeaderText = "Tag";
+            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.HeaderText = "Sub_Code";
+            this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
             // 
             // Section3_consecutiveSessions
             // 
@@ -388,16 +388,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox visalcmbconsegid;
         private System.Windows.Forms.Button visalbtnconsesearch;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sessionID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Lecturer_Name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Group_ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Subgroup_ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Location;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Timeslot;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Day;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Tag;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Module;
         private System.Windows.Forms.DataGridView asdcs12;
         private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
@@ -409,5 +399,15 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sessionID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Lecturer_Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Group_ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Subgroup_ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Location;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Timeslot;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Day;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tag;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Module;
     }
 }
