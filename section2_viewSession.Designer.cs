@@ -28,10 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.R1S1LecSesDataGrid = new System.Windows.Forms.DataGridView();
+            this.RS1_lecInfoRemoveB = new System.Windows.Forms.Button();
+            this.RS1_lecInfoUpdateB = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.durationLabel = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.atdCountLabel = new System.Windows.Forms.Label();
+            this.studentGrpLabel = new System.Windows.Forms.Label();
+            this.subjectCodeLabel = new System.Windows.Forms.Label();
+            this.taglabel = new System.Windows.Forms.Label();
             this.RS1_subinfoTH = new System.Windows.Forms.Label();
             this.RS1_subinfoLH = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -41,19 +51,9 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.RS1_lecInfoRemoveB = new System.Windows.Forms.Button();
-            this.RS1_lecInfoUpdateB = new System.Windows.Forms.Button();
-            this.R1S1LecSesDataGrid = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.taglabel = new System.Windows.Forms.Label();
-            this.subjectCodeLabel = new System.Windows.Forms.Label();
-            this.studentGrpLabel = new System.Windows.Forms.Label();
-            this.atdCountLabel = new System.Windows.Forms.Label();
-            this.durationLabel = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.R1S1LecSesDataGrid)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -70,6 +70,86 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(920, 585);
             this.panel1.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(28, 77);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(180, 19);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "Employee Assignment";
+            // 
+            // R1S1LecSesDataGrid
+            // 
+            this.R1S1LecSesDataGrid.AllowUserToAddRows = false;
+            this.R1S1LecSesDataGrid.AllowUserToDeleteRows = false;
+            this.R1S1LecSesDataGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.R1S1LecSesDataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.R1S1LecSesDataGrid.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.R1S1LecSesDataGrid.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.R1S1LecSesDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.R1S1LecSesDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LightSkyBlue;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.R1S1LecSesDataGrid.DefaultCellStyle = dataGridViewCellStyle2;
+            this.R1S1LecSesDataGrid.Location = new System.Drawing.Point(32, 112);
+            this.R1S1LecSesDataGrid.Margin = new System.Windows.Forms.Padding(2);
+            this.R1S1LecSesDataGrid.MultiSelect = false;
+            this.R1S1LecSesDataGrid.Name = "R1S1LecSesDataGrid";
+            this.R1S1LecSesDataGrid.ReadOnly = true;
+            this.R1S1LecSesDataGrid.RowHeadersWidth = 51;
+            this.R1S1LecSesDataGrid.RowTemplate.Height = 24;
+            this.R1S1LecSesDataGrid.Size = new System.Drawing.Size(864, 135);
+            this.R1S1LecSesDataGrid.TabIndex = 22;
+            // 
+            // RS1_lecInfoRemoveB
+            // 
+            this.RS1_lecInfoRemoveB.BackColor = System.Drawing.Color.SteelBlue;
+            this.RS1_lecInfoRemoveB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RS1_lecInfoRemoveB.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RS1_lecInfoRemoveB.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.RS1_lecInfoRemoveB.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RS1_lecInfoRemoveB.Location = new System.Drawing.Point(784, 526);
+            this.RS1_lecInfoRemoveB.Name = "RS1_lecInfoRemoveB";
+            this.RS1_lecInfoRemoveB.Size = new System.Drawing.Size(112, 47);
+            this.RS1_lecInfoRemoveB.TabIndex = 21;
+            this.RS1_lecInfoRemoveB.Text = "Done";
+            this.RS1_lecInfoRemoveB.UseVisualStyleBackColor = false;
+            this.RS1_lecInfoRemoveB.Click += new System.EventHandler(this.RS1_lecInfoRemoveB_Click);
+            // 
+            // RS1_lecInfoUpdateB
+            // 
+            this.RS1_lecInfoUpdateB.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.RS1_lecInfoUpdateB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RS1_lecInfoUpdateB.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RS1_lecInfoUpdateB.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.RS1_lecInfoUpdateB.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.refresh_26px;
+            this.RS1_lecInfoUpdateB.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RS1_lecInfoUpdateB.Location = new System.Drawing.Point(645, 526);
+            this.RS1_lecInfoUpdateB.Name = "RS1_lecInfoUpdateB";
+            this.RS1_lecInfoUpdateB.Size = new System.Drawing.Size(110, 47);
+            this.RS1_lecInfoUpdateB.TabIndex = 20;
+            this.RS1_lecInfoUpdateB.Text = "Update";
+            this.RS1_lecInfoUpdateB.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.RS1_lecInfoUpdateB.UseVisualStyleBackColor = false;
+            this.RS1_lecInfoUpdateB.Visible = false;
+            this.RS1_lecInfoUpdateB.Click += new System.EventHandler(this.RS1_lecInfoUpdateB_Click);
             // 
             // panel3
             // 
@@ -93,6 +173,66 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(864, 207);
             this.panel3.TabIndex = 7;
+            // 
+            // durationLabel
+            // 
+            this.durationLabel.AutoSize = true;
+            this.durationLabel.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.durationLabel.Location = new System.Drawing.Point(27, 169);
+            this.durationLabel.Name = "durationLabel";
+            this.durationLabel.Size = new System.Drawing.Size(39, 20);
+            this.durationLabel.TabIndex = 21;
+            this.durationLabel.Text = "Tag";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(23, 145);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(76, 19);
+            this.label4.TabIndex = 20;
+            this.label4.Text = "Duration";
+            // 
+            // atdCountLabel
+            // 
+            this.atdCountLabel.AutoSize = true;
+            this.atdCountLabel.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.atdCountLabel.Location = new System.Drawing.Point(564, 107);
+            this.atdCountLabel.Name = "atdCountLabel";
+            this.atdCountLabel.Size = new System.Drawing.Size(39, 20);
+            this.atdCountLabel.TabIndex = 19;
+            this.atdCountLabel.Text = "Tag";
+            // 
+            // studentGrpLabel
+            // 
+            this.studentGrpLabel.AutoSize = true;
+            this.studentGrpLabel.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentGrpLabel.Location = new System.Drawing.Point(27, 108);
+            this.studentGrpLabel.Name = "studentGrpLabel";
+            this.studentGrpLabel.Size = new System.Drawing.Size(39, 20);
+            this.studentGrpLabel.TabIndex = 18;
+            this.studentGrpLabel.Text = "Tag";
+            // 
+            // subjectCodeLabel
+            // 
+            this.subjectCodeLabel.AutoSize = true;
+            this.subjectCodeLabel.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.subjectCodeLabel.Location = new System.Drawing.Point(564, 44);
+            this.subjectCodeLabel.Name = "subjectCodeLabel";
+            this.subjectCodeLabel.Size = new System.Drawing.Size(39, 20);
+            this.subjectCodeLabel.TabIndex = 17;
+            this.subjectCodeLabel.Text = "Tag";
+            // 
+            // taglabel
+            // 
+            this.taglabel.AutoSize = true;
+            this.taglabel.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.taglabel.Location = new System.Drawing.Point(27, 46);
+            this.taglabel.Name = "taglabel";
+            this.taglabel.Size = new System.Drawing.Size(39, 20);
+            this.taglabel.TabIndex = 16;
+            this.taglabel.Text = "Tag";
             // 
             // RS1_subinfoTH
             // 
@@ -180,145 +320,6 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Session Information";
             // 
-            // RS1_lecInfoRemoveB
-            // 
-            this.RS1_lecInfoRemoveB.BackColor = System.Drawing.Color.SteelBlue;
-            this.RS1_lecInfoRemoveB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RS1_lecInfoRemoveB.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RS1_lecInfoRemoveB.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.RS1_lecInfoRemoveB.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RS1_lecInfoRemoveB.Location = new System.Drawing.Point(784, 526);
-            this.RS1_lecInfoRemoveB.Name = "RS1_lecInfoRemoveB";
-            this.RS1_lecInfoRemoveB.Size = new System.Drawing.Size(112, 47);
-            this.RS1_lecInfoRemoveB.TabIndex = 21;
-            this.RS1_lecInfoRemoveB.Text = "Done";
-            this.RS1_lecInfoRemoveB.UseVisualStyleBackColor = false;
-            this.RS1_lecInfoRemoveB.Click += new System.EventHandler(this.RS1_lecInfoRemoveB_Click);
-            // 
-            // RS1_lecInfoUpdateB
-            // 
-            this.RS1_lecInfoUpdateB.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.RS1_lecInfoUpdateB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RS1_lecInfoUpdateB.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RS1_lecInfoUpdateB.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.RS1_lecInfoUpdateB.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.refresh_26px;
-            this.RS1_lecInfoUpdateB.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RS1_lecInfoUpdateB.Location = new System.Drawing.Point(645, 526);
-            this.RS1_lecInfoUpdateB.Name = "RS1_lecInfoUpdateB";
-            this.RS1_lecInfoUpdateB.Size = new System.Drawing.Size(110, 47);
-            this.RS1_lecInfoUpdateB.TabIndex = 20;
-            this.RS1_lecInfoUpdateB.Text = "Update";
-            this.RS1_lecInfoUpdateB.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.RS1_lecInfoUpdateB.UseVisualStyleBackColor = false;
-            this.RS1_lecInfoUpdateB.Click += new System.EventHandler(this.RS1_lecInfoUpdateB_Click);
-            // 
-            // R1S1LecSesDataGrid
-            // 
-            this.R1S1LecSesDataGrid.AllowUserToAddRows = false;
-            this.R1S1LecSesDataGrid.AllowUserToDeleteRows = false;
-            this.R1S1LecSesDataGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.R1S1LecSesDataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.R1S1LecSesDataGrid.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.R1S1LecSesDataGrid.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.R1S1LecSesDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.R1S1LecSesDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.LightSkyBlue;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.R1S1LecSesDataGrid.DefaultCellStyle = dataGridViewCellStyle6;
-            this.R1S1LecSesDataGrid.Location = new System.Drawing.Point(32, 112);
-            this.R1S1LecSesDataGrid.Margin = new System.Windows.Forms.Padding(2);
-            this.R1S1LecSesDataGrid.MultiSelect = false;
-            this.R1S1LecSesDataGrid.Name = "R1S1LecSesDataGrid";
-            this.R1S1LecSesDataGrid.ReadOnly = true;
-            this.R1S1LecSesDataGrid.RowHeadersWidth = 51;
-            this.R1S1LecSesDataGrid.RowTemplate.Height = 24;
-            this.R1S1LecSesDataGrid.Size = new System.Drawing.Size(864, 135);
-            this.R1S1LecSesDataGrid.TabIndex = 22;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(28, 77);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(180, 19);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "Employee Assignment";
-            // 
-            // taglabel
-            // 
-            this.taglabel.AutoSize = true;
-            this.taglabel.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.taglabel.Location = new System.Drawing.Point(27, 46);
-            this.taglabel.Name = "taglabel";
-            this.taglabel.Size = new System.Drawing.Size(39, 20);
-            this.taglabel.TabIndex = 16;
-            this.taglabel.Text = "Tag";
-            // 
-            // subjectCodeLabel
-            // 
-            this.subjectCodeLabel.AutoSize = true;
-            this.subjectCodeLabel.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.subjectCodeLabel.Location = new System.Drawing.Point(564, 44);
-            this.subjectCodeLabel.Name = "subjectCodeLabel";
-            this.subjectCodeLabel.Size = new System.Drawing.Size(39, 20);
-            this.subjectCodeLabel.TabIndex = 17;
-            this.subjectCodeLabel.Text = "Tag";
-            // 
-            // studentGrpLabel
-            // 
-            this.studentGrpLabel.AutoSize = true;
-            this.studentGrpLabel.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.studentGrpLabel.Location = new System.Drawing.Point(27, 108);
-            this.studentGrpLabel.Name = "studentGrpLabel";
-            this.studentGrpLabel.Size = new System.Drawing.Size(39, 20);
-            this.studentGrpLabel.TabIndex = 18;
-            this.studentGrpLabel.Text = "Tag";
-            // 
-            // atdCountLabel
-            // 
-            this.atdCountLabel.AutoSize = true;
-            this.atdCountLabel.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.atdCountLabel.Location = new System.Drawing.Point(564, 107);
-            this.atdCountLabel.Name = "atdCountLabel";
-            this.atdCountLabel.Size = new System.Drawing.Size(39, 20);
-            this.atdCountLabel.TabIndex = 19;
-            this.atdCountLabel.Text = "Tag";
-            // 
-            // durationLabel
-            // 
-            this.durationLabel.AutoSize = true;
-            this.durationLabel.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.durationLabel.Location = new System.Drawing.Point(27, 169);
-            this.durationLabel.Name = "durationLabel";
-            this.durationLabel.Size = new System.Drawing.Size(39, 20);
-            this.durationLabel.TabIndex = 21;
-            this.durationLabel.Text = "Tag";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(23, 145);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 19);
-            this.label4.TabIndex = 20;
-            this.label4.Text = "Duration";
-            // 
             // section2_viewSession
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -330,9 +331,9 @@
             this.Text = "View Session";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.R1S1LecSesDataGrid)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.R1S1LecSesDataGrid)).EndInit();
             this.ResumeLayout(false);
 
         }
