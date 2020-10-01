@@ -49,6 +49,7 @@ namespace ABC_Institute___Timetable_Generator
                         {
                             nishikicmbsubsubjectrooms.Items.Add(read.GetValue(0).ToString());
                         }
+                        MessageBox.Show("Subjects are loaded!");
                     }
                     catch (Exception ex)
                     {

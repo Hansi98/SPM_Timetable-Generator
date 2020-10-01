@@ -31,7 +31,7 @@ namespace ABC_Institute___Timetable_Generator
             using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
             {
                 mySqlCon.Open();
-                String query = "select s.Lecturer_name, s.Group_ID, s.Subgroup_ID, s.Location, s.Timeslot, s.Day, s.Tag, s.Module from sessions s, c_session c where s.sessionID != c.ConsecutiveSes_01 and s.sessionID != c.ConsecutiveSes_02";
+                String query = "select s.GroupID, s.Tag, s.SubCode, s.Room, s.StudentCount, s.Duration, l.lecturerName, l.fac, l.dept, l.building from mydb.sessions s, mydb.session_lecturers l where s.sessionID = l.sessionID";
 
                 MySqlDataAdapter dataadapter = new MySqlDataAdapter(query, mySqlCon);
                 DataTable dataLocations = new DataTable();
