@@ -28,13 +28,12 @@ namespace ABC_Institute___Timetable_Generator
             using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
             {
                 mySqlCon.Open();
-                String query = "select s.sessionID, s.Lecturer_name, s.Group_ID, s.Subgroup_ID, s.Location, s.Timeslot, s.Day, s.Tag, s.Module from sessions s, c_session c where s.sessionID = c.ConsecutiveSes_01 or s.sessionID = c.ConsecutiveSes_02";
+                String query = "select s.GroupID, s.Tag, s.SubCode, s.StudentCount, s.Duration, c.ConsecSessionLocation as Room from mydb.c_session c, mydb.sessions s where s.sessionID = c.ConsecutiveSes_01 or s.sessionID = c.ConsecutiveSes_02";
 
                 MySqlDataAdapter dataadapter = new MySqlDataAdapter(query, mySqlCon);
                 DataTable dataLocations = new DataTable();
                 dataadapter.Fill(dataLocations);
                 dgvnishikiconsecsessionsrooms.DataSource = dataLocations;
-                dgvnishikiconsecsessionsrooms.Columns[0].Visible = false;
             }
         }
         private void Button1_Click(object sender, EventArgs e)
