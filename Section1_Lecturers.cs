@@ -25,7 +25,9 @@ namespace ABC_Institute___Timetable_Generator
             RS1_newLecs.Text = newlecs.ToString();
 
             draw();
-            
+
+            RS1_newLecs.Text = (Lservice.getAllCount() - Lservice.getOldCount()).ToString();
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -109,6 +111,7 @@ namespace ABC_Institute___Timetable_Generator
             R1S1LecDataGrid.DataSource = Lservice.getAllLecturers();
             this.R1S1changeHeader();
             RS1_totLecs.Text = Lservice.getAllCount().ToString();
+            RS1_newLecs.Text = (Lservice.getAllCount() - Lservice.getOldCount()).ToString();
         }
 
        
@@ -166,6 +169,16 @@ namespace ABC_Institute___Timetable_Generator
         private void R1s_LecRefresh_Click(object sender, EventArgs e)
         {
             draw();
+        }
+
+        private void R1S1LecDataGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

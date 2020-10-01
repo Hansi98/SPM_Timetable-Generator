@@ -22,6 +22,7 @@ namespace ABC_Institute___Timetable_Generator.Services
         String getNextEmpID();
 
         int getAllCount();
+        int getOldCount();
 
 
 

@@ -45,11 +45,6 @@
             this.btnVsessionconsecutive = new System.Windows.Forms.Button();
             this.btnVsessionunavailability = new System.Windows.Forms.Button();
             this.panelslidebar = new System.Windows.Forms.Panel();
-            this.homenavbtnsessions = new System.Windows.Forms.Button();
-            this.homenavbtntimetables = new System.Windows.Forms.Button();
-            this.homenavbtnlocations = new System.Windows.Forms.Button();
-            this.panelnav = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.homebtnstatistics = new System.Windows.Forms.Button();
             this.homebtnlocations = new System.Windows.Forms.Button();
             this.homebtntags = new System.Windows.Forms.Button();
@@ -58,15 +53,21 @@
             this.homebtnlecturers = new System.Windows.Forms.Button();
             this.homebtnworkingdnh = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.homenavbtnsessions = new System.Windows.Forms.Button();
+            this.homenavbtntimetables = new System.Windows.Forms.Button();
+            this.homenavbtnlocations = new System.Windows.Forms.Button();
+            this.panelnav = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.homenavbtndetails = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panelchildform.SuspendLayout();
             this.locationslidebar.SuspendLayout();
             this.sessionslidebar.SuspendLayout();
             this.panelslidebar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelnav.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -74,24 +75,25 @@
             this.panel2.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.panel2.Controls.Add(this.panelchildform);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 59);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Location = new System.Drawing.Point(0, 48);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1409, 783);
+            this.panel2.Size = new System.Drawing.Size(1057, 636);
             this.panel2.TabIndex = 1;
             // 
             // panelchildform
             // 
             this.panelchildform.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panelchildform.Controls.Add(this.button8);
             this.panelchildform.Controls.Add(this.locationslidebar);
             this.panelchildform.Controls.Add(this.sessionslidebar);
             this.panelchildform.Controls.Add(this.panelslidebar);
             this.panelchildform.Controls.Add(this.pictureBox1);
             this.panelchildform.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelchildform.Location = new System.Drawing.Point(0, 0);
-            this.panelchildform.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelchildform.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelchildform.Name = "panelchildform";
-            this.panelchildform.Size = new System.Drawing.Size(1409, 783);
+            this.panelchildform.Size = new System.Drawing.Size(1057, 636);
             this.panelchildform.TabIndex = 1;
             this.panelchildform.Paint += new System.Windows.Forms.PaintEventHandler(this.Panelchildform_Paint);
             // 
@@ -105,9 +107,10 @@
             this.locationslidebar.Controls.Add(this.button3);
             this.locationslidebar.Controls.Add(this.button2);
             this.locationslidebar.Controls.Add(this.button1);
-            this.locationslidebar.Location = new System.Drawing.Point(707, 3);
+            this.locationslidebar.Location = new System.Drawing.Point(530, 2);
+            this.locationslidebar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.locationslidebar.Name = "locationslidebar";
-            this.locationslidebar.Size = new System.Drawing.Size(346, 777);
+            this.locationslidebar.Size = new System.Drawing.Size(260, 631);
             this.locationslidebar.TabIndex = 2;
             // 
             // button7
@@ -119,9 +122,10 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold);
             this.button7.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button7.Location = new System.Drawing.Point(0, 663);
+            this.button7.Location = new System.Drawing.Point(0, 541);
+            this.button7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(346, 109);
+            this.button7.Size = new System.Drawing.Size(260, 89);
             this.button7.TabIndex = 6;
             this.button7.Text = "Reserve a room";
             this.button7.UseVisualStyleBackColor = true;
@@ -136,9 +140,10 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold);
             this.button6.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button6.Location = new System.Drawing.Point(0, 554);
+            this.button6.Location = new System.Drawing.Point(0, 452);
+            this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(346, 109);
+            this.button6.Size = new System.Drawing.Size(260, 89);
             this.button6.TabIndex = 5;
             this.button6.Text = "Rooms for consecutive sessions";
             this.button6.UseVisualStyleBackColor = true;
@@ -153,9 +158,10 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold);
             this.button5.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button5.Location = new System.Drawing.Point(0, 445);
+            this.button5.Location = new System.Drawing.Point(0, 363);
+            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(346, 109);
+            this.button5.Size = new System.Drawing.Size(260, 89);
             this.button5.TabIndex = 4;
             this.button5.Text = "Rooms for sessions";
             this.button5.UseVisualStyleBackColor = true;
@@ -170,9 +176,10 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold);
             this.button4.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button4.Location = new System.Drawing.Point(0, 336);
+            this.button4.Location = new System.Drawing.Point(0, 274);
+            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(346, 109);
+            this.button4.Size = new System.Drawing.Size(260, 89);
             this.button4.TabIndex = 3;
             this.button4.Text = "Rooms for groups/ sub-groups";
             this.button4.UseVisualStyleBackColor = true;
@@ -187,9 +194,10 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold);
             this.button3.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button3.Location = new System.Drawing.Point(0, 227);
+            this.button3.Location = new System.Drawing.Point(0, 185);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(346, 109);
+            this.button3.Size = new System.Drawing.Size(260, 89);
             this.button3.TabIndex = 2;
             this.button3.Text = "Rooms for lecturers";
             this.button3.UseVisualStyleBackColor = true;
@@ -204,9 +212,10 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold);
             this.button2.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button2.Location = new System.Drawing.Point(0, 118);
+            this.button2.Location = new System.Drawing.Point(0, 96);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(346, 109);
+            this.button2.Size = new System.Drawing.Size(260, 89);
             this.button2.TabIndex = 1;
             this.button2.Text = "Rooms for subjects";
             this.button2.UseVisualStyleBackColor = true;
@@ -222,8 +231,9 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold);
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(346, 118);
+            this.button1.Size = new System.Drawing.Size(260, 96);
             this.button1.TabIndex = 0;
             this.button1.Text = "Rooms for tags";
             this.button1.UseVisualStyleBackColor = true;
@@ -236,9 +246,10 @@
             this.sessionslidebar.Controls.Add(this.btnVsessionparallel);
             this.sessionslidebar.Controls.Add(this.btnVsessionconsecutive);
             this.sessionslidebar.Controls.Add(this.btnVsessionunavailability);
-            this.sessionslidebar.Location = new System.Drawing.Point(351, 3);
+            this.sessionslidebar.Location = new System.Drawing.Point(263, 2);
+            this.sessionslidebar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.sessionslidebar.Name = "sessionslidebar";
-            this.sessionslidebar.Size = new System.Drawing.Size(350, 445);
+            this.sessionslidebar.Size = new System.Drawing.Size(262, 362);
             this.sessionslidebar.TabIndex = 1;
             // 
             // btnVsessionnooverlapping
@@ -249,9 +260,10 @@
             this.btnVsessionnooverlapping.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumTurquoise;
             this.btnVsessionnooverlapping.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVsessionnooverlapping.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btnVsessionnooverlapping.Location = new System.Drawing.Point(0, 334);
+            this.btnVsessionnooverlapping.Location = new System.Drawing.Point(0, 272);
+            this.btnVsessionnooverlapping.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnVsessionnooverlapping.Name = "btnVsessionnooverlapping";
-            this.btnVsessionnooverlapping.Size = new System.Drawing.Size(350, 111);
+            this.btnVsessionnooverlapping.Size = new System.Drawing.Size(262, 90);
             this.btnVsessionnooverlapping.TabIndex = 3;
             this.btnVsessionnooverlapping.Text = "No overlapping Sessions";
             this.btnVsessionnooverlapping.UseVisualStyleBackColor = true;
@@ -265,9 +277,10 @@
             this.btnVsessionparallel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumTurquoise;
             this.btnVsessionparallel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVsessionparallel.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btnVsessionparallel.Location = new System.Drawing.Point(0, 225);
+            this.btnVsessionparallel.Location = new System.Drawing.Point(0, 183);
+            this.btnVsessionparallel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnVsessionparallel.Name = "btnVsessionparallel";
-            this.btnVsessionparallel.Size = new System.Drawing.Size(350, 109);
+            this.btnVsessionparallel.Size = new System.Drawing.Size(262, 89);
             this.btnVsessionparallel.TabIndex = 2;
             this.btnVsessionparallel.Text = "Parallel Sessions";
             this.btnVsessionparallel.UseVisualStyleBackColor = true;
@@ -281,9 +294,10 @@
             this.btnVsessionconsecutive.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumTurquoise;
             this.btnVsessionconsecutive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVsessionconsecutive.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btnVsessionconsecutive.Location = new System.Drawing.Point(0, 116);
+            this.btnVsessionconsecutive.Location = new System.Drawing.Point(0, 94);
+            this.btnVsessionconsecutive.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnVsessionconsecutive.Name = "btnVsessionconsecutive";
-            this.btnVsessionconsecutive.Size = new System.Drawing.Size(350, 109);
+            this.btnVsessionconsecutive.Size = new System.Drawing.Size(262, 89);
             this.btnVsessionconsecutive.TabIndex = 1;
             this.btnVsessionconsecutive.Text = "Consecutive Sessions";
             this.btnVsessionconsecutive.UseVisualStyleBackColor = true;
@@ -298,8 +312,9 @@
             this.btnVsessionunavailability.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVsessionunavailability.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnVsessionunavailability.Location = new System.Drawing.Point(0, 0);
+            this.btnVsessionunavailability.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnVsessionunavailability.Name = "btnVsessionunavailability";
-            this.btnVsessionunavailability.Size = new System.Drawing.Size(350, 116);
+            this.btnVsessionunavailability.Size = new System.Drawing.Size(262, 94);
             this.btnVsessionunavailability.TabIndex = 0;
             this.btnVsessionunavailability.Text = "Mark Unavailability";
             this.btnVsessionunavailability.UseVisualStyleBackColor = true;
@@ -318,92 +333,10 @@
             this.panelslidebar.Controls.Add(this.homebtnlecturers);
             this.panelslidebar.Controls.Add(this.homebtnworkingdnh);
             this.panelslidebar.Location = new System.Drawing.Point(0, 0);
-            this.panelslidebar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelslidebar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelslidebar.Name = "panelslidebar";
-            this.panelslidebar.Size = new System.Drawing.Size(345, 783);
+            this.panelslidebar.Size = new System.Drawing.Size(259, 636);
             this.panelslidebar.TabIndex = 0;
-            // 
-            // homenavbtnsessions
-            // 
-            this.homenavbtnsessions.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.homenavbtnsessions.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.homenavbtnsessions.FlatAppearance.BorderSize = 0;
-            this.homenavbtnsessions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.homenavbtnsessions.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.homenavbtnsessions.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.homenavbtnsessions.Location = new System.Drawing.Point(351, 2);
-            this.homenavbtnsessions.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.homenavbtnsessions.Name = "homenavbtnsessions";
-            this.homenavbtnsessions.Size = new System.Drawing.Size(350, 53);
-            this.homenavbtnsessions.TabIndex = 1;
-            this.homenavbtnsessions.Text = "Sessions";
-            this.homenavbtnsessions.UseVisualStyleBackColor = false;
-            this.homenavbtnsessions.Click += new System.EventHandler(this.Homebtnsessions_Click);
-            // 
-            // homenavbtntimetables
-            // 
-            this.homenavbtntimetables.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.homenavbtntimetables.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.homenavbtntimetables.FlatAppearance.BorderSize = 0;
-            this.homenavbtntimetables.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.homenavbtntimetables.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.homenavbtntimetables.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.homenavbtntimetables.Location = new System.Drawing.Point(1059, 2);
-            this.homenavbtntimetables.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.homenavbtntimetables.Name = "homenavbtntimetables";
-            this.homenavbtntimetables.Size = new System.Drawing.Size(347, 53);
-            this.homenavbtntimetables.TabIndex = 3;
-            this.homenavbtntimetables.Text = "Timetables";
-            this.homenavbtntimetables.UseVisualStyleBackColor = false;
-            this.homenavbtntimetables.Click += new System.EventHandler(this.Homebtntimetables_Click);
-            // 
-            // homenavbtnlocations
-            // 
-            this.homenavbtnlocations.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.homenavbtnlocations.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.homenavbtnlocations.FlatAppearance.BorderSize = 0;
-            this.homenavbtnlocations.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.homenavbtnlocations.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.homenavbtnlocations.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.homenavbtnlocations.Location = new System.Drawing.Point(707, 2);
-            this.homenavbtnlocations.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.homenavbtnlocations.Name = "homenavbtnlocations";
-            this.homenavbtnlocations.Size = new System.Drawing.Size(346, 53);
-            this.homenavbtnlocations.TabIndex = 2;
-            this.homenavbtnlocations.Text = "Locations";
-            this.homenavbtnlocations.UseVisualStyleBackColor = false;
-            this.homenavbtnlocations.Click += new System.EventHandler(this.Homebtnlocations_Click);
-            // 
-            // panelnav
-            // 
-            this.panelnav.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panelnav.Controls.Add(this.tableLayoutPanel1);
-            this.panelnav.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelnav.Location = new System.Drawing.Point(0, 0);
-            this.panelnav.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panelnav.Name = "panelnav";
-            this.panelnav.Size = new System.Drawing.Size(1409, 59);
-            this.panelnav.TabIndex = 0;
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 4;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.69253F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.26017F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Controls.Add(this.homenavbtnsessions, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.homenavbtntimetables, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.homenavbtndetails, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.homenavbtnlocations, 2, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1409, 57);
-            this.tableLayoutPanel1.TabIndex = 0;
             // 
             // homebtnstatistics
             // 
@@ -415,11 +348,11 @@
             this.homebtnstatistics.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.homebtnstatistics.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.graph_30px;
             this.homebtnstatistics.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.homebtnstatistics.Location = new System.Drawing.Point(0, 672);
-            this.homebtnstatistics.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.homebtnstatistics.Location = new System.Drawing.Point(0, 546);
+            this.homebtnstatistics.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.homebtnstatistics.Name = "homebtnstatistics";
-            this.homebtnstatistics.Padding = new System.Windows.Forms.Padding(27, 25, 27, 25);
-            this.homebtnstatistics.Size = new System.Drawing.Size(345, 112);
+            this.homebtnstatistics.Padding = new System.Windows.Forms.Padding(20, 20, 20, 20);
+            this.homebtnstatistics.Size = new System.Drawing.Size(259, 91);
             this.homebtnstatistics.TabIndex = 6;
             this.homebtnstatistics.Text = "Statistics";
             this.homebtnstatistics.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -437,11 +370,11 @@
             this.homebtnlocations.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.homebtnlocations.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.location_24px;
             this.homebtnlocations.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.homebtnlocations.Location = new System.Drawing.Point(0, 560);
-            this.homebtnlocations.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.homebtnlocations.Location = new System.Drawing.Point(0, 455);
+            this.homebtnlocations.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.homebtnlocations.Name = "homebtnlocations";
-            this.homebtnlocations.Padding = new System.Windows.Forms.Padding(27, 25, 27, 25);
-            this.homebtnlocations.Size = new System.Drawing.Size(345, 112);
+            this.homebtnlocations.Padding = new System.Windows.Forms.Padding(20, 20, 20, 20);
+            this.homebtnlocations.Size = new System.Drawing.Size(259, 91);
             this.homebtnlocations.TabIndex = 5;
             this.homebtnlocations.Text = "Locations";
             this.homebtnlocations.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -459,11 +392,11 @@
             this.homebtntags.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.homebtntags.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.tags_24px;
             this.homebtntags.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.homebtntags.Location = new System.Drawing.Point(0, 448);
-            this.homebtntags.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.homebtntags.Location = new System.Drawing.Point(0, 364);
+            this.homebtntags.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.homebtntags.Name = "homebtntags";
-            this.homebtntags.Padding = new System.Windows.Forms.Padding(27, 25, 27, 25);
-            this.homebtntags.Size = new System.Drawing.Size(345, 112);
+            this.homebtntags.Padding = new System.Windows.Forms.Padding(20, 20, 20, 20);
+            this.homebtntags.Size = new System.Drawing.Size(259, 91);
             this.homebtntags.TabIndex = 4;
             this.homebtntags.Text = "Tags";
             this.homebtntags.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -481,11 +414,11 @@
             this.homebtnstudents.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.homebtnstudents.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.student_male_32px;
             this.homebtnstudents.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.homebtnstudents.Location = new System.Drawing.Point(0, 336);
-            this.homebtnstudents.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.homebtnstudents.Location = new System.Drawing.Point(0, 273);
+            this.homebtnstudents.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.homebtnstudents.Name = "homebtnstudents";
-            this.homebtnstudents.Padding = new System.Windows.Forms.Padding(27, 25, 27, 25);
-            this.homebtnstudents.Size = new System.Drawing.Size(345, 112);
+            this.homebtnstudents.Padding = new System.Windows.Forms.Padding(20, 20, 20, 20);
+            this.homebtnstudents.Size = new System.Drawing.Size(259, 91);
             this.homebtnstudents.TabIndex = 3;
             this.homebtnstudents.Text = "Students";
             this.homebtnstudents.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -503,11 +436,11 @@
             this.homebtnsubjects.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.homebtnsubjects.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.elective_32pxdark;
             this.homebtnsubjects.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.homebtnsubjects.Location = new System.Drawing.Point(0, 224);
-            this.homebtnsubjects.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.homebtnsubjects.Location = new System.Drawing.Point(0, 182);
+            this.homebtnsubjects.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.homebtnsubjects.Name = "homebtnsubjects";
-            this.homebtnsubjects.Padding = new System.Windows.Forms.Padding(27, 25, 27, 25);
-            this.homebtnsubjects.Size = new System.Drawing.Size(345, 112);
+            this.homebtnsubjects.Padding = new System.Windows.Forms.Padding(20, 20, 20, 20);
+            this.homebtnsubjects.Size = new System.Drawing.Size(259, 91);
             this.homebtnsubjects.TabIndex = 2;
             this.homebtnsubjects.Text = "Subjects";
             this.homebtnsubjects.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -525,11 +458,11 @@
             this.homebtnlecturers.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.homebtnlecturers.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.lecturer_32px;
             this.homebtnlecturers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.homebtnlecturers.Location = new System.Drawing.Point(0, 112);
-            this.homebtnlecturers.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.homebtnlecturers.Location = new System.Drawing.Point(0, 91);
+            this.homebtnlecturers.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.homebtnlecturers.Name = "homebtnlecturers";
-            this.homebtnlecturers.Padding = new System.Windows.Forms.Padding(27, 25, 27, 25);
-            this.homebtnlecturers.Size = new System.Drawing.Size(345, 112);
+            this.homebtnlecturers.Padding = new System.Windows.Forms.Padding(20, 20, 20, 20);
+            this.homebtnlecturers.Size = new System.Drawing.Size(259, 91);
             this.homebtnlecturers.TabIndex = 1;
             this.homebtnlecturers.Text = "Lecturers";
             this.homebtnlecturers.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -548,10 +481,10 @@
             this.homebtnworkingdnh.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.timetable_30px;
             this.homebtnworkingdnh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.homebtnworkingdnh.Location = new System.Drawing.Point(0, 0);
-            this.homebtnworkingdnh.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.homebtnworkingdnh.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.homebtnworkingdnh.Name = "homebtnworkingdnh";
-            this.homebtnworkingdnh.Padding = new System.Windows.Forms.Padding(27, 25, 27, 25);
-            this.homebtnworkingdnh.Size = new System.Drawing.Size(345, 112);
+            this.homebtnworkingdnh.Padding = new System.Windows.Forms.Padding(20, 20, 20, 20);
+            this.homebtnworkingdnh.Size = new System.Drawing.Size(259, 91);
             this.homebtnworkingdnh.TabIndex = 0;
             this.homebtnworkingdnh.Text = "Working Days and Hours";
             this.homebtnworkingdnh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -564,12 +497,94 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.back1;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1409, 783);
+            this.pictureBox1.Size = new System.Drawing.Size(1057, 636);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // homenavbtnsessions
+            // 
+            this.homenavbtnsessions.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.homenavbtnsessions.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.homenavbtnsessions.FlatAppearance.BorderSize = 0;
+            this.homenavbtnsessions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.homenavbtnsessions.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.homenavbtnsessions.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.homenavbtnsessions.Location = new System.Drawing.Point(263, 2);
+            this.homenavbtnsessions.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.homenavbtnsessions.Name = "homenavbtnsessions";
+            this.homenavbtnsessions.Size = new System.Drawing.Size(263, 42);
+            this.homenavbtnsessions.TabIndex = 1;
+            this.homenavbtnsessions.Text = "Sessions";
+            this.homenavbtnsessions.UseVisualStyleBackColor = false;
+            this.homenavbtnsessions.Click += new System.EventHandler(this.Homebtnsessions_Click);
+            // 
+            // homenavbtntimetables
+            // 
+            this.homenavbtntimetables.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.homenavbtntimetables.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.homenavbtntimetables.FlatAppearance.BorderSize = 0;
+            this.homenavbtntimetables.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.homenavbtntimetables.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.homenavbtntimetables.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.homenavbtntimetables.Location = new System.Drawing.Point(794, 2);
+            this.homenavbtntimetables.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.homenavbtntimetables.Name = "homenavbtntimetables";
+            this.homenavbtntimetables.Size = new System.Drawing.Size(261, 42);
+            this.homenavbtntimetables.TabIndex = 3;
+            this.homenavbtntimetables.Text = "Timetables";
+            this.homenavbtntimetables.UseVisualStyleBackColor = false;
+            this.homenavbtntimetables.Click += new System.EventHandler(this.Homebtntimetables_Click);
+            // 
+            // homenavbtnlocations
+            // 
+            this.homenavbtnlocations.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.homenavbtnlocations.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.homenavbtnlocations.FlatAppearance.BorderSize = 0;
+            this.homenavbtnlocations.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.homenavbtnlocations.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.homenavbtnlocations.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.homenavbtnlocations.Location = new System.Drawing.Point(530, 2);
+            this.homenavbtnlocations.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.homenavbtnlocations.Name = "homenavbtnlocations";
+            this.homenavbtnlocations.Size = new System.Drawing.Size(260, 42);
+            this.homenavbtnlocations.TabIndex = 2;
+            this.homenavbtnlocations.Text = "Locations";
+            this.homenavbtnlocations.UseVisualStyleBackColor = false;
+            this.homenavbtnlocations.Click += new System.EventHandler(this.Homebtnlocations_Click);
+            // 
+            // panelnav
+            // 
+            this.panelnav.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panelnav.Controls.Add(this.tableLayoutPanel1);
+            this.panelnav.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelnav.Location = new System.Drawing.Point(0, 0);
+            this.panelnav.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelnav.Name = "panelnav";
+            this.panelnav.Size = new System.Drawing.Size(1057, 48);
+            this.panelnav.TabIndex = 0;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 4;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.69253F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.26017F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.Controls.Add(this.homenavbtnsessions, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.homenavbtntimetables, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.homenavbtndetails, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.homenavbtnlocations, 2, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1057, 46);
+            this.tableLayoutPanel1.TabIndex = 0;
             // 
             // homenavbtndetails
             // 
@@ -581,10 +596,10 @@
             this.homenavbtndetails.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.homenavbtndetails.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.menu_64px;
             this.homenavbtndetails.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.homenavbtndetails.Location = new System.Drawing.Point(3, 2);
-            this.homenavbtndetails.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.homenavbtndetails.Location = new System.Drawing.Point(2, 2);
+            this.homenavbtndetails.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.homenavbtndetails.Name = "homenavbtndetails";
-            this.homenavbtndetails.Size = new System.Drawing.Size(342, 53);
+            this.homenavbtndetails.Size = new System.Drawing.Size(257, 42);
             this.homenavbtndetails.TabIndex = 4;
             this.homenavbtndetails.Text = "   Menu";
             this.homenavbtndetails.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -592,15 +607,25 @@
             this.homenavbtndetails.UseVisualStyleBackColor = false;
             this.homenavbtndetails.Click += new System.EventHandler(this.Button1_Click_1);
             // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(876, 189);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(125, 36);
+            this.button8.TabIndex = 3;
+            this.button8.Text = "button8";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
             // Home
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1409, 842);
+            this.ClientSize = new System.Drawing.Size(1057, 684);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelnav);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Home";
             this.Text = "ABC Institute - Timetable Generator";
             this.Load += new System.EventHandler(this.Home_Load);
@@ -609,9 +634,9 @@
             this.locationslidebar.ResumeLayout(false);
             this.sessionslidebar.ResumeLayout(false);
             this.panelslidebar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelnav.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -647,6 +672,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button8;
 
         // private MetroFramework.Controls.MetroTabControl metroTabControl1;
 

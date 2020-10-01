@@ -164,6 +164,26 @@ namespace ABC_Institute___Timetable_Generator.ServiceImpl
 
         }
 
+        public int getOldCount()
+        {
+            MySqlDataAdapter data = new MySqlDataAdapter("assignedLecturerCount", this.con);
+            data.SelectCommand.CommandType = CommandType.StoredProcedure;
+            DataTable table = new DataTable();
+            data.Fill(table);
+            int val;
+            try
+            {
+                val = Convert.ToInt32(table.Rows[0][0]) + 0;
+
+            }
+            catch (InvalidCastException e)
+            {
+                return 0;
+            }
+
+            return val;
+        }
+
         public Lecturer getSingleLecturer(string EmpID)
         {
             try { 

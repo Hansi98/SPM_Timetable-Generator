@@ -307,5 +307,10 @@ namespace ABC_Institute___Timetable_Generator
             //
             hidelocationsubmenu();
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            new Section2_Sessions().Show();
+        }
     }
 }

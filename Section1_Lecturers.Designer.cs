@@ -28,39 +28,39 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Section1_Lecturers));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Section1_Lecturers));
             this.LecturerPortalbtnclose = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.R1S1LecDataGrid = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.RS1_newLecs = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.RS1_totLecs = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.RS1_totLecs = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.RS1_newLecs = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.RS1_searchLec = new System.Windows.Forms.TextBox();
-            this.RS1_addLecturer = new System.Windows.Forms.Button();
-            this.RS1_viewLecturer = new System.Windows.Forms.Button();
-            this.RS1_deleteLecturer = new System.Windows.Forms.Button();
-            this.R1s_LecRefresh = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.R1s_LecRefresh = new System.Windows.Forms.Button();
+            this.RS1_deleteLecturer = new System.Windows.Forms.Button();
+            this.RS1_viewLecturer = new System.Windows.Forms.Button();
+            this.RS1_addLecturer = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.R1S1LecDataGrid)).BeginInit();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel4.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // LecturerPortalbtnclose
@@ -78,19 +78,6 @@
             this.LecturerPortalbtnclose.Text = "X";
             this.LecturerPortalbtnclose.UseVisualStyleBackColor = false;
             this.LecturerPortalbtnclose.Click += new System.EventHandler(this.LecturerPortalbtnclose_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(29, 10);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.pictureBox1.Size = new System.Drawing.Size(76, 75);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -140,6 +127,7 @@
             this.R1S1LecDataGrid.RowTemplate.Height = 24;
             this.R1S1LecDataGrid.Size = new System.Drawing.Size(765, 188);
             this.R1S1LecDataGrid.TabIndex = 13;
+            this.R1S1LecDataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.R1S1LecDataGrid_CellContentClick);
             // 
             // panel2
             // 
@@ -152,6 +140,72 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(639, 141);
             this.panel2.TabIndex = 14;
+            // 
+            // panel5
+            // 
+            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel5.BackColor = System.Drawing.SystemColors.Control;
+            this.panel5.Controls.Add(this.pictureBox3);
+            this.panel5.Controls.Add(this.RS1_newLecs);
+            this.panel5.Controls.Add(this.label5);
+            this.panel5.Location = new System.Drawing.Point(376, 41);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(194, 85);
+            this.panel5.TabIndex = 17;
+            // 
+            // RS1_newLecs
+            // 
+            this.RS1_newLecs.AutoSize = true;
+            this.RS1_newLecs.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RS1_newLecs.Location = new System.Drawing.Point(67, 39);
+            this.RS1_newLecs.Name = "RS1_newLecs";
+            this.RS1_newLecs.Size = new System.Drawing.Size(48, 28);
+            this.RS1_newLecs.TabIndex = 1;
+            this.RS1_newLecs.Text = "340";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(67, 20);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(117, 19);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "New Lecturers";
+            // 
+            // panel4
+            // 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.panel4.BackColor = System.Drawing.Color.SkyBlue;
+            this.panel4.Controls.Add(this.pictureBox2);
+            this.panel4.Controls.Add(this.RS1_totLecs);
+            this.panel4.Controls.Add(this.label3);
+            this.panel4.Location = new System.Drawing.Point(64, 41);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(194, 85);
+            this.panel4.TabIndex = 16;
+            // 
+            // RS1_totLecs
+            // 
+            this.RS1_totLecs.AutoSize = true;
+            this.RS1_totLecs.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RS1_totLecs.Location = new System.Drawing.Point(67, 39);
+            this.RS1_totLecs.Name = "RS1_totLecs";
+            this.RS1_totLecs.Size = new System.Drawing.Size(48, 28);
+            this.RS1_totLecs.TabIndex = 1;
+            this.RS1_totLecs.Text = "340";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(67, 20);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(120, 19);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Total Lecturers";
             // 
             // panel3
             // 
@@ -174,98 +228,6 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Summary";
             // 
-            // panel4
-            // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.panel4.BackColor = System.Drawing.Color.SkyBlue;
-            this.panel4.Controls.Add(this.pictureBox2);
-            this.panel4.Controls.Add(this.RS1_totLecs);
-            this.panel4.Controls.Add(this.label3);
-            this.panel4.Location = new System.Drawing.Point(64, 41);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(194, 85);
-            this.panel4.TabIndex = 16;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(67, 20);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(120, 19);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Total Lecturers";
-            // 
-            // RS1_totLecs
-            // 
-            this.RS1_totLecs.AutoSize = true;
-            this.RS1_totLecs.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RS1_totLecs.Location = new System.Drawing.Point(67, 39);
-            this.RS1_totLecs.Name = "RS1_totLecs";
-            this.RS1_totLecs.Size = new System.Drawing.Size(48, 28);
-            this.RS1_totLecs.TabIndex = 1;
-            this.RS1_totLecs.Text = "340";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(10, 11);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.pictureBox2.Size = new System.Drawing.Size(48, 65);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 15;
-            this.pictureBox2.TabStop = false;
-            // 
-            // panel5
-            // 
-            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel5.BackColor = System.Drawing.SystemColors.Control;
-            this.panel5.Controls.Add(this.pictureBox3);
-            this.panel5.Controls.Add(this.RS1_newLecs);
-            this.panel5.Controls.Add(this.label5);
-            this.panel5.Location = new System.Drawing.Point(376, 41);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(194, 85);
-            this.panel5.TabIndex = 17;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(67, 20);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(117, 19);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "New Lecturers";
-            // 
-            // RS1_newLecs
-            // 
-            this.RS1_newLecs.AutoSize = true;
-            this.RS1_newLecs.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RS1_newLecs.Location = new System.Drawing.Point(67, 39);
-            this.RS1_newLecs.Name = "RS1_newLecs";
-            this.RS1_newLecs.Size = new System.Drawing.Size(48, 28);
-            this.RS1_newLecs.TabIndex = 1;
-            this.RS1_newLecs.Text = "340";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(10, 11);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.pictureBox3.Size = new System.Drawing.Size(48, 65);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 15;
-            this.pictureBox3.TabStop = false;
-            // 
             // RS1_searchLec
             // 
             this.RS1_searchLec.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -279,74 +241,6 @@
             this.RS1_searchLec.Text = " Search ...";
             this.RS1_searchLec.MouseClick += new System.Windows.Forms.MouseEventHandler(this.RS1_searchLec_MouseClick);
             this.RS1_searchLec.TextChanged += new System.EventHandler(this.RS1_searchLec_TextChanged);
-            // 
-            // RS1_addLecturer
-            // 
-            this.RS1_addLecturer.BackColor = System.Drawing.Color.DodgerBlue;
-            this.RS1_addLecturer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RS1_addLecturer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RS1_addLecturer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.RS1_addLecturer.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.add_30px;
-            this.RS1_addLecturer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RS1_addLecturer.Location = new System.Drawing.Point(29, 251);
-            this.RS1_addLecturer.Name = "RS1_addLecturer";
-            this.RS1_addLecturer.Size = new System.Drawing.Size(198, 47);
-            this.RS1_addLecturer.TabIndex = 16;
-            this.RS1_addLecturer.Text = "Add Lecturer";
-            this.RS1_addLecturer.UseVisualStyleBackColor = false;
-            this.RS1_addLecturer.Click += new System.EventHandler(this.RS1_addLecturer_Click_1);
-            // 
-            // RS1_viewLecturer
-            // 
-            this.RS1_viewLecturer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.RS1_viewLecturer.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.RS1_viewLecturer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RS1_viewLecturer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RS1_viewLecturer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.RS1_viewLecturer.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.more_26px;
-            this.RS1_viewLecturer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RS1_viewLecturer.Location = new System.Drawing.Point(575, 511);
-            this.RS1_viewLecturer.Name = "RS1_viewLecturer";
-            this.RS1_viewLecturer.Size = new System.Drawing.Size(97, 47);
-            this.RS1_viewLecturer.TabIndex = 17;
-            this.RS1_viewLecturer.Text = "View";
-            this.RS1_viewLecturer.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.RS1_viewLecturer.UseVisualStyleBackColor = false;
-            this.RS1_viewLecturer.Click += new System.EventHandler(this.RS1_viewLecturer_Click);
-            // 
-            // RS1_deleteLecturer
-            // 
-            this.RS1_deleteLecturer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.RS1_deleteLecturer.BackColor = System.Drawing.Color.Crimson;
-            this.RS1_deleteLecturer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RS1_deleteLecturer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RS1_deleteLecturer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.RS1_deleteLecturer.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.trash_can_24px;
-            this.RS1_deleteLecturer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RS1_deleteLecturer.Location = new System.Drawing.Point(680, 511);
-            this.RS1_deleteLecturer.Name = "RS1_deleteLecturer";
-            this.RS1_deleteLecturer.Size = new System.Drawing.Size(109, 47);
-            this.RS1_deleteLecturer.TabIndex = 18;
-            this.RS1_deleteLecturer.Text = "Delete";
-            this.RS1_deleteLecturer.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.RS1_deleteLecturer.UseVisualStyleBackColor = false;
-            this.RS1_deleteLecturer.Click += new System.EventHandler(this.RS1_deleteLecturer_Click);
-            // 
-            // R1s_LecRefresh
-            // 
-            this.R1s_LecRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.R1s_LecRefresh.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.R1s_LecRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.R1s_LecRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.R1s_LecRefresh.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.R1s_LecRefresh.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.refresh_24px;
-            this.R1s_LecRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.R1s_LecRefresh.Location = new System.Drawing.Point(460, 254);
-            this.R1s_LecRefresh.Name = "R1s_LecRefresh";
-            this.R1s_LecRefresh.Size = new System.Drawing.Size(38, 39);
-            this.R1s_LecRefresh.TabIndex = 19;
-            this.R1s_LecRefresh.UseVisualStyleBackColor = false;
-            this.R1s_LecRefresh.Click += new System.EventHandler(this.R1s_LecRefresh_Click);
             // 
             // panel1
             // 
@@ -367,7 +261,115 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(819, 581);
             this.panel1.TabIndex = 2;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.panel1.MouseHover += new System.EventHandler(this.panel1_MouseHover);
+            // 
+            // R1s_LecRefresh
+            // 
+            this.R1s_LecRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.R1s_LecRefresh.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.R1s_LecRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.R1s_LecRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R1s_LecRefresh.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.R1s_LecRefresh.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.refresh_24px;
+            this.R1s_LecRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.R1s_LecRefresh.Location = new System.Drawing.Point(460, 254);
+            this.R1s_LecRefresh.Name = "R1s_LecRefresh";
+            this.R1s_LecRefresh.Size = new System.Drawing.Size(38, 39);
+            this.R1s_LecRefresh.TabIndex = 19;
+            this.R1s_LecRefresh.UseVisualStyleBackColor = false;
+            this.R1s_LecRefresh.Click += new System.EventHandler(this.R1s_LecRefresh_Click);
+            // 
+            // RS1_deleteLecturer
+            // 
+            this.RS1_deleteLecturer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.RS1_deleteLecturer.BackColor = System.Drawing.Color.Crimson;
+            this.RS1_deleteLecturer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RS1_deleteLecturer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RS1_deleteLecturer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.RS1_deleteLecturer.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.trash_can_24px;
+            this.RS1_deleteLecturer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RS1_deleteLecturer.Location = new System.Drawing.Point(680, 511);
+            this.RS1_deleteLecturer.Name = "RS1_deleteLecturer";
+            this.RS1_deleteLecturer.Size = new System.Drawing.Size(109, 47);
+            this.RS1_deleteLecturer.TabIndex = 18;
+            this.RS1_deleteLecturer.Text = "Delete";
+            this.RS1_deleteLecturer.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.RS1_deleteLecturer.UseVisualStyleBackColor = false;
+            this.RS1_deleteLecturer.Click += new System.EventHandler(this.RS1_deleteLecturer_Click);
+            // 
+            // RS1_viewLecturer
+            // 
+            this.RS1_viewLecturer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.RS1_viewLecturer.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.RS1_viewLecturer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RS1_viewLecturer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RS1_viewLecturer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.RS1_viewLecturer.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.more_26px;
+            this.RS1_viewLecturer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RS1_viewLecturer.Location = new System.Drawing.Point(575, 511);
+            this.RS1_viewLecturer.Name = "RS1_viewLecturer";
+            this.RS1_viewLecturer.Size = new System.Drawing.Size(97, 47);
+            this.RS1_viewLecturer.TabIndex = 17;
+            this.RS1_viewLecturer.Text = "View";
+            this.RS1_viewLecturer.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.RS1_viewLecturer.UseVisualStyleBackColor = false;
+            this.RS1_viewLecturer.Click += new System.EventHandler(this.RS1_viewLecturer_Click);
+            // 
+            // RS1_addLecturer
+            // 
+            this.RS1_addLecturer.BackColor = System.Drawing.Color.DodgerBlue;
+            this.RS1_addLecturer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RS1_addLecturer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RS1_addLecturer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.RS1_addLecturer.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.add_30px;
+            this.RS1_addLecturer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RS1_addLecturer.Location = new System.Drawing.Point(29, 251);
+            this.RS1_addLecturer.Name = "RS1_addLecturer";
+            this.RS1_addLecturer.Size = new System.Drawing.Size(198, 47);
+            this.RS1_addLecturer.TabIndex = 16;
+            this.RS1_addLecturer.Text = "Add Lecturer";
+            this.RS1_addLecturer.UseVisualStyleBackColor = false;
+            this.RS1_addLecturer.Click += new System.EventHandler(this.RS1_addLecturer_Click_1);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(10, 11);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.pictureBox3.Size = new System.Drawing.Size(48, 65);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 15;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(10, 11);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.pictureBox2.Size = new System.Drawing.Size(48, 65);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 15;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(29, 10);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.pictureBox1.Size = new System.Drawing.Size(76, 75);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // Section1_Lecturers
             // 
@@ -378,19 +380,19 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Section1_Lecturers";
             this.Text = "Lecturer";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.R1S1LecDataGrid)).EndInit();
             this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -34,9 +34,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.RS1_searchSession = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.RS1_newSes = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.RS1_totSes = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -49,16 +46,13 @@
             this.RS1_deleteSes = new System.Windows.Forms.Button();
             this.RS1_viewSes = new System.Windows.Forms.Button();
             this.RS1_addSession = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.R1S1LecDataGrid)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -94,51 +88,19 @@
             this.RS1_searchSession.Size = new System.Drawing.Size(282, 29);
             this.RS1_searchSession.TabIndex = 15;
             this.RS1_searchSession.Text = " Search ...";
+            this.RS1_searchSession.Click += new System.EventHandler(this.RS1_searchSession_Click);
+            this.RS1_searchSession.TextChanged += new System.EventHandler(this.RS1_searchSession_TextChanged);
             // 
             // panel2
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Location = new System.Drawing.Point(87, 90);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(639, 141);
             this.panel2.TabIndex = 14;
-            // 
-            // panel5
-            // 
-            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel5.BackColor = System.Drawing.SystemColors.Control;
-            this.panel5.Controls.Add(this.pictureBox3);
-            this.panel5.Controls.Add(this.RS1_newSes);
-            this.panel5.Controls.Add(this.label5);
-            this.panel5.Location = new System.Drawing.Point(376, 41);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(194, 85);
-            this.panel5.TabIndex = 17;
-            // 
-            // RS1_newSes
-            // 
-            this.RS1_newSes.AutoSize = true;
-            this.RS1_newSes.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RS1_newSes.Location = new System.Drawing.Point(67, 39);
-            this.RS1_newSes.Name = "RS1_newSes";
-            this.RS1_newSes.Size = new System.Drawing.Size(48, 28);
-            this.RS1_newSes.TabIndex = 1;
-            this.RS1_newSes.Text = "340";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(67, 20);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(111, 19);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "New Sessions";
             // 
             // panel4
             // 
@@ -148,7 +110,7 @@
             this.panel4.Controls.Add(this.pictureBox2);
             this.panel4.Controls.Add(this.RS1_totSes);
             this.panel4.Controls.Add(this.label3);
-            this.panel4.Location = new System.Drawing.Point(64, 41);
+            this.panel4.Location = new System.Drawing.Point(242, 41);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(194, 85);
             this.panel4.TabIndex = 16;
@@ -271,6 +233,7 @@
             this.R1s_SessionRefresh.Size = new System.Drawing.Size(38, 39);
             this.R1s_SessionRefresh.TabIndex = 19;
             this.R1s_SessionRefresh.UseVisualStyleBackColor = false;
+            this.R1s_SessionRefresh.Click += new System.EventHandler(this.R1s_SessionRefresh_Click);
             // 
             // RS1_deleteSes
             // 
@@ -288,6 +251,7 @@
             this.RS1_deleteSes.Text = "Delete";
             this.RS1_deleteSes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.RS1_deleteSes.UseVisualStyleBackColor = false;
+            this.RS1_deleteSes.Click += new System.EventHandler(this.RS1_deleteSes_Click);
             // 
             // RS1_viewSes
             // 
@@ -302,9 +266,10 @@
             this.RS1_viewSes.Name = "RS1_viewSes";
             this.RS1_viewSes.Size = new System.Drawing.Size(97, 47);
             this.RS1_viewSes.TabIndex = 17;
-            this.RS1_viewSes.Text = "View";
+            this.RS1_viewSes.Text = "More";
             this.RS1_viewSes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.RS1_viewSes.UseVisualStyleBackColor = false;
+            this.RS1_viewSes.Click += new System.EventHandler(this.RS1_viewSes_Click);
             // 
             // RS1_addSession
             // 
@@ -320,19 +285,7 @@
             this.RS1_addSession.TabIndex = 16;
             this.RS1_addSession.Text = "Add Session";
             this.RS1_addSession.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(10, 11);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.pictureBox3.Size = new System.Drawing.Size(48, 65);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 15;
-            this.pictureBox3.TabStop = false;
+            this.RS1_addSession.Click += new System.EventHandler(this.RS1_addSession_Click);
             // 
             // pictureBox2
             // 
@@ -368,17 +321,15 @@
             this.Controls.Add(this.panel1);
             this.Name = "Section2_Sessions";
             this.Text = "Sessions";
+            this.Load += new System.EventHandler(this.Section2_Sessions_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.R1S1LecDataGrid)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -394,10 +345,6 @@
         private System.Windows.Forms.Button RS1_addSession;
         private System.Windows.Forms.TextBox RS1_searchSession;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label RS1_newSes;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label RS1_totSes;

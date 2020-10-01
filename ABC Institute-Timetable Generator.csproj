@@ -86,11 +86,29 @@
     <Compile Include="Section1_WorkingDays.Designer.cs">
       <DependentUpon>Section1_WorkingDays.cs</DependentUpon>
     </Compile>
+    <Compile Include="Section2_addSession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section2_addSession.Designer.cs">
+      <DependentUpon>Section2_addSession.cs</DependentUpon>
+    </Compile>
     <Compile Include="Section2_Sessions.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Section2_Sessions.Designer.cs">
       <DependentUpon>Section2_Sessions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="section2_updateSession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="section2_updateSession.Designer.cs">
+      <DependentUpon>section2_updateSession.cs</DependentUpon>
+    </Compile>
+    <Compile Include="section2_viewSession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="section2_viewSession.Designer.cs">
+      <DependentUpon>section2_viewSession.cs</DependentUpon>
     </Compile>
     <Compile Include="Section3_consecutiveSessions.cs">
       <SubType>Form</SubType>
@@ -249,6 +267,8 @@
       <DependentUpon>Section5_viewTimetable.cs</DependentUpon>
     </Compile>
     <Compile Include="Session.cs" />
+    <Compile Include="sessionServiceInt.cs" />
+    <Compile Include="SessonServiceImpl.cs" />
     <Compile Include="SubjectServiceImpl.cs" />
     <Compile Include="SubjectServicesInt.cs" />
     <Compile Include="Subject.cs" />
@@ -379,8 +399,17 @@
     <EmbeddedResource Include="Section1_WorkingDays.resx">
       <DependentUpon>Section1_WorkingDays.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Section2_addSession.resx">
+      <DependentUpon>Section2_addSession.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Section2_Sessions.resx">
       <DependentUpon>Section2_Sessions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="section2_updateSession.resx">
+      <DependentUpon>section2_updateSession.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="section2_viewSession.resx">
+      <DependentUpon>section2_viewSession.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Section3_consecutiveSessions.resx">
       <DependentUpon>Section3_consecutiveSessions.cs</DependentUpon>

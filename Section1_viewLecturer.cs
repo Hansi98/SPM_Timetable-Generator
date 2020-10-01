@@ -75,5 +75,10 @@ namespace ABC_Institute___Timetable_Generator
             new Section1_UpdateLecturer(L).Show();
             Dispose();
         }
+
+        private void Section1_viewLecturer_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

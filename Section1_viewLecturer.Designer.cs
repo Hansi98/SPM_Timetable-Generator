@@ -379,6 +379,7 @@
             this.MaximizeBox = false;
             this.Name = "Section1_viewLecturer";
             this.Text = "View Lecturer";
+            this.Load += new System.EventHandler(this.Section1_viewLecturer_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel4.ResumeLayout(false);

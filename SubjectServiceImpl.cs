@@ -114,6 +114,25 @@ namespace ABC_Institute___Timetable_Generator.ServiceImpl
             return val;
         }
 
+        public List<string> getAllSubCodes()
+        {
+            List<string> list = new List<string>();
+            MySqlDataAdapter data = new MySqlDataAdapter("getAllSubCodes", this.con);
+            data.SelectCommand.CommandType = CommandType.StoredProcedure;
+            DataTable table = new DataTable();
+            data.Fill(table);
+
+            for (int i = 0; i < table.Rows.Count; i++)
+            {
+                string name = (String)(table.Rows[i]["Subcode"]);
+               
+
+                list.Add(name);
+            }
+            return list;
+
+        }
+
         public DataTable getAllSubject()
         {
             MySqlDataAdapter data = new MySqlDataAdapter("viewAllSubjects", this.con);
