@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Section4_roomconsecsession_popup));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.nishikicmbsearchconsecbylec = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.searchconsecses = new System.Windows.Forms.PictureBox();
             this.nihsikidgvconsecsesroomdisplay = new System.Windows.Forms.DataGridView();
             this.nishikiconsecseslecroom = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -39,13 +42,10 @@
             this.btnnishikiconsecsesaddrooms = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.searchconsecses = new System.Windows.Forms.PictureBox();
-            this.nishikicmbsearchconsecbylec = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.searchconsecses)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nihsikidgvconsecsesroomdisplay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchconsecses)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -68,6 +68,37 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1253, 719);
             this.panel1.TabIndex = 0;
+            // 
+            // nishikicmbsearchconsecbylec
+            // 
+            this.nishikicmbsearchconsecbylec.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.nishikicmbsearchconsecbylec.FormattingEnabled = true;
+            this.nishikicmbsearchconsecbylec.Location = new System.Drawing.Point(824, 119);
+            this.nishikicmbsearchconsecbylec.Name = "nishikicmbsearchconsecbylec";
+            this.nishikicmbsearchconsecbylec.Size = new System.Drawing.Size(311, 24);
+            this.nishikicmbsearchconsecbylec.TabIndex = 64;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(662, 117);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(144, 24);
+            this.label1.TabIndex = 63;
+            this.label1.Text = "Search by room";
+            // 
+            // searchconsecses
+            // 
+            this.searchconsecses.Image = ((System.Drawing.Image)(resources.GetObject("searchconsecses.Image")));
+            this.searchconsecses.Location = new System.Drawing.Point(1141, 90);
+            this.searchconsecses.Name = "searchconsecses";
+            this.searchconsecses.Size = new System.Drawing.Size(77, 64);
+            this.searchconsecses.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.searchconsecses.TabIndex = 62;
+            this.searchconsecses.TabStop = false;
+            this.searchconsecses.Click += new System.EventHandler(this.Searchconsecses_Click);
             // 
             // nihsikidgvconsecsesroomdisplay
             // 
@@ -99,9 +130,9 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(357, 507);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(101, 29);
+            this.label3.Size = new System.Drawing.Size(109, 29);
             this.label3.TabIndex = 57;
-            this.label3.Text = "Lecturer";
+            this.label3.Text = "Group ID";
             // 
             // nishikicmbconsecsesroomname
             // 
@@ -174,37 +205,6 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // searchconsecses
-            // 
-            this.searchconsecses.Image = ((System.Drawing.Image)(resources.GetObject("searchconsecses.Image")));
-            this.searchconsecses.Location = new System.Drawing.Point(1141, 90);
-            this.searchconsecses.Name = "searchconsecses";
-            this.searchconsecses.Size = new System.Drawing.Size(77, 64);
-            this.searchconsecses.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.searchconsecses.TabIndex = 62;
-            this.searchconsecses.TabStop = false;
-            this.searchconsecses.Click += new System.EventHandler(this.Searchconsecses_Click);
-            // 
-            // nishikicmbsearchconsecbylec
-            // 
-            this.nishikicmbsearchconsecbylec.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.nishikicmbsearchconsecbylec.FormattingEnabled = true;
-            this.nishikicmbsearchconsecbylec.Location = new System.Drawing.Point(824, 119);
-            this.nishikicmbsearchconsecbylec.Name = "nishikicmbsearchconsecbylec";
-            this.nishikicmbsearchconsecbylec.Size = new System.Drawing.Size(311, 24);
-            this.nishikicmbsearchconsecbylec.TabIndex = 64;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(553, 119);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(238, 24);
-            this.label1.TabIndex = 63;
-            this.label1.Text = "Search by Lecturer\'s Name";
-            // 
             // Section4_roomconsecsession_popup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -217,9 +217,9 @@
             this.Text = "Section4_roomconsecsession_popup";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.searchconsecses)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nihsikidgvconsecsesroomdisplay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchconsecses)).EndInit();
             this.ResumeLayout(false);
 
         }

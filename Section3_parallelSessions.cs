@@ -47,7 +47,7 @@ namespace ABC_Institute___Timetable_Generator
             using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
             {
                 mySqlCon.Open();
-                MySqlDataAdapter sqlDa = new MySqlDataAdapter("Select * from sessions", mySqlCon);
+                MySqlDataAdapter sqlDa = new MySqlDataAdapter("Select * from newsessions", mySqlCon);
                 //sqlDa.SelectCommand.CommandType = CommandType.StoredProcedure;
                 DataTable dataTags = new DataTable();
                 sqlDa.Fill(dataTags);

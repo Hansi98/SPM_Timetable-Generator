@@ -75,7 +75,7 @@ namespace ABC_Institute___Timetable_Generator
                     int count = Convert.ToInt32(txtcapacitygroup.Text);
                     Console.WriteLine(count);
 
-                    String query = "select Room from locations where Capacity > " + count;
+                    String query = "select Room from locations where Capacity >= " + count;
 
                     Console.WriteLine(query);
 
@@ -91,6 +91,7 @@ namespace ABC_Institute___Timetable_Generator
                         {
                             nishikicmbsubgrproomname.Items.Add(read.GetValue(0).ToString());
                         }
+                        MessageBox.Show("Rooms are loaded!");
                     }
                     catch (Exception ex)
                     {
@@ -106,7 +107,7 @@ namespace ABC_Institute___Timetable_Generator
         private void PictureBox2_Click(object sender, EventArgs e)
         {
             fillsubgrouproomcombobox();
-            MessageBox.Show("Rooms are loaded!");
+            
         }
         void clearInputs()
         {

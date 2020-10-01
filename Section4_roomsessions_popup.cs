@@ -15,13 +15,7 @@ namespace ABC_Institute___Timetable_Generator
     {
         string connectionString = @"SERVER=abcdatabase.mysql.database.azure.com;PORT=3306;DATABASE=mydb;UID=abcadmin@abcdatabase;PASSWORD=ABC@123abc";
         int sessionID = 0;
-        string lecname = "";
-        string groupid = "";
-        string subgroupid = "";
-        string time = "";
-        string day = "";
-        string tag = "";
-        string module = "";
+        String subject = "";
 
         public Section4_roomsessions_popup()
         {
@@ -68,7 +62,7 @@ namespace ABC_Institute___Timetable_Generator
             using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
             {
                 mySqlCon.Open();
-                String query = "select s.sessionID, s.Lecturer_name, s.Group_ID, s.Subgroup_ID, s.Location, s.Timeslot, s.Day, s.Tag, s.Module from sessions s, c_session c where s.sessionID != c.ConsecutiveSes_01 and s.sessionID != c.ConsecutiveSes_02";
+                String query = "select s.sessionID, s.GroupID, s.Tag, s.SubCode, s.StudentCount, s.Duration, l.lecturerName, l.fac, l.dept, l.building from mydb.sessions s, mydb.session_lecturers l where s.sessionID = l.sessionID";
 
                 MySqlDataAdapter dataadapter = new MySqlDataAdapter(query, mySqlCon);
                 DataTable dataLocations = new DataTable();
@@ -83,17 +77,22 @@ namespace ABC_Institute___Timetable_Generator
             if (nihsikidgvsesroomdisplay.CurrentRow.Index != -1)
             {
                 sessionID = Convert.ToInt32(nihsikidgvsesroomdisplay.CurrentRow.Cells[0].Value.ToString());
-                //lecname = nihsikidgvsesroomdisplay.CurrentRow.Cells[1].Value.ToString();
-                //groupid = nihsikidgvsesroomdisplay.CurrentRow.Cells[2].Value.ToString();
-                //subgroupid = nihsikidgvsesroomdisplay.CurrentRow.Cells[3].Value.ToString();
-                //time = nihsikidgvsesroomdisplay.CurrentRow.Cells[4].Value.ToString();
-                //day = nihsikidgvsesroomdisplay.CurrentRow.Cells[5].Value.ToString();
-                //tag = nihsikidgvsesroomdisplay.CurrentRow.Cells[6].Value.ToString();
-                //module = nihsikidgvsesroomdisplay.CurrentRow.Cells[7].Value.ToString();
-                nishikisessubroom.Text = nihsikidgvsesroomdisplay.CurrentRow.Cells[8].Value.ToString();
-                
+                //nishikisessubroom.Text = nihsikidgvsesroomdisplay.CurrentRow.Cells[8].Value.ToString();
+
+                subject = nihsikidgvsesroomdisplay.CurrentRow.Cells[1].Value.ToString();
+
+                nishikisessubroom.Text = subject;
+
             }
 
+        }
+
+        public void clear()
+        {
+            sessionID = 0;
+            subject = "";
+            nishikisessubroom.Text = "";
+            nishikicmbsesroomname.Text = "";
         }
 
         private void Btnnishikisesaddrooms_Click(object sender, EventArgs e)
@@ -101,44 +100,19 @@ namespace ABC_Institute___Timetable_Generator
             using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
             {
                 string room = nishikicmbsesroomname.SelectedItem.ToString();
-                //int sessionID = Convert.ToInt32(nihsikidgvsesroomdisplay.CurrentRow.Cells[0].Value.ToString());
 
                 mySqlCon.Open();
-                String query = "UPDATE sessions SET Location = '"+room+"' WHERE sessionID = "+sessionID+";";
+                String query = "update mydb.sessions set Room = '"+room+"' where sessionID = "+sessionID+"";
 
                 Console.WriteLine(query);
 
-                //MySqlDataAdapter dataadapter = new MySqlDataAdapter(query, mySqlCon);
-                //DataTable dataLocations = new DataTable();
-                //dataadapter.Fill(dataLocations);
-                //nihsikidgvsesroomdisplay.DataSource = dataLocations;
-                //nihsikidgvsesroomdisplay.Columns[0].Visible = false;
                 MySqlCommand cmd = new MySqlCommand(query, mySqlCon);
                 cmd.ExecuteNonQuery();
 
                 MessageBox.Show("Location Added Successfully for the subject,  " + nishikisessubroom.Text);
+                clear();
                 this.Dispose();
 
-
-                //mySqlCon.Open();
-                //MySqlCommand mySqlCmd = new MySqlCommand("room_addsessionroom", mySqlCon);
-                //mySqlCmd.CommandType = CommandType.StoredProcedure;
-                //mySqlCmd.Parameters.AddWithValue("_sesID", sessionID);
-                //mySqlCmd.Parameters.AddWithValue("_lecname", lecname);
-                //mySqlCmd.Parameters.AddWithValue("_Groupid", groupid);
-                //mySqlCmd.Parameters.AddWithValue("_subgroupid", subgroupid);
-                //mySqlCmd.Parameters.AddWithValue("_time", time);
-                //mySqlCmd.Parameters.AddWithValue("_day", day);
-                //mySqlCmd.Parameters.AddWithValue("_tag", tag);
-                //mySqlCmd.Parameters.AddWithValue("_module", module);
-                //mySqlCmd.Parameters.AddWithValue("_room", nishikicmbsesroomname.SelectedItem);
-                //mySqlCmd.ExecuteNonQuery();
-
-                ////clearInputs();
-                ////fillLocationGrid();
-                //MessageBox.Show("Location Added Successfully for the subject,  "+ nishikisessubroom.Text);
-
-                //this.Dispose();
 
             }
         }

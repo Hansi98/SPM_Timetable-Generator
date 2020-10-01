@@ -75,6 +75,7 @@ namespace ABC_Institute___Timetable_Generator
                         {
                             nishikicmbgroupsrooms.Items.Add(read.GetValue(0).ToString());
                         }
+                        MessageBox.Show("Rooms are loaded!");
                     }
                     catch (Exception ex)
                     {
@@ -106,7 +107,7 @@ namespace ABC_Institute___Timetable_Generator
         private void PictureBox2_Click(object sender, EventArgs e)
         {
             fillgrouproomcombobox();
-            MessageBox.Show("Rooms are loaded!");
+            
         }
 
         private void Nishikicmbgroupsrooms_SelectedIndexChanged(object sender, EventArgs e)

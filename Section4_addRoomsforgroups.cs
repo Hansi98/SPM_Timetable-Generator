@@ -42,12 +42,12 @@ namespace ABC_Institute___Timetable_Generator
                 dataadapter.Fill(dataLocations);
 
 
-                string count;
-                MySqlCommand mySqlCmd = new MySqlCommand("test", mySqlCon);
-                mySqlCmd.CommandType = CommandType.StoredProcedure;
-                count = mySqlCmd.ExecuteScalar().ToString();
+                //string count;
+                //MySqlCommand mySqlCmd = new MySqlCommand("test", mySqlCon);
+                //mySqlCmd.CommandType = CommandType.StoredProcedure;
+                //count = mySqlCmd.ExecuteScalar().ToString();
 
-                Console.WriteLine(count);
+                //Console.WriteLine(count);
 
                 dgvnishikigroupsrooms.DataSource = dataLocations;
                 dgvnishikigroupsrooms.Columns[0].Visible = false;

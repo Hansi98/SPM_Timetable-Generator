@@ -136,7 +136,7 @@ namespace ABC_Institute___Timetable_Generator
             using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
             {
                 mySqlCon.Open();
-                MySqlDataAdapter sqlDa = new MySqlDataAdapter("Select * from sessions", mySqlCon);
+                MySqlDataAdapter sqlDa = new MySqlDataAdapter("Select * from newsessions", mySqlCon);
                 //sqlDa.SelectCommand.CommandType = CommandType.StoredProcedure;
                 DataTable dataTags = new DataTable();
                 sqlDa.Fill(dataTags);
@@ -155,9 +155,6 @@ namespace ABC_Institute___Timetable_Generator
                     visaldatagridconse.Rows[aa].Cells[7].Value = item["Day"].ToString();
                     visaldatagridconse.Rows[aa].Cells[8].Value = item["Tag"].ToString();
                     visaldatagridconse.Rows[aa].Cells[9].Value = item["Module"].ToString();
-
-
-
                 }
              //   visaldatagridconse.DataSource = dataTags;
 

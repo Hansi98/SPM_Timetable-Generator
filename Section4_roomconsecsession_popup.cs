@@ -28,7 +28,7 @@ namespace ABC_Institute___Timetable_Generator
             using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
             {
                 mySqlCon.Open();
-                String query = "select s.sessionID, s.Lecturer_name, s.Group_ID, s.Subgroup_ID, s.Location, s.Timeslot, s.Day, s.Tag, s.Module from sessions s, c_session c where s.sessionID = c.ConsecutiveSes_01 or s.sessionID = c.ConsecutiveSes_02";
+                String query = "select c.idconsecutiveSessions, s.GroupID, s.Tag, s.SubCode, s.StudentCount, s.Duration, c.ConsecSessionLocation as Room from mydb.c_session c, mydb.sessions s where s.sessionID = c.ConsecutiveSes_01 or s.sessionID = c.ConsecutiveSes_02";
 
                 MySqlDataAdapter dataadapter = new MySqlDataAdapter(query, mySqlCon);
                 DataTable dataLocations = new DataTable();
@@ -88,7 +88,7 @@ namespace ABC_Institute___Timetable_Generator
                 string room = nishikicmbconsecsesroomname.SelectedItem.ToString();
                 
                 mySqlCon.Open();
-                String query = "UPDATE sessions SET Location = '"+room+"' WHERE sessionID = "+consecsessionID+"";
+                String query = "UPDATE mydb.c_session set Room = '"+room+"' WHERE idconsecutiveSessions = "+consecsessionID+" ";
 
                 Console.WriteLine(query);
 
@@ -96,10 +96,8 @@ namespace ABC_Institute___Timetable_Generator
                 cmd.ExecuteNonQuery();
 
                 MessageBox.Show("Location Added Successfully");
+
                 this.Dispose();
-
-
-
             }
         }
 
@@ -107,7 +105,7 @@ namespace ABC_Institute___Timetable_Generator
         {
             using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
             {
-                String query = "Select * from lecturer";
+                String query = "Select Room from locations";
 
                 MySqlCommand sql = new MySqlCommand(query, mySqlCon);
                 MySqlDataReader read;
@@ -119,7 +117,7 @@ namespace ABC_Institute___Timetable_Generator
 
                     while (read.Read())
                     {
-                        nishikicmbsearchconsecbylec.Items.Add(read.GetValue(1).ToString() + " " + read.GetValue(3).ToString());
+                        nishikicmbsearchconsecbylec.Items.Add(read.GetValue(0).ToString());
                     }
                 }
                 catch (Exception ex)
@@ -133,21 +131,18 @@ namespace ABC_Institute___Timetable_Generator
         {
             using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
             {
-                string lec = nishikicmbsearchconsecbylec.SelectedItem.ToString();
+                string room = nishikicmbsearchconsecbylec.SelectedItem.ToString();
 
                 mySqlCon.Open();
-                String query = "select s.sessionID, s.Lecturer_name, s.Group_ID, s.Subgroup_ID, s.Location, s.Timeslot, s.Day, s.Tag, s.Module from mydb.sessions s, mydb.c_session c where s.sessionID = c.ConsecutiveSes_01 or s.sessionID = c.ConsecutiveSes_02 and Lecturer_name = '"+lec+"'";
+                String query = "select s.GroupID, s.Tag, s.SubCode, s.StudentCount, s.Duration, c.ConsecSessionLocation as Room from mydb.c_session c, mydb.sessions s where s.sessionID = c.ConsecutiveSes_01 or s.sessionID = c.ConsecutiveSes_02 and c.ConsecSessionLocation = '"+room+"'";
+
+                MySqlDataAdapter dataadapter = new MySqlDataAdapter(query, mySqlCon);
+                DataTable dataLocations = new DataTable();
+                dataadapter.Fill(dataLocations);
+                nihsikidgvconsecsesroomdisplay.DataSource = dataLocations;
+
+                MessageBox.Show("Filtered "+room+"'s sessions!");
                 
-                Console.WriteLine(query);
-
-                MySqlCommand cmd = new MySqlCommand(query, mySqlCon);
-                cmd.ExecuteNonQuery();
-
-                MessageBox.Show("Filtered "+lec+"'s sessions!");
-                this.Dispose();
-
-
-
             }
         }
     }
