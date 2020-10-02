@@ -43,7 +43,6 @@
             this.hgrpreportViewer.ReportSource = this.Section5_GroupTimetable1;
             this.hgrpreportViewer.Size = new System.Drawing.Size(800, 450);
             this.hgrpreportViewer.TabIndex = 0;
-            this.hgrpreportViewer.Load += new System.EventHandler(this.crystalReportViewer1_Load);
             // 
             // Section5_ViewGrpTimetable
             // 

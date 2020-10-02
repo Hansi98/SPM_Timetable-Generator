@@ -16,14 +16,14 @@ namespace ABC_Institute___Timetable_Generator {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class Section5_LecTimetable : ReportClass {
+    public class Section5_GroupTimetable_2 : ReportClass {
         
-        public Section5_LecTimetable() {
+        public Section5_GroupTimetable_2() {
         }
         
         public override string ResourceName {
             get {
-                return "Section5_LecTimetable.rpt";
+                return "Section5_GroupTimetable_2.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace ABC_Institute___Timetable_Generator {
         
         public override string FullResourceName {
             get {
-                return "ABC_Institute___Timetable_Generator.Section5_LecTimetable.rpt";
+                return "ABC_Institute___Timetable_Generator.Section5_GroupTimetable_2.rpt";
             }
             set {
                 // Do nothing
@@ -98,9 +98,9 @@ namespace ABC_Institute___Timetable_Generator {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedSection5_LecTimetable : Component, ICachedReport {
+    public class CachedSection5_GroupTimetable_2 : Component, ICachedReport {
         
-        public CachedSection5_LecTimetable() {
+        public CachedSection5_GroupTimetable_2() {
         }
         
         [Browsable(false)]
@@ -137,7 +137,7 @@ namespace ABC_Institute___Timetable_Generator {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            Section5_LecTimetable rpt = new Section5_LecTimetable();
+            Section5_GroupTimetable_2 rpt = new Section5_GroupTimetable_2();
             rpt.Site = this.Site;
             return rpt;
         }

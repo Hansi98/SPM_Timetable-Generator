@@ -19,6 +19,9 @@ namespace ABC_Institute___Timetable_Generator
     public partial class Section5_viewTimetable : Form
     {
         string connectionString = @"SERVER=abcdatabase.mysql.database.azure.com;PORT=3306;DATABASE=mydb;UID=abcadmin@abcdatabase;PASSWORD=ABC@123abc";
+        int daytimesession = 0;
+        int daytimesession_grp = 0;
+        int daytimesession_room = 0;
 
         public Section5_viewTimetable()
         {
@@ -39,6 +42,7 @@ namespace ABC_Institute___Timetable_Generator
             set => lecturer_name = HansiTimetable_lec.SelectedItem.ToString(); }
     
         Section5_LecTimetable lec = new Section5_LecTimetable();
+
 
         string group_name;
 
@@ -70,7 +74,8 @@ namespace ABC_Institute___Timetable_Generator
         {
             using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
             {
-                String query = "Select * from sessions";
+               
+                String query = "Select * from session_lecturers";
 
                 MySqlCommand sql = new MySqlCommand(query, mySqlCon);
                 MySqlDataReader read;
@@ -82,12 +87,14 @@ namespace ABC_Institute___Timetable_Generator
 
                     while (read.Read())
                     {
-                        HansiTimetable_lec.Items.Add(read.GetValue(1).ToString() +" "+ read.GetValue(3).ToString());
+                        HansiTimetable_lec.Items.Add(read.GetValue(2).ToString());
                     }
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.ToString());
+                    MessageBox.Show("No Sessions allocated for the selected Lecturer");
+                    this.Dispose();
                 }
 
             }
@@ -98,7 +105,7 @@ namespace ABC_Institute___Timetable_Generator
         {
             using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
             {
-                String query = "Select * from sessions";
+                String query = "Select * from locations";
 
                 MySqlCommand sql = new MySqlCommand(query, mySqlCon);
                 MySqlDataReader read;
@@ -110,12 +117,14 @@ namespace ABC_Institute___Timetable_Generator
 
                     while (read.Read())
                     {
-                        HansiTimetable_room.Items.Add(read.GetValue(8).ToString());
+                        HansiTimetable_room.Items.Add(read.GetValue(2).ToString());
                     }
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.ToString());
+                    MessageBox.Show("No Sessions allocated for the selected Room");
+                    this.Dispose();
                 }
 
             }
@@ -137,12 +146,14 @@ namespace ABC_Institute___Timetable_Generator
 
                     while (read.Read())
                     {
-                        HansiTimetable_grp.Items.Add(read.GetValue(2).ToString());
+                        HansiTimetable_grp.Items.Add(read.GetValue(1).ToString());
                     }
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.ToString());
+                    MessageBox.Show("No Sessions allocated for the selected Group ID");
+                    this.Dispose();
                 }
 
             }
@@ -158,11 +169,49 @@ namespace ABC_Institute___Timetable_Generator
             using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
             {
                 mySqlCon.Open();
-                MySqlDataAdapter sqlDa = new MySqlDataAdapter("sessionViewAll", mySqlCon);
+                MySqlDataAdapter sqlDa = new MySqlDataAdapter("TimetableViewAll", mySqlCon);
                 sqlDa.SelectCommand.CommandType = CommandType.StoredProcedure;
                 DataTable dataTimeLec = new DataTable();
                 sqlDa.Fill(dataTimeLec);
                 hansi_timelectable.DataSource = dataTimeLec;
+                hansi_timelectable.Columns[0].Visible = false;
+
+            }
+        }
+
+        private void hansi_timelectable_DoubleClick(object sender, EventArgs e)
+        {
+            if (hansi_timelectable.SelectedRows.Count != -1)
+            {
+              
+                daytimesession = Convert.ToInt32(hansi_timelectable.CurrentRow.Cells[0].Value.ToString());
+                Section5_AddDayTimeslot slot = new Section5_AddDayTimeslot();
+                slot.ShowDialog();
+
+            }
+        }
+
+        private void hansi_timegrptable_DoubleClick(object sender, EventArgs e)
+        {
+            if (hansi_timegrptable.SelectedRows.Count != -1)
+            {
+
+                daytimesession_grp = Convert.ToInt32(hansi_timegrptable.CurrentRow.Cells[0].Value.ToString());
+                Section5_AddDayTimeslot_Grp slot = new Section5_AddDayTimeslot_Grp();
+                slot.ShowDialog();
+
+            }
+        }
+
+        private void hansi_timeRoomtable_DoubleClick(object sender, EventArgs e)
+        {
+            if (hansi_timeRoomtable.SelectedRows.Count != -1)
+            {
+
+                daytimesession_room = Convert.ToInt32(hansi_timeRoomtable.CurrentRow.Cells[0].Value.ToString());
+                Section5_AddDayTimeslot_Room slot = new Section5_AddDayTimeslot_Room();
+                slot.ShowDialog();
+
             }
         }
 
@@ -176,7 +225,7 @@ namespace ABC_Institute___Timetable_Generator
             using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
             {
                 mySqlCon.Open();
-                MySqlDataAdapter sqlDa = new MySqlDataAdapter("sessionViewAll", mySqlCon);
+                MySqlDataAdapter sqlDa = new MySqlDataAdapter("TimetableViewAll", mySqlCon);
                 sqlDa.SelectCommand.CommandType = CommandType.StoredProcedure;
                 DataTable dataTimeLec = new DataTable();
                 sqlDa.Fill(dataTimeLec);
@@ -189,7 +238,7 @@ namespace ABC_Institute___Timetable_Generator
             using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
             {
                 mySqlCon.Open();
-                MySqlDataAdapter sqlDa = new MySqlDataAdapter("sessionViewAll", mySqlCon);
+                MySqlDataAdapter sqlDa = new MySqlDataAdapter("TimetableViewAll", mySqlCon);
                 sqlDa.SelectCommand.CommandType = CommandType.StoredProcedure;
                 DataTable dataTimeLec = new DataTable();
                 sqlDa.Fill(dataTimeLec);
@@ -250,51 +299,7 @@ namespace ABC_Institute___Timetable_Generator
             }
         }
 
-        private void HansiTimetable_Addlec_Click_1(object sender, EventArgs e)
-        {
-            using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
-            {
-                mySqlCon.Open();
-                MySqlDataAdapter sqlDa = new MySqlDataAdapter("lecTimetableSearch", mySqlCon);
-                sqlDa.SelectCommand.CommandType = CommandType.StoredProcedure;
-                sqlDa.SelectCommand.Parameters.AddWithValue("_searchString", HansiTimetable_lec.SelectedItem);
-                DataTable dataLocations = new DataTable();
-                sqlDa.Fill(dataLocations);
-                hansi_timelectable.DataSource = dataLocations;
-                hansi_timelectable.Columns[0].Visible = false;
-            }
-        }
-
-        private void HansiTimetable_Addgrp_Click_1(object sender, EventArgs e)
-        {
-            using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
-            {
-                mySqlCon.Open();
-                MySqlDataAdapter sqlDa = new MySqlDataAdapter("grpTimetableSearch", mySqlCon);
-                sqlDa.SelectCommand.CommandType = CommandType.StoredProcedure;
-                sqlDa.SelectCommand.Parameters.AddWithValue("_searchString", HansiTimetable_grp.SelectedItem);
-                Console.WriteLine(HansiTimetable_grp.SelectedItem);
-                DataTable dataLocations = new DataTable();
-                sqlDa.Fill(dataLocations);
-                hansi_timegrptable.DataSource = dataLocations;
-                hansi_timegrptable.Columns[0].Visible = false;
-            }
-        }
-
-        private void HansiTimetable_roomadd_Click_1(object sender, EventArgs e)
-        {
-            using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
-            {
-                mySqlCon.Open();
-                MySqlDataAdapter sqlDa = new MySqlDataAdapter("roomTimetableSearch", mySqlCon);
-                sqlDa.SelectCommand.CommandType = CommandType.StoredProcedure;
-                sqlDa.SelectCommand.Parameters.AddWithValue("_searchString", HansiTimetable_room.SelectedItem);
-                DataTable dataLocations = new DataTable();
-                sqlDa.Fill(dataLocations);
-                hansi_timeRoomtable.DataSource = dataLocations;
-                hansi_timeRoomtable.Columns[0].Visible = false;
-            }
-        }
+     
 
         private void HansiTimetable_grpDown_Click(object sender, EventArgs e)
         {          
@@ -309,7 +314,15 @@ namespace ABC_Institute___Timetable_Generator
 
         }
 
-       
+        private void hansi_timeRoomtable_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            fillRoomTimetableGrid();
+        }
+
+        private void hansi_timelectable_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            fillLecTimetableGrid();
+        }
     }
     }
     

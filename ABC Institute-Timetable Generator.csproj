@@ -206,11 +206,41 @@
     <Compile Include="Section4_roomsfortags.Designer.cs">
       <DependentUpon>Section4_roomsfortags.cs</DependentUpon>
     </Compile>
-    <Compile Include="Section5_LecTimetable.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Section5_LecTimetable.rpt</DependentUpon>
-      <SubType>Component</SubType>
+    <Compile Include="Section4_roomssubgroups_popup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section4_roomssubgroups_popup.Designer.cs">
+      <DependentUpon>Section4_roomssubgroups_popup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Section4_roomsubjects_popup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section4_roomsubjects_popup.Designer.cs">
+      <DependentUpon>Section4_roomsubjects_popup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Section4_roomtags_popup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section4_roomtags_popup.Designer.cs">
+      <DependentUpon>Section4_roomtags_popup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Section5_AddDayTimeslot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section5_AddDayTimeslot.Designer.cs">
+      <DependentUpon>Section5_AddDayTimeslot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Section5_AddDayTimeslot_Grp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section5_AddDayTimeslot_Grp.Designer.cs">
+      <DependentUpon>Section5_AddDayTimeslot_Grp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Section5_AddDayTimeslot_Room.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section5_AddDayTimeslot_Room.Designer.cs">
+      <DependentUpon>Section5_AddDayTimeslot_Room.cs</DependentUpon>
     </Compile>
     <Compile Include="Section5_GroupTimetable.cs">
       <AutoGen>True</AutoGen>
@@ -218,10 +248,58 @@
       <DependentUpon>Section5_GroupTimetable.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Section5_GroupTimetable_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Section5_GroupTimetable_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Section5_GroupTimetable_2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Section5_GroupTimetable_2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Section5_LecTimetable.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Section5_LecTimetable.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Section5_LecTimetable_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Section5_LecTimetable_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Section5_LecTimetable_2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Section5_LecTimetable_2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Section5_LecTimetable_3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Section5_LecTimetable_3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Section5_RoomTimetable.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Section5_RoomTimetable.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Section5_RoomTimetable_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Section5_RoomTimetable_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Section5_RoomTimetable_2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Section5_RoomTimetable_2.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Section5_ViewGrpTimetable.cs">
@@ -241,24 +319,6 @@
     </Compile>
     <Compile Include="Section5_ViewRoomTimetable.Designer.cs">
       <DependentUpon>Section5_ViewRoomTimetable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Section4_roomssubgroups_popup.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Section4_roomssubgroups_popup.Designer.cs">
-      <DependentUpon>Section4_roomssubgroups_popup.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Section4_roomsubjects_popup.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Section4_roomsubjects_popup.Designer.cs">
-      <DependentUpon>Section4_roomsubjects_popup.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Section4_roomtags_popup.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Section4_roomtags_popup.Designer.cs">
-      <DependentUpon>Section4_roomtags_popup.cs</DependentUpon>
     </Compile>
     <Compile Include="Section5_viewTimetable.cs">
       <SubType>Form</SubType>
@@ -459,17 +519,63 @@
     <EmbeddedResource Include="Section4_roomsfortags.resx">
       <DependentUpon>Section4_roomsfortags.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Section5_LecTimetable.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Section5_LecTimetable.cs</LastGenOutput>
+    <EmbeddedResource Include="Section4_roomssubgroups_popup.resx">
+      <DependentUpon>Section4_roomssubgroups_popup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section4_roomsubjects_popup.resx">
+      <DependentUpon>Section4_roomsubjects_popup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section4_roomtags_popup.resx">
+      <DependentUpon>Section4_roomtags_popup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section5_AddDayTimeslot.resx">
+      <DependentUpon>Section5_AddDayTimeslot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section5_AddDayTimeslot_Grp.resx">
+      <DependentUpon>Section5_AddDayTimeslot_Grp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section5_AddDayTimeslot_Room.resx">
+      <DependentUpon>Section5_AddDayTimeslot_Room.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Section5_GroupTimetable.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Section5_GroupTimetable.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Section5_GroupTimetable_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Section5_GroupTimetable_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section5_GroupTimetable_2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Section5_GroupTimetable_2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section5_LecTimetable.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Section5_LecTimetable.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section5_LecTimetable_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Section5_LecTimetable_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section5_LecTimetable_2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Section5_LecTimetable_2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section5_LecTimetable_3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Section5_LecTimetable_3.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Section5_RoomTimetable.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Section5_RoomTimetable.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section5_RoomTimetable_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Section5_RoomTimetable_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section5_RoomTimetable_2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Section5_RoomTimetable_2.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Section5_ViewGrpTimetable.resx">
       <DependentUpon>Section5_ViewGrpTimetable.cs</DependentUpon>
@@ -479,15 +585,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Section5_ViewRoomTimetable.resx">
       <DependentUpon>Section5_ViewRoomTimetable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Section4_roomssubgroups_popup.resx">
-      <DependentUpon>Section4_roomssubgroups_popup.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Section4_roomsubjects_popup.resx">
-      <DependentUpon>Section4_roomsubjects_popup.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Section4_roomtags_popup.resx">
-      <DependentUpon>Section4_roomtags_popup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Section5_viewTimetable.resx">
       <DependentUpon>Section5_viewTimetable.cs</DependentUpon>

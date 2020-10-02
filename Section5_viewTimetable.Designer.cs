@@ -147,7 +147,7 @@
             this.HansiTimetable_Addlec.TabIndex = 46;
             this.HansiTimetable_Addlec.Text = "VIEW";
             this.HansiTimetable_Addlec.UseVisualStyleBackColor = false;
-            this.HansiTimetable_Addlec.Click += new System.EventHandler(this.HansiTimetable_Addlec_Click_1);
+            this.HansiTimetable_Addlec.Click += new System.EventHandler(this.HansiTimetable_Addlec_Click);
             // 
             // hansi_timelectable
             // 
@@ -159,14 +159,16 @@
             this.hansi_timelectable.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.hansi_timelectable.ColumnHeadersHeight = 35;
             this.hansi_timelectable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.hansi_timelectable.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.hansi_timelectable.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.hansi_timelectable.Location = new System.Drawing.Point(3, 130);
             this.hansi_timelectable.Name = "hansi_timelectable";
-            this.hansi_timelectable.ReadOnly = true;
             this.hansi_timelectable.RowHeadersWidth = 45;
             this.hansi_timelectable.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.hansi_timelectable.Size = new System.Drawing.Size(772, 213);
             this.hansi_timelectable.TabIndex = 100;
+            this.hansi_timelectable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.hansi_timelectable_CellContentClick);
+            this.hansi_timelectable.DoubleClick += new System.EventHandler(this.hansi_timelectable_DoubleClick);
             // 
             // HansiTimetable_lec
             // 
@@ -243,6 +245,7 @@
             this.hansi_timegrptable.Size = new System.Drawing.Size(772, 213);
             this.hansi_timegrptable.TabIndex = 45;
             this.hansi_timegrptable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.hansi_timegrptable_CellContentClick);
+            this.hansi_timegrptable.DoubleClick += new System.EventHandler(this.hansi_timegrptable_DoubleClick);
             // 
             // HansiTimetable_grpDown
             // 
@@ -272,7 +275,7 @@
             this.HansiTimetable_Addgrp.TabIndex = 28;
             this.HansiTimetable_Addgrp.Text = "VIEW";
             this.HansiTimetable_Addgrp.UseVisualStyleBackColor = false;
-            this.HansiTimetable_Addgrp.Click += new System.EventHandler(this.HansiTimetable_Addgrp_Click_1);
+            this.HansiTimetable_Addgrp.Click += new System.EventHandler(this.HansiTimetable_Addgrp_Click);
             // 
             // HansiTimetable_grp
             // 
@@ -330,6 +333,8 @@
             this.hansi_timeRoomtable.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.hansi_timeRoomtable.Size = new System.Drawing.Size(772, 217);
             this.hansi_timeRoomtable.TabIndex = 45;
+            this.hansi_timeRoomtable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.hansi_timeRoomtable_CellContentClick);
+            this.hansi_timeRoomtable.DoubleClick += new System.EventHandler(this.hansi_timeRoomtable_DoubleClick);
             // 
             // HansiTimetable_RoomDown
             // 
@@ -359,7 +364,7 @@
             this.HansiTimetable_roomadd.TabIndex = 33;
             this.HansiTimetable_roomadd.Text = "VIEW";
             this.HansiTimetable_roomadd.UseVisualStyleBackColor = false;
-            this.HansiTimetable_roomadd.Click += new System.EventHandler(this.HansiTimetable_roomadd_Click_1);
+            this.HansiTimetable_roomadd.Click += new System.EventHandler(this.HansiTimetable_roomadd_Click);
             // 
             // HansiTimetable_room
             // 
