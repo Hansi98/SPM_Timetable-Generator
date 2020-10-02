@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.loadMain = new System.Windows.Forms.Button();
             this.loadSub = new System.Windows.Forms.Button();
@@ -88,13 +88,14 @@
             // 
             // loadMain
             // 
+            this.loadMain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.loadMain.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.loadMain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.loadMain.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loadMain.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.loadMain.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.refresh_24px;
             this.loadMain.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.loadMain.Location = new System.Drawing.Point(602, 501);
+            this.loadMain.Location = new System.Drawing.Point(603, 501);
             this.loadMain.Name = "loadMain";
             this.loadMain.Size = new System.Drawing.Size(198, 32);
             this.loadMain.TabIndex = 50;
@@ -106,6 +107,7 @@
             // 
             // loadSub
             // 
+            this.loadSub.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.loadSub.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.loadSub.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.loadSub.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -123,13 +125,14 @@
             // 
             // button1deselectlec
             // 
+            this.button1deselectlec.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button1deselectlec.BackColor = System.Drawing.Color.Crimson;
             this.button1deselectlec.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1deselectlec.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1deselectlec.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button1deselectlec.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.cancel_26px;
             this.button1deselectlec.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1deselectlec.Location = new System.Drawing.Point(627, 284);
+            this.button1deselectlec.Location = new System.Drawing.Point(619, 284);
             this.button1deselectlec.Name = "button1deselectlec";
             this.button1deselectlec.Size = new System.Drawing.Size(192, 40);
             this.button1deselectlec.TabIndex = 47;
@@ -140,6 +143,7 @@
             // 
             // button2selectLec
             // 
+            this.button2selectLec.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button2selectLec.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.button2selectLec.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2selectLec.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -157,6 +161,7 @@
             // 
             // selectorLecs
             // 
+            this.selectorLecs.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.selectorLecs.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.selectorLecs.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.selectorLecs.FormattingEnabled = true;
@@ -168,6 +173,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(31, 265);
@@ -200,23 +206,23 @@
             this.R1S2LecDataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.R1S2LecDataGrid.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.R1S2LecDataGrid.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.R1S2LecDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.R1S2LecDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.R1S2LecDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LightSkyBlue;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.R1S2LecDataGrid.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.LightSkyBlue;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.R1S2LecDataGrid.DefaultCellStyle = dataGridViewCellStyle6;
             this.R1S2LecDataGrid.Location = new System.Drawing.Point(35, 103);
             this.R1S2LecDataGrid.Margin = new System.Windows.Forms.Padding(2);
             this.R1S2LecDataGrid.MultiSelect = false;
@@ -229,6 +235,7 @@
             // 
             // RS2_stdCount
             // 
+            this.RS2_stdCount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.RS2_stdCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RS2_stdCount.Location = new System.Drawing.Point(27, 611);
             this.RS2_stdCount.MaxLength = 6;
@@ -238,6 +245,7 @@
             // 
             // RS2_dura
             // 
+            this.RS2_dura.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.RS2_dura.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.RS2_dura.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RS2_dura.FormattingEnabled = true;
@@ -254,6 +262,7 @@
             // 
             // RS2_stdGroup
             // 
+            this.RS2_stdGroup.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.RS2_stdGroup.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.RS2_stdGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RS2_stdGroup.FormattingEnabled = true;
@@ -264,6 +273,7 @@
             // 
             // RS2_subCode
             // 
+            this.RS2_subCode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.RS2_subCode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.RS2_subCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RS2_subCode.FormattingEnabled = true;
@@ -274,6 +284,7 @@
             // 
             // RS2_Tag
             // 
+            this.RS2_Tag.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.RS2_Tag.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.RS2_Tag.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RS2_Tag.FormattingEnabled = true;
@@ -290,6 +301,7 @@
             // 
             // buildaddleclabel
             // 
+            this.buildaddleclabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buildaddleclabel.AutoSize = true;
             this.buildaddleclabel.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buildaddleclabel.Location = new System.Drawing.Point(26, 532);
@@ -300,6 +312,7 @@
             // 
             // centaddleclabel
             // 
+            this.centaddleclabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.centaddleclabel.AutoSize = true;
             this.centaddleclabel.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.centaddleclabel.Location = new System.Drawing.Point(26, 478);
@@ -310,6 +323,7 @@
             // 
             // deptaddleclabel
             // 
+            this.deptaddleclabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.deptaddleclabel.AutoSize = true;
             this.deptaddleclabel.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deptaddleclabel.Location = new System.Drawing.Point(26, 426);
@@ -320,6 +334,7 @@
             // 
             // label7
             // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(26, 375);
@@ -330,6 +345,7 @@
             // 
             // RS1_addLecCancel
             // 
+            this.RS1_addLecCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.RS1_addLecCancel.BackColor = System.Drawing.Color.Crimson;
             this.RS1_addLecCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RS1_addLecCancel.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -347,6 +363,7 @@
             // 
             // RS1_addLecADD
             // 
+            this.RS1_addLecADD.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.RS1_addLecADD.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.RS1_addLecADD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RS1_addLecADD.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -374,6 +391,7 @@
             // 
             // labeladdlec34
             // 
+            this.labeladdlec34.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labeladdlec34.AutoSize = true;
             this.labeladdlec34.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labeladdlec34.Location = new System.Drawing.Point(23, 589);
