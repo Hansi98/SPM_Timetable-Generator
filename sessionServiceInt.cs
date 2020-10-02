@@ -22,6 +22,8 @@ namespace ABC_Institute___Timetable_Generator
         List<string> getSubGroups();
 
         List<string> getMainGroups();
+
+        List<string> getTags();
         int getAllCount();
     }
 }

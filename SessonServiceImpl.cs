@@ -221,6 +221,24 @@ namespace ABC_Institute___Timetable_Generator
             return list;
         }
 
+        public List<string> getTags()
+        {
+            List<string> list = new List<string>();
+            MySqlDataAdapter data = new MySqlDataAdapter("getAllTags", this.con);
+            data.SelectCommand.CommandType = CommandType.StoredProcedure;
+            DataTable table = new DataTable();
+            data.Fill(table);
+
+            for (int i = 0; i < table.Rows.Count; i++)
+            {
+                string name = (String)(table.Rows[i]["TagName"]);
+
+
+                list.Add(name);
+            }
+            return list;
+        }
+
         public DataTable searchSession(string searchString)
         {
             MySqlDataAdapter data = new MySqlDataAdapter("sessionSearch", this.con);

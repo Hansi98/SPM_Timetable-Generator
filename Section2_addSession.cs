@@ -26,6 +26,7 @@ namespace ABC_Institute___Timetable_Generator
             draw();
             loadSubCodes();
             loadGroups();
+            loadTags();
             
         }
 
@@ -217,6 +218,20 @@ namespace ABC_Institute___Timetable_Generator
 
         }
 
+
+        public void loadTags()
+        {
+            RS2_Tag.Items.Clear();
+
+
+            List<String> list = SesService.getTags();
+            for (int i = 0; i < list.Count; i++)
+            {
+                RS2_Tag.Items.Add(list[i]);
+            }
+
+        }
+
         private void RS1_addLecCancel_Click(object sender, EventArgs e)
         {
             this.Dispose();
@@ -269,6 +284,37 @@ namespace ABC_Institute___Timetable_Generator
                          MessageBoxButtons.OK,
                          MessageBoxIcon.Error);
 
+                }
+            }
+        }
+
+        private void RS2_Tag_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (RS2_Tag.Text == "Practical")
+            {
+                loadSub.Visible = false;
+                loadMain.Visible = true;
+                RS2_stdGroup.Items.Clear();
+
+
+                List<String> list = SesService.getSubGroups();
+                for (int i = 0; i < list.Count; i++)
+                {
+                    RS2_stdGroup.Items.Add(list[i]);
+                }
+
+            }
+            else
+            {
+                loadSub.Visible = true;
+                loadMain.Visible = false;
+                RS2_stdGroup.Items.Clear();
+
+
+                List<String> list = SesService.getMainGroups();
+                for (int i = 0; i < list.Count; i++)
+                {
+                    RS2_stdGroup.Items.Add(list[i]);
                 }
             }
         }

@@ -31,6 +31,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.loadMain = new System.Windows.Forms.Button();
+            this.loadSub = new System.Windows.Forms.Button();
+            this.button1deselectlec = new System.Windows.Forms.Button();
+            this.button2selectLec = new System.Windows.Forms.Button();
             this.selectorLecs = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.RS2_searchLec = new System.Windows.Forms.TextBox();
@@ -44,14 +48,10 @@
             this.centaddleclabel = new System.Windows.Forms.Label();
             this.deptaddleclabel = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.labeladdlec34 = new System.Windows.Forms.Label();
-            this.loadMain = new System.Windows.Forms.Button();
-            this.loadSub = new System.Windows.Forms.Button();
-            this.button1deselectlec = new System.Windows.Forms.Button();
-            this.button2selectLec = new System.Windows.Forms.Button();
             this.RS1_addLecCancel = new System.Windows.Forms.Button();
             this.RS1_addLecADD = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.labeladdlec34 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.R1S2LecDataGrid)).BeginInit();
             this.SuspendLayout();
@@ -85,6 +85,75 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(898, 741);
             this.panel1.TabIndex = 1;
+            // 
+            // loadMain
+            // 
+            this.loadMain.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.loadMain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.loadMain.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loadMain.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.loadMain.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.refresh_24px;
+            this.loadMain.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.loadMain.Location = new System.Drawing.Point(602, 501);
+            this.loadMain.Name = "loadMain";
+            this.loadMain.Size = new System.Drawing.Size(198, 32);
+            this.loadMain.TabIndex = 50;
+            this.loadMain.Text = "Load Main Groups";
+            this.loadMain.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.loadMain.UseVisualStyleBackColor = false;
+            this.loadMain.Visible = false;
+            this.loadMain.Click += new System.EventHandler(this.loadMain_Click);
+            // 
+            // loadSub
+            // 
+            this.loadSub.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.loadSub.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.loadSub.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loadSub.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.loadSub.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.refresh_24px;
+            this.loadSub.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.loadSub.Location = new System.Drawing.Point(602, 501);
+            this.loadSub.Name = "loadSub";
+            this.loadSub.Size = new System.Drawing.Size(187, 32);
+            this.loadSub.TabIndex = 49;
+            this.loadSub.Text = "Load Sub Groups";
+            this.loadSub.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.loadSub.UseVisualStyleBackColor = false;
+            this.loadSub.Click += new System.EventHandler(this.loadSub_Click);
+            // 
+            // button1deselectlec
+            // 
+            this.button1deselectlec.BackColor = System.Drawing.Color.Crimson;
+            this.button1deselectlec.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1deselectlec.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1deselectlec.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1deselectlec.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.cancel_26px;
+            this.button1deselectlec.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1deselectlec.Location = new System.Drawing.Point(627, 284);
+            this.button1deselectlec.Name = "button1deselectlec";
+            this.button1deselectlec.Size = new System.Drawing.Size(192, 40);
+            this.button1deselectlec.TabIndex = 47;
+            this.button1deselectlec.Text = "De-Select Lecturer";
+            this.button1deselectlec.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1deselectlec.UseVisualStyleBackColor = false;
+            this.button1deselectlec.Click += new System.EventHandler(this.button1deselectlec_Click);
+            // 
+            // button2selectLec
+            // 
+            this.button2selectLec.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.button2selectLec.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2selectLec.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2selectLec.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2selectLec.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.add_30px;
+            this.button2selectLec.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2selectLec.Location = new System.Drawing.Point(434, 284);
+            this.button2selectLec.Name = "button2selectLec";
+            this.button2selectLec.Size = new System.Drawing.Size(167, 40);
+            this.button2selectLec.TabIndex = 46;
+            this.button2selectLec.Text = "Select Lecturer";
+            this.button2selectLec.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2selectLec.UseVisualStyleBackColor = false;
+            this.button2selectLec.Click += new System.EventHandler(this.button2selectLec_Click);
             // 
             // selectorLecs
             // 
@@ -217,6 +286,7 @@
             this.RS2_Tag.Name = "RS2_Tag";
             this.RS2_Tag.Size = new System.Drawing.Size(541, 28);
             this.RS2_Tag.TabIndex = 36;
+            this.RS2_Tag.SelectedIndexChanged += new System.EventHandler(this.RS2_Tag_SelectedIndexChanged);
             // 
             // buildaddleclabel
             // 
@@ -258,95 +328,6 @@
             this.label7.TabIndex = 22;
             this.label7.Text = "Tag";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(25, 20);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(173, 33);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Add Session";
-            // 
-            // labeladdlec34
-            // 
-            this.labeladdlec34.AutoSize = true;
-            this.labeladdlec34.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labeladdlec34.Location = new System.Drawing.Point(23, 589);
-            this.labeladdlec34.Name = "labeladdlec34";
-            this.labeladdlec34.Size = new System.Drawing.Size(116, 19);
-            this.labeladdlec34.TabIndex = 1;
-            this.labeladdlec34.Text = "Student Count";
-            // 
-            // loadMain
-            // 
-            this.loadMain.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.loadMain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.loadMain.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loadMain.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.loadMain.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.refresh_24px;
-            this.loadMain.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.loadMain.Location = new System.Drawing.Point(602, 501);
-            this.loadMain.Name = "loadMain";
-            this.loadMain.Size = new System.Drawing.Size(198, 32);
-            this.loadMain.TabIndex = 50;
-            this.loadMain.Text = "Load Main Groups";
-            this.loadMain.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.loadMain.UseVisualStyleBackColor = false;
-            this.loadMain.Visible = false;
-            this.loadMain.Click += new System.EventHandler(this.loadMain_Click);
-            // 
-            // loadSub
-            // 
-            this.loadSub.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.loadSub.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.loadSub.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loadSub.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.loadSub.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.refresh_24px;
-            this.loadSub.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.loadSub.Location = new System.Drawing.Point(602, 501);
-            this.loadSub.Name = "loadSub";
-            this.loadSub.Size = new System.Drawing.Size(187, 32);
-            this.loadSub.TabIndex = 49;
-            this.loadSub.Text = "Load Sub Groups";
-            this.loadSub.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.loadSub.UseVisualStyleBackColor = false;
-            this.loadSub.Click += new System.EventHandler(this.loadSub_Click);
-            // 
-            // button1deselectlec
-            // 
-            this.button1deselectlec.BackColor = System.Drawing.Color.Crimson;
-            this.button1deselectlec.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1deselectlec.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1deselectlec.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1deselectlec.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.cancel_26px;
-            this.button1deselectlec.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1deselectlec.Location = new System.Drawing.Point(627, 284);
-            this.button1deselectlec.Name = "button1deselectlec";
-            this.button1deselectlec.Size = new System.Drawing.Size(192, 40);
-            this.button1deselectlec.TabIndex = 47;
-            this.button1deselectlec.Text = "De-Select Lecturer";
-            this.button1deselectlec.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1deselectlec.UseVisualStyleBackColor = false;
-            this.button1deselectlec.Click += new System.EventHandler(this.button1deselectlec_Click);
-            // 
-            // button2selectLec
-            // 
-            this.button2selectLec.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.button2selectLec.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2selectLec.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2selectLec.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2selectLec.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.add_30px;
-            this.button2selectLec.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2selectLec.Location = new System.Drawing.Point(434, 284);
-            this.button2selectLec.Name = "button2selectLec";
-            this.button2selectLec.Size = new System.Drawing.Size(167, 40);
-            this.button2selectLec.TabIndex = 46;
-            this.button2selectLec.Text = "Select Lecturer";
-            this.button2selectLec.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2selectLec.UseVisualStyleBackColor = false;
-            this.button2selectLec.Click += new System.EventHandler(this.button2selectLec_Click);
-            // 
             // RS1_addLecCancel
             // 
             this.RS1_addLecCancel.BackColor = System.Drawing.Color.Crimson;
@@ -380,6 +361,26 @@
             this.RS1_addLecADD.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.RS1_addLecADD.UseVisualStyleBackColor = false;
             this.RS1_addLecADD.Click += new System.EventHandler(this.RS1_addLecADD_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(25, 20);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(173, 33);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Add Session";
+            // 
+            // labeladdlec34
+            // 
+            this.labeladdlec34.AutoSize = true;
+            this.labeladdlec34.Font = new System.Drawing.Font("Tw Cen Classified MT Std", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labeladdlec34.Location = new System.Drawing.Point(23, 589);
+            this.labeladdlec34.Name = "labeladdlec34";
+            this.labeladdlec34.Size = new System.Drawing.Size(116, 19);
+            this.labeladdlec34.TabIndex = 1;
+            this.labeladdlec34.Text = "Student Count";
             // 
             // Section2_addSession
             // 

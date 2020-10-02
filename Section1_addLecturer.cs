@@ -191,5 +191,10 @@ namespace ABC_Institute___Timetable_Generator
         {
             RS1_addLecRank.Text = RS1_addLecLevel.Text + "." + RS1_addLecEmpID.Text;
         }
+
+        private void Section1_addLecturer_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
