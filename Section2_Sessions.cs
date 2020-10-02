@@ -125,5 +125,10 @@ namespace ABC_Institute___Timetable_Generator
                 new section2_viewSession(sService.getSingleSession(empID)).Show();
             }
         }
+
+        private void SesPortalbtnclose_Click(object sender, EventArgs e)
+        {
+            Dispose();
+        }
     }
 }

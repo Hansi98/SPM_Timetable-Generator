@@ -32,34 +32,28 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Section1_Subjects));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.SubPortalbtnclose = new System.Windows.Forms.Button();
+            this.R1s_subRefresh = new System.Windows.Forms.Button();
             this.R1S1SubDataGrid = new System.Windows.Forms.DataGridView();
+            this.RS1_deleteSubject = new System.Windows.Forms.Button();
+            this.RS1_viewSubject = new System.Windows.Forms.Button();
+            this.RS1_addSubject = new System.Windows.Forms.Button();
             this.RS1_searchSub = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.RS1_newLecs = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.RS1_totSubs = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.SubPortalbtnclose = new System.Windows.Forms.Button();
-            this.R1s_subRefresh = new System.Windows.Forms.Button();
-            this.RS1_deleteSubject = new System.Windows.Forms.Button();
-            this.RS1_viewSubject = new System.Windows.Forms.Button();
-            this.RS1_addSubject = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.R1S1SubDataGrid)).BeginInit();
             this.panel2.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -82,6 +76,38 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(817, 641);
             this.panel1.TabIndex = 3;
+            // 
+            // SubPortalbtnclose
+            // 
+            this.SubPortalbtnclose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.SubPortalbtnclose.BackColor = System.Drawing.Color.DarkOrange;
+            this.SubPortalbtnclose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SubPortalbtnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SubPortalbtnclose.ForeColor = System.Drawing.Color.White;
+            this.SubPortalbtnclose.Location = new System.Drawing.Point(768, 11);
+            this.SubPortalbtnclose.Margin = new System.Windows.Forms.Padding(2);
+            this.SubPortalbtnclose.Name = "SubPortalbtnclose";
+            this.SubPortalbtnclose.Size = new System.Drawing.Size(38, 29);
+            this.SubPortalbtnclose.TabIndex = 21;
+            this.SubPortalbtnclose.Text = "X";
+            this.SubPortalbtnclose.UseVisualStyleBackColor = false;
+            this.SubPortalbtnclose.Click += new System.EventHandler(this.SubPortalbtnclose_Click);
+            // 
+            // R1s_subRefresh
+            // 
+            this.R1s_subRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.R1s_subRefresh.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.R1s_subRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.R1s_subRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R1s_subRefresh.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.R1s_subRefresh.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.refresh_24px;
+            this.R1s_subRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.R1s_subRefresh.Location = new System.Drawing.Point(453, 283);
+            this.R1s_subRefresh.Name = "R1s_subRefresh";
+            this.R1s_subRefresh.Size = new System.Drawing.Size(38, 39);
+            this.R1s_subRefresh.TabIndex = 20;
+            this.R1s_subRefresh.UseVisualStyleBackColor = false;
+            this.R1s_subRefresh.Click += new System.EventHandler(this.R1s_subRefresh_Click);
             // 
             // R1S1SubDataGrid
             // 
@@ -120,6 +146,58 @@
             this.R1S1SubDataGrid.Size = new System.Drawing.Size(765, 188);
             this.R1S1SubDataGrid.TabIndex = 19;
             // 
+            // RS1_deleteSubject
+            // 
+            this.RS1_deleteSubject.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.RS1_deleteSubject.BackColor = System.Drawing.Color.Crimson;
+            this.RS1_deleteSubject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RS1_deleteSubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RS1_deleteSubject.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.RS1_deleteSubject.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.trash_can_24px;
+            this.RS1_deleteSubject.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RS1_deleteSubject.Location = new System.Drawing.Point(680, 571);
+            this.RS1_deleteSubject.Name = "RS1_deleteSubject";
+            this.RS1_deleteSubject.Size = new System.Drawing.Size(109, 47);
+            this.RS1_deleteSubject.TabIndex = 18;
+            this.RS1_deleteSubject.Text = "Delete";
+            this.RS1_deleteSubject.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.RS1_deleteSubject.UseVisualStyleBackColor = false;
+            this.RS1_deleteSubject.Click += new System.EventHandler(this.RS1_deleteSubject_Click);
+            // 
+            // RS1_viewSubject
+            // 
+            this.RS1_viewSubject.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.RS1_viewSubject.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.RS1_viewSubject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RS1_viewSubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RS1_viewSubject.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.RS1_viewSubject.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.more_26px;
+            this.RS1_viewSubject.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RS1_viewSubject.Location = new System.Drawing.Point(575, 571);
+            this.RS1_viewSubject.Name = "RS1_viewSubject";
+            this.RS1_viewSubject.Size = new System.Drawing.Size(97, 47);
+            this.RS1_viewSubject.TabIndex = 17;
+            this.RS1_viewSubject.Text = "View";
+            this.RS1_viewSubject.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.RS1_viewSubject.UseVisualStyleBackColor = false;
+            this.RS1_viewSubject.Click += new System.EventHandler(this.RS1_viewSubject_Click);
+            // 
+            // RS1_addSubject
+            // 
+            this.RS1_addSubject.BackColor = System.Drawing.Color.DodgerBlue;
+            this.RS1_addSubject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RS1_addSubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RS1_addSubject.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.RS1_addSubject.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.add_30px;
+            this.RS1_addSubject.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RS1_addSubject.Location = new System.Drawing.Point(29, 273);
+            this.RS1_addSubject.Name = "RS1_addSubject";
+            this.RS1_addSubject.Size = new System.Drawing.Size(198, 47);
+            this.RS1_addSubject.TabIndex = 16;
+            this.RS1_addSubject.Text = "Add Subject";
+            this.RS1_addSubject.UseVisualStyleBackColor = false;
+            this.RS1_addSubject.Click += new System.EventHandler(this.RS1_addSubject_Click);
+            // 
             // RS1_searchSub
             // 
             this.RS1_searchSub.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -138,46 +216,12 @@
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Location = new System.Drawing.Point(85, 105);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(639, 141);
             this.panel2.TabIndex = 14;
-            // 
-            // panel5
-            // 
-            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel5.BackColor = System.Drawing.SystemColors.Control;
-            this.panel5.Controls.Add(this.pictureBox3);
-            this.panel5.Controls.Add(this.RS1_newLecs);
-            this.panel5.Controls.Add(this.label5);
-            this.panel5.Location = new System.Drawing.Point(376, 41);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(194, 85);
-            this.panel5.TabIndex = 17;
-            // 
-            // RS1_newLecs
-            // 
-            this.RS1_newLecs.AutoSize = true;
-            this.RS1_newLecs.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RS1_newLecs.Location = new System.Drawing.Point(67, 39);
-            this.RS1_newLecs.Name = "RS1_newLecs";
-            this.RS1_newLecs.Size = new System.Drawing.Size(24, 28);
-            this.RS1_newLecs.TabIndex = 1;
-            this.RS1_newLecs.Text = "0";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(67, 20);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(112, 19);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "New Subjects";
             // 
             // panel4
             // 
@@ -187,10 +231,23 @@
             this.panel4.Controls.Add(this.pictureBox2);
             this.panel4.Controls.Add(this.RS1_totSubs);
             this.panel4.Controls.Add(this.label3);
-            this.panel4.Location = new System.Drawing.Point(64, 41);
+            this.panel4.Location = new System.Drawing.Point(231, 40);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(194, 85);
             this.panel4.TabIndex = 16;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(10, 11);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.pictureBox2.Size = new System.Drawing.Size(48, 65);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 15;
+            this.pictureBox2.TabStop = false;
             // 
             // RS1_totSubs
             // 
@@ -246,116 +303,6 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Subject Portal";
             // 
-            // SubPortalbtnclose
-            // 
-            this.SubPortalbtnclose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.SubPortalbtnclose.BackColor = System.Drawing.Color.DarkOrange;
-            this.SubPortalbtnclose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SubPortalbtnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SubPortalbtnclose.ForeColor = System.Drawing.Color.White;
-            this.SubPortalbtnclose.Location = new System.Drawing.Point(768, 11);
-            this.SubPortalbtnclose.Margin = new System.Windows.Forms.Padding(2);
-            this.SubPortalbtnclose.Name = "SubPortalbtnclose";
-            this.SubPortalbtnclose.Size = new System.Drawing.Size(38, 29);
-            this.SubPortalbtnclose.TabIndex = 21;
-            this.SubPortalbtnclose.Text = "X";
-            this.SubPortalbtnclose.UseVisualStyleBackColor = false;
-            this.SubPortalbtnclose.Click += new System.EventHandler(this.SubPortalbtnclose_Click);
-            // 
-            // R1s_subRefresh
-            // 
-            this.R1s_subRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.R1s_subRefresh.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.R1s_subRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.R1s_subRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.R1s_subRefresh.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.R1s_subRefresh.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.refresh_24px;
-            this.R1s_subRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.R1s_subRefresh.Location = new System.Drawing.Point(453, 283);
-            this.R1s_subRefresh.Name = "R1s_subRefresh";
-            this.R1s_subRefresh.Size = new System.Drawing.Size(38, 39);
-            this.R1s_subRefresh.TabIndex = 20;
-            this.R1s_subRefresh.UseVisualStyleBackColor = false;
-            this.R1s_subRefresh.Click += new System.EventHandler(this.R1s_subRefresh_Click);
-            // 
-            // RS1_deleteSubject
-            // 
-            this.RS1_deleteSubject.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.RS1_deleteSubject.BackColor = System.Drawing.Color.Crimson;
-            this.RS1_deleteSubject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RS1_deleteSubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RS1_deleteSubject.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.RS1_deleteSubject.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.trash_can_24px;
-            this.RS1_deleteSubject.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RS1_deleteSubject.Location = new System.Drawing.Point(680, 571);
-            this.RS1_deleteSubject.Name = "RS1_deleteSubject";
-            this.RS1_deleteSubject.Size = new System.Drawing.Size(109, 47);
-            this.RS1_deleteSubject.TabIndex = 18;
-            this.RS1_deleteSubject.Text = "Delete";
-            this.RS1_deleteSubject.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.RS1_deleteSubject.UseVisualStyleBackColor = false;
-            this.RS1_deleteSubject.Click += new System.EventHandler(this.RS1_deleteSubject_Click);
-            // 
-            // RS1_viewSubject
-            // 
-            this.RS1_viewSubject.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.RS1_viewSubject.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.RS1_viewSubject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RS1_viewSubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RS1_viewSubject.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.RS1_viewSubject.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.more_26px;
-            this.RS1_viewSubject.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RS1_viewSubject.Location = new System.Drawing.Point(575, 571);
-            this.RS1_viewSubject.Name = "RS1_viewSubject";
-            this.RS1_viewSubject.Size = new System.Drawing.Size(97, 47);
-            this.RS1_viewSubject.TabIndex = 17;
-            this.RS1_viewSubject.Text = "View";
-            this.RS1_viewSubject.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.RS1_viewSubject.UseVisualStyleBackColor = false;
-            this.RS1_viewSubject.Click += new System.EventHandler(this.RS1_viewSubject_Click);
-            // 
-            // RS1_addSubject
-            // 
-            this.RS1_addSubject.BackColor = System.Drawing.Color.DodgerBlue;
-            this.RS1_addSubject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RS1_addSubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RS1_addSubject.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.RS1_addSubject.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.add_30px;
-            this.RS1_addSubject.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RS1_addSubject.Location = new System.Drawing.Point(29, 273);
-            this.RS1_addSubject.Name = "RS1_addSubject";
-            this.RS1_addSubject.Size = new System.Drawing.Size(198, 47);
-            this.RS1_addSubject.TabIndex = 16;
-            this.RS1_addSubject.Text = "Add Subject";
-            this.RS1_addSubject.UseVisualStyleBackColor = false;
-            this.RS1_addSubject.Click += new System.EventHandler(this.RS1_addSubject_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(10, 11);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.pictureBox3.Size = new System.Drawing.Size(48, 65);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 15;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(10, 11);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.pictureBox2.Size = new System.Drawing.Size(48, 65);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 15;
-            this.pictureBox2.TabStop = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -382,14 +329,11 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.R1S1SubDataGrid)).EndInit();
             this.panel2.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -403,10 +347,6 @@
         private System.Windows.Forms.Button RS1_addSubject;
         private System.Windows.Forms.TextBox RS1_searchSub;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label RS1_newLecs;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label RS1_totSubs;
