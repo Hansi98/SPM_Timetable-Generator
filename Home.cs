@@ -233,28 +233,26 @@ namespace ABC_Institute___Timetable_Generator
 
         private void BtnVsessionunavailability_Click(object sender, EventArgs e)
         {
-            openchildform(new Section3_MarkUnavailabily());
-            //
-            hidesessionsubmenu();
+            new Section2_Sessions().Show();
         }
 
         private void BtnVsessionconsecutive_Click(object sender, EventArgs e)
         {
-            openchildform(new Section3_consecutiveSessions());
+            openchildform(new Section3_MarkUnavailabily());
             //
             hidesessionsubmenu();
         }
 
         private void BtnVsessionparallel_Click(object sender, EventArgs e)
         {
-            openchildform(new Section3_parallelSessions());
+            openchildform(new Section3_consecutiveSessions());
             //
             hidesessionsubmenu();
         }
 
         private void BtnVsessionnooverlapping_Click(object sender, EventArgs e)
         {
-            openchildform(new Section3_nooverlappingSessions());
+            openchildform(new Section3_parallelSessions());
             //
             hidesessionsubmenu();
         }
@@ -308,9 +306,16 @@ namespace ABC_Institute___Timetable_Generator
             hidelocationsubmenu();
         }
 
-        private void button8_Click(object sender, EventArgs e)
+        //private void button8_Click(object sender, EventArgs e)
+        //{
+        //    new Section2_Sessions().Show();
+        //}
+
+        private void Button9_Click(object sender, EventArgs e)
         {
-            new Section2_Sessions().Show();
+            openchildform(new Section3_nooverlappingSessions());
+            //
+            hidesessionsubmenu();
         }
     }
 }

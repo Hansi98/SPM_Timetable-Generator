@@ -40,13 +40,13 @@ namespace ABC_Institute___Timetable_Generator
             using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
             {
                 mySqlCon.Open();
-                MySqlDataAdapter sqlDa = new MySqlDataAdapter("sessionViewAll", mySqlCon);
+                MySqlDataAdapter sqlDa = new MySqlDataAdapter("getMasterTable", mySqlCon);
                 sqlDa.SelectCommand.CommandType = CommandType.StoredProcedure;
                 DataTable dataTags = new DataTable();
                 sqlDa.Fill(dataTags);
                 visalgdvadj1.DataSource = dataTags;
                 visalgdvadj2.DataSource = dataTags;
-                visalgdvadj3.DataSource = dataTags;
+               // visalgdvadj3.DataSource = dataTags;
             }
 
         }
@@ -79,8 +79,8 @@ namespace ABC_Institute___Timetable_Generator
             visalcmbadjts2.Items.Clear();
         
 
-            visalcmdmugsgroup.Items.Clear();
-            visalcmbadjts3.Items.Clear();
+          //  visalcmdmugsgroup.Items.Clear();
+         //   visalcmbadjts3.Items.Clear();
         
 
             for (int i = 0; i < lecDatatable.Rows.Count; i++)
@@ -95,7 +95,7 @@ namespace ABC_Institute___Timetable_Generator
             {
                 visalcmbadjts1.Items.Add((timeslotDatatable.Rows[i]["noOfWrkHours"]));
                 visalcmbadjts2.Items.Add((timeslotDatatable.Rows[i]["noOfWrkHours"]));
-                visalcmbadjts3.Items.Add((timeslotDatatable.Rows[i]["noOfWrkHours"]));
+             
             }
             for (int i = 0; i < groupDatatable.Rows.Count; i++)
             {
@@ -103,7 +103,7 @@ namespace ABC_Institute___Timetable_Generator
             }
             for (int i = 0; i < subgroupDatatable.Rows.Count; i++)
             {
-                visalcmdmugsgroup.Items.Add((subgroupDatatable.Rows[i]["GroupID"]));
+            
             }
 
         }
@@ -113,10 +113,10 @@ namespace ABC_Institute___Timetable_Generator
             using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
             {
                 mySqlCon.Open();
-                MySqlDataAdapter sqlDa = new MySqlDataAdapter("sessiongetByLecturerAndTimeslot", mySqlCon);
+                MySqlDataAdapter sqlDa = new MySqlDataAdapter("MasterTablefilterByLecturerName&Time", mySqlCon);
                 sqlDa.SelectCommand.CommandType = CommandType.StoredProcedure;
-                sqlDa.SelectCommand.Parameters.AddWithValue("_Lecturer_Name", visalcmbadjLecturer.Text);
-                sqlDa.SelectCommand.Parameters.AddWithValue("_Timeslot", visalcmbadjts1.Text);
+                sqlDa.SelectCommand.Parameters.AddWithValue("_lecturerName", visalcmbadjLecturer.Text);
+                sqlDa.SelectCommand.Parameters.AddWithValue("_time", visalcmbadjts1.Text);
                 DataTable dataLocations = new DataTable();
                 sqlDa.Fill(dataLocations);
                 visalgdvadj1.DataSource = dataLocations;
@@ -185,10 +185,10 @@ namespace ABC_Institute___Timetable_Generator
             using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
             {
                 mySqlCon.Open();
-                MySqlDataAdapter sqlDa = new MySqlDataAdapter("sessiongetByGroupAndTimeslot", mySqlCon);
+                MySqlDataAdapter sqlDa = new MySqlDataAdapter("MasterTablefilterByTime&GroupID", mySqlCon);
                 sqlDa.SelectCommand.CommandType = CommandType.StoredProcedure;
-                sqlDa.SelectCommand.Parameters.AddWithValue("_Group_ID", visalcmbadjgroup.Text);
-                sqlDa.SelectCommand.Parameters.AddWithValue("_Timeslot", visalcmbadjts2.Text);
+                sqlDa.SelectCommand.Parameters.AddWithValue("_groupID", visalcmbadjgroup.Text);
+                sqlDa.SelectCommand.Parameters.AddWithValue("_time", visalcmbadjts2.Text);
                 DataTable dataLocations = new DataTable();
                 sqlDa.Fill(dataLocations);
                 visalgdvadj2.DataSource = dataLocations;
@@ -218,42 +218,42 @@ namespace ABC_Institute___Timetable_Generator
         {
             using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
             {
-                mySqlCon.Open();
-                MySqlDataAdapter sqlDa = new MySqlDataAdapter("sessiongetBySubGroupAndTimeslot", mySqlCon);
-                sqlDa.SelectCommand.CommandType = CommandType.StoredProcedure;
-                sqlDa.SelectCommand.Parameters.AddWithValue("_Subgroup_ID", visalcmdmugsgroup.Text);
-                sqlDa.SelectCommand.Parameters.AddWithValue("_Timeslot", visalcmbadjts3.Text);
-                DataTable dataLocations = new DataTable();
-                sqlDa.Fill(dataLocations);
-                visalgdvadj3.DataSource = dataLocations;
+              //  mySqlCon.Open();
+              //  MySqlDataAdapter sqlDa = new MySqlDataAdapter("sessiongetBySubGroupAndTimeslot", mySqlCon);
+               // sqlDa.SelectCommand.CommandType = CommandType.StoredProcedure;
+             //   sqlDa.SelectCommand.Parameters.AddWithValue("_Subgroup_ID", visalcmdmugsgroup.Text);
+//sqlDa.SelectCommand.Parameters.AddWithValue("_Timeslot", visalcmbadjts3.Text);
+             //   DataTable dataLocations = new DataTable();
+            //    sqlDa.Fill(dataLocations);
+            //    visalgdvadj3.DataSource = dataLocations;
 
             }
         }
 
         private void visalgdvadj3_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (visalgdvadj3.Columns[e.ColumnIndex].Name == "Edit3")
-            {
-                visalcmbadjday3.Text = visalgdvadj3.CurrentRow.Cells[7].Value.ToString();
+        //    if (visalgdvadj3.Columns[e.ColumnIndex].Name == "Edit3")
+//{
+       //         visalcmbadjday3.Text = visalgdvadj3.CurrentRow.Cells[7].Value.ToString();
 
-                sessionID1 = Convert.ToInt32(visalgdvadj3.CurrentRow.Cells[1].Value.ToString());
-            }
+      //          sessionID1 = Convert.ToInt32(visalgdvadj3.CurrentRow.Cells[1].Value.ToString());
+         //   }
         }
 
         private void visalbtnadjfix3_Click(object sender, EventArgs e)
         {
             using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
             {
-                mySqlCon.Open();
-                MySqlCommand mySqlCmd = new MySqlCommand("newsessionAddorEdit", mySqlCon);
-                mySqlCmd.CommandType = CommandType.StoredProcedure;
-                mySqlCmd.Parameters.AddWithValue("_sessionID", sessionID1);
-                mySqlCmd.Parameters.AddWithValue("_Day", visalcmbadjday3.Text.Trim().ToString());
-                mySqlCmd.ExecuteNonQuery();
+//mySqlCon.Open();
+            //    MySqlCommand mySqlCmd = new MySqlCommand("newsessionAddorEdit", mySqlCon);
+           //     mySqlCmd.CommandType = CommandType.StoredProcedure;
+        //        mySqlCmd.Parameters.AddWithValue("_sessionID", sessionID1);
+//mySqlCmd.Parameters.AddWithValue("_Day", visalcmbadjday3.Text.Trim().ToString());
+///mySqlCmd.ExecuteNonQuery();
 
-                visalcmbadjday3.Text = "";
-                fillTagGridsessionsadj();
-                MessageBox.Show(" Fixed Successfully");
+//visalcmbadjday3.Text = "";
+//fillTagGridsessionsadj();
+//MessageBox.Show(" Fixed Successfully");
 
             }
         }

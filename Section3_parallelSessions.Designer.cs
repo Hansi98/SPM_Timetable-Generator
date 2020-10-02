@@ -34,11 +34,12 @@
             this.nishikistatimg = new System.Windows.Forms.PictureBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.visaldatagridparasess2 = new System.Windows.Forms.DataGridView();
+            this.visaldatagridparasess1 = new System.Windows.Forms.DataGridView();
             this.visalbtnparasese = new System.Windows.Forms.Button();
             this.visalbtnparasemake = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.visalcmbparasegid = new System.Windows.Forms.ComboBox();
-            this.visaldatagridparasess1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.sessionID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Lecturer_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,7 +50,6 @@
             this.Day = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tag = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Module = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.visaldatagridparasess2 = new System.Windows.Forms.DataGridView();
             this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -63,8 +63,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.nishikistatimg)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.visaldatagridparasess1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.visaldatagridparasess2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.visaldatagridparasess1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -132,6 +132,58 @@
             this.tabPage3.UseVisualStyleBackColor = true;
             this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
             // 
+            // visaldatagridparasess2
+            // 
+            this.visaldatagridparasess2.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.visaldatagridparasess2.AllowUserToAddRows = false;
+            this.visaldatagridparasess2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.visaldatagridparasess2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.visaldatagridparasess2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.visaldatagridparasess2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewCheckBoxColumn1,
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9});
+            this.visaldatagridparasess2.Location = new System.Drawing.Point(50, 256);
+            this.visaldatagridparasess2.Name = "visaldatagridparasess2";
+            this.visaldatagridparasess2.RowHeadersWidth = 51;
+            this.visaldatagridparasess2.RowTemplate.Height = 24;
+            this.visaldatagridparasess2.Size = new System.Drawing.Size(1054, 324);
+            this.visaldatagridparasess2.TabIndex = 26;
+            // 
+            // visaldatagridparasess1
+            // 
+            this.visaldatagridparasess1.AllowUserToAddRows = false;
+            this.visaldatagridparasess1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.visaldatagridparasess1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.visaldatagridparasess1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.visaldatagridparasess1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.sessionID,
+            this.Lecturer_Name,
+            this.Group_ID,
+            this.Subgroup_ID,
+            this.Location,
+            this.Timeslot,
+            this.Day,
+            this.Tag,
+            this.Module});
+            this.visaldatagridparasess1.Location = new System.Drawing.Point(50, 147);
+            this.visaldatagridparasess1.Name = "visaldatagridparasess1";
+            this.visaldatagridparasess1.RowHeadersWidth = 51;
+            this.visaldatagridparasess1.RowTemplate.Height = 24;
+            this.visaldatagridparasess1.Size = new System.Drawing.Size(1054, 200);
+            this.visaldatagridparasess1.TabIndex = 25;
+            this.visaldatagridparasess1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.visaldatagridparasess1_CellContentClick);
+            // 
             // visalbtnparasese
             // 
             this.visalbtnparasese.BackColor = System.Drawing.Color.MediumSeaGreen;
@@ -179,31 +231,6 @@
             this.visalcmbparasegid.Size = new System.Drawing.Size(324, 44);
             this.visalcmbparasegid.TabIndex = 16;
             // 
-            // visaldatagridparasess1
-            // 
-            this.visaldatagridparasess1.AllowUserToAddRows = false;
-            this.visaldatagridparasess1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.visaldatagridparasess1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.visaldatagridparasess1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.visaldatagridparasess1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.sessionID,
-            this.Lecturer_Name,
-            this.Group_ID,
-            this.Subgroup_ID,
-            this.Location,
-            this.Timeslot,
-            this.Day,
-            this.Tag,
-            this.Module});
-            this.visaldatagridparasess1.Location = new System.Drawing.Point(50, 147);
-            this.visaldatagridparasess1.Name = "visaldatagridparasess1";
-            this.visaldatagridparasess1.RowHeadersWidth = 51;
-            this.visaldatagridparasess1.RowTemplate.Height = 24;
-            this.visaldatagridparasess1.Size = new System.Drawing.Size(1054, 200);
-            this.visaldatagridparasess1.TabIndex = 25;
-            // 
             // Column1
             // 
             this.Column1.HeaderText = "Select";
@@ -218,31 +245,31 @@
             // 
             // Lecturer_Name
             // 
-            this.Lecturer_Name.HeaderText = "Lecturer_Name";
+            this.Lecturer_Name.HeaderText = "Lecturer_ID";
             this.Lecturer_Name.MinimumWidth = 6;
             this.Lecturer_Name.Name = "Lecturer_Name";
             // 
             // Group_ID
             // 
-            this.Group_ID.HeaderText = "Group_ID";
+            this.Group_ID.HeaderText = "Lecturer_Name";
             this.Group_ID.MinimumWidth = 6;
             this.Group_ID.Name = "Group_ID";
             // 
             // Subgroup_ID
             // 
-            this.Subgroup_ID.HeaderText = "Subgroup_ID";
+            this.Subgroup_ID.HeaderText = "Group_ID";
             this.Subgroup_ID.MinimumWidth = 6;
             this.Subgroup_ID.Name = "Subgroup_ID";
             // 
             // Location
             // 
-            this.Location.HeaderText = "Location";
+            this.Location.HeaderText = "Room";
             this.Location.MinimumWidth = 6;
             this.Location.Name = "Location";
             // 
             // Timeslot
             // 
-            this.Timeslot.HeaderText = "Timeslot";
+            this.Timeslot.HeaderText = "Time";
             this.Timeslot.MinimumWidth = 6;
             this.Timeslot.Name = "Timeslot";
             // 
@@ -260,35 +287,9 @@
             // 
             // Module
             // 
-            this.Module.HeaderText = "Module";
+            this.Module.HeaderText = "Sub_Code";
             this.Module.MinimumWidth = 6;
             this.Module.Name = "Module";
-            // 
-            // visaldatagridparasess2
-            // 
-            this.visaldatagridparasess2.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.visaldatagridparasess2.AllowUserToAddRows = false;
-            this.visaldatagridparasess2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.visaldatagridparasess2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.visaldatagridparasess2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.visaldatagridparasess2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewCheckBoxColumn1,
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9});
-            this.visaldatagridparasess2.Location = new System.Drawing.Point(50, 256);
-            this.visaldatagridparasess2.Name = "visaldatagridparasess2";
-            this.visaldatagridparasess2.RowHeadersWidth = 51;
-            this.visaldatagridparasess2.RowTemplate.Height = 24;
-            this.visaldatagridparasess2.Size = new System.Drawing.Size(1054, 324);
-            this.visaldatagridparasess2.TabIndex = 26;
             // 
             // dataGridViewCheckBoxColumn1
             // 
@@ -304,31 +305,31 @@
             // 
             // dataGridViewTextBoxColumn2
             // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Lecturer_Name";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Lecturer_ID";
             this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
             // dataGridViewTextBoxColumn3
             // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "Group_ID";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Lecturer_Name";
             this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
             // dataGridViewTextBoxColumn4
             // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "Subgroup_ID";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Group_ID";
             this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
             // dataGridViewTextBoxColumn5
             // 
-            this.dataGridViewTextBoxColumn5.HeaderText = "Location";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Room";
             this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             // 
             // dataGridViewTextBoxColumn6
             // 
-            this.dataGridViewTextBoxColumn6.HeaderText = "Timeslot";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Time";
             this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             // 
@@ -346,7 +347,7 @@
             // 
             // dataGridViewTextBoxColumn9
             // 
-            this.dataGridViewTextBoxColumn9.HeaderText = "Module";
+            this.dataGridViewTextBoxColumn9.HeaderText = "Sub_Code";
             this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
             // 
@@ -368,8 +369,8 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.visaldatagridparasess1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.visaldatagridparasess2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.visaldatagridparasess1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -387,16 +388,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox visalcmbparasegid;
         private System.Windows.Forms.DataGridView visaldatagridparasess1;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sessionID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Lecturer_Name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Group_ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Subgroup_ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Location;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Timeslot;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Day;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Tag;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Module;
         private System.Windows.Forms.DataGridView visaldatagridparasess2;
         private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
@@ -408,5 +399,15 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sessionID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Lecturer_Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Group_ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Subgroup_ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Location;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Timeslot;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Day;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tag;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Module;
     }
 }
