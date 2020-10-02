@@ -249,6 +249,16 @@ namespace ABC_Institute___Timetable_Generator
             return table;
         }
 
+        public DataTable searchSessionbyLec(string searchString)
+        {
+            MySqlDataAdapter data = new MySqlDataAdapter("searchSessionByLecturer", this.con);
+            data.SelectCommand.CommandType = CommandType.StoredProcedure;
+            data.SelectCommand.Parameters.AddWithValue("_sString", searchString);
+            DataTable table = new DataTable();
+            data.Fill(table);
+            return table;
+        }
+
         public bool updateSession(Session S)
         {
             throw new NotImplementedException();

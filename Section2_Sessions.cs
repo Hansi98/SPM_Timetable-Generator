@@ -43,8 +43,11 @@ namespace ABC_Institute___Timetable_Generator
             if (R1S1LecDataGrid.Columns["StudentCount"] != null)
                 R1S1LecDataGrid.Columns["StudentCount"].HeaderText = "Student Count";
 
+            if (R1S1LecDataGrid.Columns["lecturerName"] != null)
+                R1S1LecDataGrid.Columns["lecturerName"].HeaderText = "Lecturer";
 
-                
+
+
         }
 
         public void draw()
@@ -129,6 +132,26 @@ namespace ABC_Institute___Timetable_Generator
         private void SesPortalbtnclose_Click(object sender, EventArgs e)
         {
             Dispose();
+        }
+
+        private void sbylec_TextChanged(object sender, EventArgs e)
+        {
+            if (sbylec.Text.Trim() == "")
+            {
+
+                draw();
+
+            }
+            else
+            {
+                R1S1LecDataGrid.DataSource = sService.searchSessionbyLec(sbylec.Text.Trim());
+                R1S1changeHeader();
+            }
+        }
+
+        private void sbylec_Click(object sender, EventArgs e)
+        {
+            sbylec.Text = null;
         }
     }
 }

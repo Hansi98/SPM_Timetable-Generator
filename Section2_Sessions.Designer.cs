@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Section2_Sessions));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.R1s_SessionRefresh = new System.Windows.Forms.Button();
             this.RS1_deleteSes = new System.Windows.Forms.Button();
@@ -48,6 +48,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.SesPortalbtnclose = new System.Windows.Forms.Button();
+            this.sbylec = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -60,6 +61,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel1.Controls.Add(this.sbylec);
             this.panel1.Controls.Add(this.R1s_SessionRefresh);
             this.panel1.Controls.Add(this.RS1_deleteSes);
             this.panel1.Controls.Add(this.RS1_viewSes);
@@ -72,7 +74,7 @@
             this.panel1.Controls.Add(this.SesPortalbtnclose);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(823, 588);
             this.panel1.TabIndex = 3;
@@ -86,7 +88,7 @@
             this.R1s_SessionRefresh.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.R1s_SessionRefresh.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.refresh_24px;
             this.R1s_SessionRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.R1s_SessionRefresh.Location = new System.Drawing.Point(464, 254);
+            this.R1s_SessionRefresh.Location = new System.Drawing.Point(317, 251);
             this.R1s_SessionRefresh.Name = "R1s_SessionRefresh";
             this.R1s_SessionRefresh.Size = new System.Drawing.Size(38, 39);
             this.R1s_SessionRefresh.TabIndex = 19;
@@ -150,12 +152,12 @@
             this.RS1_searchSession.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.RS1_searchSession.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RS1_searchSession.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RS1_searchSession.Location = new System.Drawing.Point(516, 259);
+            this.RS1_searchSession.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RS1_searchSession.Location = new System.Drawing.Point(553, 259);
             this.RS1_searchSession.Name = "RS1_searchSession";
-            this.RS1_searchSession.Size = new System.Drawing.Size(282, 29);
+            this.RS1_searchSession.Size = new System.Drawing.Size(245, 26);
             this.RS1_searchSession.TabIndex = 15;
-            this.RS1_searchSession.Text = " Search ...";
+            this.RS1_searchSession.Text = " Search by tag, subect , group etc";
             this.RS1_searchSession.Click += new System.EventHandler(this.RS1_searchSession_Click);
             this.RS1_searchSession.TextChanged += new System.EventHandler(this.RS1_searchSession_TextChanged);
             // 
@@ -188,7 +190,7 @@
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(10, 11);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.pictureBox2.Size = new System.Drawing.Size(48, 65);
@@ -247,25 +249,25 @@
             this.R1S1LecDataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.R1S1LecDataGrid.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.R1S1LecDataGrid.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.R1S1LecDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.R1S1LecDataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.R1S1LecDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LightSkyBlue;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.R1S1LecDataGrid.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.LightSkyBlue;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.R1S1LecDataGrid.DefaultCellStyle = dataGridViewCellStyle6;
             this.R1S1LecDataGrid.Location = new System.Drawing.Point(29, 307);
-            this.R1S1LecDataGrid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.R1S1LecDataGrid.Margin = new System.Windows.Forms.Padding(2);
             this.R1S1LecDataGrid.MultiSelect = false;
             this.R1S1LecDataGrid.Name = "R1S1LecDataGrid";
             this.R1S1LecDataGrid.ReadOnly = true;
@@ -290,7 +292,7 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.Image = global::ABC_Institute___Timetable_Generator.Properties.Resources.event_60px;
             this.pictureBox1.Location = new System.Drawing.Point(29, 10);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
             this.pictureBox1.Size = new System.Drawing.Size(61, 75);
@@ -306,13 +308,27 @@
             this.SesPortalbtnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SesPortalbtnclose.ForeColor = System.Drawing.Color.White;
             this.SesPortalbtnclose.Location = new System.Drawing.Point(776, 10);
-            this.SesPortalbtnclose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SesPortalbtnclose.Margin = new System.Windows.Forms.Padding(2);
             this.SesPortalbtnclose.Name = "SesPortalbtnclose";
             this.SesPortalbtnclose.Size = new System.Drawing.Size(38, 29);
             this.SesPortalbtnclose.TabIndex = 1;
             this.SesPortalbtnclose.Text = "X";
             this.SesPortalbtnclose.UseVisualStyleBackColor = false;
             this.SesPortalbtnclose.Click += new System.EventHandler(this.SesPortalbtnclose_Click);
+            // 
+            // sbylec
+            // 
+            this.sbylec.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.sbylec.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.sbylec.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sbylec.Location = new System.Drawing.Point(365, 260);
+            this.sbylec.Name = "sbylec";
+            this.sbylec.Size = new System.Drawing.Size(178, 26);
+            this.sbylec.TabIndex = 20;
+            this.sbylec.Text = " Search by lecturer";
+            this.sbylec.Click += new System.EventHandler(this.sbylec_Click);
+            this.sbylec.TextChanged += new System.EventHandler(this.sbylec_TextChanged);
             // 
             // Section2_Sessions
             // 
@@ -357,5 +373,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button SesPortalbtnclose;
+        private System.Windows.Forms.TextBox sbylec;
     }
 }

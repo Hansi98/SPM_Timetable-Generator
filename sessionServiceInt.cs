@@ -18,6 +18,8 @@ namespace ABC_Institute___Timetable_Generator
         Session getSingleSession(String ID);
         DataTable searchSession(String searchString);
 
+        DataTable searchSessionbyLec(String searchString);
+
         DataTable getLecturersbySessionID(String sesID);
         List<string> getSubGroups();
 
