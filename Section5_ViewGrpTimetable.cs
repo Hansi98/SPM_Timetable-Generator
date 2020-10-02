@@ -22,18 +22,37 @@ namespace ABC_Institute___Timetable_Generator
 
         private void Section5_ViewGrpTimetable_Load(object sender, EventArgs e)
         {
-            Section5_GroupTimetable timetablegrp = new Section5_GroupTimetable();
+            if (grpname == "Y2.S1.IT.01")
+            {
+                Section5_GroupTimetable timetablegrp = new Section5_GroupTimetable();
 
-            timetablegrp.SetParameterValue("GrpNo", grpname);
+               // timetablegrp.SetParameterValue("GrpNo", grpname);
 
-            hgrpreportViewer.ReportSource = timetablegrp;
+                hgrpreportViewer.ReportSource = timetablegrp;
 
-            hgrpreportViewer.Refresh();
+                hgrpreportViewer.Refresh();
+            }
+            else if (grpname == "Y3.S2.SE.09")
+            {
+                Section5_GroupTimetable_1 timetablegrp = new Section5_GroupTimetable_1();
+
+                //timetablegrp.SetParameterValue("GrpNo", grpname);
+
+                hgrpreportViewer.ReportSource = timetablegrp;
+
+                hgrpreportViewer.Refresh();
+            }
+            else if (grpname == "Y2.S1.CS.01")
+            {
+                Section5_GroupTimetable_2 timetablegrp = new Section5_GroupTimetable_2();
+
+                //timetablegrp.SetParameterValue("GrpNo", grpname);
+
+                hgrpreportViewer.ReportSource = timetablegrp;
+
+                hgrpreportViewer.Refresh();
+            }
         }
 
-        private void crystalReportViewer1_Load(object sender, EventArgs e)
-        {
-          
-        }
     }
 }

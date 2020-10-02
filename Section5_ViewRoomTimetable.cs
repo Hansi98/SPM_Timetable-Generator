@@ -33,7 +33,36 @@ namespace ABC_Institute___Timetable_Generator
 
         private void crystalReportViewer1_Load(object sender, EventArgs e)
         {
-           
+            if (roomno == "A502")
+            {
+                Section5_RoomTimetable timetableroom = new Section5_RoomTimetable();
+
+                // timetableroom.SetParameterValue("RoomNo", roomno);
+
+                hroomReportViewer.ReportSource = timetableroom;
+
+                hroomReportViewer.Refresh();
+            }
+            else if (roomno == "B303")
+            {
+                Section5_RoomTimetable_1 timetableroom = new Section5_RoomTimetable_1();
+
+                // timetableroom.SetParameterValue("RoomNo", roomno);
+
+                hroomReportViewer.ReportSource = timetableroom;
+
+                hroomReportViewer.Refresh();
+            }
+            else if (roomno == "A509")
+            {
+                Section5_RoomTimetable_2 timetableroom = new Section5_RoomTimetable_2();
+
+                // timetableroom.SetParameterValue("RoomNo", roomno);
+
+                hroomReportViewer.ReportSource = timetableroom;
+
+                hroomReportViewer.Refresh();
+            }
         }
     }
 }

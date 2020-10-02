@@ -90,7 +90,7 @@ namespace ABC_Institute___Timetable_Generator {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_RoomNo {
+        public CrystalDecisions.Shared.IParameterField Parameter_GrpNo {
             get {
                 return this.DataDefinition.ParameterFields[0];
             }
