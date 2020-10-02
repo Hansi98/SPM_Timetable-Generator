@@ -19,6 +19,8 @@ namespace ABC_Institute___Timetable_Generator
         public Section4_addRoomsforgroups()
         {
             InitializeComponent();
+            fillgroupGrid();
+            fillsubgroupGrid();
         }
 
         private void Button1_Click(object sender, EventArgs e)
