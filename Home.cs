@@ -233,7 +233,10 @@ namespace ABC_Institute___Timetable_Generator
 
         private void BtnVsessionunavailability_Click(object sender, EventArgs e)
         {
-            new Section2_Sessions().Show();
+            openchildform(new Section2_Sessions());
+            //
+            hidesessionsubmenu();
+            
         }
 
         private void BtnVsessionconsecutive_Click(object sender, EventArgs e)
