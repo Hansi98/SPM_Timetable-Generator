@@ -18,6 +18,7 @@ namespace ABC_Institute___Timetable_Generator
         public Section4_addRoomsforlecturers()
         {
             InitializeComponent();
+            fillLocationGrid();
         }
 
         private void Button1_Click(object sender, EventArgs e)
