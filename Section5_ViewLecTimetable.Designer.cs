@@ -28,31 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.hlecTimetableView = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.Section5_LecTimetable1 = new ABC_Institute___Timetable_Generator.Section5_LecTimetable();
+            this.hlecreportViewer = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.SuspendLayout();
             // 
-            // hlecTimetableView
+            // hlecreportViewer
             // 
-            this.hlecTimetableView.ActiveViewIndex = 0;
-            this.hlecTimetableView.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.hlecTimetableView.Cursor = System.Windows.Forms.Cursors.Default;
-            this.hlecTimetableView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.hlecTimetableView.Location = new System.Drawing.Point(0, 0);
-            this.hlecTimetableView.Name = "hlecTimetableView";
-            this.hlecTimetableView.ReportSource = this.Section5_LecTimetable1;
-            this.hlecTimetableView.Size = new System.Drawing.Size(800, 450);
-            this.hlecTimetableView.TabIndex = 0;
-            this.hlecTimetableView.Load += new System.EventHandler(this.crystalReportViewer1_Load);
+            this.hlecreportViewer.ActiveViewIndex = -1;
+            this.hlecreportViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.hlecreportViewer.Cursor = System.Windows.Forms.Cursors.Default;
+            this.hlecreportViewer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.hlecreportViewer.Location = new System.Drawing.Point(0, 0);
+            this.hlecreportViewer.Name = "hlecreportViewer";
+            this.hlecreportViewer.Size = new System.Drawing.Size(800, 450);
+            this.hlecreportViewer.TabIndex = 0;
+            this.hlecreportViewer.Load += new System.EventHandler(this.hlecreportViewer_Load);
             // 
             // Section5_ViewLecTimetable
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.hlecTimetableView);
+            this.Controls.Add(this.hlecreportViewer);
             this.Name = "Section5_ViewLecTimetable";
-            this.Text = "Section5_ViewLecTimetable";
+            this.Text = "ViewLecTimetable";
             this.Load += new System.EventHandler(this.Section5_ViewLecTimetable_Load);
             this.ResumeLayout(false);
 
@@ -60,7 +58,6 @@
 
         #endregion
 
-        private CrystalDecisions.Windows.Forms.CrystalReportViewer hlecTimetableView;
-        private Section5_LecTimetable Section5_LecTimetable1;
+        private CrystalDecisions.Windows.Forms.CrystalReportViewer hlecreportViewer;
     }
 }

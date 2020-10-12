@@ -253,7 +253,7 @@
             this.HansiTimetable_grpDown.BackColor = System.Drawing.SystemColors.Highlight;
             this.HansiTimetable_grpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HansiTimetable_grpDown.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.HansiTimetable_grpDown.Location = new System.Drawing.Point(414, 81);
+            this.HansiTimetable_grpDown.Location = new System.Drawing.Point(410, 81);
             this.HansiTimetable_grpDown.Margin = new System.Windows.Forms.Padding(2);
             this.HansiTimetable_grpDown.Name = "HansiTimetable_grpDown";
             this.HansiTimetable_grpDown.Size = new System.Drawing.Size(143, 43);

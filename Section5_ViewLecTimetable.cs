@@ -20,93 +20,106 @@ namespace ABC_Institute___Timetable_Generator
             this.lecname = lecname;
         }
 
-        private void crystalReportViewer1_Load(object sender, EventArgs e)
+        private void hlecreportViewer_Load(object sender, EventArgs e)
         {
             if (lecname == "Dr Nuwan Kodagoda")
             {
                 Section5_LecTimetable timetable = new Section5_LecTimetable();
-
-                //timetable.SetParameterValue("LecName", lecname);
-
-                hlecTimetableView.ReportSource = timetable;
-
-                hlecTimetableView.Refresh();
-            }
-            else if (lecname == "Dr. Anuradha Karunasena")
-            {
-                Section5_LecTimetable_1 timetable = new Section5_LecTimetable_1();
-
-                //timetable.SetParameterValue("LecName", lecname);
-
-                hlecTimetableView.ReportSource = timetable;
-
-                hlecTimetableView.Refresh();
+                hlecreportViewer.ReportSource = timetable;
+                hlecreportViewer.Refresh();
             }
             else if (lecname == "Mr. Dilshan Silva")
             {
-                Section5_LecTimetable_3 timetable = new Section5_LecTimetable_3();
-
-                //timetable.SetParameterValue("LecName", lecname);
-
-                hlecTimetableView.ReportSource = timetable;
-
-                hlecTimetableView.Refresh();
+                Section5_LecTimetable_1 timetable = new Section5_LecTimetable_1();
+                hlecreportViewer.ReportSource = timetable;
+                hlecreportViewer.Refresh();
             }
             else if (lecname == "Mrs. Pradeepa Samarasinghe")
             {
                 Section5_LecTimetable_2 timetable = new Section5_LecTimetable_2();
-
-                //timetable.SetParameterValue("LecName", lecname);
-
-                hlecTimetableView.ReportSource = timetable;
-
-                hlecTimetableView.Refresh();
+                hlecreportViewer.ReportSource = timetable;
+                hlecreportViewer.Refresh();
+            }
+            else if (lecname == "Prof. Koliya Pulasinghe")
+            {
+                Section5_LecTimetable_3 timetable = new Section5_LecTimetable_3();
+                hlecreportViewer.ReportSource = timetable;
+                hlecreportViewer.Refresh(); 
+            }
+            else if (lecname == "Dr Jayantha Amaraachchi")
+            {
+                Section5_LecTimetable_4 timetable = new Section5_LecTimetable_4();
+                hlecreportViewer.ReportSource = timetable;
+                hlecreportViewer.Refresh();
+            }
+            else if (lecname == "Dr Manori Jayasinghe")
+            {
+                Section5_LecTimetable_5 timetable = new Section5_LecTimetable_5();
+                hlecreportViewer.ReportSource = timetable;
+                hlecreportViewer.Refresh(); 
+            }
+            else if (lecname == "Dr. Anuradha Karunasena")
+            {
+                Section5_LecTimetable_6 timetable = new Section5_LecTimetable_6();
+                hlecreportViewer.ReportSource = timetable;
+                hlecreportViewer.Refresh();
+            }
+            else
+            {
+                MessageBox.Show("No Sessions allocated for the selected Lecturer Name");
+                this.Dispose();
             }
         }
 
         private void Section5_ViewLecTimetable_Load(object sender, EventArgs e)
         {
-            if(lecname == "Dr Nuwan Kodagoda")
+            if (lecname == "Dr Nuwan Kodagoda")
             {
                 Section5_LecTimetable timetable = new Section5_LecTimetable();
-
-                //timetable.SetParameterValue("LecName", lecname);
-
-                hlecTimetableView.ReportSource = timetable;
-
-                hlecTimetableView.Refresh();
-            }
-            else if (lecname == "Dr. Anuradha Karunasena")
-            {
-                Section5_LecTimetable_1 timetable = new Section5_LecTimetable_1();
-
-                //timetable.SetParameterValue("LecName", lecname);
-
-                hlecTimetableView.ReportSource = timetable;
-
-                hlecTimetableView.Refresh();
+                hlecreportViewer.ReportSource = timetable;
+                hlecreportViewer.Refresh();
             }
             else if (lecname == "Mr. Dilshan Silva")
             {
-                Section5_LecTimetable_2 timetable = new Section5_LecTimetable_2();
-
-                //timetable.SetParameterValue("LecName", lecname);
-
-                hlecTimetableView.ReportSource = timetable;
-
-                hlecTimetableView.Refresh();
+                Section5_LecTimetable_1 timetable = new Section5_LecTimetable_1();
+                hlecreportViewer.ReportSource = timetable;
+                hlecreportViewer.Refresh();
             }
             else if (lecname == "Mrs. Pradeepa Samarasinghe")
             {
-                Section5_LecTimetable_3 timetable = new Section5_LecTimetable_3();
-
-                //timetable.SetParameterValue("LecName", lecname);
-
-                hlecTimetableView.ReportSource = timetable;
-
-                hlecTimetableView.Refresh();
+                Section5_LecTimetable_2 timetable = new Section5_LecTimetable_2();
+                hlecreportViewer.ReportSource = timetable;
+                hlecreportViewer.Refresh();
             }
-
+            else if (lecname == "Prof. Koliya Pulasinghe")
+            {
+                Section5_LecTimetable_3 timetable = new Section5_LecTimetable_3();
+                hlecreportViewer.ReportSource = timetable;
+                hlecreportViewer.Refresh();
+            }
+            else if (lecname == "Dr Jayantha Amaraachchi")
+            {
+                Section5_LecTimetable_4 timetable = new Section5_LecTimetable_4();
+                hlecreportViewer.ReportSource = timetable;
+                hlecreportViewer.Refresh();
+            }
+            else if (lecname == "Dr Manori Jayasinghe")
+            {
+                Section5_LecTimetable_5 timetable = new Section5_LecTimetable_5();
+                hlecreportViewer.ReportSource = timetable;
+                hlecreportViewer.Refresh();
+            }
+            else if (lecname == "Dr. Anuradha Karunasena")
+            {
+                Section5_LecTimetable_6 timetable = new Section5_LecTimetable_6();
+                hlecreportViewer.ReportSource = timetable;
+                hlecreportViewer.Refresh();
+            }
+            else
+            {
+                MessageBox.Show("No Sessions allocated for the selected Lecturer Name");
+                this.Dispose();
+            }
         }
     }
 }

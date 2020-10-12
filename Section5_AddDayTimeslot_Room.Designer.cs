@@ -128,7 +128,7 @@
             this.hansi_timetableday_room.Location = new System.Drawing.Point(459, 448);
             this.hansi_timetableday_room.Margin = new System.Windows.Forms.Padding(2);
             this.hansi_timetableday_room.Name = "hansi_timetableday_room";
-            this.hansi_timetableday_room.Size = new System.Drawing.Size(257, 21);
+            this.hansi_timetableday_room.Size = new System.Drawing.Size(265, 21);
             this.hansi_timetableday_room.TabIndex = 65;
             // 
             // label3
@@ -150,19 +150,21 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.hansi_timetableslot_room.FormattingEnabled = true;
             this.hansi_timetableslot_room.Items.AddRange(new object[] {
-            "8.30 : 9.30",
-            "9.30 :10.30",
-            "10.30 : 11.30",
-            "11.30 : 12.30",
-            "12.30 : 13.30",
-            "14.30 : 15.30",
-            "15.30 : 16.30",
-            "16.30 : 17.30",
-            "17.30 : 18.30"});
+            "8.30 ",
+            "9.30",
+            "10.30",
+            "11.30",
+            "12.30 ",
+            "13.30",
+            "14.30 ",
+            "15.30 ",
+            "16.30",
+            "17.30",
+            "18.30"});
             this.hansi_timetableslot_room.Location = new System.Drawing.Point(459, 405);
             this.hansi_timetableslot_room.Margin = new System.Windows.Forms.Padding(2);
             this.hansi_timetableslot_room.Name = "hansi_timetableslot_room";
-            this.hansi_timetableslot_room.Size = new System.Drawing.Size(257, 21);
+            this.hansi_timetableslot_room.Size = new System.Drawing.Size(265, 21);
             this.hansi_timetableslot_room.TabIndex = 63;
             // 
             // label1

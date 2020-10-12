@@ -75,7 +75,7 @@ namespace ABC_Institute___Timetable_Generator
             using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
             {
                
-                String query = "Select * from session_lecturers";
+                String query = "Select distinct s.lecturerName from session_lecturers s";
 
                 MySqlCommand sql = new MySqlCommand(query, mySqlCon);
                 MySqlDataReader read;
@@ -87,13 +87,12 @@ namespace ABC_Institute___Timetable_Generator
 
                     while (read.Read())
                     {
-                        HansiTimetable_lec.Items.Add(read.GetValue(2).ToString());
+                        HansiTimetable_lec.Items.Add(read.GetValue(0).ToString());
                     }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.ToString());
-                    MessageBox.Show("No Sessions allocated for the selected Lecturer");
+                    MessageBox.Show(ex.ToString());          
                     this.Dispose();
                 }
 
@@ -105,7 +104,7 @@ namespace ABC_Institute___Timetable_Generator
         {
             using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
             {
-                String query = "Select * from locations";
+                String query = "Select distinct l.Room from locations l";
 
                 MySqlCommand sql = new MySqlCommand(query, mySqlCon);
                 MySqlDataReader read;
@@ -117,13 +116,12 @@ namespace ABC_Institute___Timetable_Generator
 
                     while (read.Read())
                     {
-                        HansiTimetable_room.Items.Add(read.GetValue(2).ToString());
+                        HansiTimetable_room.Items.Add(read.GetValue(0).ToString());
                     }
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.ToString());
-                    MessageBox.Show("No Sessions allocated for the selected Room");
                     this.Dispose();
                 }
 
@@ -134,7 +132,7 @@ namespace ABC_Institute___Timetable_Generator
         {
             using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
             {
-                String query = "Select * from sessions";
+                String query = "Select distinct s.GroupID from groupinfo s";
 
                 MySqlCommand sql = new MySqlCommand(query, mySqlCon);
                 MySqlDataReader read;
@@ -146,39 +144,19 @@ namespace ABC_Institute___Timetable_Generator
 
                     while (read.Read())
                     {
-                        HansiTimetable_grp.Items.Add(read.GetValue(1).ToString());
+                        HansiTimetable_grp.Items.Add(read.GetValue(0).ToString());
                     }
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.ToString());
-                    MessageBox.Show("No Sessions allocated for the selected Group ID");
                     this.Dispose();
                 }
 
             }
         }
 
-        private void hansiwork_daystable_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            fillLecTimetableGrid();
-        }
-
-        public void fillLecTimetableGrid()
-        {
-            using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
-            {
-                mySqlCon.Open();
-                MySqlDataAdapter sqlDa = new MySqlDataAdapter("TimetableViewAll", mySqlCon);
-                sqlDa.SelectCommand.CommandType = CommandType.StoredProcedure;
-                DataTable dataTimeLec = new DataTable();
-                sqlDa.Fill(dataTimeLec);
-                hansi_timelectable.DataSource = dataTimeLec;
-                hansi_timelectable.Columns[0].Visible = false;
-
-            }
-        }
-
+      
         private void hansi_timelectable_DoubleClick(object sender, EventArgs e)
         {
             if (hansi_timelectable.SelectedRows.Count != -1)
@@ -215,9 +193,19 @@ namespace ABC_Institute___Timetable_Generator
             }
         }
 
-        private void hansi_timegrptable_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        public void fillLecTimetableGrid()
         {
-            fillGrpTimetableGrid();
+            using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
+            {
+                mySqlCon.Open();
+                MySqlDataAdapter sqlDa = new MySqlDataAdapter("TimetableViewAll", mySqlCon);
+                sqlDa.SelectCommand.CommandType = CommandType.StoredProcedure;
+                DataTable dataTimeLec = new DataTable();
+                sqlDa.Fill(dataTimeLec);
+                hansi_timelectable.DataSource = dataTimeLec;
+                hansi_timelectable.Columns[0].Visible = false;
+
+            }
         }
 
         public void fillGrpTimetableGrid()
@@ -230,6 +218,7 @@ namespace ABC_Institute___Timetable_Generator
                 DataTable dataTimeLec = new DataTable();
                 sqlDa.Fill(dataTimeLec);
                 hansi_timegrptable.DataSource = dataTimeLec;
+                hansi_timegrptable.Columns[0].Visible = false;
             }
         }
 
@@ -243,16 +232,10 @@ namespace ABC_Institute___Timetable_Generator
                 DataTable dataTimeLec = new DataTable();
                 sqlDa.Fill(dataTimeLec);
                 hansi_timeRoomtable.DataSource = dataTimeLec;
+                hansi_timeRoomtable.Columns[0].Visible = false;
             }
         }
-
-        private void HansiTimetable_Lecdown_Click(object sender, EventArgs e)
-        {
-            Section5_ViewLecTimetable timetable = new Section5_ViewLecTimetable(HansiTimetable_lec.SelectedItem.ToString());
-            timetable.ShowDialog();
-        }
-
-      
+     
         private void HansiTimetable_Addgrp_Click(object sender, EventArgs e)
         {
             using (MySqlConnection mySqlCon = new MySqlConnection(connectionString))
@@ -299,7 +282,11 @@ namespace ABC_Institute___Timetable_Generator
             }
         }
 
-     
+        private void HansiTimetable_Lecdown_Click(object sender, EventArgs e)
+        {
+            Section5_ViewLecTimetable timetable = new Section5_ViewLecTimetable(HansiTimetable_lec.SelectedItem.ToString());
+            timetable.ShowDialog();
+        }
 
         private void HansiTimetable_grpDown_Click(object sender, EventArgs e)
         {          
@@ -311,7 +298,6 @@ namespace ABC_Institute___Timetable_Generator
         {
               Section5_ViewRoomTimetable timetableroom = new Section5_ViewRoomTimetable(HansiTimetable_room.SelectedItem.ToString());
                 timetableroom.ShowDialog();
-
         }
 
         private void hansi_timeRoomtable_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -323,6 +309,13 @@ namespace ABC_Institute___Timetable_Generator
         {
             fillLecTimetableGrid();
         }
+
+        private void hansi_timegrptable_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            fillGrpTimetableGrid();
+        }
+
+        
     }
-    }
+}
     

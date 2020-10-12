@@ -160,15 +160,17 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.hansi_timetableslot_grp.FormattingEnabled = true;
             this.hansi_timetableslot_grp.Items.AddRange(new object[] {
-            "8.30 : 9.30",
-            "9.30 :10.30",
-            "10.30 : 11.30",
-            "11.30 : 12.30",
-            "12.30 : 13.30",
-            "14.30 : 15.30",
-            "15.30 : 16.30",
-            "16.30 : 17.30",
-            "17.30 : 18.30"});
+            "8.30 ",
+            "9.30",
+            "10.30",
+            "11.30",
+            "12.30 ",
+            "13.30",
+            "14.30 ",
+            "15.30 ",
+            "16.30",
+            "17.30",
+            "18.30"});
             this.hansi_timetableslot_grp.Location = new System.Drawing.Point(463, 409);
             this.hansi_timetableslot_grp.Margin = new System.Windows.Forms.Padding(2);
             this.hansi_timetableslot_grp.Name = "hansi_timetableslot_grp";
