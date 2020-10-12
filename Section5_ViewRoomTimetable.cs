@@ -19,49 +19,57 @@ namespace ABC_Institute___Timetable_Generator
             this.roomno = roomno;
         }
 
-        private void Section5_ViewRoomTimetable_Load(object sender, EventArgs e)
-        {
-            Section5_RoomTimetable timetableroom = new Section5_RoomTimetable();
-
-            timetableroom.SetParameterValue("RoomNo", roomno);
-
-            hroomReportViewer.ReportSource = timetableroom;
-
-            hroomReportViewer.Refresh();
-
-        }
-
-        private void crystalReportViewer1_Load(object sender, EventArgs e)
+        private void hroomreportViewer_Load(object sender, EventArgs e)
         {
             if (roomno == "A502")
             {
                 Section5_RoomTimetable timetableroom = new Section5_RoomTimetable();
-
-                // timetableroom.SetParameterValue("RoomNo", roomno);
-
-                hroomReportViewer.ReportSource = timetableroom;
-
-                hroomReportViewer.Refresh();
-            }
-            else if (roomno == "B303")
-            {
-                Section5_RoomTimetable_1 timetableroom = new Section5_RoomTimetable_1();
-
-                // timetableroom.SetParameterValue("RoomNo", roomno);
-
-                hroomReportViewer.ReportSource = timetableroom;
-
-                hroomReportViewer.Refresh();
+                hroomreportViewer.ReportSource = timetableroom;
+                hroomreportViewer.Refresh();
             }
             else if (roomno == "A509")
             {
+                Section5_RoomTimetable_1 timetableroom = new Section5_RoomTimetable_1();
+                hroomreportViewer.ReportSource = timetableroom;
+                hroomreportViewer.Refresh();
+            }
+            else if (roomno == "B303")
+            {
                 Section5_RoomTimetable_2 timetableroom = new Section5_RoomTimetable_2();
+                hroomreportViewer.ReportSource = timetableroom;
+                hroomreportViewer.Refresh();
+            }
+            else
+            {
+                MessageBox.Show("No Sessions allocated for the selected Room");
+                this.Dispose();
+            }
+        }
 
-                // timetableroom.SetParameterValue("RoomNo", roomno);
-
-                hroomReportViewer.ReportSource = timetableroom;
-
-                hroomReportViewer.Refresh();
+        private void Section5_ViewRoomTimetable_Load(object sender, EventArgs e)
+        {
+            if (roomno == "A502")
+            {
+                Section5_RoomTimetable timetableroom = new Section5_RoomTimetable();
+                hroomreportViewer.ReportSource = timetableroom;
+                hroomreportViewer.Refresh();
+            }
+            else if (roomno == "A509")
+            {
+                Section5_RoomTimetable_1 timetableroom = new Section5_RoomTimetable_1();
+                hroomreportViewer.ReportSource = timetableroom;
+                hroomreportViewer.Refresh();
+            }
+            else if (roomno == "B303")
+            {
+                Section5_RoomTimetable_2 timetableroom = new Section5_RoomTimetable_2();
+                hroomreportViewer.ReportSource = timetableroom;
+                hroomreportViewer.Refresh();
+            }
+            else
+            {
+                MessageBox.Show("No Sessions allocated for the selected Room");
+                this.Dispose();
             }
         }
     }

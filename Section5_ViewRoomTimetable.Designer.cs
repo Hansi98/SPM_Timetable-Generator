@@ -28,29 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.hroomReportViewer = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.Section5_RoomTimetable1 = new ABC_Institute___Timetable_Generator.Section5_RoomTimetable();
+            this.hroomreportViewer = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.SuspendLayout();
             // 
-            // hroomReportViewer
+            // hroomreportViewer
             // 
-            this.hroomReportViewer.ActiveViewIndex = 0;
-            this.hroomReportViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.hroomReportViewer.Cursor = System.Windows.Forms.Cursors.Default;
-            this.hroomReportViewer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.hroomReportViewer.Location = new System.Drawing.Point(0, 0);
-            this.hroomReportViewer.Name = "hroomReportViewer";
-            this.hroomReportViewer.ReportSource = this.Section5_RoomTimetable1;
-            this.hroomReportViewer.Size = new System.Drawing.Size(800, 450);
-            this.hroomReportViewer.TabIndex = 0;
-            this.hroomReportViewer.Load += new System.EventHandler(this.crystalReportViewer1_Load);
+            this.hroomreportViewer.ActiveViewIndex = -1;
+            this.hroomreportViewer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.hroomreportViewer.Cursor = System.Windows.Forms.Cursors.Default;
+            this.hroomreportViewer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.hroomreportViewer.Location = new System.Drawing.Point(0, 0);
+            this.hroomreportViewer.Name = "hroomreportViewer";
+            this.hroomreportViewer.Size = new System.Drawing.Size(800, 450);
+            this.hroomreportViewer.TabIndex = 0;
+            this.hroomreportViewer.Load += new System.EventHandler(this.hroomreportViewer_Load);
             // 
             // Section5_ViewRoomTimetable
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.hroomReportViewer);
+            this.Controls.Add(this.hroomreportViewer);
             this.Name = "Section5_ViewRoomTimetable";
             this.Text = "Section5_ViewRoomTimetable";
             this.Load += new System.EventHandler(this.Section5_ViewRoomTimetable_Load);
@@ -60,7 +58,6 @@
 
         #endregion
 
-        private CrystalDecisions.Windows.Forms.CrystalReportViewer hroomReportViewer;
-        private Section5_RoomTimetable Section5_RoomTimetable1;
+        private CrystalDecisions.Windows.Forms.CrystalReportViewer hroomreportViewer;
     }
 }
